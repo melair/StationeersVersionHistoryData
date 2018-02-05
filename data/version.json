@@ -2969,5 +2969,14 @@
       "public": "unknown",
       "beta": "unknown"
     }
+  },
+  "0.1.1145.5726": {
+    "notes": [
+      "Added large tank, requiring 5x regular tank kits.  Takes up 8 grid squares (vs 1) and has a volume of 50000 (vs 6000)."
+    ],
+    "releases": {
+      "built": "2018-02-05T00:00:00+00:00",
+      "beta": "2018-02-05T04:01:10+00:00"
+    }
   }
 }
