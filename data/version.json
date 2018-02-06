@@ -1,4 +1,1363 @@
 {
+  "0.1.1146.5727": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-02-06T00:00:00+00:00",
+      "beta": "2018-02-06T10:30:34+00:00"
+    }
+  },
+  "0.1.1145.5726": {
+    "notes": [
+      "Added large tank, requiring 5x regular tank kits.  Takes up 8 grid squares (vs 1) and has a volume of 50000 (vs 6000)."
+    ],
+    "releases": {
+      "built": "2018-02-05T00:00:00+00:00",
+      "beta": "2018-02-05T04:01:10+00:00"
+    }
+  },
+  "0.1.1143.5721": {
+    "notes": [
+      "Significantly improved terrain generation by splitting terrain features in to regions. Each voxel now only samples from close regions."
+    ],
+    "releases": {
+      "built": "2018-02-02T00:00:00+00:00",
+      "public": "2018-02-03T21:54:57+00:00",
+      "beta": "2018-02-03T21:54:57+00:00"
+    }
+  },
+  "0.1.1141.5717": {
+    "notes": [
+      "Fixed NullReferenceException in updating grid information.",
+      "Removed some unused calculations from the water shader",
+      "Fixed the water connectivity calculations for the water VisualizerExtents",
+      "Fixed water not dissipating in vacuum"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1140.5711": {
+    "notes": [
+      "Improved connecting time and added sync data progress. You might miss to progress it because small size of network messages are combined up to 100 messages.",
+      "Fixed Steam AuthTicket Exception. When it happens, game will proceed to join. You'd better to restart game. It already lost steam connection."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1135.5701": {
+    "notes": [
+      "Updated New World menu thumbnails",
+      "Upgraded Gas Display Circuitboard to connect to Gas Tank Storage. Gas Display now shows temperature and pressure of gas canisters stored in Gas Tank Storage.",
+      "Added logic support to GasTankStorage. GasTankStorage now exposes it's held gas tank's atmosphere data (pressure, temperature etc) on the logic network."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1133.5689": {
+    "notes": [
+      "Updated German, Spanish and Traditional Chinese localization files.",
+      "Fixed wall heaters not drawing enough power. Wall heaters now draw 1005w of power when working.",
+      "Fixed gas display displaying wrong values when it exceeded 999. Now updates the unity under the value to be correct."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1132.5681": {
+    "notes": [
+      "Fixed Atmos leaking bug",
+      "Added support for localizing unmined mineral names."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1130.5676": {
+    "notes": [
+      "Fixed Player's weird movement when you unconsious or dead.",
+      "Deleted invisible body on decay and respawn (if decayed)",
+      "Fixed IndexOutOfRangeException when you create Moon and then create Space. One of necessary variable wasn't initialized when switch world."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1128.5668": {
+    "notes": [
+      "removed water visualizer when using openGL"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1127.5663": {
+    "notes": [
+      "removed water visualizer when using DX9 due to lack of compute shader support",
+      "added a fallback for the terrain shader to the standard shader for dx9",
+      "Updated Korean and German language files"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1126.5657": {
+    "notes": [
+      "Added OpenGLCore to Graphics APIs for someone who has crash in related to video car and driver. It can be enabled with -force-glcore parameter."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1124.5651": {
+    "notes": [
+      "Added support for Japanese translation.",
+      "Added support for Korean translation.",
+      "Fixed broken atmosphere on game client. It usually happened before sync dropped item, tried to update atmosphere in multiplay. It broke atmospheres of all items. Now that, it shouldn't be broken in any case.",
+      "Fixed floating point numbers log spam. It happened when infinite floating numbers set in rotation of Inverse Kinematics. Now it doesn't use wrong value in rotation."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1122.5642": {
+    "notes": [
+      "Replaced Gas Tank Storage model. Same dimensions. Also has a data port, so you can read values from it using the logic system.",
+      "Fixed Air Conditioner operation flawed. Community provided new coded solution. Credit to Illiux who did math for heat-pump, ???Zaneo for providing advice for direction, and Dimitri for the actual code. Heat-pump calculates per tick power cost of energy transfer when heating and cooling. Additionally energy from pump work is added to waste or output, because of this heating cost a bit less then cooling. Cost of energy transfer and amount of additional energy added is calculated using Coefficient of Performance?."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1121.5639": {
+    "notes": [
+      "Added support for Simplified Chinese. Along with Simplified Chinese translation files.",
+      "Fixed unreadable tips on loading screen when using a CJK font.",
+      "Fixed dialog boxes showing squares in some languages.",
+      "Updated German, Spanish and Traditional Chinese translation files.",
+      "Added support for kick and ban messages for servers hosted via dedicated server or full client."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1120.5635": {
+    "notes": [
+      "Fixed tablets not working when loading with them in player inventory. They were not being correctly initialized on player locality change. Now they will correctly reinitialize when a player takes control of a entity.",
+      "Added Fixed Beacon. This is a placeable structure that requires 300W of power, but broadcasts its location. This can be accessed via the Tracker Cartridge, just like normal beacons. It can be built using the Electrical Printer.",
+      "Fixed connection problem when there are hundreds of linked devices including Logic reader/writer, filter, Circuitboard, LogicMotherboard. It didn't check message buffers size when sending sync data. It usually stuck in applying chunks data 90%-100%. You can join server that it was fixed."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1119.5631": {
+    "notes": [
+      "Fixed Join World button is disabled when player returns join menu from game.",
+      "Fixed Inactive ServerListItem Animators being called when disabled. causing lag on player load",
+      "Eyes should now correctly close when you die",
+      "Fixed writing decimals to logic memory unit from logic computers"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1117.5624": {
+    "notes": [
+      "Added Traditional Chinese localization.",
+      "Added more missing strings for localization including the Change Appearance screen.",
+      "Fixed missing EntryTools for Chair, Turret and engines.",
+      "Fixed truncate chatting text when it's full. It will scroll properly."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1114.5617": {
+    "notes": [
+      "Fixed items being invisible when viewing your own dead body after re-spawning",
+      "Fixed error when disabling shadows on re-spawn",
+      "Added skeleton despawning after 60 seconds.",
+      "Fixed re-spawn while in decayed State(wasn't working at all)",
+      "Fixed some dropped items being invisible(because they were still on the wrong layer)",
+      "Removed all shadows of dead players",
+      "Avoided possible divide by zero in cell charger. (Thanks Risu!)",
+      "Fixed ores not appearing on load for play host players",
+      "Updated localization files for German, Russian, Spanish and French"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1113.5609": {
+    "notes": [
+      "Fixed NRE in CameraCollisionHandler. It failed to join server on a certain pc because of delay to initial camera. It makes you join server properly.",
+      "Fixed battery charger distributing power to charged batteries. Now the charger only adds charge to batteries that aren't full. (Thanks Risu!)"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1111.5605": {
+    "notes": [
+      "Fixed skeletons turning into Ghost Rider. Skeletons can no longer be set on fire. (thanks FlashDim!)"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1110.5602": {
+    "notes": [
+      "Fixed healpill not healing lung damage.",
+      "Respawn player on join if dead. Prevents situation where player disconnects while dead, and unable to respawn afterwards.",
+      "Fixed invisible favorite server list on join menu."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1109.5598": {
+    "notes": [
+      "Fixed respawn button disconnecting you instead.",
+      "Fixed airlocks not cycling properly on dedicated servers"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1108.5595": {
+    "notes": [
+      "Fixed respawning beside old body instead of spawn point.",
+      "Improved UI flow when revived before respawning.",
+      "Fixed issue of being unable to be killed after having been revived once.",
+      "Fixed respawning from the respawn menu after someone revived you",
+      "Added respawn prompt localized text values."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1107.5589": {
+    "notes": [
+      "Fixed helmet not visible on old body after respawn.",
+      "HealPill should now correctly heal burn damage",
+      "Added bindip command which binds specific IP on dedicated server when it has multiple IPs. It's available only on IPv4. Usage : rocketstation_DedicatedServer .exe -bindip=192.168.1.78",
+      "Fixed error in English localized text entry.",
+      "Updated Spanish translations. [credit: socramazibi]",
+      "Added more localized labels for server detail window and skeletons."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1104.5579": {
+    "notes": [
+      "Tweaked the Join World menu server browser.",
+      "Re-Fixed spawning in wrong position",
+      "Added translucency to ice ores and silicon",
+      "Fixed object reference error with chute bin.",
+      "Added some more localized versions of button and placeholder text fields on the save and join world menus.",
+      "Fixed Camera being moveable when Dead",
+      "Decay Stage added to Human. 3 minutes after dying you will now drop all items and turn into Skeleton. Skeletons represent a dead player who has no chance of being revived.",
+      "Organ death now results in major Brute damage to player (Any organ failure will put you into Dead state)",
+      "Fixed bug with Brute damage not being able to decrease if it was at cap",
+      "Fixed spawning in wrong position (fixes wrong tutorial spawn position and fixes falling through terrain)",
+      "Fixed small items falling through terrain when moving Fast"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1102.5564": {
+    "notes": [
+      "Fixed NRE when Logic Displays attempted to render a character they didn't have a mesh for."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1101.5559": {
+    "notes": [
+      "Fixed voxels sometimes losing density on loading world.",
+      "Disabled Workshop button while mod UI is implemented.",
+      "Reduced loading time and optimized memory usage on host player.Removed unnecessary sequences when loading.",
+      "Deleted nav mesh properly when leaving game.It caused freezing. It's faster than before."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1100.5553": {
+    "notes": [
+      "Optimized memory allocations. Unity GC(garbage collector) runs more often and unloaded unused assets to reduce memory usage. There is no chance to run GC on persistent dedicated server yet. We will do it soon.",
+      "Fixed InvalidOperationException: Steamworks is not initialized. Modifed not to throw exception while updating steam stats",
+      "Fixed could not see other languages on chatting panel."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1099.5549": {
+    "notes": [
+      "Added respawn mechanic. Game will now ask if you want to respawn or exit to menu on death."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1097.5535": {
+    "notes": [
+      "Added extra visual feedback on key binding screen, and a prompt if you attempt to bind actions to mouse buttons.",
+      "Fixed Bug where game would attempt to auto-save during Tutorial.",
+      "Fixed wrong player count on dedicated server. Players could connect to dedicated server upto max player count - 1. It was fixed upto max player count.",
+      "Disabled WaterVisualizer on dedicated server. It's a visualizer only on client."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1095.5529": {
+    "notes": [
+      "Fixed LED Displays were displaying their values offset when they were placed in certain orientations. Now values will be correctly centered in all orientations.",
+      "Fixed some devices were adding energy from power usage to atmospheres that had only a small quantity of moles. For now, most devices will stop heating the atmosphere if it is below the Armstrong Limit (6kPa). In future, this will probably be lowered, as it is not realistic, but this will help with flash fires caused during decompression."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1094.5526": {
+    "notes": [
+      "Fixed Air Conditioner not being able to be powered on. Now AC can be powered on correctly, it will not draw power through it's data network, and it will close itself when turned off or looses power."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1093.5524": {
+    "notes": [
+      "Fixed bug with flood fill room generation generating junk values. Previous fix caused the junk rooms to return. When you would mine a voxel, this would cause an attempt at room generation. If all faces were closed, it would succeed and create a tiny one-grid room. Now this is checked for and prevented. Existing rooms will not be removed by this change, this only affects new rooms. Junk rooms are unlikely to have much ill effect but might cause gravity issues for the space world.",
+      "Fixed Air Conditioner double used power when heating. Now AC applies its passive energy use, and retains its active energy use to apply during power tick. Reported by Zaneo via email/discord.",
+      "Lowered view distance for Wall Lights, as their increased lighting distance was causing signficant frame drop.",
+      "Fixed cannot spraypaint pipe analyser. Now can be painted just like other devices and objects. Reported by Lizza on steam.",
+      "Fixed ices would melt when in subzero temperature even when in direct sunlight. Now ices will not melt, even if direct sunlight, if they are below freezing point. Reported by [BS] Fridge Lord on steam forums.",
+      "Fixed painted LED not changing color variable. This meant if you manually painted an LED, it would not change its color variable and would load with the default color (0). Now the color state is changed."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1092.5517": {
+    "notes": [
+      "Added support for localized text to most alert and prompt popups."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1089.5513": {
+    "notes": [
+      "Fixed Logic Motherboard missing a lot of functionality that were added to the Logic Units. This has now been unified with the logic units, so assessments available on one should also be on the other."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1087.5508": {
+    "notes": [
+      "Fixed Construction Kits were not displaying an error message when there was not enough in the kit to build the current cursor device. Now correctly states that not enough is in the kit, and shows the cursor as red.",
+      "Fixed some missing strings for other languages.",
+      "Removed old LED Medium and Large displays. These will no longer appear in your game, and you will need to place new ones. Small displays placements are unchanged.",
+      "Replaced Mode change for LED light and display color, instead of using \"Mode\" setting you now use \"Color\" setting.",
+      "Added functionality on LED Display for different display modes. Current number (default), percent (input a ratio, i.e. 1 == 100%, 0 == 0%), and power (in watts).",
+      "Added new LED Displays. They can handle alphanumeric and special characters much better than previously, and will be updated with new functionality in the coming weeks. New LED displays have a standardized button and input placement, for easier use.",
+      "Fixed bug with display formatting for units. Negative values were sometimes considered \"micro\" units and were formatted incorrectly.",
+      "Unified Logic Motherboard and Logic Unit value setting."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1086.5505": {
+    "notes": [
+      "Changed wall light distance setting from 4m to 7m. Now will provide light across a larger area, as requested by the community.",
+      "Fixed Large Tank and other internal atmosphere devices (such as the sleeper) only mix to meet pressure, they dont mix the energy and contents states. Now they completely mix with connected atmospheres.",
+      "Fixed Light Occlusion and Atmosphere world position updates not occurring on dedicated servers. Caused light issues for dedicated server logic systems and growing plants and solar heating of atmospheres."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1085.5501": {
+    "notes": [
+      "Updated community provided Russian translations."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1083.5497": {
+    "notes": [
+      "Fixed atmospheric loss due to ungenerated room cells. Rooms were not being correctly generated in some instances, such as below floor grates when there was voxels below. This caused the atmospherics system to consider below the grates as a vacuum and ablate the atmosphere dramatically, causing loss. Note: this will only affect NEW room generation! To force new room generation, lift up wall tiles and room generation will be forced for the grids above and below that wall piece. This was also the cause of zero gravity bugs in creative stations.",
+      "Added Idle logic readable to Arc Furnace. Will report 1 when nothing imported, and nothing being exported. Useful for making automated arc furnace systems.",
+      "Added Logic Dial. A dial with a configurable min/max and when dial is moved changes the value. Reports both its raw value, or the ratio compared to its max. The maximum value on the dial is the Mode."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1082.5494": {
+    "notes": [
+      "Added Logic Readers can read from other logic readers. Useful if you want to pass values simply between separated networks without extra writers.",
+      "Fixed atmospheric devices were able to be set to unlimited values using logic units. Now they will clamp assigned values to maximum and minimum."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1081.5491": {
+    "notes": [
+      "Fixed Microwave not informing player that recipe not continuing due to no power. Now tells player in tooltip that the device does not have power.",
+      "Fixed Active Vents not serializing their Pressure settings. Now correctly serializes their internal and external safeties. Possible fix for needing to reset active vents on load, as they were not storing their settings. Note: this will probably only work from the next time you load your game. So you will need to load, save, and then reload to see if it works.",
+      "Possible fix for various dedicated server initialization issues. Initialization on dedicated server has been changed to be similar to that which clients do, which might fix the many initialization problems on dedicated servers, such as active vents not working or logic units needing to be powered on/off on server restart.",
+      "Fixed Airlock Control Circuitboard exceptions and failing to correctly remove assigned devices. Now when an assigned airlock is deselected, the airlock is correctly removed. This should fix another edge case where airlock controllers would switch door assignments."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1080.5488": {
+    "notes": [
+      "Added Mode to LED Displays. When you change the mode, you change the color setting for the display. This can be used with the Logic Writer to change the current color of the text in the LED display.",
+      "Added cable analyzer recipe to the electronics printer.",
+      "Added Cable Analyzer. This device can be built from a Kit (Cable Analyzer). Display shows the Actual, Required, and Potential power (in Watts) for the network the cable sits on. It also exposes this to Logic Units, allowing you to much more easily use the logic units to manage your power.",
+      "Added tutorial translations for French and Spanish.",
+      "Fixed gameplay tips were not being cleared between language changes. Meant that english tips were being shown for other languages. Now will show tips only from the supplied language. No tip will be shown if there are no localized tips for the current language.",
+      "Fixed out of range exceptions when writing incompatible logic values to mode (such as setting LED mode to -99), and possibly other state values. Now the state values for OnOff, Lock, etc... are clamped to binary values. Mode is clamped to the number of ModeStrings the object has, so the number of valid mode states.",
+      "Fixed LEDs color changing on reload. When first placed it would be white, but on load it would be blue, even though the mode was correctly set. Now the color is correctly initialized on load.",
+      "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED.",
+      "Fixed Logic Min/Max unit was saying \"Greater\" mode when it was actually \"Less\" mode (and vice versa). Now correctly reports it's current mode.",
+      "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed.",
+      "Fixed Logic Writers writing to Lock values did nothing for all devices (particularly Airlocks and Chute outlets). Was trying to write to powered state. Now correctly writes to Lock state, very useful for locking the doors and chutes."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1078.5476": {
+    "notes": [
+      "Fixed solar panel seperate data variant also allowed power from the data cable, as well as data, effectively doubling the power output. Now power is only allowed through the power connection."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1077.5474": {
+    "notes": [
+      "Fixed Jetpack not stabilizing when Text Input Panel was visible. Characters in Jetpack modes should now have their velocity slowed when Text Input Panel is visible.",
+      "Fixed ToggleInfo Keybind (F4 Default) sometimes breaking the GameMenu from appearing. Game Menu should now appear when ToggleInfo panel is displayed"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1076.5471": {
+    "notes": [
+      "Fixed issue with Character rotating 90* in slot when Chat panel was active",
+      "Fixed being able to jump while cursor is visible"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1075.5468": {
+    "notes": [
+      "Fixed airlock control circuitboard reassigns exterior and interior airlock doors when they loose connection, resulting in confusing setups when the wires have been cut. Circuitboard will continue to remember interior/exterior doors but release them if they are not usable.",
+      "Fixed stacker caused ingots passed through it to not be saved. Now correctly initializes new stacks so that they are saved (and then loaded) correctly."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1072.5462": {
+    "notes": [
+      "Added recipe number to tutorial, so that places know which recipe they need to find as there are a lot of recipes.",
+      "Fixed reversed transformer variant doesnt change the input/output and is actually the same as the master variant. Now correctly swapped inputs and outputs.",
+      "Fixed bug with labeller causing out of range exception when dropped while entering input. Now if the labeller is dropped or the device being renamed is destroyed, the input window will be automatically closed.",
+      "Fixed possible bug with centrifuge when importing \"bad\" stacks. If the stack had an error, could result in massive stacks in the game.",
+      "Fixed game locks up when deconstructing device that has extremely high number of reagents in it. Devices will now drop a maximum of 200 stacks when being deconstructed. Some \"bad\" stacks were causing huge reagent mixes, and then these broke the centrifuge.",
+      "Fixed able to put items inside their own slots, causing the game to lock up. Now cannot put items inside other items."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1068.5451": {
+    "notes": [
+      "Changed tutorial due to feedback from players. Now highlights exist for construction requirements. Added using microwave to make a recipe. Reduced edgecases that could make the tutorial incompletable. Prepared tutorial for localization by community.",
+      "Added ToolManufactory recipe to fabricator.",
+      "added missing angle grinder to fabricator",
+      "Exposed Activate action on Furnace to Logic system. Now setting Activate to 1 will cause the furnace to ignite its internal atmosphere.",
+      "Fixed portable light causing collision with character and propelling them around. Now can safely carry the portable light"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1067.5445": {
+    "notes": [
+      "Fixed SolarControl wasn't updated connected SolarPanel on dedicated server.",
+      "Added more detailed tooltips for power tools, such as telling the player when their power tool does not have enough battery charge to complete a task."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1066.5437": {
+    "notes": [
+      "Fixed Reagent mixtures in Furnace and Recycler could sometimes spam small values for clients. Now reagent mixtures are correctly cleared on clients when they receive an update."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1062.5426": {
+    "notes": [
+      "Fixed bug with Area Power Controller using increasing amounts of power when operating off battery. Caused batteries to drain completely very fast.",
+      "Fixed Logic Compare NotEquals always reporting false. Was not implemented, so always returning 0. Now returns 1 if values are not approximately equal (within float variant)."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1061.5421": {
+    "notes": [
+      "Fixed Reconnecting players spawning inside of grids. Now players position is reset client side if there has been a delay taking control.",
+      "Fixed OnThreadUpdate not running on dedicated servers. Dedicated servers should now work correctly with Daylight Sensors"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1060.5416": {
+    "notes": [
+      "Added clearallinterval command which is clear disconnected player from dedicated server. Default and minimum value is 60 seconds.",
+      "Fixed issue with items being able to be dropped through floors."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1058.5405": {
+    "notes": [
+      "Added text display to slots for Circuitboards, Motherboards, and Cartridges as a temporary solution so you know what they are instead of needing to drop them.",
+      "Reduced the cost of steel frames and sheets.  Players using steel as a construction material will be rewarded by not needing to use as many resources.",
+      "Fixed issue where players would put open gas canisters into portable tanks, welders, etc..., and the canisters would leak all the air out. Now when a gas canister is inserted into something, it will be automatically closed.",
+      "Added recycler recipe to autolathe and fabricator.",
+      "Fixed glass recipe on fabricator to match that of autolathe",
+      "Fixed suit atmospherics will continue to use a gas canister when it is open. Now the suit will close tanks when using atmospheres, to avoid putting gas into waste tanks when they are open.",
+      "Added Recycler. Made from Kit (Recycler). Put things into this and receive resources back. Resources come out as generic reagent mixes, and will usually need to be placed into the Centrifuge to separate out into component ores for smelting. Also useful for turning ingots into ore again.",
+      "Changed Reagent mixtures from floats to double, to avoid floating point issues.",
+      "Draggable items now require you to be closer then 3 meters to interact with"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1057.5396": {
+    "notes": [
+      "Fixed bug where power usage for circuits reset to defaults.",
+      "Fixed signs not dropping kits on deconstruct, and large sign now uses 2 kits.",
+      "Fixed items spawned from stackers not saving.",
+      "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything.",
+      "Added small screws to Logic Memory. Large screws provide increments of 100 (10 if holding ALT). Small screws provide increments of 1 (0.1 if holding ALT)."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1056.5380": {
+    "notes": [
+      "Fixed Power Controller abnormal behavior. They were discharging one tick, and then recharging the next. Now they will follow a steady state. Also, power controllers without a battery will act as a passthrough if there is any power available in the upstream network.",
+      "added LogicSwitch recipe to fabricator",
+      "Fixed stuck in loading screen when failed to join server on steam client.",
+      "Adjusted logic unit models so they will be hidden when a wall is placed over them. Cleaned up corrupted geometry on sides and back of model."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1055.5374": {
+    "notes": [
+      "Fixed furnace arrows rotating weirdly. Furnace pressure arrow should no longer rotate out of the furnace.",
+      "Fixed asteroids not being rendered on load making them very hard to find. Space now renders all chunks on load.",
+      "Fixed players lungs were heating up to fast due to increased oxygen requirements. Now energy released due to heat is not scaled based on oxygen usage of the entity. This fixes players overheating very fast when suit air conditioning is turned off.",
+      "Fixed more circumstances of welders exploding, and players thermodynamics not making sense. Now solar heating is a seperate value. When suit AC is turned off, players suit will get hotter in the sun, and cooler in the shade (due to radiation of heat). Welders will still not heat up in the sun, but will allow quite a lot of heat convection/radiation. This means that they will radiate any excess heat away over time. But it does mean if doing lots of welding in a hot environment, you need to make sure the welder tank does not overpressurize.",
+      "Fixed batteries requesting more power than they can store. Batteries will now request up to their maximum power delta (difference between their storage capacity, and their current power stored). This means they will stop requesting power when they are full. Batteries will take and provide up to their maximum power delta in on tick, however, so use transformers to regulate this or you will blow wires.",
+      "Updated Ore Coal material with new textures",
+      "Fixed gas mask would retain its atmosphere when not worn. It could heat up and cause huge issues with atmosphere around it. Now when you are not wearing it, it will share its contents with the atmosphere so that this can't happen.",
+      "Fixed, in almost all cases, the sun casting light through terrain. Sun light and flare fade out as it hits the horizon on planets. Not changed in space.",
+      "Fixed issue with PlayerCharacters occasionally dropping through ground when loading a large world",
+      "Fixed transformers would always try to meet the entire demand of their child networks. This mean that they would overuse power. Now they will work together to meet a child networks power requirements.",
+      "Fixed transformers would not work unless their entire power requirement was met (which was usually the entire network load). Now they will flow through even part of their power requirement. They will be considered powered if they meet the network requirement, even if they don't meet their own setting. This means you only need to set the maximum requirement on a transformer, and not the exact amount.",
+      "Fixed Batteries (and other power storage) would not evenly charge. Now two (or more) batteries will split the charge available between them. Previously a bug meant that many devices would request infinite amounts of power during a power tick, forcing the use of transformers. Now if you place two batteries off a single solid generator, 10kW per battery will be applied. Previously the first battery would take all 20kW.",
+      "Added Required power info to the Network Analyser. This value is how much the network wants, versus potential which is how much it can provide, and actual which is how much it is providing. Helps with debugging power networks.",
+      "Fixed solar panels giving tiny amounts of power when they should not. This was due to floating point errors.",
+      "Fixed linux dedicated server fails to start when Blocked.txt doesn't exist."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1054.5355": {
+    "notes": [
+      "Fixed broken dedicated server on linux. It couldn't load world data.",
+      "Fixed rooms not loading back in after save. This resulted in atmospheric loss, and zero gravity (in space) in places that were previously rooms.",
+      "Added flare recipe to the tool manufactory"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1052.5350": {
+    "notes": [
+      "Fixed null reference exception that could occur on save due to room thread changing and altering. This was caused by the fix that would stop large saves with invalid rooms being initialized."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1051.5348": {
+    "notes": [
+      "Made visual crystals less strict so more crystals are visible",
+      "Fixed null reference exception on Atmospheric Manager when air tank is null but waste tank is full.",
+      "Colliders on thrown objects will no longer be turned off if there's an object close to it when it was thrown. This should help prevent items being thrown through objects"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1050.5341": {
+    "notes": [
+      "Updated new ore types. New Uranium, copper, gold, silver, and coal models."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1048.5331": {
+    "notes": [
+      "Added applying chunk progress in loading screen.",
+      "Added Unary Math unit to logic system. Able to perform Abs, Ceil, Floor, Round, Exp, and Log functions on input numbers.",
+      "Added chat fade delay which will auto-hide chat and console text after a delay.  Default 10 seconds, set to max to disable.",
+      "Clamped auto-save interval values between 60 - 3600 (1-30 minutes, default 2 minutes).",
+      "Added revised community French and Spanish translations. Added new language for Portuguese translations.",
+      "Added a new Logic Switch and a Logic Button variant on the Kit (Logic Switch).",
+      "Added Batch Writer to logic system. This allows you to write values to all types of an object on the output network. Note that this only writes to objects of the exact same type, so variants of the same type will be considered different objects. The use example is that one batch writer will allow you to write to every single solar on a given network.",
+      "Fixed bug with Logic Writer network message not being received when switching logic writer type due to wrong network header being sent.",
+      "Fixed splitting stackable items. When splitting, the new stack would sometimes clip thought the floor and be lost. Split item/s now fall in front of the player",
+      "If the player has a free hand, splitting a stackable will now place the new stack in the free hand.",
+      "Fixed exception when opening loading screen with too few saves.",
+      "Fixed host not regenerating and applying mesh when terrain was mined outside of the chunk render distance. The host needs up to date collision mesh for all chunks.",
+      "Fixed minables being rendered when out side of chunk render distance on the server",
+      "Added sign recipe to autolathe.",
+      "Allowed atmosphere analyser cartridge to read small gas canisters.",
+      "Fixed analyzer text of water to H2O instead of HO2",
+      "Fixed huge world saves when saving rooms."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1047.5315": {
+    "notes": [
+      "Disabled Frustrum culling for computers. Possible cause of FPS drops when looking away from a logic motherboard computer setup. This was because sometimes the computer was being hidden/rendered multiple times in a frame, forcing many position updates for the UI below.",
+      "Added Mod command to Math Processor. Allows the % math function to be applied. Format is Input1 % Input2.",
+      "Fixed bug where construction blueprint cursor is not correctly cleared upon quitting a game.",
+      "Fixed drop position. Item will now drop where the player is looking."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1045.5307": {
+    "notes": [
+      "Reimplemented chunk streaming changes using the existing chunk IsRendered system and reduced the number of mesh and minable regenerations. Result is improved joining times and faster chunk generation."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1044.5305": {
+    "notes": [
+      "Fixed network problem when joining server which has large chunk data and high latency."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1042.5301": {
+    "notes": [
+      "Improved scrollbars in menus and they now autohide.",
+      "Tweaked Join World menu overall. Now includes a new server info panel along with some other minor tweaks."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1041.5297": {
+    "notes": [
+      "Reduced surface area scale of the radiator.",
+      "Reduced power usage of logic devices.",
+      "Increased power usage of the computer.",
+      "Reduced power usage of Tool Manufactory, Pipe Bender and suit storage.",
+      "Added new model and texture for Copper, Gold, Ice, Iron, and Volatile deposits.",
+      "Fixed Pipe Radiator was always radiating, and never convecting. This meant that a radiator would remove heat from a pipe network without even convecting it into their air around it. This was because it could never find an atmosphere.",
+      "Fixed Autosave was not pulling atmospheres in a thread-safe way and sometimes causing a collection modified error. Now serializes using a safe itteration through atmosphere data.",
+      "Area Power Controller now charges its battery even when it is turned off, and will work even if an output cable is not connected.",
+      "Added signs. You can now place 1x1 or 2x1 signs and write text to them with the labeller.",
+      "Made pipe labels transparent. Label text will now show up on the pipes without the white background of the label.",
+      "Added new option for solar panels. Now contains a variant that has a separate data connection. This provides better support for logic control.",
+      "Adjusted Pipe Radiator surface area x5 to provide more consistent radiation and convection.",
+      "Removed pipe radiator buff. They were x1000 times more effective than a normal pipe and it was causing weird math issues. Now they are x10 more effective than the same sized item.",
+      "Added three LED console displays. Can be written to using the Logic Writer and will display values. Constructable from the Console construction kit.",
+      "Reverted chunk streaming changes from 5283 until issues can be fixed.",
+      "Changed the way that clients render chunks to reduce joining times. Clients still receive all chunk messages and create the chunks as they are received but only generate and apply the visual and collision meshes when needed.",
+      "Added favorite popup menu to join panel and fixed black camera filter on main menu.",
+      "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers",
+      "Fixed wrong playtime in scoreboard.",
+      "Fixed typo in starter crate names.  Game now literally playable.",
+      "Fixed label replacing menu background on failure to load/connect.",
+      "Added limited ability to bind keys to mouse actions and vice versa.  Only supports 3-button mice for now.",
+      "Increased oxygen consumption for humans. Now consume oxygen at x10 the rate they used too. This means you are much more likely to run out of air. However, it also means you produce x10 the amount of CO2 that you used too.",
+      "Fixed pipe labels not drawing on load. Labels will no longer show up as blank when loading from a save.",
+      "Fixed Solar Panel read/write via logic uses different units. Now there is the base version (Vertical/Horizontal) that is in the master units (degrees, percent) and the ratio (0..1).",
+      "Fixed broken state on dedicated server. It wasn't updating state. It's related to Logic Motherboard, solar angle in Daylight Sensor, MotionSensor, Engine rotation. Now you can control solar panel with LogicMotherboard on dedicated server."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1039.5262": {
+    "notes": [
+      "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened.",
+      "Fixed null reference exception when setting mode of an LED to a value that was not an acceptable color.",
+      "Fixed Arc Furnace chute bug. If the arc furnace was connected to a chute, when it finished its current stack it would grab the next without exporting the one inside it. Now the arc furnace will stop its current activity if it has finished the stack it is smelting.",
+      "Fixed machines not being able to drop solder ingots",
+      "Fixed broken AirlockControl on dedicated server. You can open/close airlock on dedicated server.",
+      "Fixed (possibly) double inventory bug - force panel to clear whether or not parent present. 'Split Half/Split All' interactions should no long show up doubled.",
+      "Added community provided French, Polish, and Spanish language translations. Added German tips file. Select a new language under the MISC settings header.",
+      "Added setting to adjust the transparency of tooltip and progress bar backgrounds (Tooltip Opacity on Game Options page).",
+      "Improved joining logic by changing conditions to complete loading data. It allows you to join high latency server.",
+      "Fixed occasional NRE when saving out LogicWriter configuration."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1037.5245": {
+    "notes": [
+      "Fixed Logic Min/Max and Logic Select button was not doing anything when interacted with screwdriver. Now you can correctly change this using a screwdriver.",
+      "Fixed cables burning forever. Cables will now extinguish if it's in vacuum or doesn't have a valid surrounding atmosphere.",
+      "Added logic unit Min/Max (has old select functionality). Logic Select now does proper select functionality. Takes a 0 and a 1 line, and outputs the result based on the select input.",
+      "Fixed broken map on space in dedicated server. When it loads saved world, it forced to set Moon type. It will use proper worldtype.",
+      "Added Field of View adjustment and wave emote hotkeys to the keybinding screen from hardcoded keys (numpad +/-).",
+      "Fixed Client side jittering of stationary objects",
+      "Added logic switch. Allows you to manually set a logic state of 1 or 0 without having any tools.",
+      "Fixed bug where logic writer could only write variables that it could also read from.",
+      "Fixed issue with Speech recognition initializing on non-supported operating Systems",
+      "Adjusted social media icons. They now highlight in their brand colors.",
+      "Enabled workshop button on the main menu, opens the community workshop page in the Steam overlay.",
+      "Exposed more thing states and values to logic system, such as Import and Export device slot state and stackable quantities.",
+      "Refactor of the new logic unit system to be unified with the Logic Motherboard system. Now exposed nearly all interactable states to logic units for read/write and ensured thread safe.",
+      "Fixed misaligned settings in Misc Settings menu"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1035.5224": {
+    "notes": [
+      "Fixed SolarPanel writing to actual rotation value not target when being set via a logic unit.",
+      "Fixed exception with solars when assessing vertical state."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1034.5221": {
+    "notes": [
+      "Fixed error with Logic Processors not allow client changes.",
+      "Fixed incorrect button labelling on Logic Writer."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1033.5218": {
+    "notes": [
+      "Fixed wrong blueprints showing for new logic items."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1032.5216": {
+    "notes": [
+      "Fixed Logic Compare was not configured to have it's states and therefore could not power on.",
+      "Removed ItemSecurityCamera from spawnables. Old legacy asset and was crashing dedicated servers."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1031.5213": {
+    "notes": [
+      "Added Logic device recipes",
+      "Synced recipes from smaller machines to the fabricator",
+      "Removed more invalid recipe reagents, replacing them with mainly iron.",
+      "Added new Kits for logic components. Kit (Logic Processor), Kit (Logic Memory), Kit (Logic I/O)."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1030.5209": {
+    "notes": [
+      "Added second pass of Logic Units. Now includes a Select Unit (takes two inputs and allows comparison operator. Selects input based on comparison and writes as setting), and Compare Unit (takes two inputs and allows comparison operator. Writes 1 or 0 as setting based on operation.",
+      "Fixed filtration machines bypassing second filter - now both filter slots should work. Previously we were adding the input atmosphere to the waste atmosphere after the first filter - only add after all filters run.",
+      "Added basic logic circuitry first pass. Includes Logic Reader (pulls selected values off devices, input and output network), Memory Unit (passive item that is used to store floats, can be accessed by two data networks), Math Unit (applies math operators to two selected inputs, and writes result as setting), and Logic Writer (applies setting value to devices). This allows you to apply very complex systems in the game.",
+      "Fixed Out of range exception on Eye colour when loading into game",
+      "Added option to invert the mouse wheel when scrolling through an item inventory (on Misc page of settings screen).",
+      "Fixed issue with clear disconnected players button not working after dedicated server command was added.",
+      "Fixed issue with main menu Stationeer not being able to breathe through his nose (his mouth is now closed).",
+      "Fixed NRE on Save/Load screen resulting in missing menu when exiting a game.",
+      "Adjusted collision of Airlock. Now allows pipes cables to be passed along the top of it, the same with other airlocks.",
+      "Added battery cells are renamable with a labeller, when it is powered and turned on."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1029.5194": {
+    "notes": [
+      "Fixed broken LogicMotherboard, SolarControl, AirlockControl on dedicated server.",
+      "Fixed Motherboards.LogicState sync when deleting on connect.",
+      "Changed Tablet to be a tool so it can be inside the toolbelt.",
+      "Fixed Logic Motherboard condition and actions entered as floats had to be entered twice to register properly. This caused logic motherboards based on floats to not work correctly.",
+      "Updated clearall command",
+      "Added clearall remote command on dedicated server. It will delete disconnected players.",
+      "Fixed NRE KeyManager on dedicated server",
+      "Fixed Speech recognition changes preventing dedicated server from compiling successfully.",
+      "Enabled steam workshop",
+      "Small further improvements made to Client Side Physics",
+      "Fixed joining timeout in high latency",
+      "Fixed Beacon Recipe.",
+      "Fixed Changed default autosave time to 5 minutes.",
+      "Fixed Voice Recognition now disabled by default.  Added extra checks to ensure it doesn't initialize if not running Windows 10."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1028.5180": {
+    "notes": [
+      "Changed uniform, nuclear battery and rifle recipes temporarily to address carbon and uranium issues.",
+      "Added additional error message states to Portable Scrubber to tell you why it is not working.",
+      "Fixed further issues Ragdoll ReParenting killing fps",
+      "Fixed issue with Client side physics calling Unnecessarily",
+      "Fixed issue with Character Ragdoll Jittering client side",
+      "Character RagDoll should now correctly collides with its own joints"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1027.5176": {
+    "notes": [
+      "Fixed suit sounds were not working. Breathing sounds will now play correctly when atmospherics are working on the suit.",
+      "added beacon to tool manufactory.",
+      "Added variant on Small Transformer. Has the Input and Output locations swapped.",
+      "Fixed Atmospherics Manager Exception. Sometimes a serious exception occurred when the Atmospheres were changed while being processed on the thread. While this shouldn't happen, it was happening. Now if it happens the manager will gracefully continue.",
+      "Added Daylight Sensor now also outputs solar angle (when in sunlight). Also reports sun state and solar angle in tooltip when directly viewed. This can be used with a Logic Motherboard (inserted into a computer) to create a logic system to automatically orientate solars towards the sun.",
+      "Added stacker variant with power and data cable on the other side.",
+      "Fixed issue with client crashing when leaving the tutorial."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1026.5167": {
+    "notes": [
+      "Fixed issue with network sync when Dragging Characters",
+      "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range.",
+      "Removed carbon requirement for duct tape and pipe anaylzer, and put ductape recipe on toolmanufacturer",
+      "Added null check to prevent errors when running ClearDisconnectedPlayers function while a sound is playing."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1025.5162": {
+    "notes": [
+      "Fixed Labeller unable to be turned on through interaction menu. Now shows up when cycling through interactions."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1024.5160": {
+    "notes": [
+      "Fixed steel frames inaccessable on first build (credit to: FlimFlamm on discord who found it).",
+      "Added Button for server hosts to remove all disconnected players accessed from the bottom of the in-game menu.",
+      "Removed F1 in-game key reference screen until it can be updated to reflect current key bindings."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1023.5157": {
+    "notes": [
+      "Added functionality to prompt panel to support inescapable prompts, and made the escape key invoke whatever action was bound to the 'cancel' button (for respawning)."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1022.5154": {
+    "notes": [
+      "Fixed Road Flares, and other objects such as corn, appearing out of slots to clients. Now correctly initialized.",
+      "Tweaked power draw on Beacons, cut down power consumption to a fifth of what it was.",
+      "Fixed entry tool",
+      "Fixed active slot not being selected when returning to game from the menu.",
+      "Fixed glass door dropping airlock kit. Now drops DoorKit.",
+      "Fixed key indicators for slots did not update to their new mappings. Now when keybindings are changed, the correct slot keys are displayed.",
+      "Added key indicators to status icons. For example, when internals can be toggled on and off, the current keybinding shows beside the icon. Jetpack and In slot key bindings will show.",
+      "Fixed broken LogicMotherboard",
+      "Fixed broken AtmosphericsManager",
+      "Added key mappings to status indicators. For examples, beside the jetpack symbol there will be the key for toggling it.",
+      "Added new status indicator for \"in slot\". This shows when you are inside something, and provides the key mapping to get out. This should stop people getting stuck in chairs during the tutorial.",
+      "Fixed BuildState out of bounds",
+      "Fixed Entry Tool for blast door",
+      "Added extended tooltip option. This is enabled by default and provides additional information when a player is constructing something. Such as, if there are multiple construction options available, what the placement type is, what is needed to upgrade to the next level, and what the rotation keys are.",
+      "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that.",
+      "Added new status icon for being inside a slot",
+      "Updated fabricator with chem station recipe.",
+      "Added dedicated server OS icons",
+      "Fixed pipe bender making old sensor item.",
+      "Added Tool Manufactury recipe to autolathe"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1021.5130": {
+    "notes": [
+      "Added settings button to Welcome (first launch) panel."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1017.5125": {
+    "notes": [
+      "Fixed recipes missing from Electronic Reader for Tool Manufactory.",
+      "Fixed Tracker not refreshing current target status (such as rename, or power off).",
+      "Changed flares to spawn outside the crate because they were bugged."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1016.5123": {
+    "notes": [
+      "Fixed Stairs deconstructing into nothing. Now correctly deconstructs into its kit."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1015.5119": {
+    "notes": [
+      "Fixed effects missing from Electronics Printer, and Hydraulic Pipe Bender.",
+      "Fixed issue with all simple manufacturing machines that would become broken when their output was connected to a chute and the chute was already full. Now the machine will wait a few seconds in case the chute becomes empty, if it doesnt, the machine will stop.",
+      "Fixed some positioning of new buttons in Join World menu",
+      "Added recipes to new tool manufactory",
+      "Added Tool Manufactory. Used for building tools, similar to the autolathe.",
+      "Fixed able to turn internals off with I key, even when the helmet is locked (thanks to TheRawDizzle on twitch!). Now cannot do this if locked.",
+      "Added Labeller. Has a battery in it and is used to rename things. Can rename tools, anything draggable, and devices.",
+      "Added Tracking Beacon. When powered and turned on, will show up in all tracker cartridges. Use this to mark locations and find your way to it. Can be painted to show different colors.",
+      "Fixed bug with Tracker cartridge not correctly initializing.",
+      "Added extra starting crate. Filled with spray cans to paint things, a labeller to name things, a beacon, and roadflares.",
+      "Added spray paints to the fabricator.",
+      "Added composite floor grating to autolathe",
+      "Fixed Electronic Reader displaying pressure values 0.1 of the value they should be. Now correctly displaying pressure readings.",
+      "Fixed issue with head occasionally attaching itself to hands",
+      "Fixed potential looping coroutine on ragdoll",
+      "FertilizedEgg should now only hatch if not inside a slot",
+      "Added steamclient dlls to dedicated server build",
+      "Fixed save world commands.",
+      "Added maxplayer, password commands for dedicated server",
+      "Moved Chutes to autolathe from PipeBender; and some general time balancing.",
+      "Fixed Furnace could only be rotated in the Y direction.",
+      "Modified values in default.ini",
+      "Fixed issue with parts on character going invisible when dragging them",
+      "Fixed Ragdoll Re-Parenting issue killing FPS",
+      "Fixed null reference on manufacturing motherboard when inserted into a computer. Sometimes would not be initialized correctly and would cause an exception.",
+      "Changed New World options to make it clear where Creative mode is"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1014.5083": {
+    "notes": [
+      "Fixed Autolathe, PipeBender, and Electronics Printer recipe exception meant that if you save the game in that state, it could not be loaded. Now check on load of the recipe is valid.",
+      "Fixed bug where players would receive out of range exception when deconstructing a structure with no Entry tool set but quantity set",
+      "Added active vent to pipe bender recipes.",
+      "Improved loadworld command for dedicated server. If file doesn't exist, it will save it when autosave is enabled.",
+      "Fixed thermodynamics scale value for things not affecting the solar constant heating values. This meant that when we reduced the thermodynamics scale for welders, it actually made them MORE explosive. Now we can scale the solar heating effect for different items. The welder will now prevent solar heating.",
+      "Fixed out of range exception when deconstructing StructureFiltration",
+      "Fixed bug with movement behavior when cursor was on screen",
+      "Fixed small transformer and Door not deconstructing into the correct kits."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1013.5070": {
+    "notes": [
+      "Increased default burn times for all structures and items."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1012.5068": {
+    "notes": [
+      "Removed remaining axis controls",
+      "Increased gold spawn rate, and vein size."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1011.5065": {
+    "notes": [
+      "Fixed potential NRE when Human enters Dead State",
+      "Fixed issue with being unable to transition out of Dead state",
+      "Fixed Issue with being unable to pickup and drop Unconscious players on Dedicated Server",
+      "Added default linux dedicated server commands",
+      "Fixed own suit getting frustum culled - enabled UpdateWhenOffscreen on Spacesuit Mesh Renderer",
+      "Added Stacker to autolathe",
+      "Removed controller support completely as it was incomplete and was causing some people to spin",
+      "Offline players will now drop Draggable items, including players"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1010.5051": {
+    "notes": [
+      "Fixed many devices that were deconstruction into nothing. Air Conditioner, Arc Furnace deconstruct to Furnance, Battery, Computer, Filtration."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1009.5049": {
+    "notes": [
+      "Fixed initializing problem on dedicated server",
+      "fixed nulls causing connection issues",
+      "Fixed Incorrect drop position when dropping Unconscious Players",
+      "Fixed default button position in settings menu"
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1008.5044": {
+    "notes": [
+      "Fixed various kits. Autolathe, Electronics Printer, Sleeper, Solid Fuel Generator, and Storage Lockers - not spawning their kits correctly when deconstructed."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1007.5042": {
+    "notes": [
+      "Fixed water visualizer always running causing severe performance issues for some.",
+      "Fixed Autolathe & SolidFuelGenerator not respawning after deconstruction",
+      "Fixed Tutorial servers will now be hidden even if advertise server is enabled.",
+      "Added Invert Mouse checkbox on Misc options screen.",
+      "Added Stairs to autolathe."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1006.5034": {
+    "notes": [
+      "Fixed Kit (Locker) was spawning obsolete Locker. Now correctly spawns. You will need to deconstruct any old lockers and replace them.",
+      "Disabled Mars map on dedicated server. It will be switched to Moon at this moment."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1003.5027": {
+    "notes": [
+      "Advertising of servers now disabled by default."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1002.5024": {
+    "notes": [
+      "Fixed tutorials not localized",
+      "Fixed Item Battery Charger wrong position in crates.",
+      "Fixed world shadow effect artifacts.",
+      "Reduced cost of regulators, increased pipe analysers."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1001.5020": {
+    "notes": [
+      "Fixed Battery Charger slots were not correctly configured and would not charge.",
+      "Fixed ArgumentException: The requested value 'Very High' was not found.",
+      "Increased base times on multiple recipes",
+      "Fixed tablet display so it doesn't always turn on when moved to hands",
+      "Added cartridges to electronics fab, and increased base time for most recipes.",
+      "Added new battery charger model.",
+      "Fixed tips not localized correctly. Added Localized Font to TextTips",
+      "Increased Dynamic large thing pipe bender construction times.",
+      "Removed old suit storage and gas sensor from fabricator."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1000.5010": {
+    "notes": [
+      "Fixed welder tanks exploding after a period of time due to thermodynamics, when located inside the welder.",
+      "Fixed Activate button on HydraulicPipeBender not working.",
+      "Fixed HydraulicPipeBender not generating recipes.",
+      "Added entry tool for fabricator",
+      "Moved Dynamic large object construction to Pipe bending machine",
+      "Adjusted position of the screwdriver in the hand",
+      "Removed old suit storage kit item.",
+      "Added russian_tips.xml, updated russian.xml. (Thanks guys!)",
+      "Added functionality to suit storage. Now will fill tanks and recharge battery when suit is inserted and all pipes and cables connected.",
+      "Fixed mining drill not working on load",
+      "Added thumbnail for pipe bender kit.",
+      "Added atmos cartridge to backpack on spawn.",
+      "Fixed solar panel deconstructing not producing a construction kit."
+    ],
+    "releases": {
+      "built": "unknown",
+      "public": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.999.4996": {
     "notes": [
       "Fixed starting crate stackable quantities were not clamped.",
@@ -1622,1365 +2981,6 @@
       "Disabled culling on EVA suit and Jetpack - players were seeing hands getting culled and player shadow flickering.",
       "prepared shield for implementation",
       "Removed spammy debug log"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1146.5727": {
-    "notes": [
-
-    ],
-    "releases": {
-      "built": "2018-02-06T00:00:00+00:00",
-      "beta": "2018-02-06T10:30:34+00:00"
-    }
-  },
-  "0.1.1145.5726": {
-    "notes": [
-      "Added large tank, requiring 5x regular tank kits.  Takes up 8 grid squares (vs 1) and has a volume of 50000 (vs 6000)."
-    ],
-    "releases": {
-      "built": "2018-02-05T00:00:00+00:00",
-      "beta": "2018-02-05T04:01:10+00:00"
-    }
-  },
-  "0.1.1143.5721": {
-    "notes": [
-      "Significantly improved terrain generation by splitting terrain features in to regions. Each voxel now only samples from close regions."
-    ],
-    "releases": {
-      "built": "2018-02-02T00:00:00+00:00",
-      "public": "2018-02-03T21:54:57+00:00",
-      "beta": "2018-02-03T21:54:57+00:00"
-    }
-  },
-  "0.1.1141.5717": {
-    "notes": [
-      "Fixed NullReferenceException in updating grid information.",
-      "Removed some unused calculations from the water shader",
-      "Fixed the water connectivity calculations for the water VisualizerExtents",
-      "Fixed water not dissipating in vacuum"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1140.5711": {
-    "notes": [
-      "Improved connecting time and added sync data progress. You might miss to progress it because small size of network messages are combined up to 100 messages.",
-      "Fixed Steam AuthTicket Exception. When it happens, game will proceed to join. You'd better to restart game. It already lost steam connection."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1135.5701": {
-    "notes": [
-      "Updated New World menu thumbnails",
-      "Upgraded Gas Display Circuitboard to connect to Gas Tank Storage. Gas Display now shows temperature and pressure of gas canisters stored in Gas Tank Storage.",
-      "Added logic support to GasTankStorage. GasTankStorage now exposes it's held gas tank's atmosphere data (pressure, temperature etc) on the logic network."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1133.5689": {
-    "notes": [
-      "Updated German, Spanish and Traditional Chinese localization files.",
-      "Fixed wall heaters not drawing enough power. Wall heaters now draw 1005w of power when working.",
-      "Fixed gas display displaying wrong values when it exceeded 999. Now updates the unity under the value to be correct."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1132.5681": {
-    "notes": [
-      "Fixed Atmos leaking bug",
-      "Added support for localizing unmined mineral names."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1130.5676": {
-    "notes": [
-      "Fixed Player's weird movement when you unconsious or dead.",
-      "Deleted invisible body on decay and respawn (if decayed)",
-      "Fixed IndexOutOfRangeException when you create Moon and then create Space. One of necessary variable wasn't initialized when switch world."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1128.5668": {
-    "notes": [
-      "removed water visualizer when using openGL"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1127.5663": {
-    "notes": [
-      "removed water visualizer when using DX9 due to lack of compute shader support",
-      "added a fallback for the terrain shader to the standard shader for dx9",
-      "Updated Korean and German language files"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1126.5657": {
-    "notes": [
-      "Added OpenGLCore to Graphics APIs for someone who has crash in related to video car and driver. It can be enabled with -force-glcore parameter."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1124.5651": {
-    "notes": [
-      "Added support for Japanese translation.",
-      "Added support for Korean translation.",
-      "Fixed broken atmosphere on game client. It usually happened before sync dropped item, tried to update atmosphere in multiplay. It broke atmospheres of all items. Now that, it shouldn't be broken in any case.",
-      "Fixed floating point numbers log spam. It happened when infinite floating numbers set in rotation of Inverse Kinematics. Now it doesn't use wrong value in rotation."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1122.5642": {
-    "notes": [
-      "Replaced Gas Tank Storage model. Same dimensions. Also has a data port, so you can read values from it using the logic system.",
-      "Fixed Air Conditioner operation flawed. Community provided new coded solution. Credit to Illiux who did math for heat-pump, ???Zaneo for providing advice for direction, and Dimitri for the actual code. Heat-pump calculates per tick power cost of energy transfer when heating and cooling. Additionally energy from pump work is added to waste or output, because of this heating cost a bit less then cooling. Cost of energy transfer and amount of additional energy added is calculated using Coefficient of Performance?."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1121.5639": {
-    "notes": [
-      "Added support for Simplified Chinese. Along with Simplified Chinese translation files.",
-      "Fixed unreadable tips on loading screen when using a CJK font.",
-      "Fixed dialog boxes showing squares in some languages.",
-      "Updated German, Spanish and Traditional Chinese translation files.",
-      "Added support for kick and ban messages for servers hosted via dedicated server or full client."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1120.5635": {
-    "notes": [
-      "Fixed tablets not working when loading with them in player inventory. They were not being correctly initialized on player locality change. Now they will correctly reinitialize when a player takes control of a entity.",
-      "Added Fixed Beacon. This is a placeable structure that requires 300W of power, but broadcasts its location. This can be accessed via the Tracker Cartridge, just like normal beacons. It can be built using the Electrical Printer.",
-      "Fixed connection problem when there are hundreds of linked devices including Logic reader/writer, filter, Circuitboard, LogicMotherboard. It didn't check message buffers size when sending sync data. It usually stuck in applying chunks data 90%-100%. You can join server that it was fixed."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1119.5631": {
-    "notes": [
-      "Fixed Join World button is disabled when player returns join menu from game.",
-      "Fixed Inactive ServerListItem Animators being called when disabled. causing lag on player load",
-      "Eyes should now correctly close when you die",
-      "Fixed writing decimals to logic memory unit from logic computers"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1117.5624": {
-    "notes": [
-      "Added Traditional Chinese localization.",
-      "Added more missing strings for localization including the Change Appearance screen.",
-      "Fixed missing EntryTools for Chair, Turret and engines.",
-      "Fixed truncate chatting text when it's full. It will scroll properly."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1114.5617": {
-    "notes": [
-      "Fixed items being invisible when viewing your own dead body after re-spawning",
-      "Fixed error when disabling shadows on re-spawn",
-      "Added skeleton despawning after 60 seconds.",
-      "Fixed re-spawn while in decayed State(wasn't working at all)",
-      "Fixed some dropped items being invisible(because they were still on the wrong layer)",
-      "Removed all shadows of dead players",
-      "Avoided possible divide by zero in cell charger. (Thanks Risu!)",
-      "Fixed ores not appearing on load for play host players",
-      "Updated localization files for German, Russian, Spanish and French"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1113.5609": {
-    "notes": [
-      "Fixed NRE in CameraCollisionHandler. It failed to join server on a certain pc because of delay to initial camera. It makes you join server properly.",
-      "Fixed battery charger distributing power to charged batteries. Now the charger only adds charge to batteries that aren't full. (Thanks Risu!)"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1111.5605": {
-    "notes": [
-      "Fixed skeletons turning into Ghost Rider. Skeletons can no longer be set on fire. (thanks FlashDim!)"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1110.5602": {
-    "notes": [
-      "Fixed healpill not healing lung damage.",
-      "Respawn player on join if dead. Prevents situation where player disconnects while dead, and unable to respawn afterwards.",
-      "Fixed invisible favorite server list on join menu."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1109.5598": {
-    "notes": [
-      "Fixed respawn button disconnecting you instead.",
-      "Fixed airlocks not cycling properly on dedicated servers"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1108.5595": {
-    "notes": [
-      "Fixed respawning beside old body instead of spawn point.",
-      "Improved UI flow when revived before respawning.",
-      "Fixed issue of being unable to be killed after having been revived once.",
-      "Fixed respawning from the respawn menu after someone revived you",
-      "Added respawn prompt localized text values."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1107.5589": {
-    "notes": [
-      "Fixed helmet not visible on old body after respawn.",
-      "HealPill should now correctly heal burn damage",
-      "Added bindip command which binds specific IP on dedicated server when it has multiple IPs. It's available only on IPv4. Usage : rocketstation_DedicatedServer .exe -bindip=192.168.1.78",
-      "Fixed error in English localized text entry.",
-      "Updated Spanish translations. [credit: socramazibi]",
-      "Added more localized labels for server detail window and skeletons."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1104.5579": {
-    "notes": [
-      "Tweaked the Join World menu server browser.",
-      "Re-Fixed spawning in wrong position",
-      "Added translucency to ice ores and silicon",
-      "Fixed object reference error with chute bin.",
-      "Added some more localized versions of button and placeholder text fields on the save and join world menus.",
-      "Fixed Camera being moveable when Dead",
-      "Decay Stage added to Human. 3 minutes after dying you will now drop all items and turn into Skeleton. Skeletons represent a dead player who has no chance of being revived.",
-      "Organ death now results in major Brute damage to player (Any organ failure will put you into Dead state)",
-      "Fixed bug with Brute damage not being able to decrease if it was at cap",
-      "Fixed spawning in wrong position (fixes wrong tutorial spawn position and fixes falling through terrain)",
-      "Fixed small items falling through terrain when moving Fast"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1102.5564": {
-    "notes": [
-      "Fixed NRE when Logic Displays attempted to render a character they didn't have a mesh for."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1101.5559": {
-    "notes": [
-      "Fixed voxels sometimes losing density on loading world.",
-      "Disabled Workshop button while mod UI is implemented.",
-      "Reduced loading time and optimized memory usage on host player.Removed unnecessary sequences when loading.",
-      "Deleted nav mesh properly when leaving game.It caused freezing. It's faster than before."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1100.5553": {
-    "notes": [
-      "Optimized memory allocations. Unity GC(garbage collector) runs more often and unloaded unused assets to reduce memory usage. There is no chance to run GC on persistent dedicated server yet. We will do it soon.",
-      "Fixed InvalidOperationException: Steamworks is not initialized. Modifed not to throw exception while updating steam stats",
-      "Fixed could not see other languages on chatting panel."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1099.5549": {
-    "notes": [
-      "Added respawn mechanic. Game will now ask if you want to respawn or exit to menu on death."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1097.5535": {
-    "notes": [
-      "Added extra visual feedback on key binding screen, and a prompt if you attempt to bind actions to mouse buttons.",
-      "Fixed Bug where game would attempt to auto-save during Tutorial.",
-      "Fixed wrong player count on dedicated server. Players could connect to dedicated server upto max player count - 1. It was fixed upto max player count.",
-      "Disabled WaterVisualizer on dedicated server. It's a visualizer only on client."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1095.5529": {
-    "notes": [
-      "Fixed LED Displays were displaying their values offset when they were placed in certain orientations. Now values will be correctly centered in all orientations.",
-      "Fixed some devices were adding energy from power usage to atmospheres that had only a small quantity of moles. For now, most devices will stop heating the atmosphere if it is below the Armstrong Limit (6kPa). In future, this will probably be lowered, as it is not realistic, but this will help with flash fires caused during decompression."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1094.5526": {
-    "notes": [
-      "Fixed Air Conditioner not being able to be powered on. Now AC can be powered on correctly, it will not draw power through it's data network, and it will close itself when turned off or looses power."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1093.5524": {
-    "notes": [
-      "Fixed bug with flood fill room generation generating junk values. Previous fix caused the junk rooms to return. When you would mine a voxel, this would cause an attempt at room generation. If all faces were closed, it would succeed and create a tiny one-grid room. Now this is checked for and prevented. Existing rooms will not be removed by this change, this only affects new rooms. Junk rooms are unlikely to have much ill effect but might cause gravity issues for the space world.",
-      "Fixed Air Conditioner double used power when heating. Now AC applies its passive energy use, and retains its active energy use to apply during power tick. Reported by Zaneo via email/discord.",
-      "Lowered view distance for Wall Lights, as their increased lighting distance was causing signficant frame drop.",
-      "Fixed cannot spraypaint pipe analyser. Now can be painted just like other devices and objects. Reported by Lizza on steam.",
-      "Fixed ices would melt when in subzero temperature even when in direct sunlight. Now ices will not melt, even if direct sunlight, if they are below freezing point. Reported by [BS] Fridge Lord on steam forums.",
-      "Fixed painted LED not changing color variable. This meant if you manually painted an LED, it would not change its color variable and would load with the default color (0). Now the color state is changed."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1092.5517": {
-    "notes": [
-      "Added support for localized text to most alert and prompt popups."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1089.5513": {
-    "notes": [
-      "Fixed Logic Motherboard missing a lot of functionality that were added to the Logic Units. This has now been unified with the logic units, so assessments available on one should also be on the other."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1087.5508": {
-    "notes": [
-      "Fixed Construction Kits were not displaying an error message when there was not enough in the kit to build the current cursor device. Now correctly states that not enough is in the kit, and shows the cursor as red.",
-      "Fixed some missing strings for other languages.",
-      "Removed old LED Medium and Large displays. These will no longer appear in your game, and you will need to place new ones. Small displays placements are unchanged.",
-      "Replaced Mode change for LED light and display color, instead of using \"Mode\" setting you now use \"Color\" setting.",
-      "Added functionality on LED Display for different display modes. Current number (default), percent (input a ratio, i.e. 1 == 100%, 0 == 0%), and power (in watts).",
-      "Added new LED Displays. They can handle alphanumeric and special characters much better than previously, and will be updated with new functionality in the coming weeks. New LED displays have a standardized button and input placement, for easier use.",
-      "Fixed bug with display formatting for units. Negative values were sometimes considered \"micro\" units and were formatted incorrectly.",
-      "Unified Logic Motherboard and Logic Unit value setting."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1086.5505": {
-    "notes": [
-      "Changed wall light distance setting from 4m to 7m. Now will provide light across a larger area, as requested by the community.",
-      "Fixed Large Tank and other internal atmosphere devices (such as the sleeper) only mix to meet pressure, they dont mix the energy and contents states. Now they completely mix with connected atmospheres.",
-      "Fixed Light Occlusion and Atmosphere world position updates not occurring on dedicated servers. Caused light issues for dedicated server logic systems and growing plants and solar heating of atmospheres."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1085.5501": {
-    "notes": [
-      "Updated community provided Russian translations."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1083.5497": {
-    "notes": [
-      "Fixed atmospheric loss due to ungenerated room cells. Rooms were not being correctly generated in some instances, such as below floor grates when there was voxels below. This caused the atmospherics system to consider below the grates as a vacuum and ablate the atmosphere dramatically, causing loss. Note: this will only affect NEW room generation! To force new room generation, lift up wall tiles and room generation will be forced for the grids above and below that wall piece. This was also the cause of zero gravity bugs in creative stations.",
-      "Added Idle logic readable to Arc Furnace. Will report 1 when nothing imported, and nothing being exported. Useful for making automated arc furnace systems.",
-      "Added Logic Dial. A dial with a configurable min/max and when dial is moved changes the value. Reports both its raw value, or the ratio compared to its max. The maximum value on the dial is the Mode."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1082.5494": {
-    "notes": [
-      "Added Logic Readers can read from other logic readers. Useful if you want to pass values simply between separated networks without extra writers.",
-      "Fixed atmospheric devices were able to be set to unlimited values using logic units. Now they will clamp assigned values to maximum and minimum."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1081.5491": {
-    "notes": [
-      "Fixed Microwave not informing player that recipe not continuing due to no power. Now tells player in tooltip that the device does not have power.",
-      "Fixed Active Vents not serializing their Pressure settings. Now correctly serializes their internal and external safeties. Possible fix for needing to reset active vents on load, as they were not storing their settings. Note: this will probably only work from the next time you load your game. So you will need to load, save, and then reload to see if it works.",
-      "Possible fix for various dedicated server initialization issues. Initialization on dedicated server has been changed to be similar to that which clients do, which might fix the many initialization problems on dedicated servers, such as active vents not working or logic units needing to be powered on/off on server restart.",
-      "Fixed Airlock Control Circuitboard exceptions and failing to correctly remove assigned devices. Now when an assigned airlock is deselected, the airlock is correctly removed. This should fix another edge case where airlock controllers would switch door assignments."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1080.5488": {
-    "notes": [
-      "Added Mode to LED Displays. When you change the mode, you change the color setting for the display. This can be used with the Logic Writer to change the current color of the text in the LED display.",
-      "Added cable analyzer recipe to the electronics printer.",
-      "Added Cable Analyzer. This device can be built from a Kit (Cable Analyzer). Display shows the Actual, Required, and Potential power (in Watts) for the network the cable sits on. It also exposes this to Logic Units, allowing you to much more easily use the logic units to manage your power.",
-      "Added tutorial translations for French and Spanish.",
-      "Fixed gameplay tips were not being cleared between language changes. Meant that english tips were being shown for other languages. Now will show tips only from the supplied language. No tip will be shown if there are no localized tips for the current language.",
-      "Fixed out of range exceptions when writing incompatible logic values to mode (such as setting LED mode to -99), and possibly other state values. Now the state values for OnOff, Lock, etc... are clamped to binary values. Mode is clamped to the number of ModeStrings the object has, so the number of valid mode states.",
-      "Fixed LEDs color changing on reload. When first placed it would be white, but on load it would be blue, even though the mode was correctly set. Now the color is correctly initialized on load.",
-      "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED.",
-      "Fixed Logic Min/Max unit was saying \"Greater\" mode when it was actually \"Less\" mode (and vice versa). Now correctly reports it's current mode.",
-      "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed.",
-      "Fixed Logic Writers writing to Lock values did nothing for all devices (particularly Airlocks and Chute outlets). Was trying to write to powered state. Now correctly writes to Lock state, very useful for locking the doors and chutes."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1078.5476": {
-    "notes": [
-      "Fixed solar panel seperate data variant also allowed power from the data cable, as well as data, effectively doubling the power output. Now power is only allowed through the power connection."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1077.5474": {
-    "notes": [
-      "Fixed Jetpack not stabilizing when Text Input Panel was visible. Characters in Jetpack modes should now have their velocity slowed when Text Input Panel is visible.",
-      "Fixed ToggleInfo Keybind (F4 Default) sometimes breaking the GameMenu from appearing. Game Menu should now appear when ToggleInfo panel is displayed"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1076.5471": {
-    "notes": [
-      "Fixed issue with Character rotating 90* in slot when Chat panel was active",
-      "Fixed being able to jump while cursor is visible"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1075.5468": {
-    "notes": [
-      "Fixed airlock control circuitboard reassigns exterior and interior airlock doors when they loose connection, resulting in confusing setups when the wires have been cut. Circuitboard will continue to remember interior/exterior doors but release them if they are not usable.",
-      "Fixed stacker caused ingots passed through it to not be saved. Now correctly initializes new stacks so that they are saved (and then loaded) correctly."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1072.5462": {
-    "notes": [
-      "Added recipe number to tutorial, so that places know which recipe they need to find as there are a lot of recipes.",
-      "Fixed reversed transformer variant doesnt change the input/output and is actually the same as the master variant. Now correctly swapped inputs and outputs.",
-      "Fixed bug with labeller causing out of range exception when dropped while entering input. Now if the labeller is dropped or the device being renamed is destroyed, the input window will be automatically closed.",
-      "Fixed possible bug with centrifuge when importing \"bad\" stacks. If the stack had an error, could result in massive stacks in the game.",
-      "Fixed game locks up when deconstructing device that has extremely high number of reagents in it. Devices will now drop a maximum of 200 stacks when being deconstructed. Some \"bad\" stacks were causing huge reagent mixes, and then these broke the centrifuge.",
-      "Fixed able to put items inside their own slots, causing the game to lock up. Now cannot put items inside other items."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1068.5451": {
-    "notes": [
-      "Changed tutorial due to feedback from players. Now highlights exist for construction requirements. Added using microwave to make a recipe. Reduced edgecases that could make the tutorial incompletable. Prepared tutorial for localization by community.",
-      "Added ToolManufactory recipe to fabricator.",
-      "added missing angle grinder to fabricator",
-      "Exposed Activate action on Furnace to Logic system. Now setting Activate to 1 will cause the furnace to ignite its internal atmosphere.",
-      "Fixed portable light causing collision with character and propelling them around. Now can safely carry the portable light"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1067.5445": {
-    "notes": [
-      "Fixed SolarControl wasn't updated connected SolarPanel on dedicated server.",
-      "Added more detailed tooltips for power tools, such as telling the player when their power tool does not have enough battery charge to complete a task."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1066.5437": {
-    "notes": [
-      "Fixed Reagent mixtures in Furnace and Recycler could sometimes spam small values for clients. Now reagent mixtures are correctly cleared on clients when they receive an update."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1062.5426": {
-    "notes": [
-      "Fixed bug with Area Power Controller using increasing amounts of power when operating off battery. Caused batteries to drain completely very fast.",
-      "Fixed Logic Compare NotEquals always reporting false. Was not implemented, so always returning 0. Now returns 1 if values are not approximately equal (within float variant)."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1061.5421": {
-    "notes": [
-      "Fixed Reconnecting players spawning inside of grids. Now players position is reset client side if there has been a delay taking control.",
-      "Fixed OnThreadUpdate not running on dedicated servers. Dedicated servers should now work correctly with Daylight Sensors"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1060.5416": {
-    "notes": [
-      "Added clearallinterval command which is clear disconnected player from dedicated server. Default and minimum value is 60 seconds.",
-      "Fixed issue with items being able to be dropped through floors."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1058.5405": {
-    "notes": [
-      "Added text display to slots for Circuitboards, Motherboards, and Cartridges as a temporary solution so you know what they are instead of needing to drop them.",
-      "Reduced the cost of steel frames and sheets.  Players using steel as a construction material will be rewarded by not needing to use as many resources.",
-      "Fixed issue where players would put open gas canisters into portable tanks, welders, etc..., and the canisters would leak all the air out. Now when a gas canister is inserted into something, it will be automatically closed.",
-      "Added recycler recipe to autolathe and fabricator.",
-      "Fixed glass recipe on fabricator to match that of autolathe",
-      "Fixed suit atmospherics will continue to use a gas canister when it is open. Now the suit will close tanks when using atmospheres, to avoid putting gas into waste tanks when they are open.",
-      "Added Recycler. Made from Kit (Recycler). Put things into this and receive resources back. Resources come out as generic reagent mixes, and will usually need to be placed into the Centrifuge to separate out into component ores for smelting. Also useful for turning ingots into ore again.",
-      "Changed Reagent mixtures from floats to double, to avoid floating point issues.",
-      "Draggable items now require you to be closer then 3 meters to interact with"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1057.5396": {
-    "notes": [
-      "Fixed bug where power usage for circuits reset to defaults.",
-      "Fixed signs not dropping kits on deconstruct, and large sign now uses 2 kits.",
-      "Fixed items spawned from stackers not saving.",
-      "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything.",
-      "Added small screws to Logic Memory. Large screws provide increments of 100 (10 if holding ALT). Small screws provide increments of 1 (0.1 if holding ALT)."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1056.5380": {
-    "notes": [
-      "Fixed Power Controller abnormal behavior. They were discharging one tick, and then recharging the next. Now they will follow a steady state. Also, power controllers without a battery will act as a passthrough if there is any power available in the upstream network.",
-      "added LogicSwitch recipe to fabricator",
-      "Fixed stuck in loading screen when failed to join server on steam client.",
-      "Adjusted logic unit models so they will be hidden when a wall is placed over them. Cleaned up corrupted geometry on sides and back of model."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1055.5374": {
-    "notes": [
-      "Fixed furnace arrows rotating weirdly. Furnace pressure arrow should no longer rotate out of the furnace.",
-      "Fixed asteroids not being rendered on load making them very hard to find. Space now renders all chunks on load.",
-      "Fixed players lungs were heating up to fast due to increased oxygen requirements. Now energy released due to heat is not scaled based on oxygen usage of the entity. This fixes players overheating very fast when suit air conditioning is turned off.",
-      "Fixed more circumstances of welders exploding, and players thermodynamics not making sense. Now solar heating is a seperate value. When suit AC is turned off, players suit will get hotter in the sun, and cooler in the shade (due to radiation of heat). Welders will still not heat up in the sun, but will allow quite a lot of heat convection/radiation. This means that they will radiate any excess heat away over time. But it does mean if doing lots of welding in a hot environment, you need to make sure the welder tank does not overpressurize.",
-      "Fixed batteries requesting more power than they can store. Batteries will now request up to their maximum power delta (difference between their storage capacity, and their current power stored). This means they will stop requesting power when they are full. Batteries will take and provide up to their maximum power delta in on tick, however, so use transformers to regulate this or you will blow wires.",
-      "Updated Ore Coal material with new textures",
-      "Fixed gas mask would retain its atmosphere when not worn. It could heat up and cause huge issues with atmosphere around it. Now when you are not wearing it, it will share its contents with the atmosphere so that this can't happen.",
-      "Fixed, in almost all cases, the sun casting light through terrain. Sun light and flare fade out as it hits the horizon on planets. Not changed in space.",
-      "Fixed issue with PlayerCharacters occasionally dropping through ground when loading a large world",
-      "Fixed transformers would always try to meet the entire demand of their child networks. This mean that they would overuse power. Now they will work together to meet a child networks power requirements.",
-      "Fixed transformers would not work unless their entire power requirement was met (which was usually the entire network load). Now they will flow through even part of their power requirement. They will be considered powered if they meet the network requirement, even if they don't meet their own setting. This means you only need to set the maximum requirement on a transformer, and not the exact amount.",
-      "Fixed Batteries (and other power storage) would not evenly charge. Now two (or more) batteries will split the charge available between them. Previously a bug meant that many devices would request infinite amounts of power during a power tick, forcing the use of transformers. Now if you place two batteries off a single solid generator, 10kW per battery will be applied. Previously the first battery would take all 20kW.",
-      "Added Required power info to the Network Analyser. This value is how much the network wants, versus potential which is how much it can provide, and actual which is how much it is providing. Helps with debugging power networks.",
-      "Fixed solar panels giving tiny amounts of power when they should not. This was due to floating point errors.",
-      "Fixed linux dedicated server fails to start when Blocked.txt doesn't exist."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1054.5355": {
-    "notes": [
-      "Fixed broken dedicated server on linux. It couldn't load world data.",
-      "Fixed rooms not loading back in after save. This resulted in atmospheric loss, and zero gravity (in space) in places that were previously rooms.",
-      "Added flare recipe to the tool manufactory"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1052.5350": {
-    "notes": [
-      "Fixed null reference exception that could occur on save due to room thread changing and altering. This was caused by the fix that would stop large saves with invalid rooms being initialized."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1051.5348": {
-    "notes": [
-      "Made visual crystals less strict so more crystals are visible",
-      "Fixed null reference exception on Atmospheric Manager when air tank is null but waste tank is full.",
-      "Colliders on thrown objects will no longer be turned off if there's an object close to it when it was thrown. This should help prevent items being thrown through objects"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1050.5341": {
-    "notes": [
-      "Updated new ore types. New Uranium, copper, gold, silver, and coal models."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1048.5331": {
-    "notes": [
-      "Added applying chunk progress in loading screen.",
-      "Added Unary Math unit to logic system. Able to perform Abs, Ceil, Floor, Round, Exp, and Log functions on input numbers.",
-      "Added chat fade delay which will auto-hide chat and console text after a delay.  Default 10 seconds, set to max to disable.",
-      "Clamped auto-save interval values between 60 - 3600 (1-30 minutes, default 2 minutes).",
-      "Added revised community French and Spanish translations. Added new language for Portuguese translations.",
-      "Added a new Logic Switch and a Logic Button variant on the Kit (Logic Switch).",
-      "Added Batch Writer to logic system. This allows you to write values to all types of an object on the output network. Note that this only writes to objects of the exact same type, so variants of the same type will be considered different objects. The use example is that one batch writer will allow you to write to every single solar on a given network.",
-      "Fixed bug with Logic Writer network message not being received when switching logic writer type due to wrong network header being sent.",
-      "Fixed splitting stackable items. When splitting, the new stack would sometimes clip thought the floor and be lost. Split item/s now fall in front of the player",
-      "If the player has a free hand, splitting a stackable will now place the new stack in the free hand.",
-      "Fixed exception when opening loading screen with too few saves.",
-      "Fixed host not regenerating and applying mesh when terrain was mined outside of the chunk render distance. The host needs up to date collision mesh for all chunks.",
-      "Fixed minables being rendered when out side of chunk render distance on the server",
-      "Added sign recipe to autolathe.",
-      "Allowed atmosphere analyser cartridge to read small gas canisters.",
-      "Fixed analyzer text of water to H2O instead of HO2",
-      "Fixed huge world saves when saving rooms."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1047.5315": {
-    "notes": [
-      "Disabled Frustrum culling for computers. Possible cause of FPS drops when looking away from a logic motherboard computer setup. This was because sometimes the computer was being hidden/rendered multiple times in a frame, forcing many position updates for the UI below.",
-      "Added Mod command to Math Processor. Allows the % math function to be applied. Format is Input1 % Input2.",
-      "Fixed bug where construction blueprint cursor is not correctly cleared upon quitting a game.",
-      "Fixed drop position. Item will now drop where the player is looking."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1045.5307": {
-    "notes": [
-      "Reimplemented chunk streaming changes using the existing chunk IsRendered system and reduced the number of mesh and minable regenerations. Result is improved joining times and faster chunk generation."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1044.5305": {
-    "notes": [
-      "Fixed network problem when joining server which has large chunk data and high latency."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1042.5301": {
-    "notes": [
-      "Improved scrollbars in menus and they now autohide.",
-      "Tweaked Join World menu overall. Now includes a new server info panel along with some other minor tweaks."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1041.5297": {
-    "notes": [
-      "Reduced surface area scale of the radiator.",
-      "Reduced power usage of logic devices.",
-      "Increased power usage of the computer.",
-      "Reduced power usage of Tool Manufactory, Pipe Bender and suit storage.",
-      "Added new model and texture for Copper, Gold, Ice, Iron, and Volatile deposits.",
-      "Fixed Pipe Radiator was always radiating, and never convecting. This meant that a radiator would remove heat from a pipe network without even convecting it into their air around it. This was because it could never find an atmosphere.",
-      "Fixed Autosave was not pulling atmospheres in a thread-safe way and sometimes causing a collection modified error. Now serializes using a safe itteration through atmosphere data.",
-      "Area Power Controller now charges its battery even when it is turned off, and will work even if an output cable is not connected.",
-      "Added signs. You can now place 1x1 or 2x1 signs and write text to them with the labeller.",
-      "Made pipe labels transparent. Label text will now show up on the pipes without the white background of the label.",
-      "Added new option for solar panels. Now contains a variant that has a separate data connection. This provides better support for logic control.",
-      "Adjusted Pipe Radiator surface area x5 to provide more consistent radiation and convection.",
-      "Removed pipe radiator buff. They were x1000 times more effective than a normal pipe and it was causing weird math issues. Now they are x10 more effective than the same sized item.",
-      "Added three LED console displays. Can be written to using the Logic Writer and will display values. Constructable from the Console construction kit.",
-      "Reverted chunk streaming changes from 5283 until issues can be fixed.",
-      "Changed the way that clients render chunks to reduce joining times. Clients still receive all chunk messages and create the chunks as they are received but only generate and apply the visual and collision meshes when needed.",
-      "Added favorite popup menu to join panel and fixed black camera filter on main menu.",
-      "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers",
-      "Fixed wrong playtime in scoreboard.",
-      "Fixed typo in starter crate names.  Game now literally playable.",
-      "Fixed label replacing menu background on failure to load/connect.",
-      "Added limited ability to bind keys to mouse actions and vice versa.  Only supports 3-button mice for now.",
-      "Increased oxygen consumption for humans. Now consume oxygen at x10 the rate they used too. This means you are much more likely to run out of air. However, it also means you produce x10 the amount of CO2 that you used too.",
-      "Fixed pipe labels not drawing on load. Labels will no longer show up as blank when loading from a save.",
-      "Fixed Solar Panel read/write via logic uses different units. Now there is the base version (Vertical/Horizontal) that is in the master units (degrees, percent) and the ratio (0..1).",
-      "Fixed broken state on dedicated server. It wasn't updating state. It's related to Logic Motherboard, solar angle in Daylight Sensor, MotionSensor, Engine rotation. Now you can control solar panel with LogicMotherboard on dedicated server."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1039.5262": {
-    "notes": [
-      "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened.",
-      "Fixed null reference exception when setting mode of an LED to a value that was not an acceptable color.",
-      "Fixed Arc Furnace chute bug. If the arc furnace was connected to a chute, when it finished its current stack it would grab the next without exporting the one inside it. Now the arc furnace will stop its current activity if it has finished the stack it is smelting.",
-      "Fixed machines not being able to drop solder ingots",
-      "Fixed broken AirlockControl on dedicated server. You can open/close airlock on dedicated server.",
-      "Fixed (possibly) double inventory bug - force panel to clear whether or not parent present. 'Split Half/Split All' interactions should no long show up doubled.",
-      "Added community provided French, Polish, and Spanish language translations. Added German tips file. Select a new language under the MISC settings header.",
-      "Added setting to adjust the transparency of tooltip and progress bar backgrounds (Tooltip Opacity on Game Options page).",
-      "Improved joining logic by changing conditions to complete loading data. It allows you to join high latency server.",
-      "Fixed occasional NRE when saving out LogicWriter configuration."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1037.5245": {
-    "notes": [
-      "Fixed Logic Min/Max and Logic Select button was not doing anything when interacted with screwdriver. Now you can correctly change this using a screwdriver.",
-      "Fixed cables burning forever. Cables will now extinguish if it's in vacuum or doesn't have a valid surrounding atmosphere.",
-      "Added logic unit Min/Max (has old select functionality). Logic Select now does proper select functionality. Takes a 0 and a 1 line, and outputs the result based on the select input.",
-      "Fixed broken map on space in dedicated server. When it loads saved world, it forced to set Moon type. It will use proper worldtype.",
-      "Added Field of View adjustment and wave emote hotkeys to the keybinding screen from hardcoded keys (numpad +/-).",
-      "Fixed Client side jittering of stationary objects",
-      "Added logic switch. Allows you to manually set a logic state of 1 or 0 without having any tools.",
-      "Fixed bug where logic writer could only write variables that it could also read from.",
-      "Fixed issue with Speech recognition initializing on non-supported operating Systems",
-      "Adjusted social media icons. They now highlight in their brand colors.",
-      "Enabled workshop button on the main menu, opens the community workshop page in the Steam overlay.",
-      "Exposed more thing states and values to logic system, such as Import and Export device slot state and stackable quantities.",
-      "Refactor of the new logic unit system to be unified with the Logic Motherboard system. Now exposed nearly all interactable states to logic units for read/write and ensured thread safe.",
-      "Fixed misaligned settings in Misc Settings menu"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1035.5224": {
-    "notes": [
-      "Fixed SolarPanel writing to actual rotation value not target when being set via a logic unit.",
-      "Fixed exception with solars when assessing vertical state."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1034.5221": {
-    "notes": [
-      "Fixed error with Logic Processors not allow client changes.",
-      "Fixed incorrect button labelling on Logic Writer."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1033.5218": {
-    "notes": [
-      "Fixed wrong blueprints showing for new logic items."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1032.5216": {
-    "notes": [
-      "Fixed Logic Compare was not configured to have it's states and therefore could not power on.",
-      "Removed ItemSecurityCamera from spawnables. Old legacy asset and was crashing dedicated servers."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1031.5213": {
-    "notes": [
-      "Added Logic device recipes",
-      "Synced recipes from smaller machines to the fabricator",
-      "Removed more invalid recipe reagents, replacing them with mainly iron.",
-      "Added new Kits for logic components. Kit (Logic Processor), Kit (Logic Memory), Kit (Logic I/O)."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1030.5209": {
-    "notes": [
-      "Added second pass of Logic Units. Now includes a Select Unit (takes two inputs and allows comparison operator. Selects input based on comparison and writes as setting), and Compare Unit (takes two inputs and allows comparison operator. Writes 1 or 0 as setting based on operation.",
-      "Fixed filtration machines bypassing second filter - now both filter slots should work. Previously we were adding the input atmosphere to the waste atmosphere after the first filter - only add after all filters run.",
-      "Added basic logic circuitry first pass. Includes Logic Reader (pulls selected values off devices, input and output network), Memory Unit (passive item that is used to store floats, can be accessed by two data networks), Math Unit (applies math operators to two selected inputs, and writes result as setting), and Logic Writer (applies setting value to devices). This allows you to apply very complex systems in the game.",
-      "Fixed Out of range exception on Eye colour when loading into game",
-      "Added option to invert the mouse wheel when scrolling through an item inventory (on Misc page of settings screen).",
-      "Fixed issue with clear disconnected players button not working after dedicated server command was added.",
-      "Fixed issue with main menu Stationeer not being able to breathe through his nose (his mouth is now closed).",
-      "Fixed NRE on Save/Load screen resulting in missing menu when exiting a game.",
-      "Adjusted collision of Airlock. Now allows pipes cables to be passed along the top of it, the same with other airlocks.",
-      "Added battery cells are renamable with a labeller, when it is powered and turned on."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1029.5194": {
-    "notes": [
-      "Fixed broken LogicMotherboard, SolarControl, AirlockControl on dedicated server.",
-      "Fixed Motherboards.LogicState sync when deleting on connect.",
-      "Changed Tablet to be a tool so it can be inside the toolbelt.",
-      "Fixed Logic Motherboard condition and actions entered as floats had to be entered twice to register properly. This caused logic motherboards based on floats to not work correctly.",
-      "Updated clearall command",
-      "Added clearall remote command on dedicated server. It will delete disconnected players.",
-      "Fixed NRE KeyManager on dedicated server",
-      "Fixed Speech recognition changes preventing dedicated server from compiling successfully.",
-      "Enabled steam workshop",
-      "Small further improvements made to Client Side Physics",
-      "Fixed joining timeout in high latency",
-      "Fixed Beacon Recipe.",
-      "Fixed Changed default autosave time to 5 minutes.",
-      "Fixed Voice Recognition now disabled by default.  Added extra checks to ensure it doesn't initialize if not running Windows 10."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1028.5180": {
-    "notes": [
-      "Changed uniform, nuclear battery and rifle recipes temporarily to address carbon and uranium issues.",
-      "Added additional error message states to Portable Scrubber to tell you why it is not working.",
-      "Fixed further issues Ragdoll ReParenting killing fps",
-      "Fixed issue with Client side physics calling Unnecessarily",
-      "Fixed issue with Character Ragdoll Jittering client side",
-      "Character RagDoll should now correctly collides with its own joints"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1027.5176": {
-    "notes": [
-      "Fixed suit sounds were not working. Breathing sounds will now play correctly when atmospherics are working on the suit.",
-      "added beacon to tool manufactory.",
-      "Added variant on Small Transformer. Has the Input and Output locations swapped.",
-      "Fixed Atmospherics Manager Exception. Sometimes a serious exception occurred when the Atmospheres were changed while being processed on the thread. While this shouldn't happen, it was happening. Now if it happens the manager will gracefully continue.",
-      "Added Daylight Sensor now also outputs solar angle (when in sunlight). Also reports sun state and solar angle in tooltip when directly viewed. This can be used with a Logic Motherboard (inserted into a computer) to create a logic system to automatically orientate solars towards the sun.",
-      "Added stacker variant with power and data cable on the other side.",
-      "Fixed issue with client crashing when leaving the tutorial."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1026.5167": {
-    "notes": [
-      "Fixed issue with network sync when Dragging Characters",
-      "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range.",
-      "Removed carbon requirement for duct tape and pipe anaylzer, and put ductape recipe on toolmanufacturer",
-      "Added null check to prevent errors when running ClearDisconnectedPlayers function while a sound is playing."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1025.5162": {
-    "notes": [
-      "Fixed Labeller unable to be turned on through interaction menu. Now shows up when cycling through interactions."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1024.5160": {
-    "notes": [
-      "Fixed steel frames inaccessable on first build (credit to: FlimFlamm on discord who found it).",
-      "Added Button for server hosts to remove all disconnected players accessed from the bottom of the in-game menu.",
-      "Removed F1 in-game key reference screen until it can be updated to reflect current key bindings."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1023.5157": {
-    "notes": [
-      "Added functionality to prompt panel to support inescapable prompts, and made the escape key invoke whatever action was bound to the 'cancel' button (for respawning)."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1022.5154": {
-    "notes": [
-      "Fixed Road Flares, and other objects such as corn, appearing out of slots to clients. Now correctly initialized.",
-      "Tweaked power draw on Beacons, cut down power consumption to a fifth of what it was.",
-      "Fixed entry tool",
-      "Fixed active slot not being selected when returning to game from the menu.",
-      "Fixed glass door dropping airlock kit. Now drops DoorKit.",
-      "Fixed key indicators for slots did not update to their new mappings. Now when keybindings are changed, the correct slot keys are displayed.",
-      "Added key indicators to status icons. For example, when internals can be toggled on and off, the current keybinding shows beside the icon. Jetpack and In slot key bindings will show.",
-      "Fixed broken LogicMotherboard",
-      "Fixed broken AtmosphericsManager",
-      "Added key mappings to status indicators. For examples, beside the jetpack symbol there will be the key for toggling it.",
-      "Added new status indicator for \"in slot\". This shows when you are inside something, and provides the key mapping to get out. This should stop people getting stuck in chairs during the tutorial.",
-      "Fixed BuildState out of bounds",
-      "Fixed Entry Tool for blast door",
-      "Added extended tooltip option. This is enabled by default and provides additional information when a player is constructing something. Such as, if there are multiple construction options available, what the placement type is, what is needed to upgrade to the next level, and what the rotation keys are.",
-      "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that.",
-      "Added new status icon for being inside a slot",
-      "Updated fabricator with chem station recipe.",
-      "Added dedicated server OS icons",
-      "Fixed pipe bender making old sensor item.",
-      "Added Tool Manufactury recipe to autolathe"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1021.5130": {
-    "notes": [
-      "Added settings button to Welcome (first launch) panel."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1017.5125": {
-    "notes": [
-      "Fixed recipes missing from Electronic Reader for Tool Manufactory.",
-      "Fixed Tracker not refreshing current target status (such as rename, or power off).",
-      "Changed flares to spawn outside the crate because they were bugged."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1016.5123": {
-    "notes": [
-      "Fixed Stairs deconstructing into nothing. Now correctly deconstructs into its kit."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1015.5119": {
-    "notes": [
-      "Fixed effects missing from Electronics Printer, and Hydraulic Pipe Bender.",
-      "Fixed issue with all simple manufacturing machines that would become broken when their output was connected to a chute and the chute was already full. Now the machine will wait a few seconds in case the chute becomes empty, if it doesnt, the machine will stop.",
-      "Fixed some positioning of new buttons in Join World menu",
-      "Added recipes to new tool manufactory",
-      "Added Tool Manufactory. Used for building tools, similar to the autolathe.",
-      "Fixed able to turn internals off with I key, even when the helmet is locked (thanks to TheRawDizzle on twitch!). Now cannot do this if locked.",
-      "Added Labeller. Has a battery in it and is used to rename things. Can rename tools, anything draggable, and devices.",
-      "Added Tracking Beacon. When powered and turned on, will show up in all tracker cartridges. Use this to mark locations and find your way to it. Can be painted to show different colors.",
-      "Fixed bug with Tracker cartridge not correctly initializing.",
-      "Added extra starting crate. Filled with spray cans to paint things, a labeller to name things, a beacon, and roadflares.",
-      "Added spray paints to the fabricator.",
-      "Added composite floor grating to autolathe",
-      "Fixed Electronic Reader displaying pressure values 0.1 of the value they should be. Now correctly displaying pressure readings.",
-      "Fixed issue with head occasionally attaching itself to hands",
-      "Fixed potential looping coroutine on ragdoll",
-      "FertilizedEgg should now only hatch if not inside a slot",
-      "Added steamclient dlls to dedicated server build",
-      "Fixed save world commands.",
-      "Added maxplayer, password commands for dedicated server",
-      "Moved Chutes to autolathe from PipeBender; and some general time balancing.",
-      "Fixed Furnace could only be rotated in the Y direction.",
-      "Modified values in default.ini",
-      "Fixed issue with parts on character going invisible when dragging them",
-      "Fixed Ragdoll Re-Parenting issue killing FPS",
-      "Fixed null reference on manufacturing motherboard when inserted into a computer. Sometimes would not be initialized correctly and would cause an exception.",
-      "Changed New World options to make it clear where Creative mode is"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1014.5083": {
-    "notes": [
-      "Fixed Autolathe, PipeBender, and Electronics Printer recipe exception meant that if you save the game in that state, it could not be loaded. Now check on load of the recipe is valid.",
-      "Fixed bug where players would receive out of range exception when deconstructing a structure with no Entry tool set but quantity set",
-      "Added active vent to pipe bender recipes.",
-      "Improved loadworld command for dedicated server. If file doesn't exist, it will save it when autosave is enabled.",
-      "Fixed thermodynamics scale value for things not affecting the solar constant heating values. This meant that when we reduced the thermodynamics scale for welders, it actually made them MORE explosive. Now we can scale the solar heating effect for different items. The welder will now prevent solar heating.",
-      "Fixed out of range exception when deconstructing StructureFiltration",
-      "Fixed bug with movement behavior when cursor was on screen",
-      "Fixed small transformer and Door not deconstructing into the correct kits."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1013.5070": {
-    "notes": [
-      "Increased default burn times for all structures and items."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1012.5068": {
-    "notes": [
-      "Removed remaining axis controls",
-      "Increased gold spawn rate, and vein size."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1011.5065": {
-    "notes": [
-      "Fixed potential NRE when Human enters Dead State",
-      "Fixed issue with being unable to transition out of Dead state",
-      "Fixed Issue with being unable to pickup and drop Unconscious players on Dedicated Server",
-      "Added default linux dedicated server commands",
-      "Fixed own suit getting frustum culled - enabled UpdateWhenOffscreen on Spacesuit Mesh Renderer",
-      "Added Stacker to autolathe",
-      "Removed controller support completely as it was incomplete and was causing some people to spin",
-      "Offline players will now drop Draggable items, including players"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1010.5051": {
-    "notes": [
-      "Fixed many devices that were deconstruction into nothing. Air Conditioner, Arc Furnace deconstruct to Furnance, Battery, Computer, Filtration."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1009.5049": {
-    "notes": [
-      "Fixed initializing problem on dedicated server",
-      "fixed nulls causing connection issues",
-      "Fixed Incorrect drop position when dropping Unconscious Players",
-      "Fixed default button position in settings menu"
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1008.5044": {
-    "notes": [
-      "Fixed various kits. Autolathe, Electronics Printer, Sleeper, Solid Fuel Generator, and Storage Lockers - not spawning their kits correctly when deconstructed."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1007.5042": {
-    "notes": [
-      "Fixed water visualizer always running causing severe performance issues for some.",
-      "Fixed Autolathe & SolidFuelGenerator not respawning after deconstruction",
-      "Fixed Tutorial servers will now be hidden even if advertise server is enabled.",
-      "Added Invert Mouse checkbox on Misc options screen.",
-      "Added Stairs to autolathe."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1006.5034": {
-    "notes": [
-      "Fixed Kit (Locker) was spawning obsolete Locker. Now correctly spawns. You will need to deconstruct any old lockers and replace them.",
-      "Disabled Mars map on dedicated server. It will be switched to Moon at this moment."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1003.5027": {
-    "notes": [
-      "Advertising of servers now disabled by default."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1002.5024": {
-    "notes": [
-      "Fixed tutorials not localized",
-      "Fixed Item Battery Charger wrong position in crates.",
-      "Fixed world shadow effect artifacts.",
-      "Reduced cost of regulators, increased pipe analysers."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1001.5020": {
-    "notes": [
-      "Fixed Battery Charger slots were not correctly configured and would not charge.",
-      "Fixed ArgumentException: The requested value 'Very High' was not found.",
-      "Increased base times on multiple recipes",
-      "Fixed tablet display so it doesn't always turn on when moved to hands",
-      "Added cartridges to electronics fab, and increased base time for most recipes.",
-      "Added new battery charger model.",
-      "Fixed tips not localized correctly. Added Localized Font to TextTips",
-      "Increased Dynamic large thing pipe bender construction times.",
-      "Removed old suit storage and gas sensor from fabricator."
-    ],
-    "releases": {
-      "built": "unknown",
-      "public": "unknown",
-      "beta": "unknown"
-    }
-  },
-  "0.1.1000.5010": {
-    "notes": [
-      "Fixed welder tanks exploding after a period of time due to thermodynamics, when located inside the welder.",
-      "Fixed Activate button on HydraulicPipeBender not working.",
-      "Fixed HydraulicPipeBender not generating recipes.",
-      "Added entry tool for fabricator",
-      "Moved Dynamic large object construction to Pipe bending machine",
-      "Adjusted position of the screwdriver in the hand",
-      "Removed old suit storage kit item.",
-      "Added russian_tips.xml, updated russian.xml. (Thanks guys!)",
-      "Added functionality to suit storage. Now will fill tanks and recharge battery when suit is inserted and all pipes and cables connected.",
-      "Fixed mining drill not working on load",
-      "Added thumbnail for pipe bender kit.",
-      "Added atmos cartridge to backpack on spawn.",
-      "Fixed solar panel deconstructing not producing a construction kit."
     ],
     "releases": {
       "built": "unknown",
