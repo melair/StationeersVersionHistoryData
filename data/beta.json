@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1146.5727",
-    "date": "2018-02-06T00:00:00+00:00"
+    "version": "0.1.1147.5728",
+    "date": "2018-02-07T00:00:00+00:00"
   },
   "history": [
     {
@@ -2210,8 +2210,7 @@
       "version": "0.1.891.4055",
       "notes": [
         "Fixed ItemTankConnector had incorrectly colored thumbnails.",
-        "Added ItemBatteryCellNuclear, 8x more capacity that the ItemBatteryCellLarge.",
-        "Added ProfilerController, allows for dumping of profiler information in build. Press Ctrl-Alt-Shift-P to enable."
+        "Added ItemBatteryCellNuclear, 8x more capacity that the ItemBatteryCellLarge."
       ]
     }
   ]
