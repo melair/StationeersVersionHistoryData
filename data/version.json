@@ -1,4 +1,16 @@
 {
+  "0.1.1148.5732": {
+    "notes": [
+      "Added Japanese localization files",
+      "Updated German, Spanish and Traditional Chinese localization files",
+      "Fixed Atmospherics error when picking atmosphere to emit visualizer particle from.",
+      "Fixed Large Gas Tank exceeding current maximum small grid allocation. Old max was 200 small grids, new max is 800 small grids."
+    ],
+    "releases": {
+      "built": "2018-02-08T00:00:00+00:00",
+      "beta": "2018-02-07T20:01:11+00:00"
+    }
+  },
   "0.1.1147.5728": {
     "notes": [
 
