@@ -1,4 +1,19 @@
 {
+  "0.1.1149.5741": {
+    "notes": [
+      "Added XML game data for player starting inventory. The StartingInventory game data list from XML contains references for what all players will have as starting inventory. This allows servers to run custom starting inventories for players. This is currently a global value, but will be subject to change to support scenarios in future.",
+      "Added Skeleton's Ragdoll",
+      "Fixed frames and other items spontaneously combusting when it shouldn't.",
+      "Added Starting Crate data to XML. Basic starting crate data will now be configurable based on data contained in the StreamingAssets/Data XML file contents. This might be shifted into scenario data XML classes in later updates however so is subject to change.",
+      "Added ReagentProcessor recipes to XML data format. Currently takes input prefab and output prefab. System to be extended to include quantity calculations in future.",
+      "Added duplicate recipe check to Autolathe, ElectronicsPrinter and PipeBender for recipe mod support.",
+      "Moved map upload progress bar to it's own window so more workshop functionality from map publishing can be used for mods."
+    ],
+    "releases": {
+      "built": "2018-02-08T00:00:00+00:00",
+      "beta": "2018-02-08T04:01:11+00:00"
+    }
+  },
   "0.1.1148.5732": {
     "notes": [
       "Added Japanese localization files",
