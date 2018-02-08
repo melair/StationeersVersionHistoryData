@@ -1,4 +1,13 @@
 {
+  "0.1.1150.5743": {
+    "notes": [
+      "Updated Simplified Chinese localization"
+    ],
+    "releases": {
+      "built": "2018-02-09T00:00:00+00:00",
+      "beta": "2018-02-08T20:01:22+00:00"
+    }
+  },
   "0.1.1149.5741": {
     "notes": [
       "Added XML game data for player starting inventory. The StartingInventory game data list from XML contains references for what all players will have as starting inventory. This allows servers to run custom starting inventories for players. This is currently a global value, but will be subject to change to support scenarios in future.",
