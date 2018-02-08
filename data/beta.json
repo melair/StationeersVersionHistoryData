@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1150.5743",
+    "version": "0.1.1151.5747",
     "date": "2018-02-09T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1151.5747",
+      "notes": [
+        "Fixed NRE when sending player state while disconnecting.",
+        "Fixed starting equipment now gives you the correct number of cables.",
+        "Reduced memory usages and connecting time. Client receives chunks data around own player when connecting. Explored chunks are cashed on client. It will be reset when you connecting. Server(host player, dedicated server) has all players' explored chunks."
+      ]
+    },
     {
       "version": "0.1.1150.5743",
       "notes": [
@@ -2206,15 +2214,7 @@
     {
       "version": "0.1.894.4075",
       "notes": [
-        "Fixed null refs for inventorymanager and cursormanager",
-        "Updated Shield Visual"
-      ]
-    },
-    {
-      "version": "0.1.893.4071",
-      "notes": [
-        "Moved Human damage back to brain",
-        "Updated some slot type icons, including new Cartridge icon"
+        "Fixed null refs for inventorymanager and cursormanager"
       ]
     }
   ]

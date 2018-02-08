@@ -1,4 +1,15 @@
 {
+  "0.1.1151.5747": {
+    "notes": [
+      "Fixed NRE when sending player state while disconnecting.",
+      "Fixed starting equipment now gives you the correct number of cables.",
+      "Reduced memory usages and connecting time. Client receives chunks data around own player when connecting. Explored chunks are cashed on client. It will be reset when you connecting. Server(host player, dedicated server) has all players' explored chunks."
+    ],
+    "releases": {
+      "built": "2018-02-09T00:00:00+00:00",
+      "beta": "2018-02-08T22:01:11+00:00"
+    }
+  },
   "0.1.1150.5743": {
     "notes": [
       "Updated Simplified Chinese localization"
