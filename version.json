@@ -1,4 +1,21 @@
 {
+  "0.1.1155.5760": {
+    "notes": [
+      "Fixed Game Settings heading in settings page not having a localized key.",
+      "Changed StartingCrates definition to be generic for DynamicThings. Now includes definitions for AirConditioner and Scrubber.",
+      "Added support for custom name and custom color in InventoryData and DynamicThingData, used with the ConditionData custom starting condition systems.",
+      "Changed initial spawn items. Now air conditioner, scrubber, and beacon spawn with fully charged battery cells.",
+      "Changed Starting Inventory and Starting Crates to be combined as a Starting Condition type. Different Starting Conditions can be loaded and, for now, appear as options in the Gameplay settings menu. This will be expanded to affect only new worlds, but for now, will affect any world running on the host. These can be made as mods.",
+      "Updated Portuguese and Spanish localization files",
+      "Fixed Players now start with the correct number of Iron Frames.",
+      "Fixed Disconnecting from a game (or getting disconnected from a game) now closes any prompt that is up on screen.",
+      "Fixed NRE when respawning"
+    ],
+    "releases": {
+      "built": "2018-02-12T00:00:00+00:00",
+      "beta": "2018-02-11T23:01:11+00:00"
+    }
+  },
   "0.1.1151.5747": {
     "notes": [
       "Fixed NRE when sending player state while disconnecting.",
