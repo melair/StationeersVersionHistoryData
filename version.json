@@ -1,4 +1,24 @@
 {
+  "0.1.1156.5777": {
+    "notes": [
+      "Added new status icons for Hunger and Heath. Full, low, and critical food and health indicators appear and also include their current values.",
+      "Fixed Damage states not being serialized. Now damage values for all things are included in save file and are correctly deserialized when loaded.",
+      "Fixed total damage for entities incorrectly using body oxygen damage state when should use the brains oxygen damage state.",
+      "Added milk, muffin, cereal bar, egg, and wheat as edible types. These can be eaten using secondary action, or force feed to another human using primary action.",
+      "Fixed UnauthorizedAccessException when starting dedicated server in different path. It's caused by wrong initialization orders. You can run it in any path.",
+      "Fixed bug where resetting controls to defaults was not saving the new keys correctly.",
+      "Fixed wrong recipe index when server and client have different language settings. It's fixed in Autolathe, ElectronicsPrinter, HydraulicPipeBender, ToolManufactory, ScreenConstructionJob, ScreenFilter.",
+      "Fixed issue where new implementation of starting equipment did not include Duct Tape.",
+      "Added first pass of Hunger and Nutrition. If nutrition drops too low, player starts taking Starvation damage. Eat muffins or cereal bars to increase nutrition. More updates to follow with the new survival mechanics.",
+      "Fixed issue where any progress panel displayed after the first would have no background.",
+      "Updated upload progress prompt",
+      "Fixed gas canisters disappearing when blown up. Canisters now remain in the world, in a blown up state."
+    ],
+    "releases": {
+      "built": "2018-02-12T00:00:00+00:00",
+      "beta": "2018-02-12T03:01:12+00:00"
+    }
+  },
   "0.1.1155.5760": {
     "notes": [
       "Fixed Game Settings heading in settings page not having a localized key.",
