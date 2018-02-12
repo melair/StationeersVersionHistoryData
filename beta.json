@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1159.5791",
-    "date": "2018-02-12T00:00:00+00:00"
+    "version": "0.1.1160.5792",
+    "date": "2018-02-13T00:00:00+00:00"
   },
   "history": [
     {
@@ -2213,8 +2213,7 @@
       "version": "0.1.899.4112",
       "notes": [
         "First pass on updated Character Customisation screen",
-        "Added waste ingot for furnace (not active).",
-        "Third pass of localization. Now slot names are pulled from localization file. Language can actually be selected from main menu."
+        "Added waste ingot for furnace (not active)."
       ]
     }
   ]
