@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1156.5777",
+    "version": "0.1.1157.5783",
     "date": "2018-02-12T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1157.5783",
+      "notes": [
+        "Increased calorie storage for humans. A full stomach will last over one hour of playtime.",
+        "Added Corn calorie value. Now corn will provide a small amount of calories when eaten.",
+        "Increased Muffin calorie value. Only two bites of a muffin will provide full calorie storage for a player."
+      ]
+    },
     {
       "version": "0.1.1156.5777",
       "notes": [
@@ -2207,10 +2215,7 @@
         "Second pass localization. DisplayName now localized based off prefab hash.",
         "Coal changed from Carbon reagent to Hydrocarbon reagent.",
         "First pass of localization system. Action, Gas, and Reagent names are now loaded from a Localization database generated from an XML file. No option to change language currently.",
-        "Offline Or NPC Characters should now be moveable inside mothership while dragging",
-        "CameraOffset added to jetPack modes to prevent hand clipping through body and face",
-        "Minor adjustments to damage panel, inventory thumbnails and quantity text",
-        "Small adjustments to cast bar and tooltips"
+        "Offline Or NPC Characters should now be moveable inside mothership while dragging"
       ]
     }
   ]
