@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1157.5783",
+    "version": "0.1.1159.5791",
     "date": "2018-02-12T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1158.5789",
+      "notes": [
+        "Added cereal bars to your uniform slots in case you're starting a new multiplayer game with lots of players.",
+        "Fixed issue where workshop mods would not be tagged as such if they were disabled.",
+        "Updated readme and comment in ExampleMod.zip.",
+        "Loading now skips items saved with invalid locations.",
+        "Enabled Workshop Menu.",
+        "Added ExampleMod.zip to the StreamingAssets folder.  See the readme.txt contained within for basic instructions on current mod support.",
+        "Fixed saves loaded with dead characters were not given the option to respawn. Now the respawn dialogue correctly loads when player loads their game."
+      ]
+    },
     {
       "version": "0.1.1157.5783",
       "notes": [
@@ -2202,20 +2214,7 @@
       "notes": [
         "First pass on updated Character Customisation screen",
         "Added waste ingot for furnace (not active).",
-        "Third pass of localization. Now slot names are pulled from localization file. Language can actually be selected from main menu.",
-        "UnclampTime on MovementController is now Set to 1f when OnConsious is triggered to fix character to new position",
-        "Unconscious Players Should now sync position correctly when dragged",
-        "DynamicThing now uses ActiveRigidbody reference rather then RigidBody",
-        "RagDoll Gravity should now be correctly handled"
-      ]
-    },
-    {
-      "version": "0.1.898.4103",
-      "notes": [
-        "Second pass localization. DisplayName now localized based off prefab hash.",
-        "Coal changed from Carbon reagent to Hydrocarbon reagent.",
-        "First pass of localization system. Action, Gas, and Reagent names are now loaded from a Localization database generated from an XML file. No option to change language currently.",
-        "Offline Or NPC Characters should now be moveable inside mothership while dragging"
+        "Third pass of localization. Now slot names are pulled from localization file. Language can actually be selected from main menu."
       ]
     }
   ]

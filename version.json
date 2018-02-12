@@ -1,4 +1,28 @@
 {
+  "0.1.1159.5791": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-02-12T00:00:00+00:00",
+      "beta": "2018-02-12T06:01:11+00:00"
+    }
+  },
+  "0.1.1158.5789": {
+    "notes": [
+      "Added cereal bars to your uniform slots in case you're starting a new multiplayer game with lots of players.",
+      "Fixed issue where workshop mods would not be tagged as such if they were disabled.",
+      "Updated readme and comment in ExampleMod.zip.",
+      "Loading now skips items saved with invalid locations.",
+      "Enabled Workshop Menu.",
+      "Added ExampleMod.zip to the StreamingAssets folder.  See the readme.txt contained within for basic instructions on current mod support.",
+      "Fixed saves loaded with dead characters were not given the option to respawn. Now the respawn dialogue correctly loads when player loads their game."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1157.5783": {
     "notes": [
       "Increased calorie storage for humans. A full stomach will last over one hour of playtime.",
