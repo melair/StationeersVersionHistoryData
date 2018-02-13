@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1160.5792",
+    "version": "0.1.1161.5796",
     "date": "2018-02-13T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1161.5796",
+      "notes": [
+        "Fixed missing nutrition warning voice messages and missing heath icons.",
+        "Added Potato as growable (and edible) plant. Currently same growth stats as the wheat.",
+        "Fixed Chutes ejecting contents during load. When a world was loaded chute contents (and possibly manufacturing devices as well) would eject their contents. Now they will continue to loop correctly. Note: this will only work with saves from now on. Old saves with items in chutes will eject their contents until they are resaved."
+      ]
+    },
     {
       "version": "0.1.1158.5789",
       "notes": [
@@ -2205,15 +2213,7 @@
         "Removed duplicate language files",
         "Added localization for UI.",
         "Scene updated with new LocalizedText components.",
-        "Updated lights in Character Customisation screen",
-        "Added fudge factor to occlusion culling to minimize small objects culling too early. Things now cull later than they're supposed to."
-      ]
-    },
-    {
-      "version": "0.1.899.4112",
-      "notes": [
-        "First pass on updated Character Customisation screen",
-        "Added waste ingot for furnace (not active)."
+        "Updated lights in Character Customisation screen"
       ]
     }
   ]

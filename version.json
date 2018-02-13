@@ -1,4 +1,15 @@
 {
+  "0.1.1161.5796": {
+    "notes": [
+      "Fixed missing nutrition warning voice messages and missing heath icons.",
+      "Added Potato as growable (and edible) plant. Currently same growth stats as the wheat.",
+      "Fixed Chutes ejecting contents during load. When a world was loaded chute contents (and possibly manufacturing devices as well) would eject their contents. Now they will continue to loop correctly. Note: this will only work with saves from now on. Old saves with items in chutes will eject their contents until they are resaved."
+    ],
+    "releases": {
+      "built": "2018-02-13T00:00:00+00:00",
+      "beta": "2018-02-13T01:01:11+00:00"
+    }
+  },
   "0.1.1160.5792": {
     "notes": [
 
