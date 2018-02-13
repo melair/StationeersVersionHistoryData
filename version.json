@@ -1,4 +1,13 @@
 {
+  "0.1.1162.5798": {
+    "notes": [
+      "Fixed non-latin languages not working on signs and pipe labels. Signs and labels should now show non-latin text correctly if the right game language is selected."
+    ],
+    "releases": {
+      "built": "2018-02-14T00:00:00+00:00",
+      "beta": "2018-02-13T20:01:11+00:00"
+    }
+  },
   "0.1.1161.5796": {
     "notes": [
       "Fixed missing nutrition warning voice messages and missing heath icons.",

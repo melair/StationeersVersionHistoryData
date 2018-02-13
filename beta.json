@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1161.5796",
-    "date": "2018-02-13T00:00:00+00:00"
+    "version": "0.1.1162.5798",
+    "date": "2018-02-14T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1162.5798",
+      "notes": [
+        "Fixed non-latin languages not working on signs and pipe labels. Signs and labels should now show non-latin text correctly if the right game language is selected."
+      ]
+    },
     {
       "version": "0.1.1161.5796",
       "notes": [
@@ -2211,9 +2217,7 @@
         "Adjusted blur amount in translucent menus",
         "Fixed Character Customisation screen not showing up",
         "Removed duplicate language files",
-        "Added localization for UI.",
-        "Scene updated with new LocalizedText components.",
-        "Updated lights in Character Customisation screen"
+        "Added localization for UI."
       ]
     }
   ]
