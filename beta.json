@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1162.5798",
-    "date": "2018-02-14T00:00:00+00:00"
+    "version": "0.1.1163.5802",
+    "date": "2018-02-15T00:00:00+00:00"
   },
   "history": [
     {
@@ -2216,8 +2216,7 @@
         "Water visualizer now works on motherships",
         "Adjusted blur amount in translucent menus",
         "Fixed Character Customisation screen not showing up",
-        "Removed duplicate language files",
-        "Added localization for UI."
+        "Removed duplicate language files"
       ]
     }
   ]
