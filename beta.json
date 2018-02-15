@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1163.5802",
+    "version": "0.1.1164.5807",
     "date": "2018-02-15T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1164.5807",
+      "notes": [
+        "Fixed issue where client didn't play WeldingTorch and MiningDrill sound when they activated.",
+        "Added tag support for Steam Workshop mods.",
+        "Fixed bug with some operating systems where the game couldn't determine voice control compatibility.",
+        "Fixed bug where starting condition selection dropdown box could get into an infinite loop.",
+        "Fix sync problem in out of sight objects. Client caches things information within 60m. When a thing is interpolating while in and out 60m, it can stunk if there is an obstacle between 2 positions. And it's properly tracking player who is out of 60m."
+      ]
+    },
     {
       "version": "0.1.1162.5798",
       "notes": [
@@ -2210,13 +2220,7 @@
         "fixed buffer release error on water",
         "Fixed bug with localization settings not initializing correctly for blank or unset language settings.",
         "Fixed language dropdown not correctly displaying the selected language.",
-        "Fixed localization double key registration.",
-        "moved water visualizer to AtmosphericsController",
-        "Water is no longer jumpy while moving around",
-        "Water visualizer now works on motherships",
-        "Adjusted blur amount in translucent menus",
-        "Fixed Character Customisation screen not showing up",
-        "Removed duplicate language files"
+        "Fixed localization double key registration."
       ]
     }
   ]

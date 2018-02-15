@@ -1,4 +1,17 @@
 {
+  "0.1.1164.5807": {
+    "notes": [
+      "Fixed issue where client didn't play WeldingTorch and MiningDrill sound when they activated.",
+      "Added tag support for Steam Workshop mods.",
+      "Fixed bug with some operating systems where the game couldn't determine voice control compatibility.",
+      "Fixed bug where starting condition selection dropdown box could get into an infinite loop.",
+      "Fix sync problem in out of sight objects. Client caches things information within 60m. When a thing is interpolating while in and out 60m, it can stunk if there is an obstacle between 2 positions. And it's properly tracking player who is out of 60m."
+    ],
+    "releases": {
+      "built": "2018-02-15T00:00:00+00:00",
+      "beta": "2018-02-15T03:01:12+00:00"
+    }
+  },
   "0.1.1163.5802": {
     "notes": [
 
