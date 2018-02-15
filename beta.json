@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1165.5810",
-    "date": "2018-02-15T00:00:00+00:00"
+    "version": "0.1.1166.5815",
+    "date": "2018-02-16T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1166.5815",
+      "notes": [
+        "Fixed data disk slots incorrectly oriented on StructureComputer. DataDisks placed in a computer should now be rotated correctly. (Thanks Risu!)",
+        "Fixed bug with APCs drawing more power than needed if charging nearly-full batteries. APC power draw now takes into account battery charge.",
+        "First pass on global atmosphere system"
+      ]
+    },
     {
       "version": "0.1.1165.5810",
       "notes": [
@@ -2220,11 +2228,7 @@
         "Now clearing AtmosphericsManager on new session",
         "Water Visualizer now renders on client",
         "fixed null in water visualizer on starting a new session after leaving a session",
-        "Fixed stack overflow on trying to display missing strings for gases or reagents.",
-        "Added interactables to localization.",
-        "voxels no longer block faces on motherships",
-        "fixed buffer release error on water",
-        "Fixed bug with localization settings not initializing correctly for blank or unset language settings."
+        "Fixed stack overflow on trying to display missing strings for gases or reagents."
       ]
     }
   ]

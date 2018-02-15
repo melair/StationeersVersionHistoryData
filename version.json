@@ -1,4 +1,15 @@
 {
+  "0.1.1166.5815": {
+    "notes": [
+      "Fixed data disk slots incorrectly oriented on StructureComputer. DataDisks placed in a computer should now be rotated correctly. (Thanks Risu!)",
+      "Fixed bug with APCs drawing more power than needed if charging nearly-full batteries. APC power draw now takes into account battery charge.",
+      "First pass on global atmosphere system"
+    ],
+    "releases": {
+      "built": "2018-02-16T00:00:00+00:00",
+      "beta": "2018-02-15T20:01:11+00:00"
+    }
+  },
   "0.1.1165.5810": {
     "notes": [
       "Fixed NRE in tracker on dedicated server"
