@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1164.5807",
+    "version": "0.1.1165.5810",
     "date": "2018-02-15T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1165.5810",
+      "notes": [
+        "Fixed NRE in tracker on dedicated server"
+      ]
+    },
     {
       "version": "0.1.1164.5807",
       "notes": [
@@ -2218,9 +2224,7 @@
         "Added interactables to localization.",
         "voxels no longer block faces on motherships",
         "fixed buffer release error on water",
-        "Fixed bug with localization settings not initializing correctly for blank or unset language settings.",
-        "Fixed language dropdown not correctly displaying the selected language.",
-        "Fixed localization double key registration."
+        "Fixed bug with localization settings not initializing correctly for blank or unset language settings."
       ]
     }
   ]
