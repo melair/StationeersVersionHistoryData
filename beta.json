@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1166.5815",
+    "version": "0.1.1167.5824",
     "date": "2018-02-16T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1167.5824",
+      "notes": [
+        "Added first pass of gas generator. Provides power from the gas combusted inside.",
+        "Updated Hunger status icons",
+        "Fixed NRE in dedicated server when stop server and press ESC button.",
+        "Fixed some duplicate initializations when starting a new world",
+        "Removed some unused ore game objects from WorldManager Prefab",
+        "Removed old code for changing material on ores that was no longer needed"
+      ]
+    },
     {
       "version": "0.1.1166.5815",
       "notes": [
@@ -2221,14 +2232,7 @@
     {
       "version": "0.1.900.4133",
       "notes": [
-        "Added base font data.",
-        "Added localized font type for non direct string components.",
-        "Added russian and extended font support.",
-        "Added sample russian and german localization files.",
-        "Now clearing AtmosphericsManager on new session",
-        "Water Visualizer now renders on client",
-        "fixed null in water visualizer on starting a new session after leaving a session",
-        "Fixed stack overflow on trying to display missing strings for gases or reagents."
+        "Added base font data."
       ]
     }
   ]
