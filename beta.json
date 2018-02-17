@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1167.5824",
-    "date": "2018-02-16T00:00:00+00:00"
+    "version": "0.1.1168.5828",
+    "date": "2018-02-17T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1168.5828",
+      "notes": [
+        "Added Hunger Rate to settings screen (temporarily).  Allows you to scale how fast your character gets hungry by 0-4x.  Not yet available for dedicated servers.",
+        "Fixed ScreenFilter not clearing when loading mod data, preventing loading data more than once per launch.",
+        "Added Mods now reload whenever you leave the workshop menu, allowing changes to be applied without relaunching the game.",
+        "Fixed bug where large batteries in the mining drill were rotated in a way that meant you couldn't see their charge level."
+      ]
+    },
     {
       "version": "0.1.1167.5824",
       "notes": [
@@ -2224,15 +2233,7 @@
         "Grounded check moved to Human from MovementController",
         "Offline characters and NPCDummyCharacter should no longer jitter on the spot",
         "Fixed Interactions, Slots, and some other UI widgets not correctly changing to new language fonts.",
-        "New Russian Language font",
-        "Fixed an overflow issue on main menu",
-        "Fixed dots in dropdown menus"
-      ]
-    },
-    {
-      "version": "0.1.900.4133",
-      "notes": [
-        "Added base font data."
+        "New Russian Language font"
       ]
     }
   ]
