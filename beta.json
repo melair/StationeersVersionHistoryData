@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1168.5828",
-    "date": "2018-02-17T00:00:00+00:00"
+    "version": "0.1.1170.5830",
+    "date": "2018-02-19T00:00:00+00:00"
   },
   "history": [
     {
@@ -2231,9 +2231,7 @@
         "Added new font for languages with extended characters e.g German",
         "now Clearing AtmosControllers",
         "Grounded check moved to Human from MovementController",
-        "Offline characters and NPCDummyCharacter should no longer jitter on the spot",
-        "Fixed Interactions, Slots, and some other UI widgets not correctly changing to new language fonts.",
-        "New Russian Language font"
+        "Offline characters and NPCDummyCharacter should no longer jitter on the spot"
       ]
     }
   ]

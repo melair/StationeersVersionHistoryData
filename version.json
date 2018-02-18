@@ -1,4 +1,13 @@
 {
+  "0.1.1170.5830": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-02-19T00:00:00+00:00",
+      "beta": "2018-02-18T23:01:11+00:00"
+    }
+  },
   "0.1.1168.5828": {
     "notes": [
       "Added Hunger Rate to settings screen (temporarily).  Allows you to scale how fast your character gets hungry by 0-4x.  Not yet available for dedicated servers.",
