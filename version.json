@@ -1,4 +1,17 @@
 {
+  "0.1.1172.5847": {
+    "notes": [
+      "Fixed radiators not working in vacuum. Radiators should now begin radiating heat again on the moon.",
+      "Added new filter options in Join World menu. Incompatible versions are now hidden by default, along with options to hide password protected and empty servers. Other improvements have also been added to stop it from locking up while refreshing the server list.",
+      "Tweaked some values for the quest panel in the tutorial. This should be a bit easier to read now.",
+      "Fixed power connector not able to have portable generator wrenched onto it. Now can correctly wrench a portable generator to a power connector, to get generated power from it. Credit to Risu on Discord for solution.",
+      "Fixed unable to change dynamic air conditioner's mode while wrenched onto tank connectors."
+    ],
+    "releases": {
+      "built": "2018-02-20T00:00:00+00:00",
+      "beta": "2018-02-19T20:01:10+00:00"
+    }
+  },
   "0.1.1171.5834": {
     "notes": [
       "Fixed duplicate atmosphere error causing atmospheric controller to crash",

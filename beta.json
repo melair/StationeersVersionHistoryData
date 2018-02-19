@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1171.5834",
-    "date": "2018-02-19T00:00:00+00:00"
+    "version": "0.1.1172.5847",
+    "date": "2018-02-20T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1172.5847",
+      "notes": [
+        "Fixed radiators not working in vacuum. Radiators should now begin radiating heat again on the moon.",
+        "Added new filter options in Join World menu. Incompatible versions are now hidden by default, along with options to hide password protected and empty servers. Other improvements have also been added to stop it from locking up while refreshing the server list.",
+        "Tweaked some values for the quest panel in the tutorial. This should be a bit easier to read now.",
+        "Fixed power connector not able to have portable generator wrenched onto it. Now can correctly wrench a portable generator to a power connector, to get generated power from it. Credit to Risu on Discord for solution.",
+        "Fixed unable to change dynamic air conditioner's mode while wrenched onto tank connectors."
+      ]
+    },
     {
       "version": "0.1.1171.5834",
       "notes": [
@@ -2226,16 +2236,6 @@
         "Added burnt cable variants. Currently only burnt by the welding torch. Future will burn when too much power is sent down a cable and from fire.",
         "Fixed Invisible mesh bug when unequiping another unconsious players suit",
         "Humans will now drop items before activating ragdoll. so items are no longer stuck inside you"
-      ]
-    },
-    {
-      "version": "0.1.902.4150",
-      "notes": [
-        "Fixed code was being escaped for visualizer for all built when it should have been the opposite. Caused atmosphere to break, especially so on clients.",
-        "Replaced Battery with new model and simpler functionality.",
-        "Fixed Jump jittering in mothership. Can't jump again until grounded.",
-        "Stopped water prefab appearing in editor",
-        "Fixed saved date going to two lines sometimes in Load menu"
       ]
     }
   ]
