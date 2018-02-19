@@ -1,4 +1,15 @@
 {
+  "0.1.1171.5834": {
+    "notes": [
+      "Fixed duplicate atmosphere error causing atmospheric controller to crash",
+      "Fixed null error on atmospheric things when entering rooms with no Atmosphere",
+      "Fixed Soybeans never maturing and becoming harvestable."
+    ],
+    "releases": {
+      "built": "2018-02-19T00:00:00+00:00",
+      "beta": "2018-02-19T01:01:11+00:00"
+    }
+  },
   "0.1.1170.5830": {
     "notes": [
 

@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1170.5830",
+    "version": "0.1.1171.5834",
     "date": "2018-02-19T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1171.5834",
+      "notes": [
+        "Fixed duplicate atmosphere error causing atmospheric controller to crash",
+        "Fixed null error on atmospheric things when entering rooms with no Atmosphere",
+        "Fixed Soybeans never maturing and becoming harvestable."
+      ]
+    },
     {
       "version": "0.1.1168.5828",
       "notes": [
@@ -2227,11 +2235,7 @@
         "Replaced Battery with new model and simpler functionality.",
         "Fixed Jump jittering in mothership. Can't jump again until grounded.",
         "Stopped water prefab appearing in editor",
-        "Fixed saved date going to two lines sometimes in Load menu",
-        "Added new font for languages with extended characters e.g German",
-        "now Clearing AtmosControllers",
-        "Grounded check moved to Human from MovementController",
-        "Offline characters and NPCDummyCharacter should no longer jitter on the spot"
+        "Fixed saved date going to two lines sometimes in Load menu"
       ]
     }
   ]
