@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1172.5847",
-    "date": "2018-02-20T00:00:00+00:00"
+    "version": "0.1.1173.5851",
+    "date": "2018-02-21T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1173.5851",
+      "notes": [
+        "Fixed sounds of nearby structures in vacuum popping in and out while you're in a pressured room. Should no longer hear phantom sounds from machines in vacuum."
+      ]
+    },
     {
       "version": "0.1.1172.5847",
       "notes": [
@@ -2233,9 +2239,7 @@
       "version": "0.1.903.4155",
       "notes": [
         "Refactored Structure creation to use local rotation references rather than world. This should avoid the rare bug where a client sees the objects all rotated in bizarre directions.",
-        "Added burnt cable variants. Currently only burnt by the welding torch. Future will burn when too much power is sent down a cable and from fire.",
-        "Fixed Invisible mesh bug when unequiping another unconsious players suit",
-        "Humans will now drop items before activating ragdoll. so items are no longer stuck inside you"
+        "Added burnt cable variants. Currently only burnt by the welding torch. Future will burn when too much power is sent down a cable and from fire."
       ]
     }
   ]

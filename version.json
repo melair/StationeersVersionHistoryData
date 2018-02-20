@@ -1,4 +1,13 @@
 {
+  "0.1.1173.5851": {
+    "notes": [
+      "Fixed sounds of nearby structures in vacuum popping in and out while you're in a pressured room. Should no longer hear phantom sounds from machines in vacuum."
+    ],
+    "releases": {
+      "built": "2018-02-21T00:00:00+00:00",
+      "beta": "2018-02-20T20:01:12+00:00"
+    }
+  },
   "0.1.1172.5847": {
     "notes": [
       "Fixed radiators not working in vacuum. Radiators should now begin radiating heat again on the moon.",
