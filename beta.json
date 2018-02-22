@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1173.5851",
-    "date": "2018-02-21T00:00:00+00:00"
+    "version": "0.1.1175.5869",
+    "date": "2018-02-22T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1175.5869",
+      "notes": [
+        "Removed buggy bedrock texture - the bedrock level is not making it's way to the shader correctly. This data is already being reworked in a coming update.",
+        "Added decay state for chickens. Chicken corpses now disappear after a minute.",
+        "Added new Hydroponics Tray model.",
+        "Fixed accessing WorldAtmospheres adding a lock to GetAtmosphereLocal when accessing from outside the manager thread and redirecting all reading of WorldAtmosphere through GetAtmosphereLocal",
+        "Added warning for waste tank when it is broken, and therefore will leak air.",
+        "Added warning indicators and voice notification for Waste Tank. Now will disable warning when caution and critical, for either no waste tank existing, or over pressure. This helps avoid embarrassing instances where you have too much pressure in your waste tank and it explodes.",
+        "Added Ore Scanning. An item can be made called a \"Ground Penetrating Radar\". When activated, it scans the surrounding area. Using a Ore Scanner Cartridge in your tablet will allow you to view the scanned data. These items can be built on the Electronics Printer. This will help you locate different kinds of ores without having to directly mine. Different types of ores have different colors on the scan results.",
+        "Added voice notifications for Helmet Closed, and Helmet Opened. This will help avoid those embarrassing situations where you die because you pressed I and vented your breathing atmosphere into space, but didn't realize it was because your helmet was open."
+      ]
+    },
     {
       "version": "0.1.1173.5851",
       "notes": [
@@ -2226,20 +2239,7 @@
         "PrecisionPlacement now uses Prefab name rather then name (which was resulting in NREs)",
         "Fixed status info labels artifacting in Russian",
         "Enabled GPU instancing on all ColorSwatches, should cut down render batch calls on GPUs that support it.",
-        "error when displaying the mining drills on off interaction menu.",
-        "Added regular ASCII characters too Russian font",
-        "Fixed potential NRE when dropping anything with a Joint",
-        "Suit now correctly plays screen DamageEffect",
-        "Tooltips are now hidden while progress bar is visible.",
-        "Screen Damage effect should now only trigger when suit actually takes damage",
-        "Destroying chunks when chunkcontroller is cleared"
-      ]
-    },
-    {
-      "version": "0.1.903.4155",
-      "notes": [
-        "Refactored Structure creation to use local rotation references rather than world. This should avoid the rare bug where a client sees the objects all rotated in bizarre directions.",
-        "Added burnt cable variants. Currently only burnt by the welding torch. Future will burn when too much power is sent down a cable and from fire."
+        "error when displaying the mining drills on off interaction menu."
       ]
     }
   ]
