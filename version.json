@@ -1,4 +1,13 @@
 {
+  "0.1.1176.5874": {
+    "notes": [
+      "Fixed bug where status icons would not refresh properly when loading into a game where they should be visible."
+    ],
+    "releases": {
+      "built": "2018-02-22T00:00:00+00:00",
+      "beta": "2018-02-22T04:01:12+00:00"
+    }
+  },
   "0.1.1175.5869": {
     "notes": [
       "Removed buggy bedrock texture - the bedrock level is not making it's way to the shader correctly. This data is already being reworked in a coming update.",

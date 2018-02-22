@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1175.5869",
+    "version": "0.1.1176.5874",
     "date": "2018-02-22T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1176.5874",
+      "notes": [
+        "Fixed bug where status icons would not refresh properly when loading into a game where they should be visible."
+      ]
+    },
     {
       "version": "0.1.1175.5869",
       "notes": [
@@ -2237,9 +2243,7 @@
       "version": "0.1.905.4168",
       "notes": [
         "PrecisionPlacement now uses Prefab name rather then name (which was resulting in NREs)",
-        "Fixed status info labels artifacting in Russian",
-        "Enabled GPU instancing on all ColorSwatches, should cut down render batch calls on GPUs that support it.",
-        "error when displaying the mining drills on off interaction menu."
+        "Fixed status info labels artifacting in Russian"
       ]
     }
   ]
