@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1176.5874",
-    "date": "2018-02-22T00:00:00+00:00"
+    "version": "0.1.1177.5878",
+    "date": "2018-02-23T00:00:00+00:00"
   },
   "history": [
     {
@@ -2242,8 +2242,7 @@
     {
       "version": "0.1.905.4168",
       "notes": [
-        "PrecisionPlacement now uses Prefab name rather then name (which was resulting in NREs)",
-        "Fixed status info labels artifacting in Russian"
+        "PrecisionPlacement now uses Prefab name rather then name (which was resulting in NREs)"
       ]
     }
   ]

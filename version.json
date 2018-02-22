@@ -1,4 +1,13 @@
 {
+  "0.1.1177.5878": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-02-23T00:00:00+00:00",
+      "beta": "2018-02-22T20:01:10+00:00"
+    }
+  },
   "0.1.1176.5874": {
     "notes": [
       "Fixed bug where status icons would not refresh properly when loading into a game where they should be visible."
