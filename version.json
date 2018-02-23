@@ -1,4 +1,13 @@
 {
+  "0.1.1181.5904": {
+    "notes": [
+      "Fixed ore smelting gas always being output into world atmosphere. Now smelting gases in furnaces should output into connected pipe network again instead of world atmosphere."
+    ],
+    "releases": {
+      "built": "2018-02-23T00:00:00+00:00",
+      "beta": "2018-02-23T05:01:11+00:00"
+    }
+  },
   "0.1.1180.5902": {
     "notes": [
 

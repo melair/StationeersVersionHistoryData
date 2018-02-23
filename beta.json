@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1180.5902",
+    "version": "0.1.1181.5904",
     "date": "2018-02-23T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1181.5904",
+      "notes": [
+        "Fixed ore smelting gas always being output into world atmosphere. Now smelting gases in furnaces should output into connected pipe network again instead of world atmosphere."
+      ]
+    },
     {
       "version": "0.1.1179.5896",
       "notes": [
@@ -2239,8 +2245,7 @@
         "Original prefab is now cached out on each thing",
         "Changes made to V/H Float thresholds for animation over network",
         "Fixed more overflow issues from localisation",
-        "Made interaction buttons longer to accommodate more text",
-        "Reworked info panel for loads and saves"
+        "Made interaction buttons longer to accommodate more text"
       ]
     }
   ]
