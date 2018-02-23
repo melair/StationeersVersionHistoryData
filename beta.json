@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1177.5878",
+    "version": "0.1.1178.5891",
     "date": "2018-02-23T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1178.5891",
+      "notes": [
+        "Fixed ice not melting in vacuum. Ice now melts either if it is in a warm enough atmosphere, or if it's in sunlight and not in a cold atmosphere - including vacuum.",
+        "Fixed Open Workshop button on Workshop page to correctly take you to the page for the currently selected mod rather than the Stationeers workshop.",
+        "Fixed bug where smelting would calculate the resulting gas mixture cumulatively for stacks of ore, resulting in huge quantities of gas being produced. [credit: Risu]",
+        "Fixed water spreading. Water was not spreading after the global atmos update but has now been reintroduced and made to work with the global atmosphere system",
+        "Fixed labeller cancel button not doing anything.",
+        "Fixed Stairs being able to be built on top of eachother/other things - Stairs was overriding a wrapper method that wasn't being called wrapper method removed and override corrected",
+        "Added an egg carton to the starting crate.",
+        "Fixed DynamicGPR colliding with player when in an inventory slot - The item was tagged as \"CollidersAlwaysVisible\", should have been untagged",
+        "Added Potatoes to starter crate."
+      ]
+    },
     {
       "version": "0.1.1176.5874",
       "notes": [
@@ -2228,21 +2242,7 @@
         "Added Solid Fuel Generator. Powered from Coal ore.",
         "Fixed Battery able to connect to itself. Now will flash an error and disable operation if it is on the same input and output networks.",
         "Added a spark effect able to be called via network when a power cable is burned.",
-        "Refactored smelting process so that it can be used by other items in the game.",
-        "Characters should now be able to traverse airlocks correctly",
-        "Fixed issue with jumping in movement controller. sometimes wouldn't trigger",
-        "Fixed exit game popup. Now uses new Localization and has the correct buttons and text.",
-        "Suit Damage camera effect should now only play when negative suit damage is taken",
-        "Taking off another humans jumpsuit should now render their body correctly",
-        "Fixed burnt cables could be placed unlimited and would not collide with anything.",
-        "Added heavy cable.",
-        "Second pass on Character Customisation screen"
-      ]
-    },
-    {
-      "version": "0.1.905.4168",
-      "notes": [
-        "PrecisionPlacement now uses Prefab name rather then name (which was resulting in NREs)"
+        "Refactored smelting process so that it can be used by other items in the game."
       ]
     }
   ]
