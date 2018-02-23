@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1178.5891",
+    "version": "0.1.1179.5896",
     "date": "2018-02-23T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1179.5896",
+      "notes": [
+        "Added egg carton recipe for the fabricator",
+        "Added Baked Potato."
+      ]
+    },
     {
       "version": "0.1.1178.5891",
       "notes": [
@@ -2239,10 +2246,7 @@
     {
       "version": "0.1.906.4181",
       "notes": [
-        "Added Solid Fuel Generator. Powered from Coal ore.",
-        "Fixed Battery able to connect to itself. Now will flash an error and disable operation if it is on the same input and output networks.",
-        "Added a spark effect able to be called via network when a power cable is burned.",
-        "Refactored smelting process so that it can be used by other items in the game."
+        "Added Solid Fuel Generator. Powered from Coal ore."
       ]
     }
   ]

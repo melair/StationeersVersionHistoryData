@@ -1,4 +1,14 @@
 {
+  "0.1.1179.5896": {
+    "notes": [
+      "Added egg carton recipe for the fabricator",
+      "Added Baked Potato."
+    ],
+    "releases": {
+      "built": "2018-02-23T00:00:00+00:00",
+      "beta": "2018-02-23T03:01:11+00:00"
+    }
+  },
   "0.1.1178.5891": {
     "notes": [
       "Fixed ice not melting in vacuum. Ice now melts either if it is in a warm enough atmosphere, or if it's in sunlight and not in a cold atmosphere - including vacuum.",
