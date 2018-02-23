@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1179.5896",
+    "version": "0.1.1180.5902",
     "date": "2018-02-23T00:00:00+00:00"
   },
   "history": [
@@ -2241,12 +2241,6 @@
         "Fixed more overflow issues from localisation",
         "Made interaction buttons longer to accommodate more text",
         "Reworked info panel for loads and saves"
-      ]
-    },
-    {
-      "version": "0.1.906.4181",
-      "notes": [
-        "Added Solid Fuel Generator. Powered from Coal ore."
       ]
     }
   ]

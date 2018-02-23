@@ -1,4 +1,13 @@
 {
+  "0.1.1180.5902": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-02-23T00:00:00+00:00",
+      "beta": "2018-02-23T04:01:10+00:00"
+    }
+  },
   "0.1.1179.5896": {
     "notes": [
       "Added egg carton recipe for the fabricator",
