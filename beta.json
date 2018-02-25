@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1181.5904",
-    "date": "2018-02-23T00:00:00+00:00"
+    "version": "0.1.1182.5906",
+    "date": "2018-02-26T00:00:00+00:00"
   },
   "history": [
     {
@@ -2244,8 +2244,7 @@
         "Fixed splitting stacks",
         "Original prefab is now cached out on each thing",
         "Changes made to V/H Float thresholds for animation over network",
-        "Fixed more overflow issues from localisation",
-        "Made interaction buttons longer to accommodate more text"
+        "Fixed more overflow issues from localisation"
       ]
     }
   ]
