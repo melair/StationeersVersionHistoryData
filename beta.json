@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1182.5906",
+    "version": "0.1.1183.5913",
     "date": "2018-02-26T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1183.5913",
+      "notes": [
+        "Replaced Passive Vent model with new model.",
+        "Fixed cast bar getting stuck when consuming cereal bars too quickly.",
+        "Fixed airlocks leaking atmosphere when internal doors are open. 1x1 rooms should no longer leak atmosphere.",
+        "Missing material for baked potatoes."
+      ]
+    },
     {
       "version": "0.1.1181.5904",
       "notes": [
@@ -2235,16 +2244,6 @@
       "version": "0.1.908.4198",
       "notes": [
         "Temporarily disabled bedrock colour from rendering while I work on a more complete solution."
-      ]
-    },
-    {
-      "version": "0.1.907.4194",
-      "notes": [
-        "fixed locker entry item and removed it from the furniture kit",
-        "Fixed splitting stacks",
-        "Original prefab is now cached out on each thing",
-        "Changes made to V/H Float thresholds for animation over network",
-        "Fixed more overflow issues from localisation"
       ]
     }
   ]

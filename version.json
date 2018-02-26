@@ -1,4 +1,16 @@
 {
+  "0.1.1183.5913": {
+    "notes": [
+      "Replaced Passive Vent model with new model.",
+      "Fixed cast bar getting stuck when consuming cereal bars too quickly.",
+      "Fixed airlocks leaking atmosphere when internal doors are open. 1x1 rooms should no longer leak atmosphere.",
+      "Missing material for baked potatoes."
+    ],
+    "releases": {
+      "built": "2018-02-26T00:00:00+00:00",
+      "beta": "2018-02-26T05:01:11+00:00"
+    }
+  },
   "0.1.1182.5906": {
     "notes": [
 
