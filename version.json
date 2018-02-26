@@ -1,4 +1,13 @@
 {
+  "0.1.1184.5915": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-02-27T00:00:00+00:00",
+      "beta": "2018-02-26T20:01:13+00:00"
+    }
+  },
   "0.1.1183.5913": {
     "notes": [
       "Replaced Passive Vent model with new model.",
