@@ -1,4 +1,14 @@
 {
+  "0.1.1186.5926": {
+    "notes": [
+      "Fixed holes in terrain caused by registering with incorrect neighbours",
+      "Fixed incorrect mars atmosphere composition"
+    ],
+    "releases": {
+      "built": "2018-02-28T00:00:00+00:00",
+      "beta": "2018-02-27T22:01:11+00:00"
+    }
+  },
   "0.1.1185.5924": {
     "notes": [
       "Fixed items falling through terrain when loading a saved game caused by terrain not loading in properly around things",

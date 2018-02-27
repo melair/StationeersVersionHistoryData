@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1185.5924",
+    "version": "0.1.1186.5926",
     "date": "2018-02-28T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1186.5926",
+      "notes": [
+        "Fixed holes in terrain caused by registering with incorrect neighbours",
+        "Fixed incorrect mars atmosphere composition"
+      ]
+    },
     {
       "version": "0.1.1185.5924",
       "notes": [
@@ -2242,10 +2249,7 @@
         "Added placeholder setting for enabling popup chat",
         "Can now rotate your character on the character customization screen by clicking and dragging.",
         "Character customization screen cancel/confirm buttons and escape key returns to the menu rather than back to the game.",
-        "Player HUD now hidden when on the character customization screen.",
-        "Fixed issue with garbled text on load screen after using the main menu continue button.",
-        "Fixed picking atmosphere for particle causing out of range exception. Now locks the atmosphere container when picking and removing atmospheres.",
-        "Fixed bug with Battery and APC where they would still consider output if their output/input was null."
+        "Player HUD now hidden when on the character customization screen."
       ]
     }
   ]
