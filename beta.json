@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1184.5915",
-    "date": "2018-02-27T00:00:00+00:00"
+    "version": "0.1.1185.5924",
+    "date": "2018-02-28T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1185.5924",
+      "notes": [
+        "Fixed items falling through terrain when loading a saved game caused by terrain not loading in properly around things",
+        "Added World Settings are now saved out when the world is in worldsettings.xml.  When loading a game, if this file is not found it will fall back to the old method/presets.",
+        "Moved world settings to XML. All world settings are now exposed in XML. This allows for adding custom world types and exposing the settings in game",
+        "Added custom world generation parameters. It is now possible to define your own world terrain generation via XML",
+        "Improved speed of terrain generation significantly through micro optimisations and removing unnecessary bounds checking when setting voxel.",
+        "Fixed NRE by checking that CurrentBuildState is set before attempting to access its renderer.",
+        "Fixed will now display default image if no mod preview image is provided."
+      ]
+    },
     {
       "version": "0.1.1183.5913",
       "notes": [
@@ -2233,17 +2245,7 @@
         "Player HUD now hidden when on the character customization screen.",
         "Fixed issue with garbled text on load screen after using the main menu continue button.",
         "Fixed picking atmosphere for particle causing out of range exception. Now locks the atmosphere container when picking and removing atmospheres.",
-        "Fixed bug with Battery and APC where they would still consider output if their output/input was null.",
-        "Added breaking electrical cables on load too high.",
-        "Added fuses. Use Fuse Kit. Four variants (1k, 5k, 50k, 100k). Normal cables break at 5k. Fuses are mounted on top of cables and break them when power exceeds their rating.",
-        "Moved atmosphere visualizer trails to local space - trails now stay relative to mothership.",
-        "Added cached DeltaTime to GameManager - useful for threads and avoiding engine calls."
-      ]
-    },
-    {
-      "version": "0.1.908.4198",
-      "notes": [
-        "Temporarily disabled bedrock colour from rendering while I work on a more complete solution."
+        "Fixed bug with Battery and APC where they would still consider output if their output/input was null."
       ]
     }
   ]

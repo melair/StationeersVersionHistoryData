@@ -1,4 +1,19 @@
 {
+  "0.1.1185.5924": {
+    "notes": [
+      "Fixed items falling through terrain when loading a saved game caused by terrain not loading in properly around things",
+      "Added World Settings are now saved out when the world is in worldsettings.xml.  When loading a game, if this file is not found it will fall back to the old method/presets.",
+      "Moved world settings to XML. All world settings are now exposed in XML. This allows for adding custom world types and exposing the settings in game",
+      "Added custom world generation parameters. It is now possible to define your own world terrain generation via XML",
+      "Improved speed of terrain generation significantly through micro optimisations and removing unnecessary bounds checking when setting voxel.",
+      "Fixed NRE by checking that CurrentBuildState is set before attempting to access its renderer.",
+      "Fixed will now display default image if no mod preview image is provided."
+    ],
+    "releases": {
+      "built": "2018-02-28T00:00:00+00:00",
+      "beta": "2018-02-27T20:01:12+00:00"
+    }
+  },
   "0.1.1184.5915": {
     "notes": [
 
