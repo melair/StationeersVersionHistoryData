@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1187.5938",
+    "version": "0.1.1188.5944",
     "date": "2018-02-28T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1188.5944",
+      "notes": [
+        "Fixed broken scene reference to Speech Recognizer.",
+        "Changed Mars temperature to -60"
+      ]
+    },
     {
       "version": "0.1.1187.5938",
       "notes": [
@@ -2246,14 +2253,7 @@
     {
       "version": "0.1.912.4215",
       "notes": [
-        "New Voice sound samples from Audio Director so not done at runtime.",
-        "Fixed transformer not getting enough power to display error state when necessary."
-      ]
-    },
-    {
-      "version": "0.1.911.4213",
-      "notes": [
-        "Added mode strings for battery."
+        "New Voice sound samples from Audio Director so not done at runtime."
       ]
     }
   ]
