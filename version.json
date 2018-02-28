@@ -1,4 +1,19 @@
 {
+  "0.1.1187.5938": {
+    "notes": [
+      "Fixed issue where world settings were not being properly initialized if you started a second game without restarting the client.",
+      "Fixed issue where world name was not being set correctly when loading a game.",
+      "Disabled custom world parameters temporarily while a couple of server issues get resolved.",
+      "Changed automatically assigned tags for workshop saved game submissions.",
+      "Fixed stuttering introduced in 5919 by reverting some bad logic in WorldManager",
+      "Fixed error when pressing the create world button without selecting an option. It now defaults to the moon world if no button was selected",
+      "Fixed hunger no longer applies to characters inside a sleeper."
+    ],
+    "releases": {
+      "built": "2018-02-28T00:00:00+00:00",
+      "beta": "2018-02-28T02:01:12+00:00"
+    }
+  },
   "0.1.1186.5926": {
     "notes": [
       "Fixed holes in terrain caused by registering with incorrect neighbours",
