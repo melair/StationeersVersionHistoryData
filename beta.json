@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1188.5944",
-    "date": "2018-02-28T00:00:00+00:00"
+    "version": "0.1.1190.5949",
+    "date": "2018-03-01T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1189.5948",
+      "notes": [
+        "Fixed creative mode setting not applying correctly from map presets."
+      ]
+    },
     {
       "version": "0.1.1188.5944",
       "notes": [
@@ -2246,14 +2252,7 @@
         "Fixed issue with one face missing normal map",
         "Switched character creation screen mannequin animation to standing idle.",
         "Fixed bug with some HUD elements not returning after being in the character customization panel.",
-        "Instead of hiding the HUD in the character customization panel, it now hides for all menu windows.",
-        "Added settings page checkbox for Popup Chat Bubbles."
-      ]
-    },
-    {
-      "version": "0.1.912.4215",
-      "notes": [
-        "New Voice sound samples from Audio Director so not done at runtime."
+        "Instead of hiding the HUD in the character customization panel, it now hides for all menu windows."
       ]
     }
   ]

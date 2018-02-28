@@ -1,4 +1,22 @@
 {
+  "0.1.1190.5949": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-01T00:00:00+00:00",
+      "beta": "2018-02-28T20:01:11+00:00"
+    }
+  },
+  "0.1.1189.5948": {
+    "notes": [
+      "Fixed creative mode setting not applying correctly from map presets."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1188.5944": {
     "notes": [
       "Fixed broken scene reference to Speech Recognizer.",
