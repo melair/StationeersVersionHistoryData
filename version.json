@@ -1,4 +1,13 @@
 {
+  "0.1.1191.5952": {
+    "notes": [
+      "Added new localization strings for Workshop page"
+    ],
+    "releases": {
+      "built": "2018-03-02T00:00:00+00:00",
+      "beta": "2018-03-01T20:01:10+00:00"
+    }
+  },
   "0.1.1190.5949": {
     "notes": [
 

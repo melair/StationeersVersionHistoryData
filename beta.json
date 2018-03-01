@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1190.5949",
-    "date": "2018-03-01T00:00:00+00:00"
+    "version": "0.1.1191.5952",
+    "date": "2018-03-02T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1191.5952",
+      "notes": [
+        "Added new localization strings for Workshop page"
+      ]
+    },
     {
       "version": "0.1.1189.5948",
       "notes": [
@@ -2250,9 +2256,7 @@
         "Fixed duplicate skins and removed some old ones.",
         "Added several more skin colour combinations",
         "Fixed issue with one face missing normal map",
-        "Switched character creation screen mannequin animation to standing idle.",
-        "Fixed bug with some HUD elements not returning after being in the character customization panel.",
-        "Instead of hiding the HUD in the character customization panel, it now hides for all menu windows."
+        "Switched character creation screen mannequin animation to standing idle."
       ]
     }
   ]
