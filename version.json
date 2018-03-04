@@ -1,4 +1,16 @@
 {
+  "0.1.1192.5959": {
+    "notes": [
+      "Fixed motherships using the main global atmosphere to using their own copy - still more work to be done on the mothership AtmosControl",
+      "Fixed Tanks dynamic tanks in tank connectors colliding with motherships affecting the motherships movement",
+      "Made Mothership be affected by Gravity",
+      "Fixed NRE when fail to join server."
+    ],
+    "releases": {
+      "built": "2018-03-05T00:00:00+00:00",
+      "beta": "2018-03-04T20:01:11+00:00"
+    }
+  },
   "0.1.1191.5952": {
     "notes": [
       "Added new localization strings for Workshop page"

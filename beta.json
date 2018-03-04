@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1191.5952",
-    "date": "2018-03-02T00:00:00+00:00"
+    "version": "0.1.1192.5959",
+    "date": "2018-03-05T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1192.5959",
+      "notes": [
+        "Fixed motherships using the main global atmosphere to using their own copy - still more work to be done on the mothership AtmosControl",
+        "Fixed Tanks dynamic tanks in tank connectors colliding with motherships affecting the motherships movement",
+        "Made Mothership be affected by Gravity",
+        "Fixed NRE when fail to join server."
+      ]
+    },
     {
       "version": "0.1.1191.5952",
       "notes": [
@@ -2251,12 +2260,7 @@
         "DeviceBlockedList should now correctly clear on Server Shutdown",
         "Cached regulary used interactables as base clases on things for optimization and reduced garbage collection requirements.",
         "Fixed tablet not turning off when out of battery.",
-        "Ensured RoomController thread stopped on application quit.",
-        "Added missing updated skin materials.",
-        "Fixed duplicate skins and removed some old ones.",
-        "Added several more skin colour combinations",
-        "Fixed issue with one face missing normal map",
-        "Switched character creation screen mannequin animation to standing idle."
+        "Ensured RoomController thread stopped on application quit."
       ]
     }
   ]
