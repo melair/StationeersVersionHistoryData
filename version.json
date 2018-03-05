@@ -1,4 +1,21 @@
 {
+  "0.1.1193.5974": {
+    "notes": [
+      "Fixed dynamic scrubbers not working in global atmospheres. Dynamic Scrubbers should now be able filter and trap gasses from global (e.g. Martian) atmospheres.",
+      "Reverted global atmosphere per AtmosphericsController back to a single global atmosphere",
+      "Fixed most interactions on moving motherships - Now using the interpolated RigidBody position with the camera offset added. Camera position wont work properly while the player is moving",
+      "Added sun fading out at night time to reduce the occurrences of seeing the sun through the terrain and the terrain not casting shadows on objects",
+      "Fixed HandleCollision doing excessive work - HandleCollisionsWith was being called multiple times on each structure and was doing it for each other structure. Removed pointless checks and added a magnitude distance check using the bounds of both objects to see if they could potentially be touching.",
+      "Fixed items jittering when being pushed by a mothership. When their grid controller is changed to a mothership interpolation is enabled.",
+      "Fixed issue where Asteroids in space were not visible after loading from save.",
+      "Changed Active Vent model to new model, in line with other atmospheric item changes.",
+      "Added first pass of new New World Menu including custom world settings screen.  Customizing some settings not yet supported, so consider it a work-in-progress for now."
+    ],
+    "releases": {
+      "built": "2018-03-06T00:00:00+00:00",
+      "beta": "2018-03-05T20:01:11+00:00"
+    }
+  },
   "0.1.1192.5959": {
     "notes": [
       "Fixed motherships using the main global atmosphere to using their own copy - still more work to be done on the mothership AtmosControl",
