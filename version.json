@@ -1,4 +1,13 @@
 {
+  "0.1.1195.5989": {
+    "notes": [
+      "Fixed items and structures occluding when moving too fast. Things no longer flicker on and off when moving quickly on a mothership."
+    ],
+    "releases": {
+      "built": "2018-03-07T00:00:00+00:00",
+      "beta": "2018-03-06T20:01:12+00:00"
+    }
+  },
   "0.1.1194.5987": {
     "notes": [
       "Fixed self collision for all things in thing Awake",

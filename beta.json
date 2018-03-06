@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1194.5987",
-    "date": "2018-03-06T00:00:00+00:00"
+    "version": "0.1.1195.5989",
+    "date": "2018-03-07T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1195.5989",
+      "notes": [
+        "Fixed items and structures occluding when moving too fast. Things no longer flicker on and off when moving quickly on a mothership."
+      ]
+    },
     {
       "version": "0.1.1194.5987",
       "notes": [
@@ -2258,9 +2264,7 @@
       "notes": [
         "New Alert and Confirmation dialog boxes",
         "Updated HUD animations",
-        "Centered interactions panel when in hands",
-        "Repositioned character in Character Customisation screen along with a few menu changes",
-        "Fixed bug with transformer still considering itself receiving power if input cable missing."
+        "Centered interactions panel when in hands"
       ]
     }
   ]
