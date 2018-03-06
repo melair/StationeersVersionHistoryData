@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1193.5974",
+    "version": "0.1.1194.5987",
     "date": "2018-03-06T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1194.5987",
+      "notes": [
+        "Fixed self collision for all things in thing Awake",
+        "Fixed construction tooltip while building on moving mothership",
+        "Fixed motherships velocity is now correctly clamped. This value will probably change but it's set to the same as the player for now.",
+        "Fixed motherships constantly pitching/yawing before snapping back to upright after collision.",
+        "Fixed being unable to build on mothership while it's moving. Still some problems when the ship is rotating that need fixing.",
+        "Fixed tooltips jittering on motherships.",
+        "Fixed Active Vent missing box collider so could not be deconstructed. Now has correct collider."
+      ]
+    },
     {
       "version": "0.1.1193.5974",
       "notes": [
@@ -2248,19 +2260,7 @@
         "Updated HUD animations",
         "Centered interactions panel when in hands",
         "Repositioned character in Character Customisation screen along with a few menu changes",
-        "Fixed bug with transformer still considering itself receiving power if input cable missing.",
-        "Added Wall mounted small transformer.",
-        "IK's disabled for Offline players"
-      ]
-    },
-    {
-      "version": "0.1.915.4255",
-      "notes": [
-        "Added additional logging.",
-        "Fixed Collection accessing on thread.",
-        "Fixed picking things up out of moving crates. The crate was trying to throw stuff.",
-        "New Jump and falling animations added",
-        "Changes made to jump animation setting so its smoother"
+        "Fixed bug with transformer still considering itself receiving power if input cable missing."
       ]
     }
   ]

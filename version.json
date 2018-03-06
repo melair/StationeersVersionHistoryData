@@ -1,4 +1,19 @@
 {
+  "0.1.1194.5987": {
+    "notes": [
+      "Fixed self collision for all things in thing Awake",
+      "Fixed construction tooltip while building on moving mothership",
+      "Fixed motherships velocity is now correctly clamped. This value will probably change but it's set to the same as the player for now.",
+      "Fixed motherships constantly pitching/yawing before snapping back to upright after collision.",
+      "Fixed being unable to build on mothership while it's moving. Still some problems when the ship is rotating that need fixing.",
+      "Fixed tooltips jittering on motherships.",
+      "Fixed Active Vent missing box collider so could not be deconstructed. Now has correct collider."
+    ],
+    "releases": {
+      "built": "2018-03-06T00:00:00+00:00",
+      "beta": "2018-03-06T06:01:11+00:00"
+    }
+  },
   "0.1.1193.5974": {
     "notes": [
       "Fixed dynamic scrubbers not working in global atmospheres. Dynamic Scrubbers should now be able filter and trap gasses from global (e.g. Martian) atmospheres.",
