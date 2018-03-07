@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1195.5989",
-    "date": "2018-03-07T00:00:00+00:00"
+    "version": "0.1.1196.6000",
+    "date": "2018-03-08T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1196.6000",
+      "notes": [
+        "Added an option in misc settings to enable a bare bones menu with no particles",
+        "Fixed issue with on/off sounds on Wall Heaters/Coolers MaxDistance setting, meaning they were always playing at full volume no matter where the player was in relation to them.  Let us know if you notice any other objects behaving in a similar way.",
+        "Fixed Clients joining servers with custom global atmosphere. Client now receives the global gas mix during the joining phase"
+      ]
+    },
     {
       "version": "0.1.1195.5989",
       "notes": [
@@ -2257,14 +2265,6 @@
         "Character maxspeed Velocity cap should now apply on mars",
         "Updated dropdown menu",
         "Updated old references to ItemConsole to the renamed ItemKitConsole in crates that contained them."
-      ]
-    },
-    {
-      "version": "0.1.916.4259",
-      "notes": [
-        "New Alert and Confirmation dialog boxes",
-        "Updated HUD animations",
-        "Centered interactions panel when in hands"
       ]
     }
   ]
