@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1196.6000",
+    "version": "0.1.1197.6007",
     "date": "2018-03-08T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1197.6007",
+      "notes": [
+        "Added Soy Oil that can be produced in the Reagent Processor from Soy Beans.",
+        "Added Fries that can be made in the microwave using a Potato and a small quantity of Soy Oil. Provides a lot of calories.",
+        "Added Baked Potato recipe. One potato can now be turned into a baked potato in the microwave, for more nutrition.",
+        "Changed Portable Scrubber. Now will suck in all atmosphere when no filter is installed. Also added a level, when open, the internal atmosphere of the scrubber will be ejected into the world. This makes the scrubber more useful for different functions, such as clearing all of an atmosphere from a room on a planet."
+      ]
+    },
     {
       "version": "0.1.1196.6000",
       "notes": [
@@ -2255,16 +2264,6 @@
         "PrecisionIK added to Items for things like guns etc",
         "Improvements made to aiming of EnergyGun",
         "Initial commit of monster. currently does nothing but chase ship"
-      ]
-    },
-    {
-      "version": "0.1.917.4264",
-      "notes": [
-        "Made text larger for Labeller UI",
-        "Characters should now be able to jump on mars",
-        "Character maxspeed Velocity cap should now apply on mars",
-        "Updated dropdown menu",
-        "Updated old references to ItemConsole to the renamed ItemKitConsole in crates that contained them."
       ]
     }
   ]
