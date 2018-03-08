@@ -1,4 +1,13 @@
 {
+  "0.1.1198.6011": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-09T00:00:00+00:00",
+      "beta": "2018-03-08T20:04:57+00:00"
+    }
+  },
   "0.1.1197.6007": {
     "notes": [
       "Added Soy Oil that can be produced in the Reagent Processor from Soy Beans.",
