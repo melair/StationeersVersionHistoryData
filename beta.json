@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1198.6011",
-    "date": "2018-03-09T00:00:00+00:00"
+    "version": "0.1.1200.6022",
+    "date": "2018-03-10T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1199.6020",
+      "notes": [
+        "Fixed bug with Scrubber not venting air when set to Open due to exceeded pressure error state. Now will vent even when completely full, if the lever is open.",
+        "Added Portable Solar. When placed outside of inventory, the panels will open. A battery can be placed inside, and available sunlight will be used to slowly charge the battery. Can be constructed using the Electronics Printer, using similar resources to the large solar panel.",
+        "Added Heavy Cable variant for 4-way corner piece. Constructable from Heavy Cable Coil.",
+        "Changed heavy cable to models which were more distinct and fitting with aesthetic of the game.",
+        "Added 3-way corner heavy cable model, in line with normal cable coil corner.",
+        "Fixed out of focus main menu",
+        "Added DOF to be removed when enabling menu lite option",
+        "Fix construction cursor flickering when building walls and windows."
+      ]
+    },
     {
       "version": "0.1.1197.6007",
       "notes": [
@@ -2245,25 +2258,6 @@
         "Interim commit of save screen changes.  Still work in progress.",
         "Refactored Device Import and Export system to always take conveyor/chute/or slot inputs.",
         "Fixed incorrect character rotation on save"
-      ]
-    },
-    {
-      "version": "0.1.919.4270",
-      "notes": [
-        "Added WeaponEnergyPistol that will replace the old energy weapon. Has two modes (Stun & Kill). Can overheat. When too hot, will error and open its cooling rail until it cools again. Has a chance to ignite somethings. Will ignite the air it is in.",
-        "Refactored the Medical Scanner.",
-        "Damage states now synchronized to clients for everything within their range.",
-        "Fixed bug with ClientControl not syncing across network causing IK to not function"
-      ]
-    },
-    {
-      "version": "0.1.918.4267",
-      "notes": [
-        "First pass on Monster, currently just paths no shooting",
-        "Fixed bug with camera unclipping when reconnecting as a previously Unconscious Player",
-        "PrecisionIK added to Items for things like guns etc",
-        "Improvements made to aiming of EnergyGun",
-        "Initial commit of monster. currently does nothing but chase ship"
       ]
     }
   ]

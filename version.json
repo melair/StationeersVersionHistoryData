@@ -1,4 +1,29 @@
 {
+  "0.1.1200.6022": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-10T00:00:00+00:00",
+      "beta": "2018-03-10T07:01:11+00:00"
+    }
+  },
+  "0.1.1199.6020": {
+    "notes": [
+      "Fixed bug with Scrubber not venting air when set to Open due to exceeded pressure error state. Now will vent even when completely full, if the lever is open.",
+      "Added Portable Solar. When placed outside of inventory, the panels will open. A battery can be placed inside, and available sunlight will be used to slowly charge the battery. Can be constructed using the Electronics Printer, using similar resources to the large solar panel.",
+      "Added Heavy Cable variant for 4-way corner piece. Constructable from Heavy Cable Coil.",
+      "Changed heavy cable to models which were more distinct and fitting with aesthetic of the game.",
+      "Added 3-way corner heavy cable model, in line with normal cable coil corner.",
+      "Fixed out of focus main menu",
+      "Added DOF to be removed when enabling menu lite option",
+      "Fix construction cursor flickering when building walls and windows."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1198.6011": {
     "notes": [
 
