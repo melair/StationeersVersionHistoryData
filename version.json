@@ -1,4 +1,13 @@
 {
+  "0.1.1204.6031": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-13T00:00:00+00:00",
+      "beta": "2018-03-12T20:01:11+00:00"
+    }
+  },
   "0.1.1203.6028": {
     "notes": [
       "Fixed another couple of instances where sounds had incorrect MaxDistance values set and as a result could be heard much further away than intended."
