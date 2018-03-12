@@ -1,4 +1,14 @@
 {
+  "0.1.1202.6025": {
+    "notes": [
+      "Fixed a bug with room data was not cleaned up when session ended.",
+      "Fixed an issue atmosphere would exit when deleting Sleeper."
+    ],
+    "releases": {
+      "built": "2018-03-12T00:00:00+00:00",
+      "beta": "2018-03-12T01:01:11+00:00"
+    }
+  },
   "0.1.1201.6023": {
     "notes": [
 

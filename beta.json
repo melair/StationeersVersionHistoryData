@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1201.6023",
+    "version": "0.1.1202.6025",
     "date": "2018-03-12T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1202.6025",
+      "notes": [
+        "Fixed a bug with room data was not cleaned up when session ended.",
+        "Fixed an issue atmosphere would exit when deleting Sleeper."
+      ]
+    },
     {
       "version": "0.1.1199.6020",
       "notes": [
@@ -2254,10 +2261,7 @@
         "Fixed tanks now placed on the small grid, for ease of placement.",
         "Recipes now can include min/max Pressure and Temperature values, to allow different requirements for smelting and cooking.",
         "First pass of power CSV - dumps and parses constant power usage (appliances, tools, devices)",
-        "Placeholder for a portrait view added to status info panel",
-        "Interim commit of save screen changes.  Still work in progress.",
-        "Refactored Device Import and Export system to always take conveyor/chute/or slot inputs.",
-        "Fixed incorrect character rotation on save"
+        "Placeholder for a portrait view added to status info panel"
       ]
     }
   ]
