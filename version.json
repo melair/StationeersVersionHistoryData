@@ -1,4 +1,13 @@
 {
+  "0.1.1203.6028": {
+    "notes": [
+      "Fixed another couple of instances where sounds had incorrect MaxDistance values set and as a result could be heard much further away than intended."
+    ],
+    "releases": {
+      "built": "2018-03-12T00:00:00+00:00",
+      "beta": "2018-03-12T03:01:11+00:00"
+    }
+  },
   "0.1.1202.6025": {
     "notes": [
       "Fixed a bug with room data was not cleaned up when session ended.",

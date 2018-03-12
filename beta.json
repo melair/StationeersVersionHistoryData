@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1202.6025",
+    "version": "0.1.1203.6028",
     "date": "2018-03-12T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1203.6028",
+      "notes": [
+        "Fixed another couple of instances where sounds had incorrect MaxDistance values set and as a result could be heard much further away than intended."
+      ]
+    },
     {
       "version": "0.1.1202.6025",
       "notes": [
@@ -2259,9 +2265,7 @@
         "Corrected ordering of asteroid prefab loading to make sure it always includes the correct bedrock level",
         "Fixed jittering in mothership room",
         "Fixed tanks now placed on the small grid, for ease of placement.",
-        "Recipes now can include min/max Pressure and Temperature values, to allow different requirements for smelting and cooking.",
-        "First pass of power CSV - dumps and parses constant power usage (appliances, tools, devices)",
-        "Placeholder for a portrait view added to status info panel"
+        "Recipes now can include min/max Pressure and Temperature values, to allow different requirements for smelting and cooking."
       ]
     }
   ]
