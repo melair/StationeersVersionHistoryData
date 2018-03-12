@@ -1,9 +1,152 @@
 {
   "current": {
-    "version": "0.1.1181.5904",
-    "date": "2018-02-23T00:00:00+00:00"
+    "version": "0.1.1203.6028",
+    "date": "2018-03-12T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1203.6028",
+      "notes": [
+        "Fixed another couple of instances where sounds had incorrect MaxDistance values set and as a result could be heard much further away than intended."
+      ]
+    },
+    {
+      "version": "0.1.1202.6025",
+      "notes": [
+        "Fixed a bug with room data was not cleaned up when session ended.",
+        "Fixed an issue atmosphere would exit when deleting Sleeper."
+      ]
+    },
+    {
+      "version": "0.1.1199.6020",
+      "notes": [
+        "Fixed bug with Scrubber not venting air when set to Open due to exceeded pressure error state. Now will vent even when completely full, if the lever is open.",
+        "Added Portable Solar. When placed outside of inventory, the panels will open. A battery can be placed inside, and available sunlight will be used to slowly charge the battery. Can be constructed using the Electronics Printer, using similar resources to the large solar panel.",
+        "Added Heavy Cable variant for 4-way corner piece. Constructable from Heavy Cable Coil.",
+        "Changed heavy cable to models which were more distinct and fitting with aesthetic of the game.",
+        "Added 3-way corner heavy cable model, in line with normal cable coil corner.",
+        "Fixed out of focus main menu",
+        "Added DOF to be removed when enabling menu lite option",
+        "Fix construction cursor flickering when building walls and windows."
+      ]
+    },
+    {
+      "version": "0.1.1197.6007",
+      "notes": [
+        "Added Soy Oil that can be produced in the Reagent Processor from Soy Beans.",
+        "Added Fries that can be made in the microwave using a Potato and a small quantity of Soy Oil. Provides a lot of calories.",
+        "Added Baked Potato recipe. One potato can now be turned into a baked potato in the microwave, for more nutrition.",
+        "Changed Portable Scrubber. Now will suck in all atmosphere when no filter is installed. Also added a level, when open, the internal atmosphere of the scrubber will be ejected into the world. This makes the scrubber more useful for different functions, such as clearing all of an atmosphere from a room on a planet."
+      ]
+    },
+    {
+      "version": "0.1.1196.6000",
+      "notes": [
+        "Added an option in misc settings to enable a bare bones menu with no particles",
+        "Fixed issue with on/off sounds on Wall Heaters/Coolers MaxDistance setting, meaning they were always playing at full volume no matter where the player was in relation to them.  Let us know if you notice any other objects behaving in a similar way.",
+        "Fixed Clients joining servers with custom global atmosphere. Client now receives the global gas mix during the joining phase"
+      ]
+    },
+    {
+      "version": "0.1.1195.5989",
+      "notes": [
+        "Fixed items and structures occluding when moving too fast. Things no longer flicker on and off when moving quickly on a mothership."
+      ]
+    },
+    {
+      "version": "0.1.1194.5987",
+      "notes": [
+        "Fixed self collision for all things in thing Awake",
+        "Fixed construction tooltip while building on moving mothership",
+        "Fixed motherships velocity is now correctly clamped. This value will probably change but it's set to the same as the player for now.",
+        "Fixed motherships constantly pitching/yawing before snapping back to upright after collision.",
+        "Fixed being unable to build on mothership while it's moving. Still some problems when the ship is rotating that need fixing.",
+        "Fixed tooltips jittering on motherships.",
+        "Fixed Active Vent missing box collider so could not be deconstructed. Now has correct collider."
+      ]
+    },
+    {
+      "version": "0.1.1193.5974",
+      "notes": [
+        "Fixed dynamic scrubbers not working in global atmospheres. Dynamic Scrubbers should now be able filter and trap gasses from global (e.g. Martian) atmospheres.",
+        "Reverted global atmosphere per AtmosphericsController back to a single global atmosphere",
+        "Fixed most interactions on moving motherships - Now using the interpolated RigidBody position with the camera offset added. Camera position wont work properly while the player is moving",
+        "Added sun fading out at night time to reduce the occurrences of seeing the sun through the terrain and the terrain not casting shadows on objects",
+        "Fixed HandleCollision doing excessive work - HandleCollisionsWith was being called multiple times on each structure and was doing it for each other structure. Removed pointless checks and added a magnitude distance check using the bounds of both objects to see if they could potentially be touching.",
+        "Fixed items jittering when being pushed by a mothership. When their grid controller is changed to a mothership interpolation is enabled.",
+        "Fixed issue where Asteroids in space were not visible after loading from save.",
+        "Changed Active Vent model to new model, in line with other atmospheric item changes.",
+        "Added first pass of new New World Menu including custom world settings screen.  Customizing some settings not yet supported, so consider it a work-in-progress for now."
+      ]
+    },
+    {
+      "version": "0.1.1192.5959",
+      "notes": [
+        "Fixed motherships using the main global atmosphere to using their own copy - still more work to be done on the mothership AtmosControl",
+        "Fixed Tanks dynamic tanks in tank connectors colliding with motherships affecting the motherships movement",
+        "Made Mothership be affected by Gravity",
+        "Fixed NRE when fail to join server."
+      ]
+    },
+    {
+      "version": "0.1.1191.5952",
+      "notes": [
+        "Added new localization strings for Workshop page"
+      ]
+    },
+    {
+      "version": "0.1.1189.5948",
+      "notes": [
+        "Fixed creative mode setting not applying correctly from map presets."
+      ]
+    },
+    {
+      "version": "0.1.1188.5944",
+      "notes": [
+        "Fixed broken scene reference to Speech Recognizer.",
+        "Changed Mars temperature to -60"
+      ]
+    },
+    {
+      "version": "0.1.1187.5938",
+      "notes": [
+        "Fixed issue where world settings were not being properly initialized if you started a second game without restarting the client.",
+        "Fixed issue where world name was not being set correctly when loading a game.",
+        "Disabled custom world parameters temporarily while a couple of server issues get resolved.",
+        "Changed automatically assigned tags for workshop saved game submissions.",
+        "Fixed stuttering introduced in 5919 by reverting some bad logic in WorldManager",
+        "Fixed error when pressing the create world button without selecting an option. It now defaults to the moon world if no button was selected",
+        "Fixed hunger no longer applies to characters inside a sleeper."
+      ]
+    },
+    {
+      "version": "0.1.1186.5926",
+      "notes": [
+        "Fixed holes in terrain caused by registering with incorrect neighbours",
+        "Fixed incorrect mars atmosphere composition"
+      ]
+    },
+    {
+      "version": "0.1.1185.5924",
+      "notes": [
+        "Fixed items falling through terrain when loading a saved game caused by terrain not loading in properly around things",
+        "Added World Settings are now saved out when the world is in worldsettings.xml.  When loading a game, if this file is not found it will fall back to the old method/presets.",
+        "Moved world settings to XML. All world settings are now exposed in XML. This allows for adding custom world types and exposing the settings in game",
+        "Added custom world generation parameters. It is now possible to define your own world terrain generation via XML",
+        "Improved speed of terrain generation significantly through micro optimisations and removing unnecessary bounds checking when setting voxel.",
+        "Fixed NRE by checking that CurrentBuildState is set before attempting to access its renderer.",
+        "Fixed will now display default image if no mod preview image is provided."
+      ]
+    },
+    {
+      "version": "0.1.1183.5913",
+      "notes": [
+        "Replaced Passive Vent model with new model.",
+        "Fixed cast bar getting stuck when consuming cereal bars too quickly.",
+        "Fixed airlocks leaking atmosphere when internal doors are open. 1x1 rooms should no longer leak atmosphere.",
+        "Missing material for baked potatoes."
+      ]
+    },
     {
       "version": "0.1.1181.5904",
       "notes": [
@@ -2122,130 +2265,7 @@
         "Corrected ordering of asteroid prefab loading to make sure it always includes the correct bedrock level",
         "Fixed jittering in mothership room",
         "Fixed tanks now placed on the small grid, for ease of placement.",
-        "Recipes now can include min/max Pressure and Temperature values, to allow different requirements for smelting and cooking.",
-        "First pass of power CSV - dumps and parses constant power usage (appliances, tools, devices)",
-        "Placeholder for a portrait view added to status info panel",
-        "Interim commit of save screen changes.  Still work in progress.",
-        "Refactored Device Import and Export system to always take conveyor/chute/or slot inputs.",
-        "Fixed incorrect character rotation on save"
-      ]
-    },
-    {
-      "version": "0.1.919.4270",
-      "notes": [
-        "Added WeaponEnergyPistol that will replace the old energy weapon. Has two modes (Stun & Kill). Can overheat. When too hot, will error and open its cooling rail until it cools again. Has a chance to ignite somethings. Will ignite the air it is in.",
-        "Refactored the Medical Scanner.",
-        "Damage states now synchronized to clients for everything within their range.",
-        "Fixed bug with ClientControl not syncing across network causing IK to not function"
-      ]
-    },
-    {
-      "version": "0.1.918.4267",
-      "notes": [
-        "First pass on Monster, currently just paths no shooting",
-        "Fixed bug with camera unclipping when reconnecting as a previously Unconscious Player",
-        "PrecisionIK added to Items for things like guns etc",
-        "Improvements made to aiming of EnergyGun",
-        "Initial commit of monster. currently does nothing but chase ship"
-      ]
-    },
-    {
-      "version": "0.1.917.4264",
-      "notes": [
-        "Made text larger for Labeller UI",
-        "Characters should now be able to jump on mars",
-        "Character maxspeed Velocity cap should now apply on mars",
-        "Updated dropdown menu",
-        "Updated old references to ItemConsole to the renamed ItemKitConsole in crates that contained them."
-      ]
-    },
-    {
-      "version": "0.1.916.4259",
-      "notes": [
-        "New Alert and Confirmation dialog boxes",
-        "Updated HUD animations",
-        "Centered interactions panel when in hands",
-        "Repositioned character in Character Customisation screen along with a few menu changes",
-        "Fixed bug with transformer still considering itself receiving power if input cable missing.",
-        "Added Wall mounted small transformer.",
-        "IK's disabled for Offline players"
-      ]
-    },
-    {
-      "version": "0.1.915.4255",
-      "notes": [
-        "Added additional logging.",
-        "Fixed Collection accessing on thread.",
-        "Fixed picking things up out of moving crates. The crate was trying to throw stuff.",
-        "New Jump and falling animations added",
-        "Changes made to jump animation setting so its smoother"
-      ]
-    },
-    {
-      "version": "0.1.914.4245",
-      "notes": [
-        "Mothership is set not kinematic after one second after creation",
-        "Removed unity FindLocalObject calls. Replaced with NetworkThing.Find. Reduced GC significantly.",
-        "Offline players & HumanNPC's should now have their IK look forward when offline rather then down or in another random direction",
-        "fixed bedrock level issue on client",
-        "DeviceBlockedList for A* should now correctly removed devices",
-        "DeviceBlockedList should now correctly clear on Server Shutdown",
-        "Cached regulary used interactables as base clases on things for optimization and reduced garbage collection requirements.",
-        "Fixed tablet not turning off when out of battery.",
-        "Ensured RoomController thread stopped on application quit.",
-        "Added missing updated skin materials.",
-        "Fixed duplicate skins and removed some old ones.",
-        "Added several more skin colour combinations",
-        "Fixed issue with one face missing normal map",
-        "Switched character creation screen mannequin animation to standing idle.",
-        "Fixed bug with some HUD elements not returning after being in the character customization panel.",
-        "Instead of hiding the HUD in the character customization panel, it now hides for all menu windows.",
-        "Added settings page checkbox for Popup Chat Bubbles."
-      ]
-    },
-    {
-      "version": "0.1.912.4215",
-      "notes": [
-        "New Voice sound samples from Audio Director so not done at runtime.",
-        "Fixed transformer not getting enough power to display error state when necessary."
-      ]
-    },
-    {
-      "version": "0.1.911.4213",
-      "notes": [
-        "Added mode strings for battery.",
-        "Fixed bug with Particle Thread not be closed on game exit, and causing lockups.",
-        "Added Transformer. Use to step up/down power consumption safely.",
-        "A* Should now block cells that are mostly devices",
-        "First pass on new loading screen",
-        "Added placeholder setting for enabling popup chat",
-        "Can now rotate your character on the character customization screen by clicking and dragging.",
-        "Character customization screen cancel/confirm buttons and escape key returns to the menu rather than back to the game.",
-        "Player HUD now hidden when on the character customization screen.",
-        "Fixed issue with garbled text on load screen after using the main menu continue button.",
-        "Fixed picking atmosphere for particle causing out of range exception. Now locks the atmosphere container when picking and removing atmospheres.",
-        "Fixed bug with Battery and APC where they would still consider output if their output/input was null.",
-        "Added breaking electrical cables on load too high.",
-        "Added fuses. Use Fuse Kit. Four variants (1k, 5k, 50k, 100k). Normal cables break at 5k. Fuses are mounted on top of cables and break them when power exceeds their rating.",
-        "Moved atmosphere visualizer trails to local space - trails now stay relative to mothership.",
-        "Added cached DeltaTime to GameManager - useful for threads and avoiding engine calls."
-      ]
-    },
-    {
-      "version": "0.1.908.4198",
-      "notes": [
-        "Temporarily disabled bedrock colour from rendering while I work on a more complete solution."
-      ]
-    },
-    {
-      "version": "0.1.907.4194",
-      "notes": [
-        "fixed locker entry item and removed it from the furniture kit",
-        "Fixed splitting stacks",
-        "Original prefab is now cached out on each thing",
-        "Changes made to V/H Float thresholds for animation over network",
-        "Fixed more overflow issues from localisation",
-        "Made interaction buttons longer to accommodate more text"
+        "Recipes now can include min/max Pressure and Temperature values, to allow different requirements for smelting and cooking."
       ]
     }
   ]
