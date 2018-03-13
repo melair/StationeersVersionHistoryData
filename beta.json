@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1206.6039",
+    "version": "0.1.1207.6041",
     "date": "2018-03-14T00:00:00+00:00"
   },
   "history": [
@@ -2262,8 +2262,7 @@
       "version": "0.1.921.4296",
       "notes": [
         "Fixed centrifuge causing exception. Was nuked by sound change.",
-        "Added player portrait camera. Scales with UI. Can be disabled under gameplay options in settings menu.",
-        "Fixed ArgumentOutOfRangeException in LogicConditionMessage."
+        "Added player portrait camera. Scales with UI. Can be disabled under gameplay options in settings menu."
       ]
     }
   ]
