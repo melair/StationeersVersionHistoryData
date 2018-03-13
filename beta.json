@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1204.6031",
-    "date": "2018-03-13T00:00:00+00:00"
+    "version": "0.1.1206.6039",
+    "date": "2018-03-14T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1205.6038",
+      "notes": [
+        "Fixed over stacking plants when harvesting, now they drop in the world instead",
+        "Added random rotation to plants when they are plated",
+        "Fixed issue with Disable Particles on Menu checkbox behaviour being inverted and not applying correctly on load.",
+        "Fixed issue where manually entering a decimal value on a settings slider would result in an error."
+      ]
+    },
     {
       "version": "0.1.1203.6028",
       "notes": [
@@ -2255,16 +2264,6 @@
         "Fixed centrifuge causing exception. Was nuked by sound change.",
         "Added player portrait camera. Scales with UI. Can be disabled under gameplay options in settings menu.",
         "Fixed ArgumentOutOfRangeException in LogicConditionMessage."
-      ]
-    },
-    {
-      "version": "0.1.920.4289",
-      "notes": [
-        "bedrock asteroids fixed on Load",
-        "mining drill has a slower mining speed",
-        "Corrected ordering of asteroid prefab loading to make sure it always includes the correct bedrock level",
-        "Fixed jittering in mothership room",
-        "Fixed tanks now placed on the small grid, for ease of placement."
       ]
     }
   ]

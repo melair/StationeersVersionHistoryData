@@ -1,4 +1,25 @@
 {
+  "0.1.1206.6039": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-14T00:00:00+00:00",
+      "beta": "2018-03-13T21:01:11+00:00"
+    }
+  },
+  "0.1.1205.6038": {
+    "notes": [
+      "Fixed over stacking plants when harvesting, now they drop in the world instead",
+      "Added random rotation to plants when they are plated",
+      "Fixed issue with Disable Particles on Menu checkbox behaviour being inverted and not applying correctly on load.",
+      "Fixed issue where manually entering a decimal value on a settings slider would result in an error."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1204.6031": {
     "notes": [
 
