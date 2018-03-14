@@ -1,4 +1,13 @@
 {
+  "0.1.1208.6043": {
+    "notes": [
+      "Fixed issue where clients would have issues joining dedicated servers running the Mars map."
+    ],
+    "releases": {
+      "built": "2018-03-15T00:00:00+00:00",
+      "beta": "2018-03-14T20:01:11+00:00"
+    }
+  },
   "0.1.1207.6041": {
     "notes": [
 

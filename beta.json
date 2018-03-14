@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1207.6041",
-    "date": "2018-03-14T00:00:00+00:00"
+    "version": "0.1.1208.6043",
+    "date": "2018-03-15T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1208.6043",
+      "notes": [
+        "Fixed issue where clients would have issues joining dedicated servers running the Mars map."
+      ]
+    },
     {
       "version": "0.1.1205.6038",
       "notes": [
@@ -2256,13 +2262,6 @@
         "Dumps and Processes battery storage capacity and generation values.",
         "Fixed body mesh not showing in portrait when naked.",
         "Fixed bug with facialHair turning invisible when too close"
-      ]
-    },
-    {
-      "version": "0.1.921.4296",
-      "notes": [
-        "Fixed centrifuge causing exception. Was nuked by sound change.",
-        "Added player portrait camera. Scales with UI. Can be disabled under gameplay options in settings menu."
       ]
     }
   ]
