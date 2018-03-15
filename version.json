@@ -1,4 +1,14 @@
 {
+  "0.1.1210.6049": {
+    "notes": [
+      "Added power used by individual devices to network analyser display in place of the 'Powered' message.",
+      "Fixed Milk to now work with food consumption changes."
+    ],
+    "releases": {
+      "built": "2018-03-15T00:00:00+00:00",
+      "beta": "2018-03-15T04:01:12+00:00"
+    }
+  },
   "0.1.1209.6046": {
     "notes": [
       "Modified food consumption based on player feedback.  Each item now provides a set quantity of calories, and can be consumed in as small or large increments as you like, based on how long you hold down the SecondaryAction button.  You can no longer consume food beyond 100%.  Different foods contain varied amounts of calories and can be consumed at varying speeds, very roughly balanced around ingredients and complexity of production (likely to change).",

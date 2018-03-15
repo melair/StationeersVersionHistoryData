@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1209.6046",
+    "version": "0.1.1210.6049",
     "date": "2018-03-15T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1210.6049",
+      "notes": [
+        "Added power used by individual devices to network analyser display in place of the 'Powered' message.",
+        "Fixed Milk to now work with food consumption changes."
+      ]
+    },
     {
       "version": "0.1.1209.6046",
       "notes": [
@@ -2259,14 +2266,6 @@
         "Moved CSVs out of Resources folder into Editor folder",
         "Dumped temperature CSVs to file instead of debug.log",
         "fixed incorrect bodySkin material assignment when changing skin colour"
-      ]
-    },
-    {
-      "version": "0.1.922.4301",
-      "notes": [
-        "Fixed null reference when starting game with new PortraitCamera.",
-        "Fixed CSV dumper to use the right path now - saves Resource folder relative path instead of Asset.",
-        "Dumps and Processes battery storage capacity and generation values."
       ]
     }
   ]
