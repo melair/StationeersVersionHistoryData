@@ -1,4 +1,13 @@
 {
+  "0.1.1211.6051": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-16T00:00:00+00:00",
+      "beta": "2018-03-15T20:01:12+00:00"
+    }
+  },
   "0.1.1210.6049": {
     "notes": [
       "Added power used by individual devices to network analyser display in place of the 'Powered' message.",
