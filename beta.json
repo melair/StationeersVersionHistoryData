@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1208.6043",
+    "version": "0.1.1209.6046",
     "date": "2018-03-15T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1209.6046",
+      "notes": [
+        "Modified food consumption based on player feedback.  Each item now provides a set quantity of calories, and can be consumed in as small or large increments as you like, based on how long you hold down the SecondaryAction button.  You can no longer consume food beyond 100%.  Different foods contain varied amounts of calories and can be consumed at varying speeds, very roughly balanced around ingredients and complexity of production (likely to change).",
+        "Fixed power usage value of reversed stacker so it uses as much as the default version."
+      ]
+    },
     {
       "version": "0.1.1208.6043",
       "notes": [
@@ -2259,9 +2266,7 @@
       "notes": [
         "Fixed null reference when starting game with new PortraitCamera.",
         "Fixed CSV dumper to use the right path now - saves Resource folder relative path instead of Asset.",
-        "Dumps and Processes battery storage capacity and generation values.",
-        "Fixed body mesh not showing in portrait when naked.",
-        "Fixed bug with facialHair turning invisible when too close"
+        "Dumps and Processes battery storage capacity and generation values."
       ]
     }
   ]
