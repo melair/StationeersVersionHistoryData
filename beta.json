@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1211.6051",
-    "date": "2018-03-16T00:00:00+00:00"
+    "version": "0.1.1212.6057",
+    "date": "2018-03-17T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1212.6057",
+      "notes": [
+        "Fixed Skeletons will no longer decompose if flagged as Indestructible.",
+        "Fixed Removed superfluous raycast on solar panels.",
+        "Fixed issue calculating correct nutrition values to give from eating items.",
+        "Fixed issue where consuming a whole piece of food at once would reward no nutrition."
+      ]
+    },
     {
       "version": "0.1.1210.6049",
       "notes": [
@@ -2257,15 +2266,6 @@
         "Added chute window object that allows you to see object traversing through it.",
         "Fixed portrait camera breaking game when loading second world from menu.",
         "Fixed energy pistol not working."
-      ]
-    },
-    {
-      "version": "0.1.923.4307",
-      "notes": [
-        "Adjusted labeller UI",
-        "Moved CSVs out of Resources folder into Editor folder",
-        "Dumped temperature CSVs to file instead of debug.log",
-        "fixed incorrect bodySkin material assignment when changing skin colour"
       ]
     }
   ]
