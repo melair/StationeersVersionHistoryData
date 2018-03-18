@@ -1,4 +1,13 @@
 {
+  "0.1.1213.6058": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-19T00:00:00+00:00",
+      "beta": "2018-03-18T20:01:12+00:00"
+    }
+  },
   "0.1.1212.6057": {
     "notes": [
       "Fixed Skeletons will no longer decompose if flagged as Indestructible.",
