@@ -1,4 +1,13 @@
 {
+  "0.1.1214.6060": {
+    "notes": [
+      "Fixed problem where stackers would occasionally back up by changing their order of execution."
+    ],
+    "releases": {
+      "built": "2018-03-19T00:00:00+00:00",
+      "beta": "2018-03-18T21:01:15+00:00"
+    }
+  },
   "0.1.1213.6058": {
     "notes": [
 
