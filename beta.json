@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1215.6065",
-    "date": "2018-03-19T00:00:00+00:00"
+    "version": "0.1.1216.6070",
+    "date": "2018-03-20T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1216.6070",
+      "notes": [
+        "Fixed Network Analyser now reports correct power usage values including draw from heating or battery charging etc. rather than just the base usage of the device itself."
+      ]
+    },
     {
       "version": "0.1.1215.6065",
       "notes": [
@@ -2267,8 +2273,7 @@
         "fixed crystal visualizers not being destroyed on clients",
         "fixed floating mesh geometry that was sometimes present after mining asteroids",
         "Fixed Structure Window doesn't respawn after deconstruction. Quantity was set to zero.",
-        "Fixed Interactions icon on Items that don't have interaction function causing Errors. Slot interactions should be excluded from HasKeyInteractions, and now are. [STAT-520]",
-        "Reexported CSVs with right display names. Make sure game is running before dumping CSVs."
+        "Fixed Interactions icon on Items that don't have interaction function causing Errors. Slot interactions should be excluded from HasKeyInteractions, and now are. [STAT-520]"
       ]
     }
   ]

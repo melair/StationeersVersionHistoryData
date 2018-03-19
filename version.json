@@ -1,4 +1,13 @@
 {
+  "0.1.1216.6070": {
+    "notes": [
+      "Fixed Network Analyser now reports correct power usage values including draw from heating or battery charging etc. rather than just the base usage of the device itself."
+    ],
+    "releases": {
+      "built": "2018-03-20T00:00:00+00:00",
+      "beta": "2018-03-19T20:01:12+00:00"
+    }
+  },
   "0.1.1215.6065": {
     "notes": [
       "Fixed issue couldn't load broken save file caused by same reference ID of object.",
