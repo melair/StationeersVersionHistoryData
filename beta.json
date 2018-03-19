@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1214.6060",
+    "version": "0.1.1215.6065",
     "date": "2018-03-19T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1215.6065",
+      "notes": [
+        "Fixed issue couldn't load broken save file caused by same reference ID of object.",
+        "Added Manufacturing machines current recipe and job progress now persist through save/load."
+      ]
+    },
     {
       "version": "0.1.1214.6060",
       "notes": [
@@ -2262,14 +2269,6 @@
         "Fixed Structure Window doesn't respawn after deconstruction. Quantity was set to zero.",
         "Fixed Interactions icon on Items that don't have interaction function causing Errors. Slot interactions should be excluded from HasKeyInteractions, and now are. [STAT-520]",
         "Reexported CSVs with right display names. Make sure game is running before dumping CSVs."
-      ]
-    },
-    {
-      "version": "0.1.925.4313",
-      "notes": [
-        "Fixed Chute inlet (and possible some other DeviceImport children) not colliding on second entry.",
-        "Imported Mason's power settings. Passive power usage and power generation.",
-        "Added chute window object that allows you to see object traversing through it."
       ]
     }
   ]
