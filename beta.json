@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1217.6071",
-    "date": "2018-03-21T00:00:00+00:00"
+    "version": "0.1.1218.6078",
+    "date": "2018-03-22T00:00:00+00:00"
   },
   "history": [
+    {
+      "version": "0.1.1218.6078",
+      "notes": [
+        "Fixed frame drop caused by garbage created by SolarPanel."
+      ]
+    },
     {
       "version": "0.1.1216.6070",
       "notes": [
@@ -2270,9 +2276,7 @@
         "Made engines check operability in OnServerTick - should hopefully alleviate issues with Engines incorrectly being in an error state.",
         "Fixed Grabbing Ragdolled character from great distance causes suit damage [STAT-516]",
         "refactored mining time and amount on the mining tools",
-        "fixed crystal visualizers not being destroyed on clients",
-        "fixed floating mesh geometry that was sometimes present after mining asteroids",
-        "Fixed Structure Window doesn't respawn after deconstruction. Quantity was set to zero."
+        "fixed crystal visualizers not being destroyed on clients"
       ]
     }
   ]

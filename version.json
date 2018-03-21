@@ -1,4 +1,13 @@
 {
+  "0.1.1218.6078": {
+    "notes": [
+      "Fixed frame drop caused by garbage created by SolarPanel."
+    ],
+    "releases": {
+      "built": "2018-03-22T00:00:00+00:00",
+      "beta": "2018-03-21T20:01:11+00:00"
+    }
+  },
   "0.1.1217.6071": {
     "notes": [
 
