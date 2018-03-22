@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1218.6078",
-    "date": "2018-03-22T00:00:00+00:00"
+    "version": "0.1.1219.6080",
+    "date": "2018-03-23T00:00:00+00:00"
   },
   "history": [
     {
@@ -2275,8 +2275,7 @@
         "Fixed transformer switch was badly rotated.",
         "Made engines check operability in OnServerTick - should hopefully alleviate issues with Engines incorrectly being in an error state.",
         "Fixed Grabbing Ragdolled character from great distance causes suit damage [STAT-516]",
-        "refactored mining time and amount on the mining tools",
-        "fixed crystal visualizers not being destroyed on clients"
+        "refactored mining time and amount on the mining tools"
       ]
     }
   ]
