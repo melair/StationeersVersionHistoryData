@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1219.6080",
+    "version": "0.1.1220.6082",
     "date": "2018-03-23T00:00:00+00:00"
   },
   "history": [
@@ -2274,8 +2274,7 @@
         "Fixed Alert panel not resizing initially",
         "Fixed transformer switch was badly rotated.",
         "Made engines check operability in OnServerTick - should hopefully alleviate issues with Engines incorrectly being in an error state.",
-        "Fixed Grabbing Ragdolled character from great distance causes suit damage [STAT-516]",
-        "refactored mining time and amount on the mining tools"
+        "Fixed Grabbing Ragdolled character from great distance causes suit damage [STAT-516]"
       ]
     }
   ]
