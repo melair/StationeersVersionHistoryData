@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1220.6082",
-    "date": "2018-03-23T00:00:00+00:00"
+    "version": "0.1.1222.6084",
+    "date": "2018-03-27T00:00:00+01:00"
   },
   "history": [
     {
@@ -2272,9 +2272,7 @@
         "Fixed walls not batching - use .sharedMesh instead of .mesh since we're not modifying verts, just changing references.",
         "Fixed Player can see hand of dragged player in his face in the portrait view [STAT-533]",
         "Fixed Alert panel not resizing initially",
-        "Fixed transformer switch was badly rotated.",
-        "Made engines check operability in OnServerTick - should hopefully alleviate issues with Engines incorrectly being in an error state.",
-        "Fixed Grabbing Ragdolled character from great distance causes suit damage [STAT-516]"
+        "Fixed transformer switch was badly rotated."
       ]
     }
   ]
