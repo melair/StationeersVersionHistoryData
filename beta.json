@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1222.6084",
-    "date": "2018-03-27T00:00:00+01:00"
+    "version": "0.1.1223.6091",
+    "date": "2018-03-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1223.6091",
+      "notes": [
+        "Fixed Rocket Engines gauge needle rotating around the wrong axis. Needles on the rocket engine gauge should no longer rotate into it's face.",
+        "Added missing normal and heavy cable variants (4-way and 5-way corners).",
+        "Cable variant construction list order is now shared across both cable types.",
+        "Fixed some inconsistencies around cable configuration and rotation restrictions.",
+        "Fixed performance problem with ConsoleDebug - added an additional check before setting _fadingOut to true as it was always being set back to true."
+      ]
+    },
     {
       "version": "0.1.1218.6078",
       "notes": [
@@ -2266,13 +2276,7 @@
       "notes": [
         "First pass of Arc Furnace. Electrically powered furnace for smelting basic metals early game.",
         "added some test values to ensure xml settings are working.  Steel and gold requires pressure and temps to smelt, as a test.",
-        "STAT - 436. Drill anim should now correctly disable after use",
-        "Fixed NRE in CameraColorControl when rejoin several times",
-        "Fixed Exceptions when clear objects reviewed by Simon",
-        "Fixed walls not batching - use .sharedMesh instead of .mesh since we're not modifying verts, just changing references.",
-        "Fixed Player can see hand of dragged player in his face in the portrait view [STAT-533]",
-        "Fixed Alert panel not resizing initially",
-        "Fixed transformer switch was badly rotated."
+        "STAT - 436. Drill anim should now correctly disable after use"
       ]
     }
   ]
