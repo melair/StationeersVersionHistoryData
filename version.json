@@ -1,4 +1,37 @@
 {
+  "0.1.1226.6099": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-03-30T00:00:00+01:00",
+      "beta": "2018-03-29T23:01:10+01:00"
+    }
+  },
+  "0.1.1225.6098": {
+    "notes": [
+      "Fixed Issue using chutes with Furnaces, Simple Fabricators and Stackers occasionally causing them to get jammed due to incorrect execution order. [Credit: Kamuchi]",
+      "Fixed Issue where machines could occasionally output incorrectly sized stacks due to a rounding error. [Credit: Risu]",
+      "Fixed Issue with slots on some objects not being occluded based on range correctly. [Credit: Risu]",
+      "Fixed missing burnt cable reference for Heavy Cable 5-Way Junction.",
+      "Added localization key for Burnt Heavy Cable 5-Way Junction.",
+      "fixed spelling of pipe analyser",
+      "Removed unused intro vidoes"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1224.6093": {
+    "notes": [
+      "Re-enabled flagging of items as out of bounds"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1223.6091": {
     "notes": [
       "Fixed Rocket Engines gauge needle rotating around the wrong axis. Needles on the rocket engine gauge should no longer rotate into it's face.",

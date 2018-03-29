@@ -1,9 +1,27 @@
 {
   "current": {
-    "version": "0.1.1223.6091",
-    "date": "2018-03-28T00:00:00+01:00"
+    "version": "0.1.1226.6099",
+    "date": "2018-03-30T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1225.6098",
+      "notes": [
+        "Fixed Issue using chutes with Furnaces, Simple Fabricators and Stackers occasionally causing them to get jammed due to incorrect execution order. [Credit: Kamuchi]",
+        "Fixed Issue where machines could occasionally output incorrectly sized stacks due to a rounding error. [Credit: Risu]",
+        "Fixed Issue with slots on some objects not being occluded based on range correctly. [Credit: Risu]",
+        "Fixed missing burnt cable reference for Heavy Cable 5-Way Junction.",
+        "Added localization key for Burnt Heavy Cable 5-Way Junction.",
+        "fixed spelling of pipe analyser",
+        "Removed unused intro vidoes"
+      ]
+    },
+    {
+      "version": "0.1.1224.6093",
+      "notes": [
+        "Re-enabled flagging of items as out of bounds"
+      ]
+    },
     {
       "version": "0.1.1223.6091",
       "notes": [
@@ -2257,26 +2275,7 @@
         "Unified tooltip coloring.",
         "Added message on furnace indicating what the current reagent mix will turn into.",
         "Fixed issue with fabricator resetting item back to steel sheets when changing quantity on the job entry.",
-        "Added clear functions for lists in static class ScreenFilter",
-        "Updated look of new chat bubbles",
-        "Fixed broken build on dedicated server",
-        "Added AWAY_MISSION preprocessor to disable AwayMissionManager for a while",
-        "Mining drill is no longer made smaller when in your inventory."
-      ]
-    },
-    {
-      "version": "0.1.927.4336",
-      "notes": [
-        "Fixed centrigure and other no atmosphere devices were not producing anything.",
-        "Stat- 435 Item pickaxe now plays anim and particle"
-      ]
-    },
-    {
-      "version": "0.1.926.4332",
-      "notes": [
-        "First pass of Arc Furnace. Electrically powered furnace for smelting basic metals early game.",
-        "added some test values to ensure xml settings are working.  Steel and gold requires pressure and temps to smelt, as a test.",
-        "STAT - 436. Drill anim should now correctly disable after use"
+        "Added clear functions for lists in static class ScreenFilter"
       ]
     }
   ]
