@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1226.6099",
+    "version": "0.1.1227.6101",
     "date": "2018-03-30T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1227.6101",
+      "notes": [
+        "Fixed issue with plants showing all growth states at once in storage or when dropped in world."
+      ]
+    },
     {
       "version": "0.1.1225.6098",
       "notes": [
@@ -2273,9 +2279,7 @@
         "Cleaned up console output log look",
         "Fixed chat bubbles looking stretched",
         "Unified tooltip coloring.",
-        "Added message on furnace indicating what the current reagent mix will turn into.",
-        "Fixed issue with fabricator resetting item back to steel sheets when changing quantity on the job entry.",
-        "Added clear functions for lists in static class ScreenFilter"
+        "Added message on furnace indicating what the current reagent mix will turn into."
       ]
     }
   ]
