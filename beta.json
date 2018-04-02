@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1227.6101",
-    "date": "2018-03-30T00:00:00+01:00"
+    "version": "0.1.1230.6105",
+    "date": "2018-04-03T00:00:00+01:00"
   },
   "history": [
     {
@@ -2276,10 +2276,7 @@
         "Added extra visual effects to arc furnace smelting.",
         "Added basic recipes to Arc Furnace.",
         "First pass on HUD chat panel",
-        "Cleaned up console output log look",
-        "Fixed chat bubbles looking stretched",
-        "Unified tooltip coloring.",
-        "Added message on furnace indicating what the current reagent mix will turn into."
+        "Cleaned up console output log look"
       ]
     }
   ]

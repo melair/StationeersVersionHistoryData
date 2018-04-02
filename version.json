@@ -1,4 +1,13 @@
 {
+  "0.1.1230.6105": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-04-03T00:00:00+01:00",
+      "beta": "2018-04-02T23:01:11+01:00"
+    }
+  },
   "0.1.1227.6101": {
     "notes": [
       "Fixed issue with plants showing all growth states at once in storage or when dropped in world."
