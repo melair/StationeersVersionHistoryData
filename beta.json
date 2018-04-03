@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1232.6108",
-    "date": "2018-04-03T00:00:00+01:00"
+    "version": "0.1.1234.6112",
+    "date": "2018-04-04T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1234.6112",
+      "notes": [
+        "Fixed bug where the quantity of food consumed would be removed from the item twice, resulting in consuming a full item rewarding no nutrition."
+      ]
+    },
     {
       "version": "0.1.1227.6101",
       "notes": [
@@ -2267,14 +2273,6 @@
         "Added some options to crystal instance",
         "Fixed broken OcclusionManager in dedicated server",
         "Added custom colors to dedicated server"
-      ]
-    },
-    {
-      "version": "0.1.928.4352",
-      "notes": [
-        "Removed hard-coded pressure and temperature requirements of smelter. Now these are defined in recipes.",
-        "Added extra visual effects to arc furnace smelting.",
-        "Added basic recipes to Arc Furnace."
       ]
     }
   ]

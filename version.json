@@ -1,4 +1,13 @@
 {
+  "0.1.1234.6112": {
+    "notes": [
+      "Fixed bug where the quantity of food consumed would be removed from the item twice, resulting in consuming a full item rewarding no nutrition."
+    ],
+    "releases": {
+      "built": "2018-04-04T00:00:00+01:00",
+      "beta": "2018-04-03T23:01:11+01:00"
+    }
+  },
   "0.1.1232.6108": {
     "notes": [
 
