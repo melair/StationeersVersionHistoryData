@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1231.6106",
+    "version": "0.1.1232.6108",
     "date": "2018-04-03T00:00:00+01:00"
   },
   "history": [
@@ -2274,8 +2274,7 @@
       "notes": [
         "Removed hard-coded pressure and temperature requirements of smelter. Now these are defined in recipes.",
         "Added extra visual effects to arc furnace smelting.",
-        "Added basic recipes to Arc Furnace.",
-        "First pass on HUD chat panel"
+        "Added basic recipes to Arc Furnace."
       ]
     }
   ]
