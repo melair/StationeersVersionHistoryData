@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1234.6112",
-    "date": "2018-04-04T00:00:00+01:00"
+    "version": "0.1.1235.6122",
+    "date": "2018-04-05T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1235.6122",
+      "notes": [
+        "First pass on dock for motherships - they work as airlocks currently except that if an airlock is on a mothership and gets close to a non-mothership airlock then it will auto align itself and move it to the docking position. This is probably not final behaviour.",
+        "Added Corner Cut version of steel frames, the the last missing variant for the existing cosmetic frame corner options.",
+        "Added new Skybox elements - Now there's stars and they move with the sun"
+      ]
+    },
     {
       "version": "0.1.1234.6112",
       "notes": [
@@ -2270,9 +2278,7 @@
         "changed world type on new button",
         "Added placeholder for Moon map in New World menu",
         "First pass of new world type: moon.",
-        "Added some options to crystal instance",
-        "Fixed broken OcclusionManager in dedicated server",
-        "Added custom colors to dedicated server"
+        "Added some options to crystal instance"
       ]
     }
   ]
