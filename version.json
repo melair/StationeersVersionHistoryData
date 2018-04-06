@@ -1,4 +1,41 @@
 {
+  "0.1.1241.6148": {
+    "notes": [
+      "Fixed Missing cladding type now appears in the construction kit as an available option.",
+      "Regenerated blueprints for cladding that had some graphical artefacts.",
+      "Fixed collision box size for several cladding types."
+    ],
+    "releases": {
+      "built": "2018-04-06T00:00:00+01:00",
+      "beta": "2018-04-06T15:35:08+01:00"
+    }
+  },
+  "0.1.1240.6146": {
+    "notes": [
+      "Added missing mirrored variant of long angled corner cladding.",
+      "Added vertex shader to plants for slight movement",
+      "Fixed console screen interactions flickering when moving quickly. Console buttons should now be able to be selected correctly on fast moving motherships.",
+      "Fixed wilted plants being deleted immediately."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1237.6132": {
+    "notes": [
+      "Added 12 variants of cladding, a paintable, largely cosmetic outer layer for your base.  Blocks sunlight but not atmosphere.  Grouped into Angled, Cylindrical, Spherical and Rounded options.  Deconstructed using the Angle Grinder.  ItemKitCompositeCladding craftable in the Fabricator or Autolathe for 1 Iron per kit.",
+      "Fixed bug where Iron Wall Kits were twice as expensive to manufacture in the Fabricator vs the Autolathe.",
+      "Fixed collider issue on new CornerCut frame piece.",
+      "Added Flags.  Small, paintable objects that remain visible for 2x the distance of frames, to make it easier to mark the way back to base in case your tracker runs out of power.  Craftable in the Tool Manufacturer and available in one of your starting crates.",
+      "Fixed stars not appearing if switching from a mars map during the day to a moon or space map.",
+      "Fixed bug where some actions would not be performed correctly if using SecondaryAction mapped to a key rather than a mouse button."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1235.6122": {
     "notes": [
       "First pass on dock for motherships - they work as airlocks currently except that if an airlock is on a mothership and gets close to a non-mothership airlock then it will auto align itself and move it to the docking position. This is probably not final behaviour.",
