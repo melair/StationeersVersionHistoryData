@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1241.6148",
-    "date": "2018-04-06T00:00:00+01:00"
+    "version": "0.1.1243.6151",
+    "date": "2018-04-10T00:00:00+01:00"
   },
   "history": [
     {
@@ -2278,9 +2278,7 @@
     {
       "version": "0.1.932.4387",
       "notes": [
-        "Fixed bug with arc furnace not smelting anything.",
-        "Third pass on Autolathe. Now correctly manufactures items and uses reagents. Only configured with two items, for test data.",
-        "Added 4 Antialiasing options to game. Default is SSAA (cheapest)."
+        "Fixed bug with arc furnace not smelting anything."
       ]
     }
   ]

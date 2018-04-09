@@ -1,4 +1,13 @@
 {
+  "0.1.1243.6151": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-04-10T00:00:00+01:00",
+      "beta": "2018-04-09T22:01:13+01:00"
+    }
+  },
   "0.1.1241.6148": {
     "notes": [
       "Fixed Missing cladding type now appears in the construction kit as an available option.",
