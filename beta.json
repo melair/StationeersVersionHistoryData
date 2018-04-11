@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1245.6158",
+    "version": "0.1.1247.6166",
     "date": "2018-04-12T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1247.6166",
+      "notes": [
+        "Fixed dedicated server could play some kind of client sounds."
+      ]
+    },
+    {
+      "version": "0.1.1246.6163",
+      "notes": [
+        "Fixed 5-way heavy cables de-spawn on game reload"
+      ]
+    },
     {
       "version": "0.1.1241.6148",
       "notes": [
@@ -2269,10 +2281,7 @@
         "TerrainPath finding added to A*. NPC's should now be able to navigate from terrain to inside rooms etc",
         "GridPathfinder should now correctly check if a door is open before pathing through",
         "Fixed lights on things occluding too early when turning away. All Things now take lights into account when calculating occlusion bounding radius.",
-        "Fixed reagent stack loses reagent values when being split.",
-        "Added CartridgeElectronicReader. A cartridge that displays all the current recipes in the game. Scroll to a new recipe with your mouse wheel and it will display all the requirements.",
-        "Removed old body part prefabs as they were obsolete.",
-        "ItemKitPipe is now used as a multiconstructor to make all kinds of basic pipe, the same as for cable coil."
+        "Fixed reagent stack loses reagent values when being split."
       ]
     }
   ]

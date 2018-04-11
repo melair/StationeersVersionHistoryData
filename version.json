@@ -1,4 +1,22 @@
 {
+  "0.1.1247.6166": {
+    "notes": [
+      "Fixed dedicated server could play some kind of client sounds."
+    ],
+    "releases": {
+      "built": "2018-04-12T00:00:00+01:00",
+      "beta": "2018-04-12T00:01:12+01:00"
+    }
+  },
+  "0.1.1246.6163": {
+    "notes": [
+      "Fixed 5-way heavy cables de-spawn on game reload"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1245.6158": {
     "notes": [
 
