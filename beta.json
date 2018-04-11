@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1243.6151",
-    "date": "2018-04-10T00:00:00+01:00"
+    "version": "0.1.1245.6158",
+    "date": "2018-04-12T00:00:00+01:00"
   },
   "history": [
     {
@@ -2273,12 +2273,6 @@
         "Added CartridgeElectronicReader. A cartridge that displays all the current recipes in the game. Scroll to a new recipe with your mouse wheel and it will display all the requirements.",
         "Removed old body part prefabs as they were obsolete.",
         "ItemKitPipe is now used as a multiconstructor to make all kinds of basic pipe, the same as for cable coil."
-      ]
-    },
-    {
-      "version": "0.1.932.4387",
-      "notes": [
-        "Fixed bug with arc furnace not smelting anything."
       ]
     }
   ]
