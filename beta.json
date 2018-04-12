@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1248.6168",
-    "date": "2018-04-12T00:00:00+01:00"
+    "version": "0.1.1249.6170",
+    "date": "2018-04-13T00:00:00+01:00"
   },
   "history": [
     {
@@ -2279,8 +2279,7 @@
         "Monster will now navigate spherically around a mothership and shoot eggs (that currently do nothing)",
         "Fixed incorrect caching on hairProp",
         "TerrainPath finding added to A*. NPC's should now be able to navigate from terrain to inside rooms etc",
-        "GridPathfinder should now correctly check if a door is open before pathing through",
-        "Fixed lights on things occluding too early when turning away. All Things now take lights into account when calculating occlusion bounding radius."
+        "GridPathfinder should now correctly check if a door is open before pathing through"
       ]
     }
   ]
