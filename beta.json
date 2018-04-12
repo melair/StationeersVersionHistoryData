@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1247.6166",
+    "version": "0.1.1248.6168",
     "date": "2018-04-12T00:00:00+01:00"
   },
   "history": [
@@ -2280,8 +2280,7 @@
         "Fixed incorrect caching on hairProp",
         "TerrainPath finding added to A*. NPC's should now be able to navigate from terrain to inside rooms etc",
         "GridPathfinder should now correctly check if a door is open before pathing through",
-        "Fixed lights on things occluding too early when turning away. All Things now take lights into account when calculating occlusion bounding radius.",
-        "Fixed reagent stack loses reagent values when being split."
+        "Fixed lights on things occluding too early when turning away. All Things now take lights into account when calculating occlusion bounding radius."
       ]
     }
   ]

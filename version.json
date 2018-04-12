@@ -1,4 +1,13 @@
 {
+  "0.1.1248.6168": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-04-12T00:00:00+01:00",
+      "beta": "2018-04-12T01:01:10+01:00"
+    }
+  },
   "0.1.1247.6166": {
     "notes": [
       "Fixed dedicated server could play some kind of client sounds."
