@@ -1,4 +1,16 @@
 {
+  "0.1.1250.6175": {
+    "notes": [
+      "Fixed bug with some recipes not recognizing the correct list of ingredients due to small floating point precision errors.",
+      "Replaced models for WallCooler, WallHeater and WallLights.",
+      "Fixed stuttering sounds of object on Mars.",
+      "Fixed MaxVoltage value on 5-way Heavy Power Cable Junction.  Was 50k instead of 100k."
+    ],
+    "releases": {
+      "built": "2018-04-14T00:00:00+01:00",
+      "beta": "2018-04-14T05:01:11+01:00"
+    }
+  },
   "0.1.1249.6170": {
     "notes": [
 
