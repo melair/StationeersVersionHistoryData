@@ -1,4 +1,13 @@
 {
+  "0.1.1251.6176": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-04-16T00:00:00+01:00",
+      "beta": "2018-04-15T22:01:13+01:00"
+    }
+  },
   "0.1.1250.6175": {
     "notes": [
       "Fixed bug with some recipes not recognizing the correct list of ingredients due to small floating point precision errors.",

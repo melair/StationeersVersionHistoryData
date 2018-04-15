@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1250.6175",
-    "date": "2018-04-14T00:00:00+01:00"
+    "version": "0.1.1251.6176",
+    "date": "2018-04-16T00:00:00+01:00"
   },
   "history": [
     {
@@ -2282,8 +2282,7 @@
         "Did a small test pass on time values",
         "Allowed steel to be smelted with hydrocarbons",
         "Cached GameManager.FixedTime for use in thread",
-        "Move several update functions on NPC to OnLifeTick",
-        "Fixed Build error in stackables"
+        "Move several update functions on NPC to OnLifeTick"
       ]
     }
   ]
