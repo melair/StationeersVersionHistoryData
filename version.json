@@ -1,4 +1,15 @@
 {
+  "0.1.1252.6182": {
+    "notes": [
+      "Fixed issue where machine inventories were not displaying portions of their contents correctly.",
+      "Fixed NRE when player respawned while building mode.",
+      "Fixed various visual issues with new Wall devices (Cooler, Heater, Lights)."
+    ],
+    "releases": {
+      "built": "2018-04-16T00:00:00+01:00",
+      "beta": "2018-04-16T06:01:11+01:00"
+    }
+  },
   "0.1.1251.6176": {
     "notes": [
 

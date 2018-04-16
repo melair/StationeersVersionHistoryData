@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1251.6176",
+    "version": "0.1.1252.6182",
     "date": "2018-04-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1252.6182",
+      "notes": [
+        "Fixed issue where machine inventories were not displaying portions of their contents correctly.",
+        "Fixed NRE when player respawned while building mode.",
+        "Fixed various visual issues with new Wall devices (Cooler, Heater, Lights)."
+      ]
+    },
     {
       "version": "0.1.1250.6175",
       "notes": [
@@ -2278,11 +2286,7 @@
         "Fixed poor camera position of portrait camera.",
         "Fixed ReagentMixtures breaking on split stack.",
         "Added first pass of tracker.",
-        "added more basic recipes to the autolathe and balanced their reagent values",
-        "Did a small test pass on time values",
-        "Allowed steel to be smelted with hydrocarbons",
-        "Cached GameManager.FixedTime for use in thread",
-        "Move several update functions on NPC to OnLifeTick"
+        "added more basic recipes to the autolathe and balanced their reagent values"
       ]
     }
   ]
