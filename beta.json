@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1253.6184",
+    "version": "0.1.1254.6186",
     "date": "2018-04-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1254.6186",
+      "notes": [
+        "Fixed value not set on wall cooler construction kit preventing them from being placed."
+      ]
+    },
     {
       "version": "0.1.1253.6184",
       "notes": [
@@ -2288,9 +2294,7 @@
         "Added first pass of Iron Frames.",
         "increased number caters from 0",
         "Second pass on moon planet. Now with craters and more ores!",
-        "First pass of AirlockControl logic fixes. Initialization after restoration of power now tries to retain current door state, failsafing to open external doors if needed.",
-        "Fixed poor camera position of portrait camera.",
-        "Fixed ReagentMixtures breaking on split stack."
+        "First pass of AirlockControl logic fixes. Initialization after restoration of power now tries to retain current door state, failsafing to open external doors if needed."
       ]
     }
   ]
