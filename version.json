@@ -1,4 +1,13 @@
 {
+  "0.1.1253.6184": {
+    "notes": [
+      "Fixed Server now synchronizes game mode with clients, so if modified manually in the save this change should now correctly propagate to clients."
+    ],
+    "releases": {
+      "built": "2018-04-17T00:00:00+01:00",
+      "beta": "2018-04-16T22:01:11+01:00"
+    }
+  },
   "0.1.1252.6182": {
     "notes": [
       "Fixed issue where machine inventories were not displaying portions of their contents correctly.",

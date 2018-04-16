@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1252.6182",
-    "date": "2018-04-16T00:00:00+01:00"
+    "version": "0.1.1253.6184",
+    "date": "2018-04-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1253.6184",
+      "notes": [
+        "Fixed Server now synchronizes game mode with clients, so if modified manually in the save this change should now correctly propagate to clients."
+      ]
+    },
     {
       "version": "0.1.1252.6182",
       "notes": [
@@ -2284,9 +2290,7 @@
         "Second pass on moon planet. Now with craters and more ores!",
         "First pass of AirlockControl logic fixes. Initialization after restoration of power now tries to retain current door state, failsafing to open external doors if needed.",
         "Fixed poor camera position of portrait camera.",
-        "Fixed ReagentMixtures breaking on split stack.",
-        "Added first pass of tracker.",
-        "added more basic recipes to the autolathe and balanced their reagent values"
+        "Fixed ReagentMixtures breaking on split stack."
       ]
     }
   ]
