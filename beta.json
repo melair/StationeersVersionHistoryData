@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1255.6192",
+    "version": "0.1.1256.6193",
     "date": "2018-04-18T00:00:00+01:00"
   },
   "history": [
@@ -2293,12 +2293,6 @@
       "version": "0.1.935.4415",
       "notes": [
         "Added iron frames recipe"
-      ]
-    },
-    {
-      "version": "0.1.934.4412",
-      "notes": [
-        "Added first pass of Iron Frames."
       ]
     }
   ]
