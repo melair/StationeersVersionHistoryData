@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1254.6186",
-    "date": "2018-04-17T00:00:00+01:00"
+    "version": "0.1.1255.6192",
+    "date": "2018-04-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1255.6192",
+      "notes": [
+        "Fixed wheat wriggling. Had the wrong shader applied to the material",
+        "Fixed missing stars. The stars had been removed from the scene for some reason, they just needed adding back in."
+      ]
+    },
     {
       "version": "0.1.1254.6186",
       "notes": [
@@ -2291,10 +2298,7 @@
     {
       "version": "0.1.934.4412",
       "notes": [
-        "Added first pass of Iron Frames.",
-        "increased number caters from 0",
-        "Second pass on moon planet. Now with craters and more ores!",
-        "First pass of AirlockControl logic fixes. Initialization after restoration of power now tries to retain current door state, failsafing to open external doors if needed."
+        "Added first pass of Iron Frames."
       ]
     }
   ]

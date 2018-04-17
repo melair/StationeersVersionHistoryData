@@ -1,4 +1,14 @@
 {
+  "0.1.1255.6192": {
+    "notes": [
+      "Fixed wheat wriggling. Had the wrong shader applied to the material",
+      "Fixed missing stars. The stars had been removed from the scene for some reason, they just needed adding back in."
+    ],
+    "releases": {
+      "built": "2018-04-18T00:00:00+01:00",
+      "beta": "2018-04-17T22:01:12+01:00"
+    }
+  },
   "0.1.1254.6186": {
     "notes": [
       "Fixed value not set on wall cooler construction kit preventing them from being placed."
