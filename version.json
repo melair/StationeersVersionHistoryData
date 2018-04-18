@@ -1,4 +1,15 @@
 {
+  "0.1.1257.6203": {
+    "notes": [
+      "Added docking port prefabs and animations",
+      "Fixed SolidFuelGenerator max sound distance set to correct (much lower) value.",
+      "Fixed collider for Composite Cladding Spherical Corner not being referenced correctly."
+    ],
+    "releases": {
+      "built": "2018-04-19T00:00:00+01:00",
+      "beta": "2018-04-18T22:01:13+01:00"
+    }
+  },
   "0.1.1256.6193": {
     "notes": [
 

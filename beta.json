@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1256.6193",
-    "date": "2018-04-18T00:00:00+01:00"
+    "version": "0.1.1257.6203",
+    "date": "2018-04-19T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1257.6203",
+      "notes": [
+        "Added docking port prefabs and animations",
+        "Fixed SolidFuelGenerator max sound distance set to correct (much lower) value.",
+        "Fixed collider for Composite Cladding Spherical Corner not being referenced correctly."
+      ]
+    },
     {
       "version": "0.1.1255.6192",
       "notes": [
@@ -2285,14 +2293,7 @@
       "version": "0.1.936.4418",
       "notes": [
         "Fixed null refs from playtest.",
-        "Added Iron Sheets.",
-        "Fixed collision on Iron Frame."
-      ]
-    },
-    {
-      "version": "0.1.935.4415",
-      "notes": [
-        "Added iron frames recipe"
+        "Added Iron Sheets."
       ]
     }
   ]
