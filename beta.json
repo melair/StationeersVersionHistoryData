@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1257.6203",
-    "date": "2018-04-19T00:00:00+01:00"
+    "version": "0.1.1258.6208",
+    "date": "2018-04-20T00:00:00+01:00"
   },
   "history": [
     {
@@ -2292,8 +2292,7 @@
     {
       "version": "0.1.936.4418",
       "notes": [
-        "Fixed null refs from playtest.",
-        "Added Iron Sheets."
+        "Fixed null refs from playtest."
       ]
     }
   ]
