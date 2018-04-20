@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1258.6208",
+    "version": "0.1.1259.6211",
     "date": "2018-04-20T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1259.6211",
+      "notes": [
+        "Fixed disappear wilted plant when reloaded.",
+        "Added Third person camera, Can be activated with mouse wheel."
+      ]
+    },
     {
       "version": "0.1.1257.6203",
       "notes": [
@@ -2285,14 +2292,7 @@
       "notes": [
         "Fixed solid fuel generators could provide power even with no ore.",
         "Fixed autolathe bugs.",
-        "Fixed toxin detected too sensitive.",
-        "Fixed autolathe not showing percentage completed."
-      ]
-    },
-    {
-      "version": "0.1.936.4418",
-      "notes": [
-        "Fixed null refs from playtest."
+        "Fixed toxin detected too sensitive."
       ]
     }
   ]

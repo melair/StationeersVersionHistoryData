@@ -1,4 +1,14 @@
 {
+  "0.1.1259.6211": {
+    "notes": [
+      "Fixed disappear wilted plant when reloaded.",
+      "Added Third person camera, Can be activated with mouse wheel."
+    ],
+    "releases": {
+      "built": "2018-04-20T00:00:00+01:00",
+      "beta": "2018-04-20T03:01:10+01:00"
+    }
+  },
   "0.1.1258.6208": {
     "notes": [
 
