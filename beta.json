@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1259.6211",
-    "date": "2018-04-20T00:00:00+01:00"
+    "version": "0.1.1261.6222",
+    "date": "2018-04-24T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1261.6222",
+      "notes": [
+        "Fixed third person camera doesn't work when player sitting on chair.",
+        "Fixed null ref caused in CursorManager by MyGraphicRaycaster",
+        "Fixed error when attempting to deconstruct spherical corner cladding pieces."
+      ]
+    },
     {
       "version": "0.1.1259.6211",
       "notes": [
@@ -2283,16 +2291,7 @@
       "version": "0.1.938.4425",
       "notes": [
         "Fixed energy gun firing only once for clients.",
-        "Fixed Autolathe and Microwave not showing current progress for clients.",
-        "Fixed NPCs not able to be killed or stunned unconscious."
-      ]
-    },
-    {
-      "version": "0.1.937.4423",
-      "notes": [
-        "Fixed solid fuel generators could provide power even with no ore.",
-        "Fixed autolathe bugs.",
-        "Fixed toxin detected too sensitive."
+        "Fixed Autolathe and Microwave not showing current progress for clients."
       ]
     }
   ]
