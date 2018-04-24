@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1263.6234",
-    "date": "2018-04-24T00:00:00+01:00"
+    "version": "0.1.1264.6235",
+    "date": "2018-04-25T00:00:00+01:00"
   },
   "history": [
     {
@@ -2290,8 +2290,7 @@
       "notes": [
         "Updated server password screen",
         "Small update to some menu buttons",
-        "Crater positions now persist on saves (old saves will still not work properly)",
-        "Fixed broken build in dedicated server"
+        "Crater positions now persist on saves (old saves will still not work properly)"
       ]
     }
   ]
