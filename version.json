@@ -1,4 +1,13 @@
 {
+  "0.1.1263.6234": {
+    "notes": [
+      "Fixed issue with motherships returning to world origin when a world was completed on their grid."
+    ],
+    "releases": {
+      "built": "2018-04-24T00:00:00+01:00",
+      "beta": "2018-04-24T07:01:22+01:00"
+    }
+  },
   "0.1.1262.6227": {
     "notes": [
       "Reverted Structure control chair and added MyGraphicRaycaster to it",

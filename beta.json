@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1262.6227",
+    "version": "0.1.1263.6234",
     "date": "2018-04-24T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1263.6234",
+      "notes": [
+        "Fixed issue with motherships returning to world origin when a world was completed on their grid."
+      ]
+    },
     {
       "version": "0.1.1262.6227",
       "notes": [
@@ -2285,9 +2291,7 @@
         "Updated server password screen",
         "Small update to some menu buttons",
         "Crater positions now persist on saves (old saves will still not work properly)",
-        "Fixed broken build in dedicated server",
-        "Added dead/unconsious animation to NPCGrounder",
-        "Fixed bug with npcs being able to fly"
+        "Fixed broken build in dedicated server"
       ]
     }
   ]
