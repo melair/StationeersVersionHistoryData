@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1261.6222",
+    "version": "0.1.1262.6227",
     "date": "2018-04-24T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1262.6227",
+      "notes": [
+        "Reverted Structure control chair and added MyGraphicRaycaster to it",
+        "reverted tablet prefab from commit 6213 to 5191 to fix the wrong screen position",
+        "Added When players go unconscious, die or respawn all players will be notified via console entry.",
+        "Added 3 new variants of wall lights (Long, Long Angled and Long Wide) available through the same ItemWallLight constructor as the existing wall lights."
+      ]
+    },
     {
       "version": "0.1.1261.6222",
       "notes": [
@@ -2279,19 +2288,6 @@
         "Fixed broken build in dedicated server",
         "Added dead/unconsious animation to NPCGrounder",
         "Fixed bug with npcs being able to fly"
-      ]
-    },
-    {
-      "version": "0.1.939.4427",
-      "notes": [
-        "Fixed client ghost atmosphere particles. Clear atmosphere if update not recieved for five seconds."
-      ]
-    },
-    {
-      "version": "0.1.938.4425",
-      "notes": [
-        "Fixed energy gun firing only once for clients.",
-        "Fixed Autolathe and Microwave not showing current progress for clients."
       ]
     }
   ]
