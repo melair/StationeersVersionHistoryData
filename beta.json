@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1264.6235",
+    "version": "0.1.1265.6238",
     "date": "2018-04-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1265.6238",
+      "notes": [
+        "Fixed error with raycast camera when deconstructing an thing it is parented to.",
+        "Fixed some errors while using consoles"
+      ]
+    },
     {
       "version": "0.1.1263.6234",
       "notes": [
@@ -2283,14 +2290,6 @@
         "Fixed bug with reagent processor where you could interact with export slot when first placed.",
         "Fixed Solar Panel not able to be placed. Now placable on half meter grids.",
         "Fixed PortraitCamera eyes sometimes occluding."
-      ]
-    },
-    {
-      "version": "0.1.940.4433",
-      "notes": [
-        "Updated server password screen",
-        "Small update to some menu buttons",
-        "Crater positions now persist on saves (old saves will still not work properly)"
       ]
     }
   ]
