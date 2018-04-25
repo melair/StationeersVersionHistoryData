@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1265.6238",
+    "version": "0.1.1266.6240",
     "date": "2018-04-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1266.6240",
+      "notes": [
+        "Fixed more issues with the graphicsraycaster when deconstructing items"
+      ]
+    },
     {
       "version": "0.1.1265.6238",
       "notes": [
@@ -2288,8 +2294,7 @@
       "notes": [
         "Fixed bug with microwave (and all) action macros for interactions being instantly finished.",
         "Fixed bug with reagent processor where you could interact with export slot when first placed.",
-        "Fixed Solar Panel not able to be placed. Now placable on half meter grids.",
-        "Fixed PortraitCamera eyes sometimes occluding."
+        "Fixed Solar Panel not able to be placed. Now placable on half meter grids."
       ]
     }
   ]
