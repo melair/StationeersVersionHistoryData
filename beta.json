@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1268.6242",
-    "date": "2018-04-25T00:00:00+01:00"
+    "version": "0.1.1269.6243",
+    "date": "2018-04-26T00:00:00+01:00"
   },
   "history": [
     {
@@ -2292,8 +2292,7 @@
     {
       "version": "0.1.941.4437",
       "notes": [
-        "Fixed bug with microwave (and all) action macros for interactions being instantly finished.",
-        "Fixed bug with reagent processor where you could interact with export slot when first placed."
+        "Fixed bug with microwave (and all) action macros for interactions being instantly finished."
       ]
     }
   ]
