@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1269.6243",
-    "date": "2018-04-26T00:00:00+01:00"
+    "version": "0.1.1270.6252",
+    "date": "2018-04-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1270.6252",
+      "notes": [
+        "Added Organics Printer.  Starting items that were previously irreplaceable (Plants, Eggs) can now be produced at the cost of large amounts of energy.  ItemKitOrganicsPrinter can now be produced in the Fabricator.  Still testing, expect bugs.",
+        "Added Recipe Selection menu \"button\" to the right-side of the contents screen of most manufacturing machines.  This will bring up a drop-down menu that you can select a recipe from, rather than having to scroll through with the left and right arrows."
+      ]
+    },
     {
       "version": "0.1.1266.6240",
       "notes": [
@@ -2285,14 +2292,7 @@
       "version": "0.1.942.4440",
       "notes": [
         "Fixed hydroponics exception.",
-        "Added multiplayer syncd plant feedback for hydroponics growing conditions.",
-        "Grounder should now orientate given what they're walking on. should now rotate correctly when walking up walls/faces etc"
-      ]
-    },
-    {
-      "version": "0.1.941.4437",
-      "notes": [
-        "Fixed bug with microwave (and all) action macros for interactions being instantly finished."
+        "Added multiplayer syncd plant feedback for hydroponics growing conditions."
       ]
     }
   ]
