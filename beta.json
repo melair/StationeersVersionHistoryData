@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1270.6252",
+    "version": "0.1.1271.6257",
     "date": "2018-04-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1271.6257",
+      "notes": [
+        "Added setting 'MouseWheelZoom' to the misc controls page, enabled by default.  This can be disabled to prevent the mouse wheel from being used to zoom in/out of third person camera mode.",
+        "Fixed when plant grows it has wrong size on hydroponics tray.",
+        "Added recipe for Fern to the Organics Printer.",
+        "Fixed recipe for ItemKitOrganicsPrinter to remove Uranium so it can now be crafted.",
+        "Fixed issue where recipe selection window would be stuck open if the crafting machine that invoked it lost power or if the player activates the chat window.",
+        "Fixed Missing texture on Organics Printer glass windows.",
+        "Fixed disabled mouse wheel for 3rd person camera activation when interaction panel enabled"
+      ]
+    },
     {
       "version": "0.1.1270.6252",
       "notes": [
@@ -2277,22 +2289,6 @@
         "Fixed Motion Sensors not working for new GridControllers. Now working on Mothership and Stations.",
         "Added two-button prompt to standardize confirmation popups.",
         "Added query icon"
-      ]
-    },
-    {
-      "version": "0.1.943.4443",
-      "notes": [
-        "Fixed Arc Furnace able to be interacted with.",
-        "Fixed Arc Furnace broken if loading from a save.",
-        "NPCGrounder now attacks when near player (no damage dealt currently)",
-        "StartAttack & DoAttack events added to NPC. These fire when attack animation starts and when it connects. Currently run on server side only"
-      ]
-    },
-    {
-      "version": "0.1.942.4440",
-      "notes": [
-        "Fixed hydroponics exception.",
-        "Added multiplayer syncd plant feedback for hydroponics growing conditions."
       ]
     }
   ]

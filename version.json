@@ -1,4 +1,19 @@
 {
+  "0.1.1271.6257": {
+    "notes": [
+      "Added setting 'MouseWheelZoom' to the misc controls page, enabled by default.  This can be disabled to prevent the mouse wheel from being used to zoom in/out of third person camera mode.",
+      "Fixed when plant grows it has wrong size on hydroponics tray.",
+      "Added recipe for Fern to the Organics Printer.",
+      "Fixed recipe for ItemKitOrganicsPrinter to remove Uranium so it can now be crafted.",
+      "Fixed issue where recipe selection window would be stuck open if the crafting machine that invoked it lost power or if the player activates the chat window.",
+      "Fixed Missing texture on Organics Printer glass windows.",
+      "Fixed disabled mouse wheel for 3rd person camera activation when interaction panel enabled"
+    ],
+    "releases": {
+      "built": "2018-04-27T00:00:00+01:00",
+      "beta": "2018-04-27T02:01:12+01:00"
+    }
+  },
   "0.1.1270.6252": {
     "notes": [
       "Added Organics Printer.  Starting items that were previously irreplaceable (Plants, Eggs) can now be produced at the cost of large amounts of energy.  ItemKitOrganicsPrinter can now be produced in the Fabricator.  Still testing, expect bugs.",
