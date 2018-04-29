@@ -1,4 +1,31 @@
 {
+  "0.1.1273.6269": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-04-30T00:00:00+01:00",
+      "beta": "2018-04-29T22:01:12+01:00"
+    }
+  },
+  "0.1.1272.6268": {
+    "notes": [
+      "Fixed active vents not working correctly when mode's been changed using logic. Using a Logic Writer to change mode on Active Vents should now correctly vent to the target pressure.",
+      "fixed prefab name in the recipe for floor gratings",
+      "Added plants will be bent when player step on them.",
+      "Added grating and made them paintable",
+      "Fixed ItemKitCompositeCladding reporting incorrect number of construction options.",
+      "Fixed Data connection on Organics Printer pointing in the wrong direction.",
+      "Added new models for Steel, Iron, Glass sheets.",
+      "Added new models for Steel and Iron frames that properly display the colour they've been painted.",
+      "Fixed Organics Printer now correctly returns an ItemKitOrganicsPrinter when deconstructed.",
+      "Added iron window to the iron kit and changed the steel windows to require steel sheets"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1271.6257": {
     "notes": [
       "Added setting 'MouseWheelZoom' to the misc controls page, enabled by default.  This can be disabled to prevent the mouse wheel from being used to zoom in/out of third person camera mode.",
