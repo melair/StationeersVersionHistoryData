@@ -1,9 +1,26 @@
 {
   "current": {
-    "version": "0.1.1273.6269",
+    "version": "0.1.1274.6282",
     "date": "2018-04-30T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1274.6282",
+      "notes": [
+        "Fixed issue where player name was occasionally missing from messages about a player going unconscious, dying or respawning.",
+        "Fixed issue constructing and deconstructing items on dedicated servers.",
+        "Fixed bug with previous commit of Traditional Chinese localization file.",
+        "Updated Localization strings for Japanese, Traditional Chinese and Spanish.",
+        "Added new paintable, models for ItemKitWall and ItemKitWallIron that are now visually distinguishable from each other.",
+        "Changed recipe for ItemKitWall.  As Windows can now be created with ItemKitWallIron and Iron alone, ItemKitWall is now crafted with Steel instead of Iron and Copper at both the Fabricator and Autolathe.",
+        "Fixed Inconsistent tool application.  Windows and Railings final stages are now both deconstructed using the Angle Grinder.",
+        "Fixed bug where new floor variants were not returning a kit.  Also, old floor variants should now return one of the new, paintable construction kits when deconstructed.",
+        "Fixed bug where the select recipe button was useable even if the machine was not powered or switched on.",
+        "Fixed bug where the select recipe menu would be stuck open without the cursor visible to interact with it if you were to press the escape key with it on-screen.",
+        "Fixed visual issue with Organics Printer on/off switch clipping through the machine when in the off state.",
+        "Fixed issue where the select menu button was not working on the Hydraulic Pipe Bender."
+      ]
+    },
     {
       "version": "0.1.1272.6268",
       "notes": [
@@ -2275,20 +2292,7 @@
       "version": "0.1.946.4471",
       "notes": [
         "Added loading of mineables from XML rather than serialized list.",
-        "Added check to see if an entered filename will overwrite an existing save.",
-        "Added alert prompt if you try to save with no filename.",
-        "Added confirmation prompts to overwriting saves and workshop publishing.",
-        "Fixed ore visualizer getting null sometimes",
-        "Fixed spacesuit sometimes not being set to correct layer on load.",
-        "Fixed Arc Furnace not producing anything.",
-        "Fixed Electronic Reader not having enough UI for the new recipe elements.",
-        "Added Lead, Nickel, and Silver ores.",
-        "Added file missing from last commit.",
-        "Added missing prompts to settings defaults reset and delete save.",
-        "Fixed a couple of layout issues on prompt popup.",
-        "Small change that should've been committed previously ensuring ScreenFilter static class list is cleared properly.",
-        "Fixed occasional NRE on continue button press.",
-        "Random Torque added to Entity when Ragdoll is set to active"
+        "Added check to see if an entered filename will overwrite an existing save."
       ]
     }
   ]
