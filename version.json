@@ -1,4 +1,13 @@
 {
+  "0.1.1276.6284": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-01T00:00:00+01:00",
+      "beta": "2018-04-30T23:01:13+01:00"
+    }
+  },
   "0.1.1274.6282": {
     "notes": [
       "Fixed issue where player name was occasionally missing from messages about a player going unconscious, dying or respawning.",

@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1274.6282",
-    "date": "2018-04-30T00:00:00+01:00"
+    "version": "0.1.1276.6284",
+    "date": "2018-05-01T00:00:00+01:00"
   },
   "history": [
     {
@@ -2286,13 +2286,6 @@
         "Enabled pdb files to debug crash dump",
         "reverted sun flare",
         "fixed grenades not working on the moon"
-      ]
-    },
-    {
-      "version": "0.1.946.4471",
-      "notes": [
-        "Added loading of mineables from XML rather than serialized list.",
-        "Added check to see if an entered filename will overwrite an existing save."
       ]
     }
   ]
