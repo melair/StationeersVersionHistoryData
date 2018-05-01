@@ -1,4 +1,13 @@
 {
+  "0.1.1278.6288": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-01T00:00:00+01:00",
+      "beta": "2018-05-01T03:01:13+01:00"
+    }
+  },
   "0.1.1277.6286": {
     "notes": [
       "Fixed bug where new light variants would cause errors when they were placed in the game due to sounds not being configured correctly.",
