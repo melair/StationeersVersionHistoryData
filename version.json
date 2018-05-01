@@ -1,4 +1,15 @@
 {
+  "0.1.1281.6298": {
+    "notes": [
+      "Fixed missing English language entry for ItemKitCompositeFloorGrating",
+      "Added Paintable Toolbelt to replace existing one.",
+      "Fixed exception when replacing cladding panel."
+    ],
+    "releases": {
+      "built": "2018-05-01T00:00:00+01:00",
+      "beta": "2018-05-01T07:01:12+01:00"
+    }
+  },
   "0.1.1280.6295": {
     "notes": [
       "Fixed UV issue with new Floor Grating Kit."

@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1280.6295",
+    "version": "0.1.1281.6298",
     "date": "2018-05-01T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1281.6298",
+      "notes": [
+        "Fixed missing English language entry for ItemKitCompositeFloorGrating",
+        "Added Paintable Toolbelt to replace existing one.",
+        "Fixed exception when replacing cladding panel."
+      ]
+    },
     {
       "version": "0.1.1280.6295",
       "notes": [
@@ -2282,10 +2290,7 @@
         "Pipe Radiators now radiate heat both in a vaccum and in an atmosphere. They are very effective.",
         "Added energy rifle. Similar to Energy Pistol but with a faster rate of fire and much faster cooling.",
         "Fixed bug on load where player meshes were not set to always show as they were entering player body after it already had a suit on.",
-        "FacialProp class can now cache MeshFilter",
-        "LocalPlayer now has HairShadow object",
-        "Hat should now hide on local player and should also show in character portrait",
-        "Hair should now correctly cast shadows for local player"
+        "FacialProp class can now cache MeshFilter"
       ]
     }
   ]
