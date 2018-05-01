@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1278.6288",
+    "version": "0.1.1280.6295",
     "date": "2018-05-01T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1280.6295",
+      "notes": [
+        "Fixed UV issue with new Floor Grating Kit."
+      ]
+    },
+    {
+      "version": "0.1.1279.6292",
+      "notes": [
+        "Added new model for ItemKitCompositeFloorGrating that shows correct painted colour.",
+        "Added automatic recycler recipes, so many items that were not previously recyclable should now be returning half their required ingredients.  Time to clean up those bases!",
+        "Fixed error on load relating to incorrectly named property on floor gratings."
+      ]
+    },
     {
       "version": "0.1.1277.6286",
       "notes": [
@@ -2272,20 +2286,6 @@
         "LocalPlayer now has HairShadow object",
         "Hat should now hide on local player and should also show in character portrait",
         "Hair should now correctly cast shadows for local player"
-      ]
-    },
-    {
-      "version": "0.1.950.4486",
-      "notes": [
-        "Changes made to Entity Dropping when in ragdoll. Should now be alot less likely to get stuck inside objects on drop"
-      ]
-    },
-    {
-      "version": "0.1.948.4482",
-      "notes": [
-        "Fixed AA settings not changing PortraitCamera.",
-        "Fixed jittering entity which doesn't have client control. Entity can't update physics by itself when it doesn't have clientcontrol",
-        "Fixed grenades making holes in the bottom of the world"
       ]
     }
   ]

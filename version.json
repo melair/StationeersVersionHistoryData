@@ -1,4 +1,24 @@
 {
+  "0.1.1280.6295": {
+    "notes": [
+      "Fixed UV issue with new Floor Grating Kit."
+    ],
+    "releases": {
+      "built": "2018-05-01T00:00:00+01:00",
+      "beta": "2018-05-01T05:01:13+01:00"
+    }
+  },
+  "0.1.1279.6292": {
+    "notes": [
+      "Added new model for ItemKitCompositeFloorGrating that shows correct painted colour.",
+      "Added automatic recycler recipes, so many items that were not previously recyclable should now be returning half their required ingredients.  Time to clean up those bases!",
+      "Fixed error on load relating to incorrectly named property on floor gratings."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1278.6288": {
     "notes": [
 
