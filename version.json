@@ -1,4 +1,15 @@
 {
+  "0.1.1277.6286": {
+    "notes": [
+      "Fixed bug where new light variants would cause errors when they were placed in the game due to sounds not being configured correctly.",
+      "Changed Consolidated floor grating kits and new variants, so there's now only ItemKitCompositeFloorGrating.  Any instances of the old kit type will be converted to the new one on load.  Any existing instances of old floor gratings should also be replaced on load.  There may be a slight colour difference as the paintable ColorGray only approximately matches the old floor grating material.",
+      "Changed Recipe cost for the old composite wall variant from 3 steel to 1 to better align the cost of completed walls vs frames."
+    ],
+    "releases": {
+      "built": "2018-05-01T00:00:00+01:00",
+      "beta": "2018-05-01T02:01:13+01:00"
+    }
+  },
   "0.1.1276.6284": {
     "notes": [
 
