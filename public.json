@@ -1,9 +1,241 @@
 {
   "current": {
-    "version": "0.1.1234.6112",
-    "date": "2018-04-04T00:00:00+01:00"
+    "version": "0.1.1285.6308",
+    "date": "2018-05-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1285.6308",
+      "notes": [
+        "Fixed new wall kit fabricator recipe not being consistent with modified autolathe version.",
+        "Fixed several outdated recycling recipes overriding the more up-to-date automated versions.",
+        "Fixed Ingots now properly handled by new automated recycling recipe system and returning their original quantity as reagent mix."
+      ]
+    },
+    {
+      "version": "0.1.1284.6306",
+      "notes": [
+        "Fixed some input oddities when dealing with popup prompts like the new recipe selection dropdown and labeller window.  Can now use the chat key to submit the prompt, rather than cancel it.",
+        "Fixed bug with interaction doesn't work intermittently on 3rd person camera.",
+        "Added paintable mining belts."
+      ]
+    },
+    {
+      "version": "0.1.1281.6298",
+      "notes": [
+        "Fixed missing English language entry for ItemKitCompositeFloorGrating",
+        "Added Paintable Toolbelt to replace existing one.",
+        "Fixed exception when replacing cladding panel."
+      ]
+    },
+    {
+      "version": "0.1.1280.6295",
+      "notes": [
+        "Fixed UV issue with new Floor Grating Kit."
+      ]
+    },
+    {
+      "version": "0.1.1279.6292",
+      "notes": [
+        "Added new model for ItemKitCompositeFloorGrating that shows correct painted colour.",
+        "Added automatic recycler recipes, so many items that were not previously recyclable should now be returning half their required ingredients.  Time to clean up those bases!",
+        "Fixed error on load relating to incorrectly named property on floor gratings."
+      ]
+    },
+    {
+      "version": "0.1.1277.6286",
+      "notes": [
+        "Fixed bug where new light variants would cause errors when they were placed in the game due to sounds not being configured correctly.",
+        "Changed Consolidated floor grating kits and new variants, so there's now only ItemKitCompositeFloorGrating.  Any instances of the old kit type will be converted to the new one on load.  Any existing instances of old floor gratings should also be replaced on load.  There may be a slight colour difference as the paintable ColorGray only approximately matches the old floor grating material.",
+        "Changed Recipe cost for the old composite wall variant from 3 steel to 1 to better align the cost of completed walls vs frames."
+      ]
+    },
+    {
+      "version": "0.1.1274.6282",
+      "notes": [
+        "Fixed issue where player name was occasionally missing from messages about a player going unconscious, dying or respawning.",
+        "Fixed issue constructing and deconstructing items on dedicated servers.",
+        "Fixed bug with previous commit of Traditional Chinese localization file.",
+        "Updated Localization strings for Japanese, Traditional Chinese and Spanish.",
+        "Added new paintable, models for ItemKitWall and ItemKitWallIron that are now visually distinguishable from each other.",
+        "Changed recipe for ItemKitWall.  As Windows can now be created with ItemKitWallIron and Iron alone, ItemKitWall is now crafted with Steel instead of Iron and Copper at both the Fabricator and Autolathe.",
+        "Fixed Inconsistent tool application.  Windows and Railings final stages are now both deconstructed using the Angle Grinder.",
+        "Fixed bug where new floor variants were not returning a kit.  Also, old floor variants should now return one of the new, paintable construction kits when deconstructed.",
+        "Fixed bug where the select recipe button was useable even if the machine was not powered or switched on.",
+        "Fixed bug where the select recipe menu would be stuck open without the cursor visible to interact with it if you were to press the escape key with it on-screen.",
+        "Fixed visual issue with Organics Printer on/off switch clipping through the machine when in the off state.",
+        "Fixed issue where the select menu button was not working on the Hydraulic Pipe Bender."
+      ]
+    },
+    {
+      "version": "0.1.1272.6268",
+      "notes": [
+        "Fixed active vents not working correctly when mode's been changed using logic. Using a Logic Writer to change mode on Active Vents should now correctly vent to the target pressure.",
+        "fixed prefab name in the recipe for floor gratings",
+        "Added plants will be bent when player step on them.",
+        "Added grating and made them paintable",
+        "Fixed ItemKitCompositeCladding reporting incorrect number of construction options.",
+        "Fixed Data connection on Organics Printer pointing in the wrong direction.",
+        "Added new models for Steel, Iron, Glass sheets.",
+        "Added new models for Steel and Iron frames that properly display the colour they've been painted.",
+        "Fixed Organics Printer now correctly returns an ItemKitOrganicsPrinter when deconstructed.",
+        "Added iron window to the iron kit and changed the steel windows to require steel sheets"
+      ]
+    },
+    {
+      "version": "0.1.1271.6257",
+      "notes": [
+        "Added setting 'MouseWheelZoom' to the misc controls page, enabled by default.  This can be disabled to prevent the mouse wheel from being used to zoom in/out of third person camera mode.",
+        "Fixed when plant grows it has wrong size on hydroponics tray.",
+        "Added recipe for Fern to the Organics Printer.",
+        "Fixed recipe for ItemKitOrganicsPrinter to remove Uranium so it can now be crafted.",
+        "Fixed issue where recipe selection window would be stuck open if the crafting machine that invoked it lost power or if the player activates the chat window.",
+        "Fixed Missing texture on Organics Printer glass windows.",
+        "Fixed disabled mouse wheel for 3rd person camera activation when interaction panel enabled"
+      ]
+    },
+    {
+      "version": "0.1.1270.6252",
+      "notes": [
+        "Added Organics Printer.  Starting items that were previously irreplaceable (Plants, Eggs) can now be produced at the cost of large amounts of energy.  ItemKitOrganicsPrinter can now be produced in the Fabricator.  Still testing, expect bugs.",
+        "Added Recipe Selection menu \"button\" to the right-side of the contents screen of most manufacturing machines.  This will bring up a drop-down menu that you can select a recipe from, rather than having to scroll through with the left and right arrows."
+      ]
+    },
+    {
+      "version": "0.1.1266.6240",
+      "notes": [
+        "Fixed more issues with the graphicsraycaster when deconstructing items"
+      ]
+    },
+    {
+      "version": "0.1.1265.6238",
+      "notes": [
+        "Fixed error with raycast camera when deconstructing an thing it is parented to.",
+        "Fixed some errors while using consoles"
+      ]
+    },
+    {
+      "version": "0.1.1263.6234",
+      "notes": [
+        "Fixed issue with motherships returning to world origin when a world was completed on their grid."
+      ]
+    },
+    {
+      "version": "0.1.1262.6227",
+      "notes": [
+        "Reverted Structure control chair and added MyGraphicRaycaster to it",
+        "reverted tablet prefab from commit 6213 to 5191 to fix the wrong screen position",
+        "Added When players go unconscious, die or respawn all players will be notified via console entry.",
+        "Added 3 new variants of wall lights (Long, Long Angled and Long Wide) available through the same ItemWallLight constructor as the existing wall lights."
+      ]
+    },
+    {
+      "version": "0.1.1261.6222",
+      "notes": [
+        "Fixed third person camera doesn't work when player sitting on chair.",
+        "Fixed null ref caused in CursorManager by MyGraphicRaycaster",
+        "Fixed error when attempting to deconstruct spherical corner cladding pieces."
+      ]
+    },
+    {
+      "version": "0.1.1259.6211",
+      "notes": [
+        "Fixed disappear wilted plant when reloaded.",
+        "Added Third person camera, Can be activated with mouse wheel."
+      ]
+    },
+    {
+      "version": "0.1.1257.6203",
+      "notes": [
+        "Added docking port prefabs and animations",
+        "Fixed SolidFuelGenerator max sound distance set to correct (much lower) value.",
+        "Fixed collider for Composite Cladding Spherical Corner not being referenced correctly."
+      ]
+    },
+    {
+      "version": "0.1.1255.6192",
+      "notes": [
+        "Fixed wheat wriggling. Had the wrong shader applied to the material",
+        "Fixed missing stars. The stars had been removed from the scene for some reason, they just needed adding back in."
+      ]
+    },
+    {
+      "version": "0.1.1254.6186",
+      "notes": [
+        "Fixed value not set on wall cooler construction kit preventing them from being placed."
+      ]
+    },
+    {
+      "version": "0.1.1253.6184",
+      "notes": [
+        "Fixed Server now synchronizes game mode with clients, so if modified manually in the save this change should now correctly propagate to clients."
+      ]
+    },
+    {
+      "version": "0.1.1252.6182",
+      "notes": [
+        "Fixed issue where machine inventories were not displaying portions of their contents correctly.",
+        "Fixed NRE when player respawned while building mode.",
+        "Fixed various visual issues with new Wall devices (Cooler, Heater, Lights)."
+      ]
+    },
+    {
+      "version": "0.1.1250.6175",
+      "notes": [
+        "Fixed bug with some recipes not recognizing the correct list of ingredients due to small floating point precision errors.",
+        "Replaced models for WallCooler, WallHeater and WallLights.",
+        "Fixed stuttering sounds of object on Mars.",
+        "Fixed MaxVoltage value on 5-way Heavy Power Cable Junction.  Was 50k instead of 100k."
+      ]
+    },
+    {
+      "version": "0.1.1247.6166",
+      "notes": [
+        "Fixed dedicated server could play some kind of client sounds."
+      ]
+    },
+    {
+      "version": "0.1.1246.6163",
+      "notes": [
+        "Fixed 5-way heavy cables de-spawn on game reload"
+      ]
+    },
+    {
+      "version": "0.1.1241.6148",
+      "notes": [
+        "Fixed Missing cladding type now appears in the construction kit as an available option.",
+        "Regenerated blueprints for cladding that had some graphical artefacts.",
+        "Fixed collision box size for several cladding types."
+      ]
+    },
+    {
+      "version": "0.1.1240.6146",
+      "notes": [
+        "Added missing mirrored variant of long angled corner cladding.",
+        "Added vertex shader to plants for slight movement",
+        "Fixed console screen interactions flickering when moving quickly. Console buttons should now be able to be selected correctly on fast moving motherships.",
+        "Fixed wilted plants being deleted immediately."
+      ]
+    },
+    {
+      "version": "0.1.1237.6132",
+      "notes": [
+        "Added 12 variants of cladding, a paintable, largely cosmetic outer layer for your base.  Blocks sunlight but not atmosphere.  Grouped into Angled, Cylindrical, Spherical and Rounded options.  Deconstructed using the Angle Grinder.  ItemKitCompositeCladding craftable in the Fabricator or Autolathe for 1 Iron per kit.",
+        "Fixed bug where Iron Wall Kits were twice as expensive to manufacture in the Fabricator vs the Autolathe.",
+        "Fixed collider issue on new CornerCut frame piece.",
+        "Added Flags.  Small, paintable objects that remain visible for 2x the distance of frames, to make it easier to mark the way back to base in case your tracker runs out of power.  Craftable in the Tool Manufacturer and available in one of your starting crates.",
+        "Fixed stars not appearing if switching from a mars map during the day to a moon or space map.",
+        "Fixed bug where some actions would not be performed correctly if using SecondaryAction mapped to a key rather than a mouse button."
+      ]
+    },
+    {
+      "version": "0.1.1235.6122",
+      "notes": [
+        "First pass on dock for motherships - they work as airlocks currently except that if an airlock is on a mothership and gets close to a non-mothership airlock then it will auto align itself and move it to the docking position. This is probably not final behaviour.",
+        "Added Corner Cut version of steel frames, the the last missing variant for the existing cosmetic frame corner options.",
+        "Added new Skybox elements - Now there's stars and they move with the sun"
+      ]
+    },
     {
       "version": "0.1.1234.6112",
       "notes": [
@@ -2060,219 +2292,7 @@
     {
       "version": "0.1.952.4496",
       "notes": [
-        "Possible fix for sun time sync issue.",
-        "Fixed JIP clients not generating renamed events.",
-        "Added call from computer OnRename to motherboard OnRename so consoles can now have their screen title changed.",
-        "Fixed issue with some circuitboard prefabs where TitleText wasn't pointing to their Title Text box.",
-        "Fixed bug where prompts were not correctly clearing button functionality when disabled."
-      ]
-    },
-    {
-      "version": "0.1.951.4490",
-      "notes": [
-        "Reenabled thermodynamics.",
-        "Pipe Radiators now radiate heat both in a vaccum and in an atmosphere. They are very effective.",
-        "Added energy rifle. Similar to Energy Pistol but with a faster rate of fire and much faster cooling.",
-        "Fixed bug on load where player meshes were not set to always show as they were entering player body after it already had a suit on.",
-        "FacialProp class can now cache MeshFilter",
-        "LocalPlayer now has HairShadow object",
-        "Hat should now hide on local player and should also show in character portrait",
-        "Hair should now correctly cast shadows for local player"
-      ]
-    },
-    {
-      "version": "0.1.950.4486",
-      "notes": [
-        "Changes made to Entity Dropping when in ragdoll. Should now be alot less likely to get stuck inside objects on drop"
-      ]
-    },
-    {
-      "version": "0.1.948.4482",
-      "notes": [
-        "Fixed AA settings not changing PortraitCamera.",
-        "Fixed jittering entity which doesn't have client control. Entity can't update physics by itself when it doesn't have clientcontrol",
-        "Fixed grenades making holes in the bottom of the world"
-      ]
-    },
-    {
-      "version": "0.1.947.4477",
-      "notes": [
-        "Enabled pdb files to debug crash dump",
-        "reverted sun flare",
-        "fixed grenades not working on the moon"
-      ]
-    },
-    {
-      "version": "0.1.946.4471",
-      "notes": [
-        "Added loading of mineables from XML rather than serialized list.",
-        "Added check to see if an entered filename will overwrite an existing save.",
-        "Added alert prompt if you try to save with no filename.",
-        "Added confirmation prompts to overwriting saves and workshop publishing.",
-        "Fixed ore visualizer getting null sometimes",
-        "Fixed spacesuit sometimes not being set to correct layer on load.",
-        "Fixed Arc Furnace not producing anything.",
-        "Fixed Electronic Reader not having enough UI for the new recipe elements.",
-        "Added Lead, Nickel, and Silver ores.",
-        "Added file missing from last commit.",
-        "Added missing prompts to settings defaults reset and delete save.",
-        "Fixed a couple of layout issues on prompt popup.",
-        "Small change that should've been committed previously ensuring ScreenFilter static class list is cleared properly.",
-        "Fixed occasional NRE on continue button press.",
-        "Random Torque added to Entity when Ragdoll is set to active"
-      ]
-    },
-    {
-      "version": "0.1.945.4458",
-      "notes": [
-        "Prevent client from connecting before server finished loading a save",
-        "Prevent duplicated steam id player. kick existing player from server.",
-        "Cloning crystal prefabs before changing materials top stop prefabs being changed every time you run the game.",
-        "finished adding minimum required recipes for autolathe to make basic survival loop",
-        "removed hydrocarbon steel recipe",
-        "Fixed bug with HydroponicTray not showing current state of Plant.",
-        "Fixed bug with Plant too sensitive to TemperatureEfficiency when growing.",
-        "Fixed Motion Sensors not working for new GridControllers. Now working on Mothership and Stations.",
-        "Added two-button prompt to standardize confirmation popups.",
-        "Added query icon"
-      ]
-    },
-    {
-      "version": "0.1.943.4443",
-      "notes": [
-        "Fixed Arc Furnace able to be interacted with.",
-        "Fixed Arc Furnace broken if loading from a save.",
-        "NPCGrounder now attacks when near player (no damage dealt currently)",
-        "StartAttack & DoAttack events added to NPC. These fire when attack animation starts and when it connects. Currently run on server side only"
-      ]
-    },
-    {
-      "version": "0.1.942.4440",
-      "notes": [
-        "Fixed hydroponics exception.",
-        "Added multiplayer syncd plant feedback for hydroponics growing conditions.",
-        "Grounder should now orientate given what they're walking on. should now rotate correctly when walking up walls/faces etc"
-      ]
-    },
-    {
-      "version": "0.1.941.4437",
-      "notes": [
-        "Fixed bug with microwave (and all) action macros for interactions being instantly finished.",
-        "Fixed bug with reagent processor where you could interact with export slot when first placed.",
-        "Fixed Solar Panel not able to be placed. Now placable on half meter grids.",
-        "Fixed PortraitCamera eyes sometimes occluding."
-      ]
-    },
-    {
-      "version": "0.1.940.4433",
-      "notes": [
-        "Updated server password screen",
-        "Small update to some menu buttons",
-        "Crater positions now persist on saves (old saves will still not work properly)",
-        "Fixed broken build in dedicated server",
-        "Added dead/unconsious animation to NPCGrounder",
-        "Fixed bug with npcs being able to fly"
-      ]
-    },
-    {
-      "version": "0.1.939.4427",
-      "notes": [
-        "Fixed client ghost atmosphere particles. Clear atmosphere if update not recieved for five seconds."
-      ]
-    },
-    {
-      "version": "0.1.938.4425",
-      "notes": [
-        "Fixed energy gun firing only once for clients.",
-        "Fixed Autolathe and Microwave not showing current progress for clients.",
-        "Fixed NPCs not able to be killed or stunned unconscious."
-      ]
-    },
-    {
-      "version": "0.1.937.4423",
-      "notes": [
-        "Fixed solid fuel generators could provide power even with no ore.",
-        "Fixed autolathe bugs.",
-        "Fixed toxin detected too sensitive.",
-        "Fixed autolathe not showing percentage completed."
-      ]
-    },
-    {
-      "version": "0.1.936.4418",
-      "notes": [
-        "Fixed null refs from playtest.",
-        "Added Iron Sheets.",
-        "Fixed collision on Iron Frame."
-      ]
-    },
-    {
-      "version": "0.1.935.4415",
-      "notes": [
-        "Added iron frames recipe"
-      ]
-    },
-    {
-      "version": "0.1.934.4412",
-      "notes": [
-        "Added first pass of Iron Frames.",
-        "increased number caters from 0",
-        "Second pass on moon planet. Now with craters and more ores!",
-        "First pass of AirlockControl logic fixes. Initialization after restoration of power now tries to retain current door state, failsafing to open external doors if needed.",
-        "Fixed poor camera position of portrait camera.",
-        "Fixed ReagentMixtures breaking on split stack.",
-        "Added first pass of tracker.",
-        "added more basic recipes to the autolathe and balanced their reagent values",
-        "Did a small test pass on time values",
-        "Allowed steel to be smelted with hydrocarbons",
-        "Cached GameManager.FixedTime for use in thread",
-        "Move several update functions on NPC to OnLifeTick",
-        "Fixed Build error in stackables",
-        "Devices should no longer be added to GridPathfinder DeviceBlockedList if they're on a stair cell",
-        "Monster will now navigate spherically around a mothership and shoot eggs (that currently do nothing)",
-        "Fixed incorrect caching on hairProp",
-        "TerrainPath finding added to A*. NPC's should now be able to navigate from terrain to inside rooms etc",
-        "GridPathfinder should now correctly check if a door is open before pathing through",
-        "Fixed lights on things occluding too early when turning away. All Things now take lights into account when calculating occlusion bounding radius.",
-        "Fixed reagent stack loses reagent values when being split.",
-        "Added CartridgeElectronicReader. A cartridge that displays all the current recipes in the game. Scroll to a new recipe with your mouse wheel and it will display all the requirements.",
-        "Removed old body part prefabs as they were obsolete.",
-        "ItemKitPipe is now used as a multiconstructor to make all kinds of basic pipe, the same as for cable coil."
-      ]
-    },
-    {
-      "version": "0.1.932.4387",
-      "notes": [
-        "Fixed bug with arc furnace not smelting anything.",
-        "Third pass on Autolathe. Now correctly manufactures items and uses reagents. Only configured with two items, for test data.",
-        "Added 4 Antialiasing options to game. Default is SSAA (cheapest).",
-        "Recipes now can contain a time value. Only used by Microwave and Arc Furnace currently.",
-        "Fixed bug with Bench not powering up correctly.",
-        "Added scene variables to use in save prompt tweaks later.",
-        "Scene changes to support Scotts fix to portrait body visibility.",
-        "CameraPortrait should now reinitialize correctly when rejoining a game. previously was being deleted"
-      ]
-    },
-    {
-      "version": "0.1.931.4378",
-      "notes": [
-        "First path of autolathe. Doesn't make anything, but can take reagents.",
-        "Fixed fires particles spawning after fire's been put out. Fire held zombie reference to atmos not in any containers. Now checking if fire's atmos actually exists in the GridController.",
-        "Added realistic temperatures to ore smelting to test ability to reach various ranges.  Furnace does not inforce pressure limits any more, so all ores now require 100kpa pressure.",
-        "Fixed colours on splash screen",
-        "First pass for splash screen",
-        "Added missing thumbnails for ItemHat and ItemGrenade.",
-        "Added checking to recipe loading to set defaults for temperarue and pressure."
-      ]
-    },
-    {
-      "version": "0.1.930.4366",
-      "notes": [
-        "changed world type on new button",
-        "Added placeholder for Moon map in New World menu",
-        "First pass of new world type: moon.",
-        "Added some options to crystal instance",
-        "Fixed broken OcclusionManager in dedicated server",
-        "Added custom colors to dedicated server"
+        "Possible fix for sun time sync issue."
       ]
     }
   ]
