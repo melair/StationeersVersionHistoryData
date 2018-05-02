@@ -1,4 +1,15 @@
 {
+  "0.1.1285.6308": {
+    "notes": [
+      "Fixed new wall kit fabricator recipe not being consistent with modified autolathe version.",
+      "Fixed several outdated recycling recipes overriding the more up-to-date automated versions.",
+      "Fixed Ingots now properly handled by new automated recycling recipe system and returning their original quantity as reagent mix."
+    ],
+    "releases": {
+      "built": "2018-05-02T00:00:00+01:00",
+      "beta": "2018-05-02T03:01:11+01:00"
+    }
+  },
   "0.1.1284.6306": {
     "notes": [
       "Fixed some input oddities when dealing with popup prompts like the new recipe selection dropdown and labeller window.  Can now use the chat key to submit the prompt, rather than cancel it.",

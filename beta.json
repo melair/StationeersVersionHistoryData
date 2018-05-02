@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1284.6306",
+    "version": "0.1.1285.6308",
     "date": "2018-05-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1285.6308",
+      "notes": [
+        "Fixed new wall kit fabricator recipe not being consistent with modified autolathe version.",
+        "Fixed several outdated recycling recipes overriding the more up-to-date automated versions.",
+        "Fixed Ingots now properly handled by new automated recycling recipe system and returning their original quantity as reagent mix."
+      ]
+    },
     {
       "version": "0.1.1284.6306",
       "notes": [
@@ -2284,11 +2292,7 @@
     {
       "version": "0.1.952.4496",
       "notes": [
-        "Possible fix for sun time sync issue.",
-        "Fixed JIP clients not generating renamed events.",
-        "Added call from computer OnRename to motherboard OnRename so consoles can now have their screen title changed.",
-        "Fixed issue with some circuitboard prefabs where TitleText wasn't pointing to their Title Text box.",
-        "Fixed bug where prompts were not correctly clearing button functionality when disabled."
+        "Possible fix for sun time sync issue."
       ]
     }
   ]
