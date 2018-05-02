@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1285.6308",
+    "version": "0.1.1286.6311",
     "date": "2018-05-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1286.6311",
+      "notes": [
+        "Fixed issue with the select recipe screen in network games, where clicking the recipe selection button on a machine will trigger the popup on only the hosts machine.",
+        "Fixed issue where the front of ItemDrill was missing."
+      ]
+    },
     {
       "version": "0.1.1285.6308",
       "notes": [
@@ -2285,14 +2292,7 @@
         "Fixed Nickel Ore turns into Lead Ingot.",
         "Updated Ingot model with new one.",
         "Added Alloy Ingot model.",
-        "Added Constantan, Electrum, Invar, and Solder Ingots.",
-        "Added Lead, Silver, and Nickel Ingot prefabs."
-      ]
-    },
-    {
-      "version": "0.1.952.4496",
-      "notes": [
-        "Possible fix for sun time sync issue."
+        "Added Constantan, Electrum, Invar, and Solder Ingots."
       ]
     }
   ]

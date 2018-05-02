@@ -1,4 +1,14 @@
 {
+  "0.1.1286.6311": {
+    "notes": [
+      "Fixed issue with the select recipe screen in network games, where clicking the recipe selection button on a machine will trigger the popup on only the hosts machine.",
+      "Fixed issue where the front of ItemDrill was missing."
+    ],
+    "releases": {
+      "built": "2018-05-02T00:00:00+01:00",
+      "beta": "2018-05-02T08:01:11+01:00"
+    }
+  },
   "0.1.1285.6308": {
     "notes": [
       "Fixed new wall kit fabricator recipe not being consistent with modified autolathe version.",
