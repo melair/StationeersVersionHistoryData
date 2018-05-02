@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1286.6311",
-    "date": "2018-05-02T00:00:00+01:00"
+    "version": "0.1.1288.6314",
+    "date": "2018-05-03T00:00:00+01:00"
   },
   "history": [
     {
@@ -2290,9 +2290,7 @@
         "Added language strings for new ingots.",
         "Fixed tracker, arrow now correctly points at target",
         "Fixed Nickel Ore turns into Lead Ingot.",
-        "Updated Ingot model with new one.",
-        "Added Alloy Ingot model.",
-        "Added Constantan, Electrum, Invar, and Solder Ingots."
+        "Updated Ingot model with new one."
       ]
     }
   ]
