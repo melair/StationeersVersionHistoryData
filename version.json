@@ -1,4 +1,15 @@
 {
+  "0.1.1284.6306": {
+    "notes": [
+      "Fixed some input oddities when dealing with popup prompts like the new recipe selection dropdown and labeller window.  Can now use the chat key to submit the prompt, rather than cancel it.",
+      "Fixed bug with interaction doesn't work intermittently on 3rd person camera.",
+      "Added paintable mining belts."
+    ],
+    "releases": {
+      "built": "2018-05-02T00:00:00+01:00",
+      "beta": "2018-05-02T02:01:11+01:00"
+    }
+  },
   "0.1.1283.6302": {
     "notes": [
 

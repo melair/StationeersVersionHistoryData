@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1283.6302",
+    "version": "0.1.1284.6306",
     "date": "2018-05-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1284.6306",
+      "notes": [
+        "Fixed some input oddities when dealing with popup prompts like the new recipe selection dropdown and labeller window.  Can now use the chat key to submit the prompt, rather than cancel it.",
+        "Fixed bug with interaction doesn't work intermittently on 3rd person camera.",
+        "Added paintable mining belts."
+      ]
+    },
     {
       "version": "0.1.1281.6298",
       "notes": [
@@ -2281,14 +2289,6 @@
         "Added call from computer OnRename to motherboard OnRename so consoles can now have their screen title changed.",
         "Fixed issue with some circuitboard prefabs where TitleText wasn't pointing to their Title Text box.",
         "Fixed bug where prompts were not correctly clearing button functionality when disabled."
-      ]
-    },
-    {
-      "version": "0.1.951.4490",
-      "notes": [
-        "Reenabled thermodynamics.",
-        "Pipe Radiators now radiate heat both in a vaccum and in an atmosphere. They are very effective.",
-        "Added energy rifle. Similar to Energy Pistol but with a faster rate of fire and much faster cooling."
       ]
     }
   ]
