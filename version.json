@@ -1,4 +1,13 @@
 {
+  "0.1.1290.6322": {
+    "notes": [
+      "Added RollCover \"Door\". You can build it using ItemKitDoor and place wires, pipes, and logic things inside it(they're actually placed on the frame behind it)"
+    ],
+    "releases": {
+      "built": "2018-05-04T00:00:00+01:00",
+      "beta": "2018-05-03T22:01:11+01:00"
+    }
+  },
   "0.1.1289.6320": {
     "notes": [
       "Fixed consoles not working in third person.",
