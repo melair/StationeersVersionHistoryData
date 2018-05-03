@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1288.6314",
+    "version": "0.1.1289.6320",
     "date": "2018-05-03T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1289.6320",
+      "notes": [
+        "Fixed consoles not working in third person.",
+        "Finished and added 3D printing shader for the Fabricator",
+        "First pass on atmosphere flowing from main grid to mothership grid",
+        "First pass on Mothership being created when you build a port side dock"
+      ]
+    },
     {
       "version": "0.1.1286.6311",
       "notes": [
@@ -2285,12 +2294,7 @@
       "version": "0.1.953.4506",
       "notes": [
         "Arc furnace can produce all simple ingots",
-        "Furnace given ability to smelt alloys",
-        "More mid tier recipes added to the fabricator",
-        "Added language strings for new ingots.",
-        "Fixed tracker, arrow now correctly points at target",
-        "Fixed Nickel Ore turns into Lead Ingot.",
-        "Updated Ingot model with new one."
+        "Furnace given ability to smelt alloys"
       ]
     }
   ]

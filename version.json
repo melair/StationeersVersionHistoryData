@@ -1,4 +1,16 @@
 {
+  "0.1.1289.6320": {
+    "notes": [
+      "Fixed consoles not working in third person.",
+      "Finished and added 3D printing shader for the Fabricator",
+      "First pass on atmosphere flowing from main grid to mothership grid",
+      "First pass on Mothership being created when you build a port side dock"
+    ],
+    "releases": {
+      "built": "2018-05-03T00:00:00+01:00",
+      "beta": "2018-05-03T05:01:13+01:00"
+    }
+  },
   "0.1.1288.6314": {
     "notes": [
 
