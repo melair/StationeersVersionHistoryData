@@ -1,4 +1,15 @@
 {
+  "0.1.1291.6327": {
+    "notes": [
+      "Fixed issue where the the sprite references on ItemKitPipe were incorrectly configured, meaning it always displayed the yellow thumbnail no matter what colour they were painted.",
+      "Fixed NRE when ejecting silicon from fabricator. Added needed null check.",
+      "Fixed Roll Cover placement. You were able to place it at all angles. Now it's just like other doors."
+    ],
+    "releases": {
+      "built": "2018-05-07T00:00:00+01:00",
+      "beta": "2018-05-06T22:01:10+01:00"
+    }
+  },
   "0.1.1290.6322": {
     "notes": [
       "Added RollCover \"Door\". You can build it using ItemKitDoor and place wires, pipes, and logic things inside it(they're actually placed on the frame behind it)"

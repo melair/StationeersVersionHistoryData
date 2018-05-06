@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1290.6322",
-    "date": "2018-05-04T00:00:00+01:00"
+    "version": "0.1.1291.6327",
+    "date": "2018-05-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1291.6327",
+      "notes": [
+        "Fixed issue where the the sprite references on ItemKitPipe were incorrectly configured, meaning it always displayed the yellow thumbnail no matter what colour they were painted.",
+        "Fixed NRE when ejecting silicon from fabricator. Added needed null check.",
+        "Fixed Roll Cover placement. You were able to place it at all angles. Now it's just like other doors."
+      ]
+    },
     {
       "version": "0.1.1290.6322",
       "notes": [
@@ -2290,10 +2298,7 @@
       "notes": [
         "updated linux steamworks(x86)",
         "Added dumby backshadow for character. Call Human.UpdateBackSlotShadow when equiping new backslot item. Example in Jetpack OnEnter/Exit Inventory",
-        "Added ProjectSettings for dedicated server on linux",
-        "Added Linux dedicated server build command",
-        "updated linux steamworks",
-        "Fixed splash background by scott"
+        "Added ProjectSettings for dedicated server on linux"
       ]
     }
   ]
