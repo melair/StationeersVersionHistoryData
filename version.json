@@ -1,4 +1,16 @@
 {
+  "0.1.1292.6332": {
+    "notes": [
+      "Fixed Floor Grates can now be rotated on any axis.",
+      "Made docking ports not spawnable",
+      "Fixed missing localized name value for most recent frame variant (complete frame with corner removed).",
+      "Fixed issue where CompositeRollCover did not return a door kit upon deconstruction."
+    ],
+    "releases": {
+      "built": "2018-05-08T00:00:00+01:00",
+      "beta": "2018-05-07T22:01:11+01:00"
+    }
+  },
   "0.1.1291.6327": {
     "notes": [
       "Fixed issue where the the sprite references on ItemKitPipe were incorrectly configured, meaning it always displayed the yellow thumbnail no matter what colour they were painted.",
