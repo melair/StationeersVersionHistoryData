@@ -1,4 +1,24 @@
 {
+  "0.1.1295.6341": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-09T00:00:00+01:00",
+      "beta": "2018-05-09T00:02:01+01:00"
+    }
+  },
+  "0.1.1293.6338": {
+    "notes": [
+      "Fixed 3D printing material. Was supposed to be white",
+      "Added first pass of Ladder.  Can be spawned in as an ItemKitLadder.  Currently need to be looking at a ladder to climb it, this will definitely be refined.  No recipe on crafting machines until it gets another pass.",
+      "Added new wall types to 4 new kits. These kits can be built on the fabricator in the same way as the regular wall kit."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1292.6332": {
     "notes": [
       "Fixed Floor Grates can now be rotated on any axis.",
