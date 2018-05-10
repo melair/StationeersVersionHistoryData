@@ -1,9 +1,24 @@
 {
   "current": {
-    "version": "0.1.1295.6341",
-    "date": "2018-05-09T00:00:00+01:00"
+    "version": "0.1.1297.6349",
+    "date": "2018-05-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1297.6349",
+      "notes": [
+        "Fixed issue where players were able to climb walls as long as they were looking at a ladder."
+      ]
+    },
+    {
+      "version": "0.1.1296.6347",
+      "notes": [
+        "Added ability to loop backwards through device and value selection on Logic READER by holding the QuantityModifier key (Left Alt by default).",
+        "Fixed issue causing duplicate prefab errors on load for new wall variant kits.",
+        "Fixed Iron Window's build state collider that was preventing passing though an unfinished iron window",
+        "Fixed new wall prefab names"
+      ]
+    },
     {
       "version": "0.1.1293.6338",
       "notes": [
@@ -2293,14 +2308,7 @@
       "version": "0.1.955.4532",
       "notes": [
         "Added Initialize panel in Starter.unity",
-        "Internal Inventory Quantities (Like fuel qty in Welder) should now update when the inventory is open rather then just when you reOpen the inventory",
-        "Fixed bug where throwing things while moving at high velocity would cause collision",
-        "Clamped force applied to character when throwing as throwing at high velocities would cause giant negative force applied to character",
-        "Networked synced Throwing animation",
-        "Fixed incorrect transition time on Throwing R",
-        "Disabled majority of player input while unconscious/dead.",
-        "Removed manager reset input",
-        "Jetpack movement should now be disabled when using item labler and other keyboard input devices"
+        "Internal Inventory Quantities (Like fuel qty in Welder) should now update when the inventory is open rather then just when you reOpen the inventory"
       ]
     }
   ]

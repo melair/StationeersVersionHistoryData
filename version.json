@@ -1,4 +1,25 @@
 {
+  "0.1.1297.6349": {
+    "notes": [
+      "Fixed issue where players were able to climb walls as long as they were looking at a ladder."
+    ],
+    "releases": {
+      "built": "2018-05-10T00:00:00+01:00",
+      "beta": "2018-05-10T03:01:12+01:00"
+    }
+  },
+  "0.1.1296.6347": {
+    "notes": [
+      "Added ability to loop backwards through device and value selection on Logic READER by holding the QuantityModifier key (Left Alt by default).",
+      "Fixed issue causing duplicate prefab errors on load for new wall variant kits.",
+      "Fixed Iron Window's build state collider that was preventing passing though an unfinished iron window",
+      "Fixed new wall prefab names"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1295.6341": {
     "notes": [
 
