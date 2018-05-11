@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1297.6349",
-    "date": "2018-05-10T00:00:00+01:00"
+    "version": "0.1.1300.6356",
+    "date": "2018-05-11T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1300.6356",
+      "notes": [
+        "Changed window settings so that the game can be visible in the background",
+        "Fixed occasional NRE with ElectronicReader",
+        "Fixed missing references to new e-reader lists in tutorial and world manager.",
+        "Removed some debug entries on ladder.",
+        "Added Electronic Reader Cartridge filtering.  Target any manufacturing machine, furnace or computer with manufacturing motherboard and it will only display the recipes relevant to that machine.",
+        "Fixed ItemKitWall had wrong default thumbnail colour (orange instead of white).",
+        "Fixed Tidied up several item kit names for consistency."
+      ]
+    },
     {
       "version": "0.1.1297.6349",
       "notes": [
@@ -2290,25 +2302,6 @@
       "version": "0.1.960.4543",
       "notes": [
         "Updated initialising screen"
-      ]
-    },
-    {
-      "version": "0.1.959.4541",
-      "notes": [
-        "Fixed dark blue in splash screen"
-      ]
-    },
-    {
-      "version": "0.1.958.4539",
-      "notes": [
-        "Disabled SpeechRecognizer in server build"
-      ]
-    },
-    {
-      "version": "0.1.955.4532",
-      "notes": [
-        "Added Initialize panel in Starter.unity",
-        "Internal Inventory Quantities (Like fuel qty in Welder) should now update when the inventory is open rather then just when you reOpen the inventory"
       ]
     }
   ]

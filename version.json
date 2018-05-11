@@ -1,4 +1,19 @@
 {
+  "0.1.1300.6356": {
+    "notes": [
+      "Changed window settings so that the game can be visible in the background",
+      "Fixed occasional NRE with ElectronicReader",
+      "Fixed missing references to new e-reader lists in tutorial and world manager.",
+      "Removed some debug entries on ladder.",
+      "Added Electronic Reader Cartridge filtering.  Target any manufacturing machine, furnace or computer with manufacturing motherboard and it will only display the recipes relevant to that machine.",
+      "Fixed ItemKitWall had wrong default thumbnail colour (orange instead of white).",
+      "Fixed Tidied up several item kit names for consistency."
+    ],
+    "releases": {
+      "built": "2018-05-11T00:00:00+01:00",
+      "beta": "2018-05-11T01:01:12+01:00"
+    }
+  },
   "0.1.1297.6349": {
     "notes": [
       "Fixed issue where players were able to climb walls as long as they were looking at a ladder."
