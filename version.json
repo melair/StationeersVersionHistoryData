@@ -1,4 +1,23 @@
 {
+  "0.1.1304.6361": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-15T00:00:00+01:00",
+      "beta": "2018-05-14T22:01:13+01:00"
+    }
+  },
+  "0.1.1303.6360": {
+    "notes": [
+      "Fixed Increased idle power cost of Fabricator and Hydraulic Pipe Bender to bring them more in line with other manufacturing devices.",
+      "Fixed the inability to rotate walls and floors in some orientations"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1300.6356": {
     "notes": [
       "Changed window settings so that the game can be visible in the background",
