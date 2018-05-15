@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1304.6361",
-    "date": "2018-05-15T00:00:00+01:00"
+    "version": "0.1.1305.6365",
+    "date": "2018-05-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1305.6365",
+      "notes": [
+        "Fixed pressure gauge needle on Portable Air Scrubber rotating in the wrong direction.",
+        "Fixed Raycaster camera being deleted on clients when the object it was attached to was destroyed."
+      ]
+    },
     {
       "version": "0.1.1303.6360",
       "notes": [
@@ -2299,10 +2306,7 @@
         "Setup scrollbar for Join World menu so it actually works",
         "Rearranged some of the Join World menu",
         "Fixed machine generation of reagent.cs was missing equality check for pressure and temperature in recipes.",
-        "Fixed small transformer max setting too low. Moved from 1kW to 5kW.",
-        "Fixed pressure and temperature not configured for recipe data correctly.",
-        "Fixed auto save in dedicated server.",
-        "Added autosaveinterval parameter."
+        "Fixed small transformer max setting too low. Moved from 1kW to 5kW."
       ]
     }
   ]
