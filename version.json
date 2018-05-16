@@ -1,4 +1,13 @@
 {
+  "0.1.1306.6366": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-17T00:00:00+01:00",
+      "beta": "2018-05-16T22:01:12+01:00"
+    }
+  },
   "0.1.1305.6365": {
     "notes": [
       "Fixed pressure gauge needle on Portable Air Scrubber rotating in the wrong direction.",

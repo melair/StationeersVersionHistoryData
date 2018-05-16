@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1305.6365",
-    "date": "2018-05-16T00:00:00+01:00"
+    "version": "0.1.1306.6366",
+    "date": "2018-05-17T00:00:00+01:00"
   },
   "history": [
     {
@@ -2305,8 +2305,7 @@
         "Allowed overflow for some titles in Settings menu and added an autosize to some titles for German localisation support",
         "Setup scrollbar for Join World menu so it actually works",
         "Rearranged some of the Join World menu",
-        "Fixed machine generation of reagent.cs was missing equality check for pressure and temperature in recipes.",
-        "Fixed small transformer max setting too low. Moved from 1kW to 5kW."
+        "Fixed machine generation of reagent.cs was missing equality check for pressure and temperature in recipes."
       ]
     }
   ]
