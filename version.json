@@ -1,4 +1,14 @@
 {
+  "0.1.1307.6369": {
+    "notes": [
+      "Fixed atmos thread crash when deconstructing multiple pipes.",
+      "Added building effect for structures and build states"
+    ],
+    "releases": {
+      "built": "2018-05-18T00:00:00+01:00",
+      "beta": "2018-05-18T00:01:11+01:00"
+    }
+  },
   "0.1.1306.6366": {
     "notes": [
 

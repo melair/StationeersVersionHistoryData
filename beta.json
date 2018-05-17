@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1306.6366",
-    "date": "2018-05-17T00:00:00+01:00"
+    "version": "0.1.1307.6369",
+    "date": "2018-05-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1307.6369",
+      "notes": [
+        "Fixed atmos thread crash when deconstructing multiple pipes.",
+        "Added building effect for structures and build states"
+      ]
+    },
     {
       "version": "0.1.1305.6365",
       "notes": [
@@ -2302,10 +2309,7 @@
         "Fixed save world failure. Metafile was opened twice.",
         "Adjusted some padding on alert panel",
         "Widened menu tabs in Settings menu",
-        "Allowed overflow for some titles in Settings menu and added an autosize to some titles for German localisation support",
-        "Setup scrollbar for Join World menu so it actually works",
-        "Rearranged some of the Join World menu",
-        "Fixed machine generation of reagent.cs was missing equality check for pressure and temperature in recipes."
+        "Allowed overflow for some titles in Settings menu and added an autosize to some titles for German localisation support"
       ]
     }
   ]
