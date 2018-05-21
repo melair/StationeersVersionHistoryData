@@ -1,4 +1,25 @@
 {
+  "0.1.1310.6380": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-21T00:00:00+01:00",
+      "beta": "2018-05-21T03:01:12+01:00"
+    }
+  },
+  "0.1.1308.6377": {
+    "notes": [
+      "Removed Placement effect because it was causing an error with windows. Will add again once fixed.",
+      "Fixed Escape key not returning to the main menu if pressed on the new scenario screen.",
+      "Fixed Instances of the tablet falling through voxel terrain by enabling the 'Small Item' flag on the object to enable additional collision detection.",
+      "Added continuous collision detection for one second for items when they move to the world from a slot. This should help less things fall through the world."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1307.6369": {
     "notes": [
       "Fixed atmos thread crash when deconstructing multiple pipes.",

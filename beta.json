@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1307.6369",
-    "date": "2018-05-18T00:00:00+01:00"
+    "version": "0.1.1310.6380",
+    "date": "2018-05-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1308.6377",
+      "notes": [
+        "Removed Placement effect because it was causing an error with windows. Will add again once fixed.",
+        "Fixed Escape key not returning to the main menu if pressed on the new scenario screen.",
+        "Fixed Instances of the tablet falling through voxel terrain by enabling the 'Small Item' flag on the object to enable additional collision detection.",
+        "Added continuous collision detection for one second for items when they move to the world from a slot. This should help less things fall through the world."
+      ]
+    },
     {
       "version": "0.1.1307.6369",
       "notes": [
@@ -2298,18 +2307,6 @@
         "Re-enabled menu camera waypoint setup but on the character creation scene as a placeholder.",
         "Additional force added to character if dragging another person in gravity",
         "Added first pass of menu cutscene station and logic."
-      ]
-    },
-    {
-      "version": "0.1.962.4566",
-      "notes": [
-        "Fixed sending unnecessary atmosphere updates when client moving around.",
-        "Fixed clients not receiving updates for atmospheres when invalid world atmospheres existed.",
-        "Fixed null ref when particle system for fires was initialized when fires drawn out of range on connect.",
-        "Fixed save world failure. Metafile was opened twice.",
-        "Adjusted some padding on alert panel",
-        "Widened menu tabs in Settings menu",
-        "Allowed overflow for some titles in Settings menu and added an autosize to some titles for German localisation support"
       ]
     }
   ]
