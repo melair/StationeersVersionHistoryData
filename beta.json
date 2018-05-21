@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1313.6389",
-    "date": "2018-05-21T00:00:00+01:00"
+    "version": "0.1.1314.6390",
+    "date": "2018-05-22T00:00:00+01:00"
   },
   "history": [
     {
@@ -2309,8 +2309,7 @@
         "Queen set to nonSpawnable",
         "Updated lighting and camera movement speed in main menu cutscene",
         "Added extra kerning to text in Settings menu",
-        "Fixed refresh spinner in Join World menu spinning weird",
-        "Adjusted New World buttons zoom"
+        "Fixed refresh spinner in Join World menu spinning weird"
       ]
     }
   ]
