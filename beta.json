@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1314.6390",
+    "version": "0.1.1315.6392",
     "date": "2018-05-22T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1315.6392",
+      "notes": [
+        "Fixed issues with changing the sun orbit parameters when not in-game."
+      ]
+    },
     {
       "version": "0.1.1312.6387",
       "notes": [
@@ -2307,9 +2313,7 @@
         "NPCGrounder should now correctly play attack animation when appropriate",
         "GridPathfinder should now track no room structures better & navigate no room stairs better",
         "Queen set to nonSpawnable",
-        "Updated lighting and camera movement speed in main menu cutscene",
-        "Added extra kerning to text in Settings menu",
-        "Fixed refresh spinner in Join World menu spinning weird"
+        "Updated lighting and camera movement speed in main menu cutscene"
       ]
     }
   ]
