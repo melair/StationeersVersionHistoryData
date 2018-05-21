@@ -1,9 +1,24 @@
 {
   "current": {
-    "version": "0.1.1310.6380",
+    "version": "0.1.1313.6389",
     "date": "2018-05-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1312.6387",
+      "notes": [
+        "Added settings screen option for SunOrbitPeriod, allowing you to adjust the duration of a full sun orbit between 0.1 and 2x the base value of 1200."
+      ]
+    },
+    {
+      "version": "0.1.1311.6385",
+      "notes": [
+        "First pass on atmosphere flowing between ship and main grid",
+        "removed Altitude text from control chair that was causing errors",
+        "Fixed mothership spawned by docking port from being made twice",
+        "Fixed dock position when being created by mothership"
+      ]
+    },
     {
       "version": "0.1.1308.6377",
       "notes": [
@@ -2296,17 +2311,6 @@
         "Added extra kerning to text in Settings menu",
         "Fixed refresh spinner in Join World menu spinning weird",
         "Adjusted New World buttons zoom"
-      ]
-    },
-    {
-      "version": "0.1.963.4580",
-      "notes": [
-        "Added damage state to tooltips.",
-        "Fixed bug with atmosphere OpenNeighbours being changed while processing.",
-        "First pass of new burning mechanics for items.",
-        "Re-enabled menu camera waypoint setup but on the character creation scene as a placeholder.",
-        "Additional force added to character if dragging another person in gravity",
-        "Added first pass of menu cutscene station and logic."
       ]
     }
   ]

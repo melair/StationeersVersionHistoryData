@@ -1,4 +1,34 @@
 {
+  "0.1.1313.6389": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-21T00:00:00+01:00",
+      "beta": "2018-05-21T08:01:13+01:00"
+    }
+  },
+  "0.1.1312.6387": {
+    "notes": [
+      "Added settings screen option for SunOrbitPeriod, allowing you to adjust the duration of a full sun orbit between 0.1 and 2x the base value of 1200."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1311.6385": {
+    "notes": [
+      "First pass on atmosphere flowing between ship and main grid",
+      "removed Altitude text from control chair that was causing errors",
+      "Fixed mothership spawned by docking port from being made twice",
+      "Fixed dock position when being created by mothership"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1310.6380": {
     "notes": [
 
