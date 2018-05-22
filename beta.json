@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1316.6398",
-    "date": "2018-05-22T00:00:00+01:00"
+    "version": "0.1.1317.6399",
+    "date": "2018-05-23T00:00:00+01:00"
   },
   "history": [
     {
@@ -2316,8 +2316,7 @@
     {
       "version": "0.1.964.4586",
       "notes": [
-        "Adjusted maximum pressure points and volume for tanks.",
-        "Added additional UI to see destroyed items in inventory."
+        "Adjusted maximum pressure points and volume for tanks."
       ]
     }
   ]

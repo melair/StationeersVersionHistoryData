@@ -1,4 +1,13 @@
 {
+  "0.1.1317.6399": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-23T00:00:00+01:00",
+      "beta": "2018-05-22T22:01:11+01:00"
+    }
+  },
   "0.1.1316.6398": {
     "notes": [
       "Fixed NRE when trying to recycle a reagent mix.  Can now recycle reagent mixes, ores and ingots but the resulting slag will need to be fed through a centrifuge until it's back in the form of usable ores.",
