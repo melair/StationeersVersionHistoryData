@@ -1,4 +1,17 @@
 {
+  "0.1.1316.6398": {
+    "notes": [
+      "Fixed NRE when trying to recycle a reagent mix.  Can now recycle reagent mixes, ores and ingots but the resulting slag will need to be fed through a centrifuge until it's back in the form of usable ores.",
+      "Fixed Stacker will now automatically eject whatever it is processing if an incompatible item is is in the input slot, allowing players to implement their own chute jam handling and resolution system.",
+      "Added functionality to the Stacker.  Can now read the contents with logic, and read/write the quantity setting with logic.  It can also be used to automatically remove items from slots in a chute network, for example it can process a mining belt full of ores.",
+      "Fixed bug with atmos not flowing between different grids properly.",
+      "Fixed issue where loading settings from an old version could cause unrecoverable errors that required users to delete their settings file."
+    ],
+    "releases": {
+      "built": "2018-05-22T00:00:00+01:00",
+      "beta": "2018-05-22T07:01:11+01:00"
+    }
+  },
   "0.1.1315.6392": {
     "notes": [
       "Fixed issues with changing the sun orbit parameters when not in-game."
