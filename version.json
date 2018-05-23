@@ -1,4 +1,13 @@
 {
+  "0.1.1319.6405": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-24T00:00:00+01:00",
+      "beta": "2018-05-23T22:01:12+01:00"
+    }
+  },
   "0.1.1318.6403": {
     "notes": [
       "Fixed bug where recycler was only searching 1 layer deep for contents when calculating value of returned reagent mix.",

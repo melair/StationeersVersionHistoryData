@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1318.6403",
-    "date": "2018-05-23T00:00:00+01:00"
+    "version": "0.1.1319.6405",
+    "date": "2018-05-24T00:00:00+01:00"
   },
   "history": [
     {
@@ -2316,8 +2316,7 @@
         "Added shake to mineables while being mined",
         "Precision place should now correctly hide Tablet UI",
         "Mass change on NPCGrounder",
-        "Changes made to help A* so they don't get stuck going up walls",
-        "Fixed air tanks spawning overpressurized on load."
+        "Changes made to help A* so they don't get stuck going up walls"
       ]
     }
   ]
