@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1317.6399",
+    "version": "0.1.1318.6403",
     "date": "2018-05-23T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1318.6403",
+      "notes": [
+        "Fixed bug where recycler was only searching 1 layer deep for contents when calculating value of returned reagent mix.",
+        "Fixed atmosphere bug that was causing atmospheres to not mix vertically.",
+        "Refactored dock atmos mixing code"
+      ]
+    },
     {
       "version": "0.1.1316.6398",
       "notes": [
@@ -2309,14 +2317,7 @@
         "Precision place should now correctly hide Tablet UI",
         "Mass change on NPCGrounder",
         "Changes made to help A* so they don't get stuck going up walls",
-        "Fixed air tanks spawning overpressurized on load.",
-        "Fixed OpenNeighbours being wrong briefly in a frame and causing atmosphere variances."
-      ]
-    },
-    {
-      "version": "0.1.964.4586",
-      "notes": [
-        "Adjusted maximum pressure points and volume for tanks."
+        "Fixed air tanks spawning overpressurized on load."
       ]
     }
   ]
