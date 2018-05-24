@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1319.6405",
-    "date": "2018-05-24T00:00:00+01:00"
+    "version": "0.1.1320.6409",
+    "date": "2018-05-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1320.6409",
+      "notes": [
+        "Fixed fabricator printing effect on clients",
+        "Added missing 4-way corner pipe variant and ruptured version.",
+        "Added linked dock serialization"
+      ]
+    },
     {
       "version": "0.1.1318.6403",
       "notes": [
@@ -2312,11 +2320,7 @@
         "Gas Canister explosion now uses the same explosion methods as Grenades.",
         "Atmosphere Volume now altered based on voxel state. This means as you mine voxels the atmosphere will progressively have more volume.",
         "Fabricator should have all major recipes.  Alloy recipes given larger required temp/pressure ranges.",
-        "Added mining time per minable (values need setting)",
-        "Added shake to mineables while being mined",
-        "Precision place should now correctly hide Tablet UI",
-        "Mass change on NPCGrounder",
-        "Changes made to help A* so they don't get stuck going up walls"
+        "Added mining time per minable (values need setting)"
       ]
     }
   ]

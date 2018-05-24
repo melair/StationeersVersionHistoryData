@@ -1,4 +1,15 @@
 {
+  "0.1.1320.6409": {
+    "notes": [
+      "Fixed fabricator printing effect on clients",
+      "Added missing 4-way corner pipe variant and ruptured version.",
+      "Added linked dock serialization"
+    ],
+    "releases": {
+      "built": "2018-05-25T00:00:00+01:00",
+      "beta": "2018-05-24T22:01:12+01:00"
+    }
+  },
   "0.1.1319.6405": {
     "notes": [
 
