@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1320.6409",
+    "version": "0.1.1321.6411",
     "date": "2018-05-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1321.6411",
+      "notes": [
+        "Fixed misaligned 3-way corner pipe connections as a result of previous update adding new pipe variant."
+      ]
+    },
     {
       "version": "0.1.1320.6409",
       "notes": [
@@ -2318,9 +2324,7 @@
         "Removed new allocations in unreliable messages(Atmosphere, AnimationUpdate, DamageStateMessage, DynamicThingUpdateMessage)",
         "Fixed extreme heat radiation values. Now radiates heat based on clamped internal atmosphere scale.",
         "Gas Canister explosion now uses the same explosion methods as Grenades.",
-        "Atmosphere Volume now altered based on voxel state. This means as you mine voxels the atmosphere will progressively have more volume.",
-        "Fabricator should have all major recipes.  Alloy recipes given larger required temp/pressure ranges.",
-        "Added mining time per minable (values need setting)"
+        "Atmosphere Volume now altered based on voxel state. This means as you mine voxels the atmosphere will progressively have more volume."
       ]
     }
   ]
