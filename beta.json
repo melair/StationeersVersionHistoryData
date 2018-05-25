@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1322.6413",
+    "version": "0.1.1323.6416",
     "date": "2018-05-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1323.6416",
+      "notes": [
+        "Added synchronization of SunOrbitPeriod on join. Servers should now be able to set custom day length when creating/loading a world."
+      ]
+    },
     {
       "version": "0.1.1322.6413",
       "notes": [
@@ -2326,9 +2332,7 @@
         "Fixed radiators not working when placed directly onto a block.",
         "Fixed radiation values not consistent with stephanboltz law. Note: this will now make most things cool down reasonably fast in space.",
         "Fixed cleanup occurring in pipe networks on modestly low pressure, not on extremely low mole quantities. Would make cooled pipe networks empty from the world.",
-        "Eased many 'progression' autolathe recipes to more reasonable values. Replicated changes to fabricator.",
-        "Removed new allocations in unreliable messages(Atmosphere, AnimationUpdate, DamageStateMessage, DynamicThingUpdateMessage)",
-        "Fixed extreme heat radiation values. Now radiates heat based on clamped internal atmosphere scale."
+        "Eased many 'progression' autolathe recipes to more reasonable values. Replicated changes to fabricator."
       ]
     }
   ]
