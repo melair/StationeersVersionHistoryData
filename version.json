@@ -1,4 +1,13 @@
 {
+  "0.1.1322.6413": {
+    "notes": [
+      "Fixed issue with canister pressure gauge needles rotating in the wrong direction."
+    ],
+    "releases": {
+      "built": "2018-05-25T00:00:00+01:00",
+      "beta": "2018-05-25T03:01:11+01:00"
+    }
+  },
   "0.1.1321.6411": {
     "notes": [
       "Fixed misaligned 3-way corner pipe connections as a result of previous update adding new pipe variant."

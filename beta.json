@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1321.6411",
+    "version": "0.1.1322.6413",
     "date": "2018-05-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1322.6413",
+      "notes": [
+        "Fixed issue with canister pressure gauge needles rotating in the wrong direction."
+      ]
+    },
     {
       "version": "0.1.1321.6411",
       "notes": [
@@ -2322,9 +2328,7 @@
         "Fixed cleanup occurring in pipe networks on modestly low pressure, not on extremely low mole quantities. Would make cooled pipe networks empty from the world.",
         "Eased many 'progression' autolathe recipes to more reasonable values. Replicated changes to fabricator.",
         "Removed new allocations in unreliable messages(Atmosphere, AnimationUpdate, DamageStateMessage, DynamicThingUpdateMessage)",
-        "Fixed extreme heat radiation values. Now radiates heat based on clamped internal atmosphere scale.",
-        "Gas Canister explosion now uses the same explosion methods as Grenades.",
-        "Atmosphere Volume now altered based on voxel state. This means as you mine voxels the atmosphere will progressively have more volume."
+        "Fixed extreme heat radiation values. Now radiates heat based on clamped internal atmosphere scale."
       ]
     }
   ]
