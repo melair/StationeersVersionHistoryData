@@ -1,4 +1,13 @@
 {
+  "0.1.1325.6418": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-28T00:00:00+01:00",
+      "beta": "2018-05-27T23:01:10+01:00"
+    }
+  },
   "0.1.1323.6416": {
     "notes": [
       "Added synchronization of SunOrbitPeriod on join. Servers should now be able to set custom day length when creating/loading a world."
