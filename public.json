@@ -1,9 +1,178 @@
 {
   "current": {
-    "version": "0.1.1285.6308",
-    "date": "2018-05-02T00:00:00+01:00"
+    "version": "0.1.1323.6416",
+    "date": "2018-05-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1323.6416",
+      "notes": [
+        "Added synchronization of SunOrbitPeriod on join. Servers should now be able to set custom day length when creating/loading a world."
+      ]
+    },
+    {
+      "version": "0.1.1322.6413",
+      "notes": [
+        "Fixed issue with canister pressure gauge needles rotating in the wrong direction."
+      ]
+    },
+    {
+      "version": "0.1.1321.6411",
+      "notes": [
+        "Fixed misaligned 3-way corner pipe connections as a result of previous update adding new pipe variant."
+      ]
+    },
+    {
+      "version": "0.1.1320.6409",
+      "notes": [
+        "Fixed fabricator printing effect on clients",
+        "Added missing 4-way corner pipe variant and ruptured version.",
+        "Added linked dock serialization"
+      ]
+    },
+    {
+      "version": "0.1.1318.6403",
+      "notes": [
+        "Fixed bug where recycler was only searching 1 layer deep for contents when calculating value of returned reagent mix.",
+        "Fixed atmosphere bug that was causing atmospheres to not mix vertically.",
+        "Refactored dock atmos mixing code"
+      ]
+    },
+    {
+      "version": "0.1.1316.6398",
+      "notes": [
+        "Fixed NRE when trying to recycle a reagent mix.  Can now recycle reagent mixes, ores and ingots but the resulting slag will need to be fed through a centrifuge until it's back in the form of usable ores.",
+        "Fixed Stacker will now automatically eject whatever it is processing if an incompatible item is is in the input slot, allowing players to implement their own chute jam handling and resolution system.",
+        "Added functionality to the Stacker.  Can now read the contents with logic, and read/write the quantity setting with logic.  It can also be used to automatically remove items from slots in a chute network, for example it can process a mining belt full of ores.",
+        "Fixed bug with atmos not flowing between different grids properly.",
+        "Fixed issue where loading settings from an old version could cause unrecoverable errors that required users to delete their settings file."
+      ]
+    },
+    {
+      "version": "0.1.1315.6392",
+      "notes": [
+        "Fixed issues with changing the sun orbit parameters when not in-game."
+      ]
+    },
+    {
+      "version": "0.1.1312.6387",
+      "notes": [
+        "Added settings screen option for SunOrbitPeriod, allowing you to adjust the duration of a full sun orbit between 0.1 and 2x the base value of 1200."
+      ]
+    },
+    {
+      "version": "0.1.1311.6385",
+      "notes": [
+        "First pass on atmosphere flowing between ship and main grid",
+        "removed Altitude text from control chair that was causing errors",
+        "Fixed mothership spawned by docking port from being made twice",
+        "Fixed dock position when being created by mothership"
+      ]
+    },
+    {
+      "version": "0.1.1308.6377",
+      "notes": [
+        "Removed Placement effect because it was causing an error with windows. Will add again once fixed.",
+        "Fixed Escape key not returning to the main menu if pressed on the new scenario screen.",
+        "Fixed Instances of the tablet falling through voxel terrain by enabling the 'Small Item' flag on the object to enable additional collision detection.",
+        "Added continuous collision detection for one second for items when they move to the world from a slot. This should help less things fall through the world."
+      ]
+    },
+    {
+      "version": "0.1.1307.6369",
+      "notes": [
+        "Fixed atmos thread crash when deconstructing multiple pipes.",
+        "Added building effect for structures and build states"
+      ]
+    },
+    {
+      "version": "0.1.1305.6365",
+      "notes": [
+        "Fixed pressure gauge needle on Portable Air Scrubber rotating in the wrong direction.",
+        "Fixed Raycaster camera being deleted on clients when the object it was attached to was destroyed."
+      ]
+    },
+    {
+      "version": "0.1.1303.6360",
+      "notes": [
+        "Fixed Increased idle power cost of Fabricator and Hydraulic Pipe Bender to bring them more in line with other manufacturing devices.",
+        "Fixed the inability to rotate walls and floors in some orientations"
+      ]
+    },
+    {
+      "version": "0.1.1300.6356",
+      "notes": [
+        "Changed window settings so that the game can be visible in the background",
+        "Fixed occasional NRE with ElectronicReader",
+        "Fixed missing references to new e-reader lists in tutorial and world manager.",
+        "Removed some debug entries on ladder.",
+        "Added Electronic Reader Cartridge filtering.  Target any manufacturing machine, furnace or computer with manufacturing motherboard and it will only display the recipes relevant to that machine.",
+        "Fixed ItemKitWall had wrong default thumbnail colour (orange instead of white).",
+        "Fixed Tidied up several item kit names for consistency."
+      ]
+    },
+    {
+      "version": "0.1.1297.6349",
+      "notes": [
+        "Fixed issue where players were able to climb walls as long as they were looking at a ladder."
+      ]
+    },
+    {
+      "version": "0.1.1296.6347",
+      "notes": [
+        "Added ability to loop backwards through device and value selection on Logic READER by holding the QuantityModifier key (Left Alt by default).",
+        "Fixed issue causing duplicate prefab errors on load for new wall variant kits.",
+        "Fixed Iron Window's build state collider that was preventing passing though an unfinished iron window",
+        "Fixed new wall prefab names"
+      ]
+    },
+    {
+      "version": "0.1.1293.6338",
+      "notes": [
+        "Fixed 3D printing material. Was supposed to be white",
+        "Added first pass of Ladder.  Can be spawned in as an ItemKitLadder.  Currently need to be looking at a ladder to climb it, this will definitely be refined.  No recipe on crafting machines until it gets another pass.",
+        "Added new wall types to 4 new kits. These kits can be built on the fabricator in the same way as the regular wall kit."
+      ]
+    },
+    {
+      "version": "0.1.1292.6332",
+      "notes": [
+        "Fixed Floor Grates can now be rotated on any axis.",
+        "Made docking ports not spawnable",
+        "Fixed missing localized name value for most recent frame variant (complete frame with corner removed).",
+        "Fixed issue where CompositeRollCover did not return a door kit upon deconstruction."
+      ]
+    },
+    {
+      "version": "0.1.1291.6327",
+      "notes": [
+        "Fixed issue where the the sprite references on ItemKitPipe were incorrectly configured, meaning it always displayed the yellow thumbnail no matter what colour they were painted.",
+        "Fixed NRE when ejecting silicon from fabricator. Added needed null check.",
+        "Fixed Roll Cover placement. You were able to place it at all angles. Now it's just like other doors."
+      ]
+    },
+    {
+      "version": "0.1.1290.6322",
+      "notes": [
+        "Added RollCover \"Door\". You can build it using ItemKitDoor and place wires, pipes, and logic things inside it(they're actually placed on the frame behind it)"
+      ]
+    },
+    {
+      "version": "0.1.1289.6320",
+      "notes": [
+        "Fixed consoles not working in third person.",
+        "Finished and added 3D printing shader for the Fabricator",
+        "First pass on atmosphere flowing from main grid to mothership grid",
+        "First pass on Mothership being created when you build a port side dock"
+      ]
+    },
+    {
+      "version": "0.1.1286.6311",
+      "notes": [
+        "Fixed issue with the select recipe screen in network games, where clicking the recipe selection button on a machine will trigger the popup on only the hosts machine.",
+        "Fixed issue where the front of ItemDrill was missing."
+      ]
+    },
     {
       "version": "0.1.1285.6308",
       "notes": [
@@ -2163,136 +2332,7 @@
         "Fixed radiators not working when placed directly onto a block.",
         "Fixed radiation values not consistent with stephanboltz law. Note: this will now make most things cool down reasonably fast in space.",
         "Fixed cleanup occurring in pipe networks on modestly low pressure, not on extremely low mole quantities. Would make cooled pipe networks empty from the world.",
-        "Eased many 'progression' autolathe recipes to more reasonable values. Replicated changes to fabricator.",
-        "Removed new allocations in unreliable messages(Atmosphere, AnimationUpdate, DamageStateMessage, DynamicThingUpdateMessage)",
-        "Fixed extreme heat radiation values. Now radiates heat based on clamped internal atmosphere scale.",
-        "Gas Canister explosion now uses the same explosion methods as Grenades.",
-        "Atmosphere Volume now altered based on voxel state. This means as you mine voxels the atmosphere will progressively have more volume.",
-        "Fabricator should have all major recipes.  Alloy recipes given larger required temp/pressure ranges.",
-        "Added mining time per minable (values need setting)",
-        "Added shake to mineables while being mined",
-        "Precision place should now correctly hide Tablet UI",
-        "Mass change on NPCGrounder",
-        "Changes made to help A* so they don't get stuck going up walls",
-        "Fixed air tanks spawning overpressurized on load.",
-        "Fixed OpenNeighbours being wrong briefly in a frame and causing atmosphere variances."
-      ]
-    },
-    {
-      "version": "0.1.964.4586",
-      "notes": [
-        "Adjusted maximum pressure points and volume for tanks.",
-        "Added additional UI to see destroyed items in inventory.",
-        "Moved ProcessEntityAnimationUpdate onto Entity instead of Human",
-        "removed legacy UNET code in NPC",
-        "NPCGrounder should now correctly play attack animation when appropriate",
-        "GridPathfinder should now track no room structures better & navigate no room stairs better",
-        "Queen set to nonSpawnable",
-        "Updated lighting and camera movement speed in main menu cutscene",
-        "Added extra kerning to text in Settings menu",
-        "Fixed refresh spinner in Join World menu spinning weird",
-        "Adjusted New World buttons zoom"
-      ]
-    },
-    {
-      "version": "0.1.963.4580",
-      "notes": [
-        "Added damage state to tooltips.",
-        "Fixed bug with atmosphere OpenNeighbours being changed while processing.",
-        "First pass of new burning mechanics for items.",
-        "Re-enabled menu camera waypoint setup but on the character creation scene as a placeholder.",
-        "Additional force added to character if dragging another person in gravity",
-        "Added first pass of menu cutscene station and logic."
-      ]
-    },
-    {
-      "version": "0.1.962.4566",
-      "notes": [
-        "Fixed sending unnecessary atmosphere updates when client moving around.",
-        "Fixed clients not receiving updates for atmospheres when invalid world atmospheres existed.",
-        "Fixed null ref when particle system for fires was initialized when fires drawn out of range on connect.",
-        "Fixed save world failure. Metafile was opened twice.",
-        "Adjusted some padding on alert panel",
-        "Widened menu tabs in Settings menu",
-        "Allowed overflow for some titles in Settings menu and added an autosize to some titles for German localisation support",
-        "Setup scrollbar for Join World menu so it actually works",
-        "Rearranged some of the Join World menu",
-        "Fixed machine generation of reagent.cs was missing equality check for pressure and temperature in recipes.",
-        "Fixed small transformer max setting too low. Moved from 1kW to 5kW.",
-        "Fixed pressure and temperature not configured for recipe data correctly.",
-        "Fixed auto save in dedicated server.",
-        "Added autosaveinterval parameter."
-      ]
-    },
-    {
-      "version": "0.1.960.4543",
-      "notes": [
-        "Updated initialising screen"
-      ]
-    },
-    {
-      "version": "0.1.959.4541",
-      "notes": [
-        "Fixed dark blue in splash screen"
-      ]
-    },
-    {
-      "version": "0.1.958.4539",
-      "notes": [
-        "Disabled SpeechRecognizer in server build"
-      ]
-    },
-    {
-      "version": "0.1.955.4532",
-      "notes": [
-        "Added Initialize panel in Starter.unity",
-        "Internal Inventory Quantities (Like fuel qty in Welder) should now update when the inventory is open rather then just when you reOpen the inventory",
-        "Fixed bug where throwing things while moving at high velocity would cause collision",
-        "Clamped force applied to character when throwing as throwing at high velocities would cause giant negative force applied to character",
-        "Networked synced Throwing animation",
-        "Fixed incorrect transition time on Throwing R",
-        "Disabled majority of player input while unconscious/dead.",
-        "Removed manager reset input",
-        "Jetpack movement should now be disabled when using item labler and other keyboard input devices",
-        "Throwing animation added",
-        "Fixed issue with children renderers not being re-enabled on precision place",
-        "Fixed NRE when placing an item and swapping to an item that didn't have a ConstructionCursor",
-        "NPC should now correctly transition to dead animation",
-        "Removed NPC Grounder ray.",
-        "Fixed bug with hair shadow not destroying if you changed to no hair",
-        "Increased max shadow distance value from 50 to 300."
-      ]
-    },
-    {
-      "version": "0.1.954.4514",
-      "notes": [
-        "updated linux steamworks(x86)",
-        "Added dumby backshadow for character. Call Human.UpdateBackSlotShadow when equiping new backslot item. Example in Jetpack OnEnter/Exit Inventory",
-        "Added ProjectSettings for dedicated server on linux",
-        "Added Linux dedicated server build command",
-        "updated linux steamworks",
-        "Fixed splash background by scott"
-      ]
-    },
-    {
-      "version": "0.1.953.4506",
-      "notes": [
-        "Arc furnace can produce all simple ingots",
-        "Furnace given ability to smelt alloys",
-        "More mid tier recipes added to the fabricator",
-        "Added language strings for new ingots.",
-        "Fixed tracker, arrow now correctly points at target",
-        "Fixed Nickel Ore turns into Lead Ingot.",
-        "Updated Ingot model with new one.",
-        "Added Alloy Ingot model.",
-        "Added Constantan, Electrum, Invar, and Solder Ingots.",
-        "Added Lead, Silver, and Nickel Ingot prefabs."
-      ]
-    },
-    {
-      "version": "0.1.952.4496",
-      "notes": [
-        "Possible fix for sun time sync issue."
+        "Eased many 'progression' autolathe recipes to more reasonable values. Replicated changes to fabricator."
       ]
     }
   ]
