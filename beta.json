@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1325.6418",
-    "date": "2018-05-28T00:00:00+01:00"
+    "version": "0.1.1327.6423",
+    "date": "2018-05-29T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1327.6423",
+      "notes": [
+        "Fixed Issue with the sun not working on Dedicated Servers due to missing value."
+      ]
+    },
     {
       "version": "0.1.1323.6416",
       "notes": [
@@ -2327,10 +2333,7 @@
         "Fixed big buttons bouncing when hovering on the edge of them",
         "NPCGrounders now have Agro range and will leash on Agro distance (currently 20)",
         "Added occlusion checking based on slot type (isHidden ) for the solar heating.",
-        "Suit Airconditioning now also affects helmet to be more efficient.",
-        "Added solar heating to all atmospheres except pipe network within the game.",
-        "Fixed radiators not working when placed directly onto a block.",
-        "Fixed radiation values not consistent with stephanboltz law. Note: this will now make most things cool down reasonably fast in space."
+        "Suit Airconditioning now also affects helmet to be more efficient."
       ]
     }
   ]

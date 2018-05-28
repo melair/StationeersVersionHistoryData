@@ -1,4 +1,13 @@
 {
+  "0.1.1327.6423": {
+    "notes": [
+      "Fixed Issue with the sun not working on Dedicated Servers due to missing value."
+    ],
+    "releases": {
+      "built": "2018-05-29T00:00:00+01:00",
+      "beta": "2018-05-28T23:01:12+01:00"
+    }
+  },
   "0.1.1325.6418": {
     "notes": [
 
