@@ -1,4 +1,16 @@
 {
+  "0.1.1328.6427": {
+    "notes": [
+      "Fixed doors being placable on the wrong faces after using another face placement structure to change the rotation to an up or down face",
+      "Fixed part of the construction cursor being left in world if it was enabled when disconnecting",
+      "Changed mothership atmosphers to dump back to the main atmosphere controller if they are not in a Room",
+      "Changed occlusion manager to only set dynamic things gridcontroller to a mothership if they are inside a room"
+    ],
+    "releases": {
+      "built": "2018-05-30T00:00:00+01:00",
+      "beta": "2018-05-29T22:01:12+01:00"
+    }
+  },
   "0.1.1327.6423": {
     "notes": [
       "Fixed Issue with the sun not working on Dedicated Servers due to missing value."
