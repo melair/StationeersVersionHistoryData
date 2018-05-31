@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1331.6440",
+    "version": "0.1.1332.6441",
     "date": "2018-06-01T00:00:00+01:00"
   },
   "history": [
@@ -2326,12 +2326,6 @@
         "Reverted scene changes",
         "Deleted old canvas",
         "Fixed suit without player causing exception."
-      ]
-    },
-    {
-      "version": "0.1.968.4628",
-      "notes": [
-        "removed terrain snap to structure"
       ]
     }
   ]

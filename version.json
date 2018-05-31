@@ -1,4 +1,13 @@
 {
+  "0.1.1332.6441": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-01T00:00:00+01:00",
+      "beta": "2018-05-31T23:01:10+01:00"
+    }
+  },
   "0.1.1331.6440": {
     "notes": [
       "Added [EXPERIMENTAL] False State to Logic Motherboard States.  This allows you to configure a state in which the logic motherboard will transition to if conditions of the current state are not met, without triggering associated actions.  To keep the existing behaviour on a given state, its false state should be set to itself.  This will be the default for any states in saves created before this change was introduced.",
