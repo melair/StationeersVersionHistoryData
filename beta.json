@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1328.6427",
-    "date": "2018-05-30T00:00:00+01:00"
+    "version": "0.1.1330.6435",
+    "date": "2018-05-31T00:00:00+01:00"
   },
   "history": [
     {
@@ -2331,13 +2331,6 @@
         "Fixed solar power generation rate - solar panels now define generation in W, not kW.",
         "Added energy released and burn times to temperature CSV",
         "Exported all Things instead of Items in temperature CSV"
-      ]
-    },
-    {
-      "version": "0.1.966.4620",
-      "notes": [
-        "Altered suit default pressure to 50kPa to reduce solar heating effect.",
-        "Added wall destruction based on pressure. Walls and other face structures (such as doors) can now break at higher pressures. They will start taking brute damage above certain values and eventually break."
       ]
     }
   ]

@@ -1,4 +1,13 @@
 {
+  "0.1.1330.6435": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-05-31T00:00:00+01:00",
+      "beta": "2018-05-31T01:01:10+01:00"
+    }
+  },
   "0.1.1328.6427": {
     "notes": [
       "Fixed doors being placable on the wrong faces after using another face placement structure to change the rotation to an up or down face",
