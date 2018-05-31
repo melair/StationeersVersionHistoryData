@@ -1,4 +1,17 @@
 {
+  "0.1.1331.6440": {
+    "notes": [
+      "Added [EXPERIMENTAL] False State to Logic Motherboard States.  This allows you to configure a state in which the logic motherboard will transition to if conditions of the current state are not met, without triggering associated actions.  To keep the existing behaviour on a given state, its false state should be set to itself.  This will be the default for any states in saves created before this change was introduced.",
+      "Fixed Inability to use logic motherboards to work with the 'Setting' logic value on stackers.",
+      "Fixed motherships disappearing when moving away from starting point.",
+      "Changed player behaviour on Conveyors to fix a bug. Previously conveyors were disabled to hide the bugs.",
+      "Fixed incorrect orientation of Corner Conveyor switches."
+    ],
+    "releases": {
+      "built": "2018-06-01T00:00:00+01:00",
+      "beta": "2018-05-31T22:01:11+01:00"
+    }
+  },
   "0.1.1330.6435": {
     "notes": [
 

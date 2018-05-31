@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1330.6435",
-    "date": "2018-05-31T00:00:00+01:00"
+    "version": "0.1.1331.6440",
+    "date": "2018-06-01T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1331.6440",
+      "notes": [
+        "Added [EXPERIMENTAL] False State to Logic Motherboard States.  This allows you to configure a state in which the logic motherboard will transition to if conditions of the current state are not met, without triggering associated actions.  To keep the existing behaviour on a given state, its false state should be set to itself.  This will be the default for any states in saves created before this change was introduced.",
+        "Fixed Inability to use logic motherboards to work with the 'Setting' logic value on stackers.",
+        "Fixed motherships disappearing when moving away from starting point.",
+        "Changed player behaviour on Conveyors to fix a bug. Previously conveyors were disabled to hide the bugs.",
+        "Fixed incorrect orientation of Corner Conveyor switches."
+      ]
+    },
     {
       "version": "0.1.1328.6427",
       "notes": [
@@ -2322,15 +2332,6 @@
       "version": "0.1.968.4628",
       "notes": [
         "removed terrain snap to structure"
-      ]
-    },
-    {
-      "version": "0.1.967.4625",
-      "notes": [
-        "Fixed broken gas canister model.",
-        "Fixed solar power generation rate - solar panels now define generation in W, not kW.",
-        "Added energy released and burn times to temperature CSV",
-        "Exported all Things instead of Items in temperature CSV"
       ]
     }
   ]
