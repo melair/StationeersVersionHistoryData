@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1333.6446",
-    "date": "2018-06-04T00:00:00+01:00"
+    "version": "0.1.1335.6448",
+    "date": "2018-06-05T00:00:00+01:00"
   },
   "history": [
     {
@@ -2324,8 +2324,7 @@
         "Added ip validation when connect to friend server.",
         "tweaked ore generation. Reduced Iron, and the 3 new ores. Increased copper and ice. And reduced mining times on iron and ice.",
         "Reverted scene changes",
-        "Deleted old canvas",
-        "Fixed suit without player causing exception."
+        "Deleted old canvas"
       ]
     }
   ]
