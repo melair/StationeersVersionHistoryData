@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1335.6448",
-    "date": "2018-06-05T00:00:00+01:00"
+    "version": "0.1.1336.6452",
+    "date": "2018-06-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1336.6452",
+      "notes": [
+        "Updated Authoring Tool model"
+      ]
+    },
     {
       "version": "0.1.1331.6440",
       "notes": [
@@ -2322,9 +2328,7 @@
         "Added path validation check to linux dedicated server",
         "linux dedicated server always start automatically. it will run without UI.",
         "Added ip validation when connect to friend server.",
-        "tweaked ore generation. Reduced Iron, and the 3 new ores. Increased copper and ice. And reduced mining times on iron and ice.",
-        "Reverted scene changes",
-        "Deleted old canvas"
+        "tweaked ore generation. Reduced Iron, and the 3 new ores. Increased copper and ice. And reduced mining times on iron and ice."
       ]
     }
   ]
