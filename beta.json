@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1336.6452",
+    "version": "0.1.1338.6458",
     "date": "2018-06-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1338.6458",
+      "notes": [
+        "Added wreckage construction tool to help with authoring event maps.",
+        "Added DestroyedStructure base class and destroyed variant of Rocket Engine.  These can be harvested using either a welding torch or grinder into wreckage chunks, that can be stacked and fed into a Recycler."
+      ]
+    },
+    {
+      "version": "0.1.1337.6456",
+      "notes": [
+        "Fixed issue with SolarPanel's jitter and horizontal direction was initialized when world is loaded."
+      ]
+    },
     {
       "version": "0.1.1336.6452",
       "notes": [
@@ -2323,12 +2336,7 @@
         "Tweaks to temperatures - cables are the only structures that can burn at the moment",
         "Added structure fires, all things can burn now if they override OnFireTick",
         "Fixed NRE when trying to double destroy an item's GameObject",
-        "Added servername parameter to dedicated server",
-        "%20 is switched to Space in text parameters",
-        "Added path validation check to linux dedicated server",
-        "linux dedicated server always start automatically. it will run without UI.",
-        "Added ip validation when connect to friend server.",
-        "tweaked ore generation. Reduced Iron, and the 3 new ores. Increased copper and ice. And reduced mining times on iron and ice."
+        "Added servername parameter to dedicated server"
       ]
     }
   ]

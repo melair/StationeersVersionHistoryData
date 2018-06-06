@@ -1,4 +1,23 @@
 {
+  "0.1.1338.6458": {
+    "notes": [
+      "Added wreckage construction tool to help with authoring event maps.",
+      "Added DestroyedStructure base class and destroyed variant of Rocket Engine.  These can be harvested using either a welding torch or grinder into wreckage chunks, that can be stacked and fed into a Recycler."
+    ],
+    "releases": {
+      "built": "2018-06-06T00:00:00+01:00",
+      "beta": "2018-06-06T06:01:13+01:00"
+    }
+  },
+  "0.1.1337.6456": {
+    "notes": [
+      "Fixed issue with SolarPanel's jitter and horizontal direction was initialized when world is loaded."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1336.6452": {
     "notes": [
       "Updated Authoring Tool model"
