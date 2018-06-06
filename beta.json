@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1338.6458",
-    "date": "2018-06-06T00:00:00+01:00"
+    "version": "0.1.1339.6460",
+    "date": "2018-06-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1339.6460",
+      "notes": [
+        "Fixed helmets held in hand affecting player's suit's atmospheres. Dropping a helmet in your hand while having another helmet on should no longer flush your internal atmosphere. Thanks Meow~ster!"
+      ]
+    },
     {
       "version": "0.1.1338.6458",
       "notes": [
@@ -2334,9 +2340,7 @@
         "Added multiplayer icon for Settings menu",
         "Dump all Things in temperature CSV instead of DynamicThings",
         "Tweaks to temperatures - cables are the only structures that can burn at the moment",
-        "Added structure fires, all things can burn now if they override OnFireTick",
-        "Fixed NRE when trying to double destroy an item's GameObject",
-        "Added servername parameter to dedicated server"
+        "Added structure fires, all things can burn now if they override OnFireTick"
       ]
     }
   ]

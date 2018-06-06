@@ -1,4 +1,13 @@
 {
+  "0.1.1339.6460": {
+    "notes": [
+      "Fixed helmets held in hand affecting player's suit's atmospheres. Dropping a helmet in your hand while having another helmet on should no longer flush your internal atmosphere. Thanks Meow~ster!"
+    ],
+    "releases": {
+      "built": "2018-06-07T00:00:00+01:00",
+      "beta": "2018-06-06T22:01:12+01:00"
+    }
+  },
   "0.1.1338.6458": {
     "notes": [
       "Added wreckage construction tool to help with authoring event maps.",
