@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1339.6460",
+    "version": "0.1.1340.6467",
     "date": "2018-06-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1340.6467",
+      "notes": [
+        "Fixed Face structures that are restricted to Y rotation from being placed on the wrong face after placing a face mount structure that is not restricted to Y rotation",
+        "Fixed Dynamic Tanks not being able to be wrenched onto a Tank Connector on a Mothership.",
+        "Fixed Authoring mode persisting for items that were used with the authoring tool after the authoring tool has been dropped",
+        "Fixed not exiting build mode when removing authoring tool from hand"
+      ]
+    },
     {
       "version": "0.1.1339.6460",
       "notes": [
@@ -2335,12 +2344,7 @@
         "show alert popup in MainMenu when steam join ip is wrong",
         "Added multiplayer page to options to allow in-game setting of server parameters.  Still needs visual pass and functionality hooked up.",
         "Added missing file",
-        "Reverted 4686. Auto-save is safe in thread.",
-        "Fixed auto save. Auto save is running in thread because of causing low frame. Not that it's running on coroutine, player feels lags when it's saving.",
-        "Added multiplayer icon for Settings menu",
-        "Dump all Things in temperature CSV instead of DynamicThings",
-        "Tweaks to temperatures - cables are the only structures that can burn at the moment",
-        "Added structure fires, all things can burn now if they override OnFireTick"
+        "Reverted 4686. Auto-save is safe in thread."
       ]
     }
   ]
