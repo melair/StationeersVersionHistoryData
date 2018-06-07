@@ -1,4 +1,23 @@
 {
+  "0.1.1344.6478": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-08T00:00:00+01:00",
+      "beta": "2018-06-07T22:01:14+01:00"
+    }
+  },
+  "0.1.1343.6477": {
+    "notes": [
+      "Fixed missing part of authoring tool mesh",
+      "Fixed material on authoring tool"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1342.6474": {
     "notes": [
 
