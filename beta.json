@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1340.6467",
+    "version": "0.1.1342.6474",
     "date": "2018-06-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1341.6473",
+      "notes": [
+        "Added thumbnail for Authoring Tool."
+      ]
+    },
     {
       "version": "0.1.1340.6467",
       "notes": [
@@ -2341,10 +2347,7 @@
         "Solar Panels now produce on average 125W if left static for a day(250W average if tracking, with a 500W peak when pointed at the sun)",
         "Walllight, Sleepers, and Cryo had their passive power use decreased",
         "Removed ChuckManager from waiting list of MonoBehaviourListener. it's timeout in 5 sec.",
-        "show alert popup in MainMenu when steam join ip is wrong",
-        "Added multiplayer page to options to allow in-game setting of server parameters.  Still needs visual pass and functionality hooked up.",
-        "Added missing file",
-        "Reverted 4686. Auto-save is safe in thread."
+        "show alert popup in MainMenu when steam join ip is wrong"
       ]
     }
   ]
