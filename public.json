@@ -1,9 +1,93 @@
 {
   "current": {
-    "version": "0.1.1323.6416",
-    "date": "2018-05-25T00:00:00+01:00"
+    "version": "0.1.1346.6482",
+    "date": "2018-06-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1346.6482",
+      "notes": [
+        "Fixed Authoring Tool for Constructor things in multiplayer."
+      ]
+    },
+    {
+      "version": "0.1.1345.6480",
+      "notes": [
+        "Fixed location of 'Defaults' button on graphics settings page."
+      ]
+    },
+    {
+      "version": "0.1.1343.6477",
+      "notes": [
+        "Fixed missing part of authoring tool mesh",
+        "Fixed material on authoring tool"
+      ]
+    },
+    {
+      "version": "0.1.1341.6473",
+      "notes": [
+        "Added thumbnail for Authoring Tool."
+      ]
+    },
+    {
+      "version": "0.1.1340.6467",
+      "notes": [
+        "Fixed Face structures that are restricted to Y rotation from being placed on the wrong face after placing a face mount structure that is not restricted to Y rotation",
+        "Fixed Dynamic Tanks not being able to be wrenched onto a Tank Connector on a Mothership.",
+        "Fixed Authoring mode persisting for items that were used with the authoring tool after the authoring tool has been dropped",
+        "Fixed not exiting build mode when removing authoring tool from hand"
+      ]
+    },
+    {
+      "version": "0.1.1339.6460",
+      "notes": [
+        "Fixed helmets held in hand affecting player's suit's atmospheres. Dropping a helmet in your hand while having another helmet on should no longer flush your internal atmosphere. Thanks Meow~ster!"
+      ]
+    },
+    {
+      "version": "0.1.1338.6458",
+      "notes": [
+        "Added wreckage construction tool to help with authoring event maps.",
+        "Added DestroyedStructure base class and destroyed variant of Rocket Engine.  These can be harvested using either a welding torch or grinder into wreckage chunks, that can be stacked and fed into a Recycler."
+      ]
+    },
+    {
+      "version": "0.1.1337.6456",
+      "notes": [
+        "Fixed issue with SolarPanel's jitter and horizontal direction was initialized when world is loaded."
+      ]
+    },
+    {
+      "version": "0.1.1336.6452",
+      "notes": [
+        "Updated Authoring Tool model"
+      ]
+    },
+    {
+      "version": "0.1.1331.6440",
+      "notes": [
+        "Added [EXPERIMENTAL] False State to Logic Motherboard States.  This allows you to configure a state in which the logic motherboard will transition to if conditions of the current state are not met, without triggering associated actions.  To keep the existing behaviour on a given state, its false state should be set to itself.  This will be the default for any states in saves created before this change was introduced.",
+        "Fixed Inability to use logic motherboards to work with the 'Setting' logic value on stackers.",
+        "Fixed motherships disappearing when moving away from starting point.",
+        "Changed player behaviour on Conveyors to fix a bug. Previously conveyors were disabled to hide the bugs.",
+        "Fixed incorrect orientation of Corner Conveyor switches."
+      ]
+    },
+    {
+      "version": "0.1.1328.6427",
+      "notes": [
+        "Fixed doors being placable on the wrong faces after using another face placement structure to change the rotation to an up or down face",
+        "Fixed part of the construction cursor being left in world if it was enabled when disconnecting",
+        "Changed mothership atmosphers to dump back to the main atmosphere controller if they are not in a Room",
+        "Changed occlusion manager to only set dynamic things gridcontroller to a mothership if they are inside a room"
+      ]
+    },
+    {
+      "version": "0.1.1327.6423",
+      "notes": [
+        "Fixed Issue with the sun not working on Dedicated Servers due to missing value."
+      ]
+    },
     {
       "version": "0.1.1323.6416",
       "notes": [
@@ -2270,69 +2354,7 @@
       "version": "0.1.971.4661",
       "notes": [
         "Tidied up input fields in Multiplayer settings menu",
-        "Swapped steel sheets for mining belt in building supplies crate.",
-        "Fixed Autolathe need reimport due to new model, made sure deconstructs into correct kit.",
-        "Fixed typo in container contents.",
-        "Changed contents of building supplies crate to test standard game loop with minimal debug spawns."
-      ]
-    },
-    {
-      "version": "0.1.970.4654",
-      "notes": [
-        "Solar Panels now produce on average 125W if left static for a day(250W average if tracking, with a 500W peak when pointed at the sun)",
-        "Walllight, Sleepers, and Cryo had their passive power use decreased",
-        "Removed ChuckManager from waiting list of MonoBehaviourListener. it's timeout in 5 sec.",
-        "show alert popup in MainMenu when steam join ip is wrong",
-        "Added multiplayer page to options to allow in-game setting of server parameters.  Still needs visual pass and functionality hooked up.",
-        "Added missing file",
-        "Reverted 4686. Auto-save is safe in thread.",
-        "Fixed auto save. Auto save is running in thread because of causing low frame. Not that it's running on coroutine, player feels lags when it's saving.",
-        "Added multiplayer icon for Settings menu",
-        "Dump all Things in temperature CSV instead of DynamicThings",
-        "Tweaks to temperatures - cables are the only structures that can burn at the moment",
-        "Added structure fires, all things can burn now if they override OnFireTick",
-        "Fixed NRE when trying to double destroy an item's GameObject",
-        "Added servername parameter to dedicated server",
-        "%20 is switched to Space in text parameters",
-        "Added path validation check to linux dedicated server",
-        "linux dedicated server always start automatically. it will run without UI.",
-        "Added ip validation when connect to friend server.",
-        "tweaked ore generation. Reduced Iron, and the 3 new ores. Increased copper and ice. And reduced mining times on iron and ice.",
-        "Reverted scene changes",
-        "Deleted old canvas",
-        "Fixed suit without player causing exception."
-      ]
-    },
-    {
-      "version": "0.1.968.4628",
-      "notes": [
-        "removed terrain snap to structure"
-      ]
-    },
-    {
-      "version": "0.1.967.4625",
-      "notes": [
-        "Fixed broken gas canister model.",
-        "Fixed solar power generation rate - solar panels now define generation in W, not kW.",
-        "Added energy released and burn times to temperature CSV",
-        "Exported all Things instead of Items in temperature CSV"
-      ]
-    },
-    {
-      "version": "0.1.966.4620",
-      "notes": [
-        "Altered suit default pressure to 50kPa to reduce solar heating effect.",
-        "Added wall destruction based on pressure. Walls and other face structures (such as doors) can now break at higher pressures. They will start taking brute damage above certain values and eventually break.",
-        "Adjusted the background colours for all menus",
-        "Fixed big buttons bouncing when hovering on the edge of them",
-        "NPCGrounders now have Agro range and will leash on Agro distance (currently 20)",
-        "Added occlusion checking based on slot type (isHidden ) for the solar heating.",
-        "Suit Airconditioning now also affects helmet to be more efficient.",
-        "Added solar heating to all atmospheres except pipe network within the game.",
-        "Fixed radiators not working when placed directly onto a block.",
-        "Fixed radiation values not consistent with stephanboltz law. Note: this will now make most things cool down reasonably fast in space.",
-        "Fixed cleanup occurring in pipe networks on modestly low pressure, not on extremely low mole quantities. Would make cooled pipe networks empty from the world.",
-        "Eased many 'progression' autolathe recipes to more reasonable values. Replicated changes to fabricator."
+        "Swapped steel sheets for mining belt in building supplies crate."
       ]
     }
   ]
