@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1344.6478",
+    "version": "0.1.1345.6480",
     "date": "2018-06-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1345.6480",
+      "notes": [
+        "Fixed location of 'Defaults' button on graphics settings page."
+      ]
+    },
     {
       "version": "0.1.1343.6477",
       "notes": [
@@ -2344,8 +2350,7 @@
         "Tidied up input fields in Multiplayer settings menu",
         "Swapped steel sheets for mining belt in building supplies crate.",
         "Fixed Autolathe need reimport due to new model, made sure deconstructs into correct kit.",
-        "Fixed typo in container contents.",
-        "Changed contents of building supplies crate to test standard game loop with minimal debug spawns."
+        "Fixed typo in container contents."
       ]
     }
   ]
