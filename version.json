@@ -1,4 +1,13 @@
 {
+  "0.1.1348.6486": {
+    "notes": [
+      "Fixed / Re-fixed authoring Tool for Constructor things."
+    ],
+    "releases": {
+      "built": "2018-06-08T00:00:00+01:00",
+      "beta": "2018-06-08T08:01:11+01:00"
+    }
+  },
   "0.1.1347.6484": {
     "notes": [
       "Fixed issue with construction kits not consuming while building"
