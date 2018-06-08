@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1346.6482",
+    "version": "0.1.1347.6484",
     "date": "2018-06-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1347.6484",
+      "notes": [
+        "Fixed issue with construction kits not consuming while building"
+      ]
+    },
     {
       "version": "0.1.1346.6482",
       "notes": [
@@ -2348,13 +2354,6 @@
         "Increased jump force on Moon/Mars",
         "Grounders now do StunDamage when they attack. aswell as damaging your suit",
         "Grounders will no longer try to target Unconsious Players"
-      ]
-    },
-    {
-      "version": "0.1.971.4661",
-      "notes": [
-        "Tidied up input fields in Multiplayer settings menu",
-        "Swapped steel sheets for mining belt in building supplies crate."
       ]
     }
   ]
