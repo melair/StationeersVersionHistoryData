@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1345.6480",
+    "version": "0.1.1346.6482",
     "date": "2018-06-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1346.6482",
+      "notes": [
+        "Fixed Authoring Tool for Constructor things in multiplayer."
+      ]
+    },
     {
       "version": "0.1.1345.6480",
       "notes": [
@@ -2348,9 +2354,7 @@
       "version": "0.1.971.4661",
       "notes": [
         "Tidied up input fields in Multiplayer settings menu",
-        "Swapped steel sheets for mining belt in building supplies crate.",
-        "Fixed Autolathe need reimport due to new model, made sure deconstructs into correct kit.",
-        "Fixed typo in container contents."
+        "Swapped steel sheets for mining belt in building supplies crate."
       ]
     }
   ]
