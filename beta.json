@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1349.6487",
+    "version": "0.1.1350.6489",
     "date": "2018-06-11T00:00:00+01:00"
   },
   "history": [
@@ -2356,8 +2356,7 @@
         "Allow fire extinguisher to be used on all things.",
         "Made heat haze distortion effect only appear in atmospheres with 50kPa or above.",
         "Fixed Furnaces and SolidFuelGenerator cooling down rooms when active. Smelting of stackables used to remove energy from atmos when smelted - stopped that happening for now.",
-        "Revert auto-save again. Can't access to asteriods transform.",
-        "Increased jump force on Moon/Mars"
+        "Revert auto-save again. Can't access to asteriods transform."
       ]
     }
   ]
