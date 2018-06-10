@@ -1,4 +1,13 @@
 {
+  "0.1.1349.6487": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-11T00:00:00+01:00",
+      "beta": "2018-06-10T22:01:12+01:00"
+    }
+  },
   "0.1.1348.6486": {
     "notes": [
       "Fixed / Re-fixed authoring Tool for Constructor things."
