@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1351.6497",
-    "date": "2018-06-11T00:00:00+01:00"
+    "version": "0.1.1352.6498",
+    "date": "2018-06-12T00:00:00+01:00"
   },
   "history": [
     {
@@ -2359,8 +2359,7 @@
         "Added energy usage to recipes for fabricator and autolathe.",
         "Readjusted menu camera to not show missing walls",
         "Adjusted speed of menu camera so it is a lot slower now",
-        "Actually fixed the refresh spinner icon this time",
-        "Added energy value to recipes. Currently used only in Arc Furnace, but can be applied to the furnace itself."
+        "Actually fixed the refresh spinner icon this time"
       ]
     }
   ]

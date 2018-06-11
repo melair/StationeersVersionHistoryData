@@ -1,4 +1,13 @@
 {
+  "0.1.1352.6498": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-12T00:00:00+01:00",
+      "beta": "2018-06-11T22:01:12+01:00"
+    }
+  },
   "0.1.1351.6497": {
     "notes": [
       "Fixed bug with Roller cover not colliding with self or other doors. Now correctly collides with other doors and other roller doors.",
