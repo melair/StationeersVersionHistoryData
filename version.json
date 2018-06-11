@@ -1,4 +1,22 @@
 {
+  "0.1.1351.6497": {
+    "notes": [
+      "Fixed bug with Roller cover not colliding with self or other doors. Now correctly collides with other doors and other roller doors.",
+      "Fixed bug with roller cover collision for the handle not animating and not being in the correct positions. Now the handle is always the location of the collider for opening and closing it. Also fixed the small delay when opening and closing, now animation starts immediately.",
+      "Fixed some situations with inventory swapping between internal slots being allowed when it should not be, and interactions sometimes being allowed via the menu when they should not be. Now a faux interaction is generated when making the UI and solves the problem.",
+      "Added first pass of access control. Access Cards can be made in the (new) Security printer, which are preset with access according to their color. You can also make a new Cartridge for Access Control assignment (on the Security printer also). Currently access control can only be assigned to Doors, crates, and lockers but there is nothing stopping it being extended to pretty much everything we want in the game. This will be expanded on later, and exposed to the logic system. Access is controled/stored as bitflags so bit operators may be needed in future for the logic system.",
+      "Added Access cards (see access control above). To use, have them in your hands or in a access card slot. They all are considered together, so holding Red and Blue Access cards in your hands will give you access to both systems.",
+      "Added Security Printer for printing Access Control equipment and weapons.",
+      "Fixed missing blueprint meshes for Composite Cladding.",
+      "Added Access Card slots to Jumpsuit (One card) and Commander (Two cards).",
+      "Fixed collider placement on StructureRocketEngineDestroyed to better align with the mesh.",
+      "Added a input filed for search a file to the load world panel."
+    ],
+    "releases": {
+      "built": "2018-06-11T00:00:00+01:00",
+      "beta": "2018-06-11T12:01:12+01:00"
+    }
+  },
   "0.1.1350.6489": {
     "notes": [
 
