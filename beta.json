@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1352.6498",
-    "date": "2018-06-12T00:00:00+01:00"
+    "version": "0.1.1353.6509",
+    "date": "2018-06-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1353.6509",
+      "notes": [
+        "Fixed blueprint missing for precision place for Battery Charger kit, Authoring tool, and Nuclear Battery.",
+        "Fixed Access cards stored in the second access card slot on an officers uniform now correctly grants access."
+      ]
+    },
     {
       "version": "0.1.1351.6497",
       "notes": [
@@ -2356,10 +2363,7 @@
     {
       "version": "0.1.972.4678",
       "notes": [
-        "Added energy usage to recipes for fabricator and autolathe.",
-        "Readjusted menu camera to not show missing walls",
-        "Adjusted speed of menu camera so it is a lot slower now",
-        "Actually fixed the refresh spinner icon this time"
+        "Added energy usage to recipes for fabricator and autolathe."
       ]
     }
   ]
