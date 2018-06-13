@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1354.6514",
-    "date": "2018-06-13T00:00:00+01:00"
+    "version": "0.1.1355.6519",
+    "date": "2018-06-14T00:00:00+01:00"
   },
   "history": [
     {
@@ -2362,8 +2362,7 @@
     {
       "version": "0.1.973.4681",
       "notes": [
-        "Added logic condition changes to support more than 2 mode querying, i.e. for station batteries.",
-        "First pass on Welcome Screen added"
+        "Added logic condition changes to support more than 2 mode querying, i.e. for station batteries."
       ]
     }
   ]

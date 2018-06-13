@@ -1,4 +1,13 @@
 {
+  "0.1.1355.6519": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-14T00:00:00+01:00",
+      "beta": "2018-06-13T22:01:13+01:00"
+    }
+  },
   "0.1.1354.6514": {
     "notes": [
       "Fixed incorrect respawn position when player died in Sleeper."
