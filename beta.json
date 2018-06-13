@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1353.6509",
+    "version": "0.1.1354.6514",
     "date": "2018-06-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1354.6514",
+      "notes": [
+        "Fixed incorrect respawn position when player died in Sleeper."
+      ]
+    },
     {
       "version": "0.1.1353.6509",
       "notes": [
@@ -2358,12 +2364,6 @@
       "notes": [
         "Added logic condition changes to support more than 2 mode querying, i.e. for station batteries.",
         "First pass on Welcome Screen added"
-      ]
-    },
-    {
-      "version": "0.1.972.4678",
-      "notes": [
-        "Added energy usage to recipes for fabricator and autolathe."
       ]
     }
   ]

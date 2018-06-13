@@ -1,4 +1,13 @@
 {
+  "0.1.1354.6514": {
+    "notes": [
+      "Fixed incorrect respawn position when player died in Sleeper."
+    ],
+    "releases": {
+      "built": "2018-06-13T00:00:00+01:00",
+      "beta": "2018-06-13T02:01:10+01:00"
+    }
+  },
   "0.1.1353.6509": {
     "notes": [
       "Fixed blueprint missing for precision place for Battery Charger kit, Authoring tool, and Nuclear Battery.",
