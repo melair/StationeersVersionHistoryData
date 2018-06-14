@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1355.6519",
+    "version": "0.1.1356.6521",
     "date": "2018-06-14T00:00:00+01:00"
   },
   "history": [
@@ -2357,12 +2357,6 @@
       "version": "0.1.974.4683",
       "notes": [
         "Possible logic state state change list view is wrong."
-      ]
-    },
-    {
-      "version": "0.1.973.4681",
-      "notes": [
-        "Added logic condition changes to support more than 2 mode querying, i.e. for station batteries."
       ]
     }
   ]
