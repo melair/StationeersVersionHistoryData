@@ -1,4 +1,14 @@
 {
+  "0.1.1359.6535": {
+    "notes": [
+      "Added SMG and SMG mags",
+      "Added mag types. These will be updated as it's hard to tell the difference right now. Both are reloaded from the same ammo box currently."
+    ],
+    "releases": {
+      "built": "2018-06-14T00:00:00+01:00",
+      "beta": "2018-06-14T10:01:11+01:00"
+    }
+  },
   "0.1.1358.6532": {
     "notes": [
       "Fixed serialization on gun mags",

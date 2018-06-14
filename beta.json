@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1358.6532",
+    "version": "0.1.1359.6535",
     "date": "2018-06-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1359.6535",
+      "notes": [
+        "Added SMG and SMG mags",
+        "Added mag types. These will be updated as it's hard to tell the difference right now. Both are reloaded from the same ammo box currently."
+      ]
+    },
     {
       "version": "0.1.1358.6532",
       "notes": [
@@ -2354,10 +2361,7 @@
         "Added soybean plant. Turns into Milk when put into reagent grinder.",
         "Added LED. Variant on Wall Light that allows you to programmatically change the color based on mode changes. Could also be used as a simple memory bit.",
         "Fixed game crashing when starting a game after exiting to main menu. Cleared OcclusionManager in ClearAll(), stopping calling of OnFireTick on phantom things.",
-        "Added some scene-based field validation to port fields in multiplayer settings menu (5 digit integers)",
-        "Now updating some server params when changing UI values rather than just on load.",
-        "Portable Lights are now items rather than dynamic things - so they can be put in inventory.",
-        "Interim commit of functionality for new multiplayer menu page.  Still testing."
+        "Added some scene-based field validation to port fields in multiplayer settings menu (5 digit integers)"
       ]
     }
   ]
