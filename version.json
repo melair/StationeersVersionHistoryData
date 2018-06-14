@@ -1,4 +1,15 @@
 {
+  "0.1.1358.6532": {
+    "notes": [
+      "Fixed serialization on gun mags",
+      "Fixed bug that caused the gun to still have a reference to a removed magazine",
+      "Fixed wall coolers destroying atmospheric energy if connected pipe has no atmospheres. Now Wall Heaters will not work if the output pipe has no atmosphere in it. (Sorry, Juice!)"
+    ],
+    "releases": {
+      "built": "2018-06-14T00:00:00+01:00",
+      "beta": "2018-06-14T08:01:15+01:00"
+    }
+  },
   "0.1.1357.6528": {
     "notes": [
       "Fixed interaction on ammo box",

@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1357.6528",
+    "version": "0.1.1358.6532",
     "date": "2018-06-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1358.6532",
+      "notes": [
+        "Fixed serialization on gun mags",
+        "Fixed bug that caused the gun to still have a reference to a removed magazine",
+        "Fixed wall coolers destroying atmospheric energy if connected pipe has no atmospheres. Now Wall Heaters will not work if the output pipe has no atmosphere in it. (Sorry, Juice!)"
+      ]
+    },
     {
       "version": "0.1.1357.6528",
       "notes": [
@@ -2349,10 +2357,7 @@
         "Added some scene-based field validation to port fields in multiplayer settings menu (5 digit integers)",
         "Now updating some server params when changing UI values rather than just on load.",
         "Portable Lights are now items rather than dynamic things - so they can be put in inventory.",
-        "Interim commit of functionality for new multiplayer menu page.  Still testing.",
-        "Increased Iron and Coal spawn rates, decreased most others",
-        "Fixed collisions with thing you are dragging causes damage. Now you do not collide with things you are dragging.",
-        "Updated render distance for many objects. Increased distance for consoles. Enabled frustrum culling."
+        "Interim commit of functionality for new multiplayer menu page.  Still testing."
       ]
     }
   ]
