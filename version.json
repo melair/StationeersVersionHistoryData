@@ -1,4 +1,16 @@
 {
+  "0.1.1357.6528": {
+    "notes": [
+      "Fixed interaction on ammo box",
+      "Added recipes for gun, mag, and ammo box",
+      "Updated Japanese, German and Spanish translations.",
+      "First pass on fire arm weapons. Available is now the Pistol, Pistol Magazine, and Ammo box for reloading Magazines."
+    ],
+    "releases": {
+      "built": "2018-06-14T00:00:00+01:00",
+      "beta": "2018-06-14T07:01:11+01:00"
+    }
+  },
   "0.1.1356.6521": {
     "notes": [
 

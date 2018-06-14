@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1356.6521",
+    "version": "0.1.1357.6528",
     "date": "2018-06-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1357.6528",
+      "notes": [
+        "Fixed interaction on ammo box",
+        "Added recipes for gun, mag, and ammo box",
+        "Updated Japanese, German and Spanish translations.",
+        "First pass on fire arm weapons. Available is now the Pistol, Pistol Magazine, and Ammo box for reloading Magazines."
+      ]
+    },
     {
       "version": "0.1.1354.6514",
       "notes": [
@@ -2344,19 +2353,6 @@
         "Increased Iron and Coal spawn rates, decreased most others",
         "Fixed collisions with thing you are dragging causes damage. Now you do not collide with things you are dragging.",
         "Updated render distance for many objects. Increased distance for consoles. Enabled frustrum culling."
-      ]
-    },
-    {
-      "version": "0.1.975.4686",
-      "notes": [
-        "Fixed missing ref on multiplayer menu",
-        "Added first pass for an info tip panel"
-      ]
-    },
-    {
-      "version": "0.1.974.4683",
-      "notes": [
-        "Possible logic state state change list view is wrong."
       ]
     }
   ]
