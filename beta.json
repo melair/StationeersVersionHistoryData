@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1359.6535",
-    "date": "2018-06-14T00:00:00+01:00"
+    "version": "0.1.1360.6536",
+    "date": "2018-06-15T00:00:00+01:00"
   },
   "history": [
     {
@@ -2360,8 +2360,7 @@
         "Building Supplies crate now contains an AreaPowerControl and a large battery instead of the mining belt and tank connector.",
         "Added soybean plant. Turns into Milk when put into reagent grinder.",
         "Added LED. Variant on Wall Light that allows you to programmatically change the color based on mode changes. Could also be used as a simple memory bit.",
-        "Fixed game crashing when starting a game after exiting to main menu. Cleared OcclusionManager in ClearAll(), stopping calling of OnFireTick on phantom things.",
-        "Added some scene-based field validation to port fields in multiplayer settings menu (5 digit integers)"
+        "Fixed game crashing when starting a game after exiting to main menu. Cleared OcclusionManager in ClearAll(), stopping calling of OnFireTick on phantom things."
       ]
     }
   ]
