@@ -1,9 +1,83 @@
 {
   "current": {
-    "version": "0.1.1348.6486",
-    "date": "2018-06-08T00:00:00+01:00"
+    "version": "0.1.1362.6552",
+    "date": "2018-06-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1362.6552",
+      "notes": [
+        "Fixed ability to control access on Dynamic Air Conditioner was missing.",
+        "Fixed Missing sounds on structures that had access controls added to them previously."
+      ]
+    },
+    {
+      "version": "0.1.1361.6546",
+      "notes": [
+        "Updated language file for SMG",
+        "Added recipe for SMG and SMG Mag",
+        "Fixed slot types and names on guns",
+        "Fixed SMG prefab name string",
+        "Fixed wall cooler causing infinite loop when turned on. Wall coolers now require a valid atmosphere in the pipes again.",
+        "Updated SMG model to have reflex sight",
+        "Updated SMG model to the correct",
+        "Fixed serialization of Ammo Box",
+        "Fixed fire cooldown time to use main thread to prevent slowdown of firing when threads are busy",
+        "Added a new animation with ladder."
+      ]
+    },
+    {
+      "version": "0.1.1359.6535",
+      "notes": [
+        "Added SMG and SMG mags",
+        "Added mag types. These will be updated as it's hard to tell the difference right now. Both are reloaded from the same ammo box currently."
+      ]
+    },
+    {
+      "version": "0.1.1358.6532",
+      "notes": [
+        "Fixed serialization on gun mags",
+        "Fixed bug that caused the gun to still have a reference to a removed magazine",
+        "Fixed wall coolers destroying atmospheric energy if connected pipe has no atmospheres. Now Wall Heaters will not work if the output pipe has no atmosphere in it. (Sorry, Juice!)"
+      ]
+    },
+    {
+      "version": "0.1.1357.6528",
+      "notes": [
+        "Fixed interaction on ammo box",
+        "Added recipes for gun, mag, and ammo box",
+        "Updated Japanese, German and Spanish translations.",
+        "First pass on fire arm weapons. Available is now the Pistol, Pistol Magazine, and Ammo box for reloading Magazines."
+      ]
+    },
+    {
+      "version": "0.1.1354.6514",
+      "notes": [
+        "Fixed incorrect respawn position when player died in Sleeper."
+      ]
+    },
+    {
+      "version": "0.1.1353.6509",
+      "notes": [
+        "Fixed blueprint missing for precision place for Battery Charger kit, Authoring tool, and Nuclear Battery.",
+        "Fixed Access cards stored in the second access card slot on an officers uniform now correctly grants access."
+      ]
+    },
+    {
+      "version": "0.1.1351.6497",
+      "notes": [
+        "Fixed bug with Roller cover not colliding with self or other doors. Now correctly collides with other doors and other roller doors.",
+        "Fixed bug with roller cover collision for the handle not animating and not being in the correct positions. Now the handle is always the location of the collider for opening and closing it. Also fixed the small delay when opening and closing, now animation starts immediately.",
+        "Fixed some situations with inventory swapping between internal slots being allowed when it should not be, and interactions sometimes being allowed via the menu when they should not be. Now a faux interaction is generated when making the UI and solves the problem.",
+        "Added first pass of access control. Access Cards can be made in the (new) Security printer, which are preset with access according to their color. You can also make a new Cartridge for Access Control assignment (on the Security printer also). Currently access control can only be assigned to Doors, crates, and lockers but there is nothing stopping it being extended to pretty much everything we want in the game. This will be expanded on later, and exposed to the logic system. Access is controled/stored as bitflags so bit operators may be needed in future for the logic system.",
+        "Added Access cards (see access control above). To use, have them in your hands or in a access card slot. They all are considered together, so holding Red and Blue Access cards in your hands will give you access to both systems.",
+        "Added Security Printer for printing Access Control equipment and weapons.",
+        "Fixed missing blueprint meshes for Composite Cladding.",
+        "Added Access Card slots to Jumpsuit (One card) and Commander (Two cards).",
+        "Fixed collider placement on StructureRocketEngineDestroyed to better align with the mesh.",
+        "Added a input filed for search a file to the load world panel."
+      ]
+    },
     {
       "version": "0.1.1348.6486",
       "notes": [
@@ -2294,71 +2368,7 @@
         "Electronics Printer added. Use to create electrical items.",
         "Force to hide scoreboard when leave a game.",
         "Added minable drop amounts to XML",
-        "Added vain size to XML",
-        "fixed minables rarity",
-        "added place holder values to XML",
-        "Reduced power usage of recipe machines, as energy use now comes from recipe. Also some general energy reductions.",
-        "Fixed voxels were occluding light for hydroponics, solar, and heating, even if not dense.",
-        "Fixed plants don't heal when growing.",
-        "Fixed a couple of issues with multiplayer settings not applying/saving.",
-        "Port numbers now get clamped properly to 2000-65355 and 27020-65355.",
-        "added Energy tags to all Fabricator recipes",
-        "Capitalized all Time tags",
-        "Player now begins with a tablet(w/ battery) and some cartridges as well as a mining belt in their backpack.",
-        "Building Supplies crate now contains an AreaPowerControl and a large battery instead of the mining belt and tank connector.",
-        "Added soybean plant. Turns into Milk when put into reagent grinder.",
-        "Added LED. Variant on Wall Light that allows you to programmatically change the color based on mode changes. Could also be used as a simple memory bit.",
-        "Fixed game crashing when starting a game after exiting to main menu. Cleared OcclusionManager in ClearAll(), stopping calling of OnFireTick on phantom things.",
-        "Added some scene-based field validation to port fields in multiplayer settings menu (5 digit integers)",
-        "Now updating some server params when changing UI values rather than just on load.",
-        "Portable Lights are now items rather than dynamic things - so they can be put in inventory.",
-        "Interim commit of functionality for new multiplayer menu page.  Still testing.",
-        "Increased Iron and Coal spawn rates, decreased most others",
-        "Fixed collisions with thing you are dragging causes damage. Now you do not collide with things you are dragging.",
-        "Updated render distance for many objects. Increased distance for consoles. Enabled frustrum culling."
-      ]
-    },
-    {
-      "version": "0.1.975.4686",
-      "notes": [
-        "Fixed missing ref on multiplayer menu",
-        "Added first pass for an info tip panel"
-      ]
-    },
-    {
-      "version": "0.1.974.4683",
-      "notes": [
-        "Possible logic state state change list view is wrong."
-      ]
-    },
-    {
-      "version": "0.1.973.4681",
-      "notes": [
-        "Added logic condition changes to support more than 2 mode querying, i.e. for station batteries.",
-        "First pass on Welcome Screen added"
-      ]
-    },
-    {
-      "version": "0.1.972.4678",
-      "notes": [
-        "Added energy usage to recipes for fabricator and autolathe.",
-        "Readjusted menu camera to not show missing walls",
-        "Adjusted speed of menu camera so it is a lot slower now",
-        "Actually fixed the refresh spinner icon this time",
-        "Added energy value to recipes. Currently used only in Arc Furnace, but can be applied to the furnace itself.",
-        "added computer, fab mobo and glass to autolathe",
-        "added all mobo recipes to fabricator",
-        "Fixed mining tooltip contains slider",
-        "Fixed Heat is being added to world from devices uses power when very small number of moles are present.",
-        "Fixed autolathe not showing recipe reagent status, which indicates what you have versus what you need when constructing things.",
-        "Fixed iron frame render distance not consistent with steel frames.",
-        "fixed holes generated in bottom of world",
-        "Allow fire extinguisher to be used on all things.",
-        "Made heat haze distortion effect only appear in atmospheres with 50kPa or above.",
-        "Fixed Furnaces and SolidFuelGenerator cooling down rooms when active. Smelting of stackables used to remove energy from atmos when smelted - stopped that happening for now.",
-        "Revert auto-save again. Can't access to asteriods transform.",
-        "Increased jump force on Moon/Mars",
-        "Grounders now do StunDamage when they attack. aswell as damaging your suit"
+        "Added vain size to XML"
       ]
     }
   ]

@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1361.6546",
+    "version": "0.1.1362.6552",
     "date": "2018-06-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1362.6552",
+      "notes": [
+        "Fixed ability to control access on Dynamic Air Conditioner was missing.",
+        "Fixed Missing sounds on structures that had access controls added to them previously."
+      ]
+    },
     {
       "version": "0.1.1361.6546",
       "notes": [
@@ -2361,10 +2368,7 @@
         "Electronics Printer added. Use to create electrical items.",
         "Force to hide scoreboard when leave a game.",
         "Added minable drop amounts to XML",
-        "Added vain size to XML",
-        "fixed minables rarity",
-        "added place holder values to XML",
-        "Reduced power usage of recipe machines, as energy use now comes from recipe. Also some general energy reductions."
+        "Added vain size to XML"
       ]
     }
   ]
