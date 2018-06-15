@@ -1,4 +1,22 @@
 {
+  "0.1.1361.6546": {
+    "notes": [
+      "Updated language file for SMG",
+      "Added recipe for SMG and SMG Mag",
+      "Fixed slot types and names on guns",
+      "Fixed SMG prefab name string",
+      "Fixed wall cooler causing infinite loop when turned on. Wall coolers now require a valid atmosphere in the pipes again.",
+      "Updated SMG model to have reflex sight",
+      "Updated SMG model to the correct",
+      "Fixed serialization of Ammo Box",
+      "Fixed fire cooldown time to use main thread to prevent slowdown of firing when threads are busy",
+      "Added a new animation with ladder."
+    ],
+    "releases": {
+      "built": "2018-06-15T00:00:00+01:00",
+      "beta": "2018-06-15T02:01:10+01:00"
+    }
+  },
   "0.1.1360.6536": {
     "notes": [
 

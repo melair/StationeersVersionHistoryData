@@ -1,9 +1,24 @@
 {
   "current": {
-    "version": "0.1.1360.6536",
+    "version": "0.1.1361.6546",
     "date": "2018-06-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1361.6546",
+      "notes": [
+        "Updated language file for SMG",
+        "Added recipe for SMG and SMG Mag",
+        "Fixed slot types and names on guns",
+        "Fixed SMG prefab name string",
+        "Fixed wall cooler causing infinite loop when turned on. Wall coolers now require a valid atmosphere in the pipes again.",
+        "Updated SMG model to have reflex sight",
+        "Updated SMG model to the correct",
+        "Fixed serialization of Ammo Box",
+        "Fixed fire cooldown time to use main thread to prevent slowdown of firing when threads are busy",
+        "Added a new animation with ladder."
+      ]
+    },
     {
       "version": "0.1.1359.6535",
       "notes": [
@@ -2349,18 +2364,7 @@
         "Added vain size to XML",
         "fixed minables rarity",
         "added place holder values to XML",
-        "Reduced power usage of recipe machines, as energy use now comes from recipe. Also some general energy reductions.",
-        "Fixed voxels were occluding light for hydroponics, solar, and heating, even if not dense.",
-        "Fixed plants don't heal when growing.",
-        "Fixed a couple of issues with multiplayer settings not applying/saving.",
-        "Port numbers now get clamped properly to 2000-65355 and 27020-65355.",
-        "added Energy tags to all Fabricator recipes",
-        "Capitalized all Time tags",
-        "Player now begins with a tablet(w/ battery) and some cartridges as well as a mining belt in their backpack.",
-        "Building Supplies crate now contains an AreaPowerControl and a large battery instead of the mining belt and tank connector.",
-        "Added soybean plant. Turns into Milk when put into reagent grinder.",
-        "Added LED. Variant on Wall Light that allows you to programmatically change the color based on mode changes. Could also be used as a simple memory bit.",
-        "Fixed game crashing when starting a game after exiting to main menu. Cleared OcclusionManager in ClearAll(), stopping calling of OnFireTick on phantom things."
+        "Reduced power usage of recipe machines, as energy use now comes from recipe. Also some general energy reductions."
       ]
     }
   ]
