@@ -1,4 +1,13 @@
 {
+  "0.1.1364.6555": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-18T00:00:00+01:00",
+      "beta": "2018-06-17T23:01:12+01:00"
+    }
+  },
   "0.1.1362.6552": {
     "notes": [
       "Fixed ability to control access on Dynamic Air Conditioner was missing.",

@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1362.6552",
-    "date": "2018-06-15T00:00:00+01:00"
+    "version": "0.1.1364.6555",
+    "date": "2018-06-18T00:00:00+01:00"
   },
   "history": [
     {
@@ -2366,9 +2366,7 @@
         "Extinguisher now puts out the targeted item together with items in current atmosphere",
         "Possible fix for double destroy when thing burned out",
         "Electronics Printer added. Use to create electrical items.",
-        "Force to hide scoreboard when leave a game.",
-        "Added minable drop amounts to XML",
-        "Added vain size to XML"
+        "Force to hide scoreboard when leave a game."
       ]
     }
   ]
