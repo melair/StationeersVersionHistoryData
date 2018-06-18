@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1364.6555",
+    "version": "0.1.1365.6557",
     "date": "2018-06-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1365.6557",
+      "notes": [
+        "Added ladder recipe to fabricator"
+      ]
+    },
     {
       "version": "0.1.1362.6552",
       "notes": [
@@ -2364,9 +2370,7 @@
         "Added function to initialize current settings page when reopening the settings menu from ingame.",
         "Fixed problem with setting password on multiplayer screen.",
         "Extinguisher now puts out the targeted item together with items in current atmosphere",
-        "Possible fix for double destroy when thing burned out",
-        "Electronics Printer added. Use to create electrical items.",
-        "Force to hide scoreboard when leave a game."
+        "Possible fix for double destroy when thing burned out"
       ]
     }
   ]
