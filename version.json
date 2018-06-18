@@ -1,4 +1,14 @@
 {
+  "0.1.1366.6562": {
+    "notes": [
+      "Added a recoil to guns",
+      "Added decay timers to all Entities, including chicks and grounders."
+    ],
+    "releases": {
+      "built": "2018-06-19T00:00:00+01:00",
+      "beta": "2018-06-18T22:01:11+01:00"
+    }
+  },
   "0.1.1365.6557": {
     "notes": [
       "Added ladder recipe to fabricator"

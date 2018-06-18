@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1365.6557",
-    "date": "2018-06-18T00:00:00+01:00"
+    "version": "0.1.1366.6562",
+    "date": "2018-06-19T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1366.6562",
+      "notes": [
+        "Added a recoil to guns",
+        "Added decay timers to all Entities, including chicks and grounders."
+      ]
+    },
     {
       "version": "0.1.1365.6557",
       "notes": [
@@ -2367,10 +2374,7 @@
         "Fixed double destroy on burned items",
         "Added alert when trying to set port values outside the restricted range.",
         "Disabled changing port values or max player count while hosting a server.",
-        "Added function to initialize current settings page when reopening the settings menu from ingame.",
-        "Fixed problem with setting password on multiplayer screen.",
-        "Extinguisher now puts out the targeted item together with items in current atmosphere",
-        "Possible fix for double destroy when thing burned out"
+        "Added function to initialize current settings page when reopening the settings menu from ingame."
       ]
     }
   ]
