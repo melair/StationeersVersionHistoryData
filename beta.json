@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1366.6562",
-    "date": "2018-06-19T00:00:00+01:00"
+    "version": "0.1.1367.6571",
+    "date": "2018-06-20T00:00:00+01:00"
   },
   "history": [
     {
@@ -2373,8 +2373,7 @@
         "Disabled frustum culling temporarily",
         "Fixed double destroy on burned items",
         "Added alert when trying to set port values outside the restricted range.",
-        "Disabled changing port values or max player count while hosting a server.",
-        "Added function to initialize current settings page when reopening the settings menu from ingame."
+        "Disabled changing port values or max player count while hosting a server."
       ]
     }
   ]
