@@ -1,4 +1,17 @@
 {
+  "0.1.1369.6585": {
+    "notes": [
+      "Fixed Fuel Generator gauge display orange on one side.",
+      "Added first pass of damaged buildstates for structures. Engine can now be dealt damage until it is wrecked into a damaged build state and then more until it is destroyed and drops wreckage pieces.",
+      "Fixed bug with fertilized eggs causing an error when hatching because the shell fragment assets could not be loaded.",
+      "Wall Coolers now properly stackable to a max of 5.",
+      "Fixed broken split interaction labels on Wall Cooler and Wall Heater."
+    ],
+    "releases": {
+      "built": "2018-06-21T00:00:00+01:00",
+      "beta": "2018-06-20T22:01:11+01:00"
+    }
+  },
   "0.1.1368.6572": {
     "notes": [
 

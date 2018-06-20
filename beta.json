@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1368.6572",
-    "date": "2018-06-20T00:00:00+01:00"
+    "version": "0.1.1369.6585",
+    "date": "2018-06-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1369.6585",
+      "notes": [
+        "Fixed Fuel Generator gauge display orange on one side.",
+        "Added first pass of damaged buildstates for structures. Engine can now be dealt damage until it is wrecked into a damaged build state and then more until it is destroyed and drops wreckage pieces.",
+        "Fixed bug with fertilized eggs causing an error when hatching because the shell fragment assets could not be loaded.",
+        "Wall Coolers now properly stackable to a max of 5.",
+        "Fixed broken split interaction labels on Wall Cooler and Wall Heater."
+      ]
+    },
     {
       "version": "0.1.1366.6562",
       "notes": [
@@ -2362,17 +2372,7 @@
         "Added prompt for quit to desktop on main menu.",
         "Removed restriction on ports to allow the full range 0-65535",
         "Fixed devices that are not near the player, but in a vaccum, are playing as if they are in an atmosphere.",
-        "Fixed NRE when player fails to join server (wrong password, exceeded max player)",
-        "Fixed potential occlusion manager bugs.",
-        "turned on frustrum culling."
-      ]
-    },
-    {
-      "version": "0.1.976.4719",
-      "notes": [
-        "Disabled frustum culling temporarily",
-        "Fixed double destroy on burned items",
-        "Added alert when trying to set port values outside the restricted range."
+        "Fixed NRE when player fails to join server (wrong password, exceeded max player)"
       ]
     }
   ]
