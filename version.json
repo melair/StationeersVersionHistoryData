@@ -1,4 +1,23 @@
 {
+  "0.1.1371.6597": {
+    "notes": [
+      "Added Electrolyzer.  Available on the Atmospherics kit, it consumes a lot of power (and therefore generates quite a bit of heat) to convert moles of water into hydrogen and oxygen."
+    ],
+    "releases": {
+      "built": "2018-06-22T00:00:00+01:00",
+      "beta": "2018-06-22T00:01:11+01:00"
+    }
+  },
+  "0.1.1370.6593": {
+    "notes": [
+      "Add Build state of structures now decreases with damage",
+      "Add broken build state for anchor and composite walls."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1369.6585": {
     "notes": [
       "Fixed Fuel Generator gauge display orange on one side.",

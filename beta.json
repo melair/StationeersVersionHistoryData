@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1369.6585",
-    "date": "2018-06-21T00:00:00+01:00"
+    "version": "0.1.1371.6597",
+    "date": "2018-06-22T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1371.6597",
+      "notes": [
+        "Added Electrolyzer.  Available on the Atmospherics kit, it consumes a lot of power (and therefore generates quite a bit of heat) to convert moles of water into hydrogen and oxygen."
+      ]
+    },
+    {
+      "version": "0.1.1370.6593",
+      "notes": [
+        "Add Build state of structures now decreases with damage",
+        "Add broken build state for anchor and composite walls."
+      ]
+    },
     {
       "version": "0.1.1369.6585",
       "notes": [
@@ -2367,12 +2380,7 @@
       "version": "0.1.977.4732",
       "notes": [
         "Made disabled input fields and sliders in Multiplayer settings menu more obvious",
-        "Made Setting options more opaque",
-        "Fixed ThreadedManager tick speed naming to make it less confusing",
-        "Added prompt for quit to desktop on main menu.",
-        "Removed restriction on ports to allow the full range 0-65535",
-        "Fixed devices that are not near the player, but in a vaccum, are playing as if they are in an atmosphere.",
-        "Fixed NRE when player fails to join server (wrong password, exceeded max player)"
+        "Made Setting options more opaque"
       ]
     }
   ]
