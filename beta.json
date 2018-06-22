@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1372.6603",
+    "version": "0.1.1373.6615",
     "date": "2018-06-22T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1373.6615",
+      "notes": [
+        "Fixed missing gun hit particle",
+        "Fixed an error being caused by the deconstruction particle effect trying to run on non structure things",
+        "Fixed bug with animation on Electrolyzer.",
+        "Updated Electrolyzer power usage from 180 to 1200.",
+        "Added deconstructing of broken structures. They deconstruct to their wreckage parts using either the welding tool or the grinder.",
+        "Fixed missing destruction particle prefab in scene",
+        "Fixed with SMG does not exit aim mode when hand is changed"
+      ]
+    },
     {
       "version": "0.1.1372.6603",
       "notes": [
@@ -2368,15 +2380,7 @@
         "Added test gas data to base ores.",
         "Increased mineables drop sizes",
         "Reverted crates with broken interactables.",
-        "Fixed ice not minable.",
-        "Fixed some devices broken by Thermodynamics. Introduced ThermodynamicsScale to control effect of Thermodynamics on things.",
-        "Changes made to GridPathfinder so it tracks type of Grid aswell as location.",
-        "Fixed hat breaking game. Suit no longer assumes all items in head slot has an internal atmosphere.",
-        "Updated main menu camera movement path",
-        "Fixed NRE when clicking on player profile in TAB menu",
-        "Added missing files",
-        "Added basedirectory to dedicated server for saving each profile",
-        "Ice now produces oxygen when melted. Ice melts both in normal furnace operation, but will also (quickly) melt when in the sun, or when in an atmosphere above zero."
+        "Fixed ice not minable."
       ]
     }
   ]

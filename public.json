@@ -1,9 +1,68 @@
 {
   "current": {
-    "version": "0.1.1362.6552",
-    "date": "2018-06-15T00:00:00+01:00"
+    "version": "0.1.1373.6615",
+    "date": "2018-06-22T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1373.6615",
+      "notes": [
+        "Fixed missing gun hit particle",
+        "Fixed an error being caused by the deconstruction particle effect trying to run on non structure things",
+        "Fixed bug with animation on Electrolyzer.",
+        "Updated Electrolyzer power usage from 180 to 1200.",
+        "Added deconstructing of broken structures. They deconstruct to their wreckage parts using either the welding tool or the grinder.",
+        "Fixed missing destruction particle prefab in scene",
+        "Fixed with SMG does not exit aim mode when hand is changed"
+      ]
+    },
+    {
+      "version": "0.1.1372.6603",
+      "notes": [
+        "Added particle effect when a structure is deconstructed(when the buildstate is reduced or when it is destroyed via damage)",
+        "Updated blueprint for Electrolyzer.",
+        "Changed Electrolyzer power usage to 1200W.",
+        "Changed Electrolyzer return ratios to 1:1 Volatiles and 1:0.5 Oxygen.",
+        "Fixed bug with Electrolyzer power button animating twice.",
+        "Fixed error when Electrolyzer input pipe was empty."
+      ]
+    },
+    {
+      "version": "0.1.1371.6597",
+      "notes": [
+        "Added Electrolyzer.  Available on the Atmospherics kit, it consumes a lot of power (and therefore generates quite a bit of heat) to convert moles of water into hydrogen and oxygen."
+      ]
+    },
+    {
+      "version": "0.1.1370.6593",
+      "notes": [
+        "Add Build state of structures now decreases with damage",
+        "Add broken build state for anchor and composite walls."
+      ]
+    },
+    {
+      "version": "0.1.1369.6585",
+      "notes": [
+        "Fixed Fuel Generator gauge display orange on one side.",
+        "Added first pass of damaged buildstates for structures. Engine can now be dealt damage until it is wrecked into a damaged build state and then more until it is destroyed and drops wreckage pieces.",
+        "Fixed bug with fertilized eggs causing an error when hatching because the shell fragment assets could not be loaded.",
+        "Wall Coolers now properly stackable to a max of 5.",
+        "Fixed broken split interaction labels on Wall Cooler and Wall Heater."
+      ]
+    },
+    {
+      "version": "0.1.1366.6562",
+      "notes": [
+        "Added a recoil to guns",
+        "Added decay timers to all Entities, including chicks and grounders."
+      ]
+    },
+    {
+      "version": "0.1.1365.6557",
+      "notes": [
+        "Added ladder recipe to fabricator"
+      ]
+    },
     {
       "version": "0.1.1362.6552",
       "notes": [
@@ -2321,54 +2380,7 @@
         "Added test gas data to base ores.",
         "Increased mineables drop sizes",
         "Reverted crates with broken interactables.",
-        "Fixed ice not minable.",
-        "Fixed some devices broken by Thermodynamics. Introduced ThermodynamicsScale to control effect of Thermodynamics on things.",
-        "Changes made to GridPathfinder so it tracks type of Grid aswell as location.",
-        "Fixed hat breaking game. Suit no longer assumes all items in head slot has an internal atmosphere.",
-        "Updated main menu camera movement path",
-        "Fixed NRE when clicking on player profile in TAB menu",
-        "Added missing files",
-        "Added basedirectory to dedicated server for saving each profile",
-        "Ice now produces oxygen when melted. Ice melts both in normal furnace operation, but will also (quickly) melt when in the sun, or when in an atmosphere above zero.",
-        "Fixed smelted ores were not producing gases. Now will produce gases based on their configured GasMixture.",
-        "Fixed transformer had unnecessary syncvars."
-      ]
-    },
-    {
-      "version": "0.1.978.4734",
-      "notes": [
-        "First pass on new TAB menu, a lot of things still broken"
-      ]
-    },
-    {
-      "version": "0.1.977.4732",
-      "notes": [
-        "Made disabled input fields and sliders in Multiplayer settings menu more obvious",
-        "Made Setting options more opaque",
-        "Fixed ThreadedManager tick speed naming to make it less confusing",
-        "Added prompt for quit to desktop on main menu.",
-        "Removed restriction on ports to allow the full range 0-65535",
-        "Fixed devices that are not near the player, but in a vaccum, are playing as if they are in an atmosphere.",
-        "Fixed NRE when player fails to join server (wrong password, exceeded max player)",
-        "Fixed potential occlusion manager bugs.",
-        "turned on frustrum culling."
-      ]
-    },
-    {
-      "version": "0.1.976.4719",
-      "notes": [
-        "Disabled frustum culling temporarily",
-        "Fixed double destroy on burned items",
-        "Added alert when trying to set port values outside the restricted range.",
-        "Disabled changing port values or max player count while hosting a server.",
-        "Added function to initialize current settings page when reopening the settings menu from ingame.",
-        "Fixed problem with setting password on multiplayer screen.",
-        "Extinguisher now puts out the targeted item together with items in current atmosphere",
-        "Possible fix for double destroy when thing burned out",
-        "Electronics Printer added. Use to create electrical items.",
-        "Force to hide scoreboard when leave a game.",
-        "Added minable drop amounts to XML",
-        "Added vain size to XML"
+        "Fixed ice not minable."
       ]
     }
   ]

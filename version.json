@@ -1,4 +1,20 @@
 {
+  "0.1.1373.6615": {
+    "notes": [
+      "Fixed missing gun hit particle",
+      "Fixed an error being caused by the deconstruction particle effect trying to run on non structure things",
+      "Fixed bug with animation on Electrolyzer.",
+      "Updated Electrolyzer power usage from 180 to 1200.",
+      "Added deconstructing of broken structures. They deconstruct to their wreckage parts using either the welding tool or the grinder.",
+      "Fixed missing destruction particle prefab in scene",
+      "Fixed with SMG does not exit aim mode when hand is changed"
+    ],
+    "releases": {
+      "built": "2018-06-22T00:00:00+01:00",
+      "public": "2018-06-22T06:01:12+01:00",
+      "beta": "2018-06-22T06:01:12+01:00"
+    }
+  },
   "0.1.1372.6603": {
     "notes": [
       "Added particle effect when a structure is deconstructed(when the buildstate is reduced or when it is destroyed via damage)",
@@ -10,7 +26,8 @@
     ],
     "releases": {
       "built": "2018-06-22T00:00:00+01:00",
-      "beta": "2018-06-22T02:01:11+01:00"
+      "beta": "2018-06-22T02:01:11+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1371.6597": {
@@ -19,7 +36,8 @@
     ],
     "releases": {
       "built": "2018-06-22T00:00:00+01:00",
-      "beta": "2018-06-22T00:01:11+01:00"
+      "beta": "2018-06-22T00:01:11+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1370.6593": {
@@ -29,7 +47,8 @@
     ],
     "releases": {
       "built": "unknown",
-      "beta": "unknown"
+      "beta": "unknown",
+      "public": "unknown"
     }
   },
   "0.1.1369.6585": {
@@ -42,7 +61,8 @@
     ],
     "releases": {
       "built": "2018-06-21T00:00:00+01:00",
-      "beta": "2018-06-20T22:01:11+01:00"
+      "beta": "2018-06-20T22:01:11+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1368.6572": {
@@ -70,7 +90,8 @@
     ],
     "releases": {
       "built": "2018-06-19T00:00:00+01:00",
-      "beta": "2018-06-18T22:01:11+01:00"
+      "beta": "2018-06-18T22:01:11+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1365.6557": {
@@ -79,7 +100,8 @@
     ],
     "releases": {
       "built": "2018-06-18T00:00:00+01:00",
-      "beta": "2018-06-18T02:01:12+01:00"
+      "beta": "2018-06-18T02:01:12+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1364.6555": {
