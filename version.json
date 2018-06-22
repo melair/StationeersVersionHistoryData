@@ -1,4 +1,18 @@
 {
+  "0.1.1372.6603": {
+    "notes": [
+      "Added particle effect when a structure is deconstructed(when the buildstate is reduced or when it is destroyed via damage)",
+      "Updated blueprint for Electrolyzer.",
+      "Changed Electrolyzer power usage to 1200W.",
+      "Changed Electrolyzer return ratios to 1:1 Volatiles and 1:0.5 Oxygen.",
+      "Fixed bug with Electrolyzer power button animating twice.",
+      "Fixed error when Electrolyzer input pipe was empty."
+    ],
+    "releases": {
+      "built": "2018-06-22T00:00:00+01:00",
+      "beta": "2018-06-22T02:01:11+01:00"
+    }
+  },
   "0.1.1371.6597": {
     "notes": [
       "Added Electrolyzer.  Available on the Atmospherics kit, it consumes a lot of power (and therefore generates quite a bit of heat) to convert moles of water into hydrogen and oxygen."

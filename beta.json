@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1371.6597",
+    "version": "0.1.1372.6603",
     "date": "2018-06-22T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1372.6603",
+      "notes": [
+        "Added particle effect when a structure is deconstructed(when the buildstate is reduced or when it is destroyed via damage)",
+        "Updated blueprint for Electrolyzer.",
+        "Changed Electrolyzer power usage to 1200W.",
+        "Changed Electrolyzer return ratios to 1:1 Volatiles and 1:0.5 Oxygen.",
+        "Fixed bug with Electrolyzer power button animating twice.",
+        "Fixed error when Electrolyzer input pipe was empty."
+      ]
+    },
     {
       "version": "0.1.1371.6597",
       "notes": [
@@ -2365,22 +2376,7 @@
         "Fixed NRE when clicking on player profile in TAB menu",
         "Added missing files",
         "Added basedirectory to dedicated server for saving each profile",
-        "Ice now produces oxygen when melted. Ice melts both in normal furnace operation, but will also (quickly) melt when in the sun, or when in an atmosphere above zero.",
-        "Fixed smelted ores were not producing gases. Now will produce gases based on their configured GasMixture.",
-        "Fixed transformer had unnecessary syncvars."
-      ]
-    },
-    {
-      "version": "0.1.978.4734",
-      "notes": [
-        "First pass on new TAB menu, a lot of things still broken"
-      ]
-    },
-    {
-      "version": "0.1.977.4732",
-      "notes": [
-        "Made disabled input fields and sliders in Multiplayer settings menu more obvious",
-        "Made Setting options more opaque"
+        "Ice now produces oxygen when melted. Ice melts both in normal furnace operation, but will also (quickly) melt when in the sun, or when in an atmosphere above zero."
       ]
     }
   ]
