@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1373.6615",
-    "date": "2018-06-22T00:00:00+01:00"
+    "version": "0.1.1374.6618",
+    "date": "2018-06-25T00:00:00+01:00"
   },
   "history": [
     {
@@ -2379,8 +2379,7 @@
         "First pass of angle grinder.",
         "Added test gas data to base ores.",
         "Increased mineables drop sizes",
-        "Reverted crates with broken interactables.",
-        "Fixed ice not minable."
+        "Reverted crates with broken interactables."
       ]
     }
   ]
