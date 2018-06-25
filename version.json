@@ -1,4 +1,19 @@
 {
+  "0.1.1375.6633": {
+    "notes": [
+      "Added first pass of Elevator support. Build Kit (Elevator) on the Electronics Printer. Two current placable blocks: Elevator shafts and Levels. When a level is placed, an elevator carrage will be created. You can only merge elevator networks where only one of them contains a carrage. The levels require power to operate their doors. Note: this is only the first pass and they may substantially change! Be very careful with this while they are on the beta branch in your saves. KNOWN ISSUE: They will not work as expected on motherships. Next update will ensure they work correctly on motherships.",
+      "Added more broken build states to frames. Structures will now break to a corresponding build state if there is one, otherwise they will break to the next available build state down",
+      "Fixed broken structures being able to be deconstructed instantly by any object",
+      "Allow both radiative and convective heat transfer at the same time on Things (e.g. radiators). Radiators should no longer be less effective if placed in an atmosphere.",
+      "Added broken build state to steel frame",
+      "Fixed missing gun hit particle",
+      "Added give up option when going unconscious. You can now kill yourself on becoming unconscious and respawn immediately, instead of waiting for death."
+    ],
+    "releases": {
+      "built": "2018-06-25T00:00:00+01:00",
+      "beta": "2018-06-25T08:01:12+01:00"
+    }
+  },
   "0.1.1374.6618": {
     "notes": [
 
