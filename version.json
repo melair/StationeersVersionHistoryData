@@ -1,4 +1,22 @@
 {
+  "0.1.1380.6646": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-26T00:00:00+01:00",
+      "beta": "2018-06-25T23:01:22+01:00"
+    }
+  },
+  "0.1.1379.6645": {
+    "notes": [
+      "Fixed commander slot access card slots were not correctly merging access permissions (credit: Masoneer / Risu). Now each slot access permissions correctly merged."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1378.6643": {
     "notes": [
       "Fixed ElevatorCarrage was set as spawnable, so people were spawning it in creative. The ElevatorCarrage is a unique item, that should only be spawned by the shafts itself. Now not spawnable manually.",

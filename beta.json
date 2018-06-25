@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1378.6643",
+    "version": "0.1.1380.6646",
     "date": "2018-06-26T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1379.6645",
+      "notes": [
+        "Fixed commander slot access card slots were not correctly merging access permissions (credit: Masoneer / Risu). Now each slot access permissions correctly merged."
+      ]
+    },
     {
       "version": "0.1.1378.6643",
       "notes": [
@@ -2380,10 +2386,7 @@
         "First pass on new Server Info join prompt",
         "Improved solar panel operation. Now can rotate horizontally left/right in degrees, and vertically in extension percent, using wrench. Feedback provided in tooltips.",
         "Added Solar Panel Horizontal and Vertical settings to Logic Motherboard as an action.",
-        "Added Solar Panel Generation Rate to Logic Motherboard as a condition.",
-        "Electronic fabricator recipes expanded",
-        "Fixed prompts having jumpy titles",
-        "Updated main menu camera movement"
+        "Added Solar Panel Generation Rate to Logic Motherboard as a condition."
       ]
     }
   ]
