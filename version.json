@@ -1,4 +1,30 @@
 {
+  "0.1.1378.6643": {
+    "notes": [
+      "Fixed ElevatorCarrage was set as spawnable, so people were spawning it in creative. The ElevatorCarrage is a unique item, that should only be spawned by the shafts itself. Now not spawnable manually.",
+      "Fixed null reference exception on new shaft creation. Carrage was incorrectly trying to initialize before being correctly assigned to the shaft network. Now gracefully handles this.",
+      "Added Logic Motherboard support of Quantity, Export/Import slot details, and Recipe Hash."
+    ],
+    "releases": {
+      "built": "2018-06-26T00:00:00+01:00",
+      "beta": "2018-06-25T16:01:12+01:00"
+    }
+  },
+  "0.1.1377.6640": {
+    "notes": [
+      "Fixed Import and Export Slot Quantity was not reporting quantity for consumables (such as ingots). It was only supporting quantity checking for stackables. Now correctly reports quantity for stackable and consumable.",
+      "Added Chute Bin logic support for slot. Now will report slot occupied (0 or 1), slot occupant type (hash), and slot quantity (stackable or consumable quantity).",
+      "Changed Product Code read/write on fabricators to RecipeHash.",
+      "Added logic reading of contents of Import and Export slots. Now can read the contents using ImportSlotHash and ExportSlotHash. Each type of item has a unique hash. A gold ingot in a slot would give a hash of 226410516. This means you can check if the contents of an export or import slot is of a certain type, and then implement logic accordingly.",
+      "Fixed insidious bug with Approximately implementation that resulted in large numbers in logic system not being correctly managed.",
+      "Changed Logic system to use \"double\" precision as a base, rather than \"float\", due to precision issues. Devices still tend to use floats for implementation. Some devices will be moved to double (such as energy) due to precision issues. These issues remain and will be fixed when this is changed.",
+      "Added Logic reading and writing of current product code to basic fabricators (printers). You can now read the \"product code\" which will give you an integer that is a reference to that product. You can store this value easily in memory using a Logic Reader. When you subsequently \"write\" that value back, as a Product code again, it will set that printer to that recipe. This allow you to automatically control what a printer is producing, and potentially make automated factories."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1376.6636": {
     "notes": [
       "Added logic hooks for Elevators. Any elevator (both shafts and levels) will return the ElevatorLevel being the current level of the carrage on the local elevator network. You can also set the ElevatorLevel, which will make the carrage try to go to that level. And you can read the ElevatorSpeed, which is how fast the elevator is going. Where the carrage is missing, error values will be returned (like -1 for the ElevatorLevel).",
