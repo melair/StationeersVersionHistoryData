@@ -1,4 +1,14 @@
 {
+  "0.1.1376.6636": {
+    "notes": [
+      "Added logic hooks for Elevators. Any elevator (both shafts and levels) will return the ElevatorLevel being the current level of the carrage on the local elevator network. You can also set the ElevatorLevel, which will make the carrage try to go to that level. And you can read the ElevatorSpeed, which is how fast the elevator is going. Where the carrage is missing, error values will be returned (like -1 for the ElevatorLevel).",
+      "Reverted Destroyed Build States and Thermodynamics changes as they were causing issues."
+    ],
+    "releases": {
+      "built": "2018-06-25T00:00:00+01:00",
+      "beta": "2018-06-25T13:01:12+01:00"
+    }
+  },
   "0.1.1375.6633": {
     "notes": [
       "Added first pass of Elevator support. Build Kit (Elevator) on the Electronics Printer. Two current placable blocks: Elevator shafts and Levels. When a level is placed, an elevator carrage will be created. You can only merge elevator networks where only one of them contains a carrage. The levels require power to operate their doors. Note: this is only the first pass and they may substantially change! Be very careful with this while they are on the beta branch in your saves. KNOWN ISSUE: They will not work as expected on motherships. Next update will ensure they work correctly on motherships.",

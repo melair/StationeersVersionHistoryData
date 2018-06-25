@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1375.6633",
+    "version": "0.1.1376.6636",
     "date": "2018-06-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1376.6636",
+      "notes": [
+        "Added logic hooks for Elevators. Any elevator (both shafts and levels) will return the ElevatorLevel being the current level of the carrage on the local elevator network. You can also set the ElevatorLevel, which will make the carrage try to go to that level. And you can read the ElevatorSpeed, which is how fast the elevator is going. Where the carrage is missing, error values will be returned (like -1 for the ElevatorLevel).",
+        "Reverted Destroyed Build States and Thermodynamics changes as they were causing issues."
+      ]
+    },
     {
       "version": "0.1.1375.6633",
       "notes": [
@@ -2376,14 +2383,6 @@
         "Fixed sun incorrect settings on light in world 3.",
         "Fixed power not being reset for APC at end of tick.",
         "Updated Join Menu to support Map name properly"
-      ]
-    },
-    {
-      "version": "0.1.979.4759",
-      "notes": [
-        "reverted green material",
-        "added missing texture",
-        "Added visualizer to terrain for mineables"
       ]
     }
   ]
