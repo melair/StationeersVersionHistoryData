@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1381.6648",
+    "version": "0.1.1382.6655",
     "date": "2018-06-26T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1382.6655",
+      "notes": [
+        "Changed Kit (Elevator) model to a new custom model, which also allows painting the kit itself so the produced structure comes out correctly painted.",
+        "Added Logic Mirror. Has a screw that allows the selection of any device on it's input network. All variables of that device are then mirrored on this device, allowing you to mirror the logic state of devices between different networks. You are able to both read and write to the mirrored device. If the logic mirror is not powered, it will return no data and will not allow setting data. The logic mirror itself will be completely hidden to the logic system, as it's purpose is only to mirror. It is buildable off the Logic I/O Kit.",
+        "Fixed newly placed and unset LED displays not turning their display off when power toggled (credit: Eearslya). Now LED displays will correctly turn their display off when lost power or switched off.",
+        "Fixed able to construct printers and fabricators in mid air. Now requires mountable frame below to Build.",
+        "Added Container Mount. This functions like a Tank Connector, you can drag a container onto the mount and then use your wrench to secure or unsecure it."
+      ]
+    },
     {
       "version": "0.1.1381.6648",
       "notes": [
@@ -2381,16 +2391,6 @@
       "notes": [
         "Fixed TextMeshPro NRE",
         "New Social Media panel (disabled)"
-      ]
-    },
-    {
-      "version": "0.1.982.4783",
-      "notes": [
-        "Fixed solar panel spawning in non default position.",
-        "Road flares are stackable. Right click still activates one of them, which will be put in your hand if available.",
-        "First pass on new Kick/Ban prompts",
-        "First pass on new Server Info join prompt",
-        "Improved solar panel operation. Now can rotate horizontally left/right in degrees, and vertically in extension percent, using wrench. Feedback provided in tooltips."
       ]
     }
   ]
