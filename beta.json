@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1380.6646",
+    "version": "0.1.1381.6648",
     "date": "2018-06-26T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1381.6648",
+      "notes": [
+        "Fixed issue with some values being clamped to invalid ranges.  Caused some crafting machines to return incorrect resource values and some logic configurations to behave oddly (among other things)."
+      ]
+    },
     {
       "version": "0.1.1379.6645",
       "notes": [
@@ -2384,9 +2390,7 @@
         "Road flares are stackable. Right click still activates one of them, which will be put in your hand if available.",
         "First pass on new Kick/Ban prompts",
         "First pass on new Server Info join prompt",
-        "Improved solar panel operation. Now can rotate horizontally left/right in degrees, and vertically in extension percent, using wrench. Feedback provided in tooltips.",
-        "Added Solar Panel Horizontal and Vertical settings to Logic Motherboard as an action.",
-        "Added Solar Panel Generation Rate to Logic Motherboard as a condition."
+        "Improved solar panel operation. Now can rotate horizontally left/right in degrees, and vertically in extension percent, using wrench. Feedback provided in tooltips."
       ]
     }
   ]

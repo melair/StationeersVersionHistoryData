@@ -1,4 +1,13 @@
 {
+  "0.1.1381.6648": {
+    "notes": [
+      "Fixed issue with some values being clamped to invalid ranges.  Caused some crafting machines to return incorrect resource values and some logic configurations to behave oddly (among other things)."
+    ],
+    "releases": {
+      "built": "2018-06-26T00:00:00+01:00",
+      "beta": "2018-06-26T01:01:11+01:00"
+    }
+  },
   "0.1.1380.6646": {
     "notes": [
 
