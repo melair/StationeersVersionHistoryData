@@ -1,4 +1,20 @@
 {
+  "0.1.1383.6665": {
+    "notes": [
+      "Changed input window to lock to input type (i.e. numbers).",
+      "Added Logic Memory values can be directly set via keyboard entry. Use a labeller on a screw to bring up the value input screen and enter a value. This will then be set to the memory unit.",
+      "Fixed logic mirror showing error when it should not. Now checks its state after assignment. (Credit: Masoneer).",
+      "Removed ability for Logic Mirrors to reference other logic mirrors, as it was too easy to make infinite loops referencing each other.",
+      "Fixed potential bug where two logic mirrors could reference each other, therefore locking up the power thread. Now logic mirrors can only reference other logic mirrors so long as they don't already reference it. Note: Logic mirrors will be \"invisible\" on the logic system until they have been assigned to mirror a device.",
+      "Changed Elevator Shaft and Levels deconstruction from Drill to Angle Grinder. Now you must use the Angle Grinder to deconstruct them, and it takes slightly longer.",
+      "Fixed unable to open and close crate that is mounted. Now can open and close a mounted crate.",
+      "Fixed Z-fighting between composite floor tiles and Elevator Levels."
+    ],
+    "releases": {
+      "built": "2018-06-26T00:00:00+01:00",
+      "beta": "2018-06-26T08:01:12+01:00"
+    }
+  },
   "0.1.1382.6655": {
     "notes": [
       "Changed Kit (Elevator) model to a new custom model, which also allows painting the kit itself so the produced structure comes out correctly painted.",
