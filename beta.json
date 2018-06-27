@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1392.6694",
+    "version": "0.1.1394.6696",
     "date": "2018-06-28T00:00:00+01:00"
   },
   "history": [
@@ -2393,9 +2393,7 @@
         "Fixed current job on fabricators not showing for clients.",
         "Fixed unable to delete current job on fabricator.",
         "reduced electronics printer passive power usage.",
-        "reduced several autolathe recipe costs, removed steel from some mid tier recipes.",
-        "increased arcfurnace recipe power usage.",
-        "Fixed Gas Sensor spawning from its own kit. Now spawns from the generic sensor kit."
+        "reduced several autolathe recipe costs, removed steel from some mid tier recipes."
       ]
     }
   ]
