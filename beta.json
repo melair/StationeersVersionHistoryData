@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1387.6680",
+    "version": "0.1.1388.6684",
     "date": "2018-06-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1388.6684",
+      "notes": [
+        "Added Diode Slide. This is a diode that slides between 0 and 1 based on what its setting is, and shows a balance of red or green based on the value of this. Useful for reporting how full something is using the logic system.",
+        "Added Smart Gas Canisters.  Twice the capacity of the default gas canisters, and featuring a display roughly depicting its pressure level."
+      ]
+    },
     {
       "version": "0.1.1387.6680",
       "notes": [
@@ -2382,9 +2389,7 @@
         "Road Flares now stack 20 and spawn by default.",
         "Fixed OrganBrain exception for connection failed clients on reload. For now humans who have no OrganBrain are deleted. Better solution to come later in early access.",
         "Traversing over airlock doors and other flat edge objects should now be smoother",
-        "Improved server command parse. Command takes space with double quotes.",
-        "Fixed admin server bug.",
-        "Fixed wrong mapname on steam server browser."
+        "Improved server command parse. Command takes space with double quotes."
       ]
     }
   ]

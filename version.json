@@ -1,4 +1,14 @@
 {
+  "0.1.1388.6684": {
+    "notes": [
+      "Added Diode Slide. This is a diode that slides between 0 and 1 based on what its setting is, and shows a balance of red or green based on the value of this. Useful for reporting how full something is using the logic system.",
+      "Added Smart Gas Canisters.  Twice the capacity of the default gas canisters, and featuring a display roughly depicting its pressure level."
+    ],
+    "releases": {
+      "built": "2018-06-27T00:00:00+01:00",
+      "beta": "2018-06-27T08:01:11+01:00"
+    }
+  },
   "0.1.1387.6680": {
     "notes": [
       "Added Hydroponics Station. This is an advanced hydroponics grower. It has four slots and provides UV light for the plants to grow, even when in darkness. This UV light is toggleable on and off as it draws a lot of power. It also provides data on it's four slots, providing Growth state, efficiency, health, and the Hash of what kind of plant is inserted. Water should be provided via the pipe, everything else is gathered from the atmosphere around the station. Internal atmosphere (water) is exposed via the logic system also.",
