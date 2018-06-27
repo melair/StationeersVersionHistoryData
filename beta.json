@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1390.6690",
-    "date": "2018-06-27T00:00:00+01:00"
+    "version": "0.1.1392.6694",
+    "date": "2018-06-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1391.6693",
+      "notes": [
+        "Refactored player input window. Performance improved and code simplified. Also stores previously entered values. You can select the previous ones using the mouse wheel while in the input screen. A maximum of ten previous entries are stored. The input window will also display the input mode (such as alphanumeric, or decimal number, or integer only).",
+        "Fixed bug with Hydroponics Station not registering daylight. When the device is turned off, it should check to see if it is in sunshine."
+      ]
+    },
     {
       "version": "0.1.1389.6688",
       "notes": [
@@ -2388,11 +2395,7 @@
         "reduced electronics printer passive power usage.",
         "reduced several autolathe recipe costs, removed steel from some mid tier recipes.",
         "increased arcfurnace recipe power usage.",
-        "Fixed Gas Sensor spawning from its own kit. Now spawns from the generic sensor kit.",
-        "Updated administrator console of dedicated server",
-        "Fixed cannot change recipe buttons when device is turned off or powered down.",
-        "Cable Coil now a tool, and spawns by default in the ToolBelt.",
-        "Duct Tape now a tool, and can be placed in toolbelt."
+        "Fixed Gas Sensor spawning from its own kit. Now spawns from the generic sensor kit."
       ]
     }
   ]
