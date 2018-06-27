@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1386.6668",
+    "version": "0.1.1387.6680",
     "date": "2018-06-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1387.6680",
+      "notes": [
+        "Added Hydroponics Station. This is an advanced hydroponics grower. It has four slots and provides UV light for the plants to grow, even when in darkness. This UV light is toggleable on and off as it draws a lot of power. It also provides data on it's four slots, providing Growth state, efficiency, health, and the Hash of what kind of plant is inserted. Water should be provided via the pipe, everything else is gathered from the atmosphere around the station. Internal atmosphere (water) is exposed via the logic system also.",
+        "Added kit (Hydroponics Station). Producable off the Electronics printer. Allows construction of the Hydroponics Station for advanced growing.",
+        "Fixed Pointing a Tablet with an Atmospherics Analyzer cartridge at a Tank Storage will now display the internal atmosphere of the contained gas canister (if present).",
+        "Added new custom model for Security Printer. Also features dedicated button for Select Recipe functionality.",
+        "Can now place place a pipe and a cable in the same grid (but not more than one of the same type) as long as the ends don't overlap.",
+        "Fixed ability to place crafting machines without a frame underneath.",
+        "Added Circuitboard (Hash Display). This circuitboard can be connected with anything that has a readable hash. The prime example is linking it with any fabricator, and the display will show a thumbnail of what is selected as the current recipe. It could be set to read a Logic unit such as a Reader, which is in turn set to read from the Arc Furnace Export Slot Hash, which would render a picture of the current Ingot type being produced.",
+        "Added Flashpoint, Autoignition, and Hash, to the EReader (Credit: Masoneer)."
+      ]
+    },
     {
       "version": "0.1.1383.6665",
       "notes": [
@@ -2372,24 +2385,6 @@
         "Improved server command parse. Command takes space with double quotes.",
         "Fixed admin server bug.",
         "Fixed wrong mapname on steam server browser."
-      ]
-    },
-    {
-      "version": "0.1.985.4800",
-      "notes": [
-        "Added Chemistry Station. Makes Heal pills from Flour currently (will change).",
-        "Fixed exploded Gas Canisters in welding torches being offset when exploded. ExplosionMessage now sends LocalPosition instead of position.",
-        "Improved dedicated server commands. String parameters can take space with double quotes.",
-        "Missing fern material"
-      ]
-    },
-    {
-      "version": "0.1.984.4793",
-      "notes": [
-        "Add cereal bar.",
-        "4 slot wide display for 8, 12, and 16 slot counts.",
-        "Added fern plant.",
-        "Added Angle Grinder. Used for final stage of breaking down Frames."
       ]
     }
   ]
