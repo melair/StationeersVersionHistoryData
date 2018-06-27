@@ -1,12 +1,13 @@
 {
   "current": {
-    "version": "0.1.1383.6665",
-    "date": "2018-06-26T00:00:00+01:00"
+    "version": "0.1.1386.6668",
+    "date": "2018-06-27T00:00:00+01:00"
   },
   "history": [
     {
       "version": "0.1.1383.6665",
       "notes": [
+        "Fixed atmos thread crashing when a wall takes damage from overpressure. Overpressured bases should no longer give a huge wall of errors.",
         "Changed input window to lock to input type (i.e. numbers).",
         "Added Logic Memory values can be directly set via keyboard entry. Use a labeller on a screw to bring up the value input screen and enter a value. This will then be set to the memory unit.",
         "Fixed logic mirror showing error when it should not. Now checks its state after assignment. (Credit: Masoneer).",
@@ -2388,9 +2389,7 @@
         "Add cereal bar.",
         "4 slot wide display for 8, 12, and 16 slot counts.",
         "Added fern plant.",
-        "Added Angle Grinder. Used for final stage of breaking down Frames.",
-        "Increased toolbelt slots to 8.",
-        "Made toolbelt slots hidden. They were too small, and nobody really noticed what was in them anyway."
+        "Added Angle Grinder. Used for final stage of breaking down Frames."
       ]
     }
   ]
