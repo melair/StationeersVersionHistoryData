@@ -1,4 +1,24 @@
 {
+  "0.1.1390.6690": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-27T00:00:00+01:00",
+      "beta": "2018-06-27T12:01:12+01:00"
+    }
+  },
+  "0.1.1389.6688": {
+    "notes": [
+      "Added able to set values with keyboard input using a labeller on a button on the Transformers, Pipe Regulators, Volume Pump, and Mixer. This is similar to setting a value using the labeller on memory. This is a much faster (and more specific) way of setting a value on the device than clicking the wheel to move it.",
+      "Fixed door and airlock action strings not localized.",
+      "Fixed Hydroponics Station not receiving water. Volume was set to zero, so no mixing with connected pipe network would occur."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1388.6684": {
     "notes": [
       "Added Diode Slide. This is a diode that slides between 0 and 1 based on what its setting is, and shows a balance of red or green based on the value of this. Useful for reporting how full something is using the logic system.",

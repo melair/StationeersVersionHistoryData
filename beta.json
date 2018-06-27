@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1388.6684",
+    "version": "0.1.1390.6690",
     "date": "2018-06-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1389.6688",
+      "notes": [
+        "Added able to set values with keyboard input using a labeller on a button on the Transformers, Pipe Regulators, Volume Pump, and Mixer. This is similar to setting a value using the labeller on memory. This is a much faster (and more specific) way of setting a value on the device than clicking the wheel to move it.",
+        "Fixed door and airlock action strings not localized.",
+        "Fixed Hydroponics Station not receiving water. Volume was set to zero, so no mixing with connected pipe network would occur."
+      ]
+    },
     {
       "version": "0.1.1388.6684",
       "notes": [
@@ -2384,12 +2392,7 @@
         "Updated administrator console of dedicated server",
         "Fixed cannot change recipe buttons when device is turned off or powered down.",
         "Cable Coil now a tool, and spawns by default in the ToolBelt.",
-        "Duct Tape now a tool, and can be placed in toolbelt.",
-        "Added Portable Scrubbers and Air Conditioners to the Electronics Printer.",
-        "Road Flares now stack 20 and spawn by default.",
-        "Fixed OrganBrain exception for connection failed clients on reload. For now humans who have no OrganBrain are deleted. Better solution to come later in early access.",
-        "Traversing over airlock doors and other flat edge objects should now be smoother",
-        "Improved server command parse. Command takes space with double quotes."
+        "Duct Tape now a tool, and can be placed in toolbelt."
       ]
     }
   ]
