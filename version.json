@@ -1,4 +1,22 @@
 {
+  "0.1.1397.6703": {
+    "notes": [
+      "Fixed structures without broken build states not deconstructing. Re enabled reverted changes."
+    ],
+    "releases": {
+      "built": "2018-06-28T00:00:00+01:00",
+      "beta": "2018-06-28T03:01:11+01:00"
+    }
+  },
+  "0.1.1396.6701": {
+    "notes": [
+      "Added Kit (Crate) Item. When used with secondary action (Right Mouse) creates a Dynamic Crate. These can be built on the Autolathe using Iron Ingots. This allows early game creation of Dynamic Crates for use storing things. Credit: Nysch on Steam Suggestion forum."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1395.6698": {
     "notes": [
       "Fixed Missing Action string values for Cycle, Force Open and Force Close."

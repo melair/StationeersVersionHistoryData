@@ -1,12 +1,25 @@
 {
   "current": {
-    "version": "0.1.1395.6698",
+    "version": "0.1.1397.6703",
     "date": "2018-06-28T00:00:00+01:00"
   },
   "history": [
     {
+      "version": "0.1.1397.6703",
+      "notes": [
+        "Fixed structures without broken build states not deconstructing. Re enabled reverted changes."
+      ]
+    },
+    {
+      "version": "0.1.1396.6701",
+      "notes": [
+        "Added Kit (Crate) Item. When used with secondary action (Right Mouse) creates a Dynamic Crate. These can be built on the Autolathe using Iron Ingots. This allows early game creation of Dynamic Crates for use storing things. Credit: Nysch on Steam Suggestion forum."
+      ]
+    },
+    {
       "version": "0.1.1395.6698",
       "notes": [
+        "Fixed plants being deleted when being harvested. This was an erroneous fix to previous bug with plants when destroying their growing tray. Now plants will be destroyed when destroying their tray, but only if the seed has grown. If the seed is mature, it will be harvested normally instead of being destroyed. If the seed is still a seed, it will be ejected like all other inventory would.",
         "Fixed Missing Action string values for Cycle, Force Open and Force Close."
       ]
     },
@@ -2388,16 +2401,7 @@
         "Updated social media buttons position",
         "Fixed funky transparency on interactions when locking mask",
         "Fixed misaligned interaction and inventory panel on PanelClothing",
-        "Updated social media buttons",
-        "made fabricator recipe use silicon",
-        "updated dynamiccratepipesupplies to be the 2nd spawn in crate for a survival game."
-      ]
-    },
-    {
-      "version": "0.1.986.4815",
-      "notes": [
-        "Fixed current job on fabricators not showing for clients.",
-        "Fixed unable to delete current job on fabricator."
+        "Updated social media buttons"
       ]
     }
   ]
