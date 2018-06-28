@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1394.6696",
+    "version": "0.1.1395.6698",
     "date": "2018-06-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1395.6698",
+      "notes": [
+        "Fixed Missing Action string values for Cycle, Force Open and Force Close."
+      ]
+    },
     {
       "version": "0.1.1391.6693",
       "notes": [
@@ -2391,9 +2397,7 @@
       "version": "0.1.986.4815",
       "notes": [
         "Fixed current job on fabricators not showing for clients.",
-        "Fixed unable to delete current job on fabricator.",
-        "reduced electronics printer passive power usage.",
-        "reduced several autolathe recipe costs, removed steel from some mid tier recipes."
+        "Fixed unable to delete current job on fabricator."
       ]
     }
   ]
