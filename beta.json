@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1400.6720",
+    "version": "0.1.1401.6722",
     "date": "2018-06-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1401.6722",
+      "notes": [
+        "Fixed Labeller breaking after labelling 10 items. Credit: Eearslya."
+      ]
+    },
     {
       "version": "0.1.1400.6720",
       "notes": [
@@ -2406,9 +2412,7 @@
         "Added status command on dedicated server",
         "Added two new types of ice. Now Oxite, Water Ice, and Volatiles ice.",
         "Portable Gas Tanks can now have Gas Canisters inserted into them. The canisters will be pressurized to the tank pressure.",
-        "increased all .25 values to .5 to prevent display rounding, and floating point issues.",
-        "Added access key to dedicated server administrator. Only one connection is valid to run command.",
-        "Fixed gap on dropdown"
+        "increased all .25 values to .5 to prevent display rounding, and floating point issues."
       ]
     }
   ]

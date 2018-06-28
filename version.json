@@ -1,4 +1,13 @@
 {
+  "0.1.1401.6722": {
+    "notes": [
+      "Fixed Labeller breaking after labelling 10 items. Credit: Eearslya."
+    ],
+    "releases": {
+      "built": "2018-06-28T00:00:00+01:00",
+      "beta": "2018-06-28T08:01:12+01:00"
+    }
+  },
   "0.1.1400.6720": {
     "notes": [
       "Fixed null reference when adding/removing graph display from console.",
