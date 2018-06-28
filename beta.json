@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1401.6722",
-    "date": "2018-06-28T00:00:00+01:00"
+    "version": "0.1.1402.6723",
+    "date": "2018-06-29T00:00:00+01:00"
   },
   "history": [
     {
@@ -2411,8 +2411,7 @@
         "Canisters and Tanks now paintable.",
         "Added status command on dedicated server",
         "Added two new types of ice. Now Oxite, Water Ice, and Volatiles ice.",
-        "Portable Gas Tanks can now have Gas Canisters inserted into them. The canisters will be pressurized to the tank pressure.",
-        "increased all .25 values to .5 to prevent display rounding, and floating point issues."
+        "Portable Gas Tanks can now have Gas Canisters inserted into them. The canisters will be pressurized to the tank pressure."
       ]
     }
   ]

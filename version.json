@@ -1,4 +1,13 @@
 {
+  "0.1.1402.6723": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-29T00:00:00+01:00",
+      "beta": "2018-06-28T22:01:11+01:00"
+    }
+  },
   "0.1.1401.6722": {
     "notes": [
       "Fixed Labeller breaking after labelling 10 items. Credit: Eearslya."
