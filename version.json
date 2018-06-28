@@ -1,4 +1,31 @@
 {
+  "0.1.1400.6720": {
+    "notes": [
+      "Fixed null reference when adding/removing graph display from console.",
+      "Fixed Input Window would not apply changes when using the \"Chat\" key (Return). Now correctly submits the value instead of cancelling the value.",
+      "Added custom model for Kit (Hydroponics Station)",
+      "Fixed able to place Hydroponics Station floating in the air. Now requires a frame below it."
+    ],
+    "releases": {
+      "built": "2018-06-28T00:00:00+01:00",
+      "beta": "2018-06-28T07:01:11+01:00"
+    }
+  },
+  "0.1.1398.6710": {
+    "notes": [
+      "Added Access control to Battery, centrifuge, Generator, Pump, Recycler, Suit Storage, Transformer, and Flashing Light.",
+      "Added Circuitboard (Graph Display). Can be built on the Electronics Printer. Takes the average setting from any assignable device and records the value. Records a value every tick (half second) and then renders them as a graph. Color of the line is take from the Console color.",
+      "Added key bind for turning headlamp on and off. Default: 'L'",
+      "Added MotherShip Core Kit for constructing it",
+      "Changed MotherShip initial block back a frame",
+      "Fixed dedicated server InputWindow error when launching by moving the InputWindow.Initialize to not run on the dedicated server",
+      "Fixed errors with effects manager trying to render effects on the dedicated server"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1397.6703": {
     "notes": [
       "Fixed structures without broken build states not deconstructing. Re enabled reverted changes."
