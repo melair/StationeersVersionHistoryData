@@ -1,4 +1,18 @@
 {
+  "0.1.1407.6746": {
+    "notes": [
+      "Fixed unable to interact with slots on securing crate to crate mount if the lid was open when crate was mounted. Now can correctly interact.",
+      "Fixed various pipe kits not correctly paintable and displaying the correct colors.",
+      "Fixed Pipe Valve not paintable and does not show correct color thumbnails. Now correctly paintable and shows correct thumbnails for color in inventory.",
+      "Changed strings with \"Construction Kit\" to \"Kit\" for names.",
+      "Added Kits for constructing Portable Air Conditioner and Portable Scrubber. These are produced from the Pipe Bender. Use right click action to build these in front of you.",
+      "Fixed Helmet light being operable when not on head slot"
+    ],
+    "releases": {
+      "built": "2018-06-29T00:00:00+01:00",
+      "beta": "2018-06-29T05:01:11+01:00"
+    }
+  },
   "0.1.1405.6740": {
     "notes": [
 
