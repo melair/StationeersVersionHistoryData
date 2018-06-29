@@ -1,4 +1,24 @@
 {
+  "0.1.1411.6759": {
+    "notes": [
+      "Removed writing Flag variable to motherboard as there were multiplayer issues. Can still read. Will be reviewed in future.",
+      "Removed old spawnable crates.",
+      "Fixed screen effects not showing in third person. Now volumetric lighting now correctly shows on local character when in third person."
+    ],
+    "releases": {
+      "built": "2018-06-29T00:00:00+01:00",
+      "beta": "2018-06-29T06:01:10+01:00"
+    }
+  },
+  "0.1.1408.6753": {
+    "notes": [
+      "Fixed Smart Canister notification light offset locations."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1407.6746": {
     "notes": [
       "Fixed unable to interact with slots on securing crate to crate mount if the lid was open when crate was mounted. Now can correctly interact.",

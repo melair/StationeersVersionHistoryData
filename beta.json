@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1407.6746",
+    "version": "0.1.1411.6759",
     "date": "2018-06-29T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1411.6759",
+      "notes": [
+        "Removed writing Flag variable to motherboard as there were multiplayer issues. Can still read. Will be reviewed in future.",
+        "Removed old spawnable crates.",
+        "Fixed screen effects not showing in third person. Now volumetric lighting now correctly shows on local character when in third person."
+      ]
+    },
+    {
+      "version": "0.1.1408.6753",
+      "notes": [
+        "Fixed Smart Canister notification light offset locations."
+      ]
+    },
     {
       "version": "0.1.1407.6746",
       "notes": [
@@ -2416,13 +2430,7 @@
       "notes": [
         "Added Iron wall recipe.",
         "All tools are now paintable.",
-        "Random color assigned to all player spawned equipment on first creation.",
-        "Changed mineables time.",
-        "Spacesuit, Jetpack, and Helmet are now paintable.",
-        "Increased ore vein density.",
-        "Fixed locker causing errors when saved with wall position (NOTE: will break existing lockers in games!)",
-        "Fixed bench able to be rotated at odd angles.",
-        "Added Iron Wall and Kit."
+        "Random color assigned to all player spawned equipment on first creation."
       ]
     }
   ]
