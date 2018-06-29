@@ -1,4 +1,21 @@
 {
+  "0.1.1403.6732": {
+    "notes": [
+      "Fixed Errors when writing a hash value directly to a HashDisplay circuitboard using logic rather than setting the source via data disk.",
+      "Fixed ItemPipeRadiator now paintable.",
+      "Fixed Smart Canisters now have the correct maximum pressure (~20MPa).",
+      "Fixed Smart Canisters destroyed model now has the correct pivot location.",
+      "Fixed wilted plants being destroyed from damage",
+      "Fixed bug which would allow someone to spawn multiple pipes on top of a radiator",
+      "Fixed a bug where if a radiator was placed first a pipe of any orientation could be placed",
+      "Fixed Missing sounds on some structures after the addition of the access control interactions.",
+      "Fixed incorrect fabricator placement restriction"
+    ],
+    "releases": {
+      "built": "2018-06-29T00:00:00+01:00",
+      "beta": "2018-06-29T03:01:12+01:00"
+    }
+  },
   "0.1.1402.6723": {
     "notes": [
 

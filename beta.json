@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1402.6723",
+    "version": "0.1.1403.6732",
     "date": "2018-06-29T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1403.6732",
+      "notes": [
+        "Fixed Errors when writing a hash value directly to a HashDisplay circuitboard using logic rather than setting the source via data disk.",
+        "Fixed ItemPipeRadiator now paintable.",
+        "Fixed Smart Canisters now have the correct maximum pressure (~20MPa).",
+        "Fixed Smart Canisters destroyed model now has the correct pivot location.",
+        "Fixed wilted plants being destroyed from damage",
+        "Fixed bug which would allow someone to spawn multiple pipes on top of a radiator",
+        "Fixed a bug where if a radiator was placed first a pipe of any orientation could be placed",
+        "Fixed Missing sounds on some structures after the addition of the access control interactions.",
+        "Fixed incorrect fabricator placement restriction"
+      ]
+    },
     {
       "version": "0.1.1401.6722",
       "notes": [
@@ -2401,17 +2415,7 @@
         "Added escape key handling for main menu.",
         "First pass on Credits screen",
         "Fixed Centrifuge and Furnace dropping completed ingots when only ores placed in when deconstructed (should drop reagent mixes).",
-        "Fixed Active Vents, Engines, and Cooler/Heaters not registering their ConnectedPipeNetwork correctly. Brute force check occurs in OnAtmosphericTick to check for networks.",
-        "Furnace recipe temps decreased, since thermodynamics cools the furnace now.",
-        "All alloys have furnace recipes that make themselves now.",
-        "Added three new reagents for medical system.",
-        "Fixed Manufacturing machines outputting slag not the ingots that were placed in them. Now ingots are dropped by all the manufacturing devices that accept ingots (such as fabricators).",
-        "Fixed Invar name displayed as Electrum.",
-        "Propane is now named \"Volatiles\".",
-        "Canisters and Tanks now paintable.",
-        "Added status command on dedicated server",
-        "Added two new types of ice. Now Oxite, Water Ice, and Volatiles ice.",
-        "Portable Gas Tanks can now have Gas Canisters inserted into them. The canisters will be pressurized to the tank pressure."
+        "Fixed Active Vents, Engines, and Cooler/Heaters not registering their ConnectedPipeNetwork correctly. Brute force check occurs in OnAtmosphericTick to check for networks."
       ]
     }
   ]
