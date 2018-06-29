@@ -1,4 +1,24 @@
 {
+  "0.1.1405.6740": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-06-29T00:00:00+01:00",
+      "beta": "2018-06-29T04:01:11+01:00"
+    }
+  },
+  "0.1.1404.6737": {
+    "notes": [
+      "Fixed Missing sounds on some assets after addition of access control.",
+      "Fixed Steel Frame (Side), (Corner), and (Corner Cut), can be placed repeatedly over top of one another, or overlapping other objects. Masoneer #0053.",
+      "Fixed the furnace contents window will never show more than 500, but will still correctly output what youve put into it. Ie. 2000g of steel would be four 500g bars, but the windows will just say \"500\". Masoneer living bug list 0096. Now reports how many stacks will be produced, and the remainer, of the current contents."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1403.6732": {
     "notes": [
       "Fixed Errors when writing a hash value directly to a HashDisplay circuitboard using logic rather than setting the source via data disk.",

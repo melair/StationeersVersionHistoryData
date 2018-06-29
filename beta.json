@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1403.6732",
+    "version": "0.1.1405.6740",
     "date": "2018-06-29T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1404.6737",
+      "notes": [
+        "Fixed Missing sounds on some assets after addition of access control.",
+        "Fixed Steel Frame (Side), (Corner), and (Corner Cut), can be placed repeatedly over top of one another, or overlapping other objects. Masoneer #0053.",
+        "Fixed the furnace contents window will never show more than 500, but will still correctly output what youve put into it. Ie. 2000g of steel would be four 500g bars, but the windows will just say \"500\". Masoneer living bug list 0096. Now reports how many stacks will be produced, and the remainer, of the current contents."
+      ]
+    },
     {
       "version": "0.1.1403.6732",
       "notes": [
@@ -2410,12 +2418,7 @@
         "Changes made by altering the overall graphics settings are now reflected in the display for affected advanced settings.",
         "Changed default shadow distance for Fantastic quality to 200 from 50.",
         "Fixed bug where pressing escape while in the in-game version of the save or settings screen would return to game instead of back to the in-game menu.",
-        "Escape key now closes prompts and alerts as well.",
-        "Added code support for credits screen.",
-        "Added escape key handling for main menu.",
-        "First pass on Credits screen",
-        "Fixed Centrifuge and Furnace dropping completed ingots when only ores placed in when deconstructed (should drop reagent mixes).",
-        "Fixed Active Vents, Engines, and Cooler/Heaters not registering their ConnectedPipeNetwork correctly. Brute force check occurs in OnAtmosphericTick to check for networks."
+        "Escape key now closes prompts and alerts as well."
       ]
     }
   ]
