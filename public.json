@@ -1,9 +1,212 @@
 {
   "current": {
-    "version": "0.1.1373.6615",
-    "date": "2018-06-22T00:00:00+01:00"
+    "version": "0.1.1411.6759",
+    "date": "2018-06-29T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1411.6759",
+      "notes": [
+        "Removed writing Flag variable to motherboard as there were multiplayer issues. Can still read. Will be reviewed in future.",
+        "Removed old spawnable crates.",
+        "Fixed screen effects not showing in third person. Now volumetric lighting now correctly shows on local character when in third person."
+      ]
+    },
+    {
+      "version": "0.1.1408.6753",
+      "notes": [
+        "Fixed Smart Canister notification light offset locations."
+      ]
+    },
+    {
+      "version": "0.1.1407.6746",
+      "notes": [
+        "Fixed unable to interact with slots on securing crate to crate mount if the lid was open when crate was mounted. Now can correctly interact.",
+        "Fixed various pipe kits not correctly paintable and displaying the correct colors.",
+        "Fixed Pipe Valve not paintable and does not show correct color thumbnails. Now correctly paintable and shows correct thumbnails for color in inventory.",
+        "Changed strings with \"Construction Kit\" to \"Kit\" for names.",
+        "Added Kits for constructing Portable Air Conditioner and Portable Scrubber. These are produced from the Pipe Bender. Use right click action to build these in front of you.",
+        "Fixed Helmet light being operable when not on head slot"
+      ]
+    },
+    {
+      "version": "0.1.1404.6737",
+      "notes": [
+        "Fixed Missing sounds on some assets after addition of access control.",
+        "Fixed Steel Frame (Side), (Corner), and (Corner Cut), can be placed repeatedly over top of one another, or overlapping other objects. Masoneer #0053.",
+        "Fixed the furnace contents window will never show more than 500, but will still correctly output what youve put into it. Ie. 2000g of steel would be four 500g bars, but the windows will just say \"500\". Masoneer living bug list 0096. Now reports how many stacks will be produced, and the remainer, of the current contents."
+      ]
+    },
+    {
+      "version": "0.1.1403.6732",
+      "notes": [
+        "Fixed Errors when writing a hash value directly to a HashDisplay circuitboard using logic rather than setting the source via data disk.",
+        "Fixed ItemPipeRadiator now paintable.",
+        "Fixed Smart Canisters now have the correct maximum pressure (~20MPa).",
+        "Fixed Smart Canisters destroyed model now has the correct pivot location.",
+        "Fixed wilted plants being destroyed from damage",
+        "Fixed bug which would allow someone to spawn multiple pipes on top of a radiator",
+        "Fixed a bug where if a radiator was placed first a pipe of any orientation could be placed",
+        "Fixed Missing sounds on some structures after the addition of the access control interactions.",
+        "Fixed incorrect fabricator placement restriction"
+      ]
+    },
+    {
+      "version": "0.1.1401.6722",
+      "notes": [
+        "Fixed Labeller breaking after labelling 10 items. Credit: Eearslya."
+      ]
+    },
+    {
+      "version": "0.1.1400.6720",
+      "notes": [
+        "Fixed null reference when adding/removing graph display from console.",
+        "Fixed Input Window would not apply changes when using the \"Chat\" key (Return). Now correctly submits the value instead of cancelling the value.",
+        "Added custom model for Kit (Hydroponics Station)",
+        "Fixed able to place Hydroponics Station floating in the air. Now requires a frame below it."
+      ]
+    },
+    {
+      "version": "0.1.1398.6710",
+      "notes": [
+        "Added Access control to Battery, centrifuge, Generator, Pump, Recycler, Suit Storage, Transformer, and Flashing Light.",
+        "Added Circuitboard (Graph Display). Can be built on the Electronics Printer. Takes the average setting from any assignable device and records the value. Records a value every tick (half second) and then renders them as a graph. Color of the line is take from the Console color.",
+        "Added key bind for turning headlamp on and off. Default: 'L'",
+        "Added MotherShip Core Kit for constructing it",
+        "Changed MotherShip initial block back a frame",
+        "Fixed dedicated server InputWindow error when launching by moving the InputWindow.Initialize to not run on the dedicated server",
+        "Fixed errors with effects manager trying to render effects on the dedicated server"
+      ]
+    },
+    {
+      "version": "0.1.1397.6703",
+      "notes": [
+        "Fixed structures without broken build states not deconstructing. Re enabled reverted changes."
+      ]
+    },
+    {
+      "version": "0.1.1396.6701",
+      "notes": [
+        "Added Kit (Crate) Item. When used with secondary action (Right Mouse) creates a Dynamic Crate. These can be built on the Autolathe using Iron Ingots. This allows early game creation of Dynamic Crates for use storing things. Credit: Nysch on Steam Suggestion forum."
+      ]
+    },
+    {
+      "version": "0.1.1395.6698",
+      "notes": [
+        "Fixed plants being deleted when being harvested. This was an erroneous fix to previous bug with plants when destroying their growing tray. Now plants will be destroyed when destroying their tray, but only if the seed has grown. If the seed is mature, it will be harvested normally instead of being destroyed. If the seed is still a seed, it will be ejected like all other inventory would.",
+        "Fixed Missing Action string values for Cycle, Force Open and Force Close."
+      ]
+    },
+    {
+      "version": "0.1.1391.6693",
+      "notes": [
+        "Refactored player input window. Performance improved and code simplified. Also stores previously entered values. You can select the previous ones using the mouse wheel while in the input screen. A maximum of ten previous entries are stored. The input window will also display the input mode (such as alphanumeric, or decimal number, or integer only).",
+        "Fixed bug with Hydroponics Station not registering daylight. When the device is turned off, it should check to see if it is in sunshine."
+      ]
+    },
+    {
+      "version": "0.1.1389.6688",
+      "notes": [
+        "Added able to set values with keyboard input using a labeller on a button on the Transformers, Pipe Regulators, Volume Pump, and Mixer. This is similar to setting a value using the labeller on memory. This is a much faster (and more specific) way of setting a value on the device than clicking the wheel to move it.",
+        "Fixed door and airlock action strings not localized.",
+        "Fixed Hydroponics Station not receiving water. Volume was set to zero, so no mixing with connected pipe network would occur."
+      ]
+    },
+    {
+      "version": "0.1.1388.6684",
+      "notes": [
+        "Added Diode Slide. This is a diode that slides between 0 and 1 based on what its setting is, and shows a balance of red or green based on the value of this. Useful for reporting how full something is using the logic system.",
+        "Added Smart Gas Canisters.  Twice the capacity of the default gas canisters, and featuring a display roughly depicting its pressure level."
+      ]
+    },
+    {
+      "version": "0.1.1387.6680",
+      "notes": [
+        "Added Hydroponics Station. This is an advanced hydroponics grower. It has four slots and provides UV light for the plants to grow, even when in darkness. This UV light is toggleable on and off as it draws a lot of power. It also provides data on it's four slots, providing Growth state, efficiency, health, and the Hash of what kind of plant is inserted. Water should be provided via the pipe, everything else is gathered from the atmosphere around the station. Internal atmosphere (water) is exposed via the logic system also.",
+        "Added kit (Hydroponics Station). Producable off the Electronics printer. Allows construction of the Hydroponics Station for advanced growing.",
+        "Fixed Pointing a Tablet with an Atmospherics Analyzer cartridge at a Tank Storage will now display the internal atmosphere of the contained gas canister (if present).",
+        "Added new custom model for Security Printer. Also features dedicated button for Select Recipe functionality.",
+        "Can now place place a pipe and a cable in the same grid (but not more than one of the same type) as long as the ends don't overlap.",
+        "Fixed ability to place crafting machines without a frame underneath.",
+        "Added Circuitboard (Hash Display). This circuitboard can be connected with anything that has a readable hash. The prime example is linking it with any fabricator, and the display will show a thumbnail of what is selected as the current recipe. It could be set to read a Logic unit such as a Reader, which is in turn set to read from the Arc Furnace Export Slot Hash, which would render a picture of the current Ingot type being produced.",
+        "Added Flashpoint, Autoignition, and Hash, to the EReader (Credit: Masoneer)."
+      ]
+    },
+    {
+      "version": "0.1.1383.6665",
+      "notes": [
+        "Fixed atmos thread crashing when a wall takes damage from overpressure. Overpressured bases should no longer give a huge wall of errors.",
+        "Changed input window to lock to input type (i.e. numbers).",
+        "Added Logic Memory values can be directly set via keyboard entry. Use a labeller on a screw to bring up the value input screen and enter a value. This will then be set to the memory unit.",
+        "Fixed logic mirror showing error when it should not. Now checks its state after assignment. (Credit: Masoneer).",
+        "Removed ability for Logic Mirrors to reference other logic mirrors, as it was too easy to make infinite loops referencing each other.",
+        "Fixed potential bug where two logic mirrors could reference each other, therefore locking up the power thread. Now logic mirrors can only reference other logic mirrors so long as they don't already reference it. Note: Logic mirrors will be \"invisible\" on the logic system until they have been assigned to mirror a device.",
+        "Changed Elevator Shaft and Levels deconstruction from Drill to Angle Grinder. Now you must use the Angle Grinder to deconstruct them, and it takes slightly longer.",
+        "Fixed unable to open and close crate that is mounted. Now can open and close a mounted crate.",
+        "Fixed Z-fighting between composite floor tiles and Elevator Levels."
+      ]
+    },
+    {
+      "version": "0.1.1382.6655",
+      "notes": [
+        "Changed Kit (Elevator) model to a new custom model, which also allows painting the kit itself so the produced structure comes out correctly painted.",
+        "Added Logic Mirror. Has a screw that allows the selection of any device on it's input network. All variables of that device are then mirrored on this device, allowing you to mirror the logic state of devices between different networks. You are able to both read and write to the mirrored device. If the logic mirror is not powered, it will return no data and will not allow setting data. The logic mirror itself will be completely hidden to the logic system, as it's purpose is only to mirror. It is buildable off the Logic I/O Kit.",
+        "Fixed newly placed and unset LED displays not turning their display off when power toggled (credit: Eearslya). Now LED displays will correctly turn their display off when lost power or switched off.",
+        "Fixed able to construct printers and fabricators in mid air. Now requires mountable frame below to Build.",
+        "Added Container Mount. This functions like a Tank Connector, you can drag a container onto the mount and then use your wrench to secure or unsecure it."
+      ]
+    },
+    {
+      "version": "0.1.1381.6648",
+      "notes": [
+        "Fixed issue with some values being clamped to invalid ranges.  Caused some crafting machines to return incorrect resource values and some logic configurations to behave oddly (among other things)."
+      ]
+    },
+    {
+      "version": "0.1.1379.6645",
+      "notes": [
+        "Fixed commander slot access card slots were not correctly merging access permissions (credit: Masoneer / Risu). Now each slot access permissions correctly merged."
+      ]
+    },
+    {
+      "version": "0.1.1378.6643",
+      "notes": [
+        "Fixed ElevatorCarrage was set as spawnable, so people were spawning it in creative. The ElevatorCarrage is a unique item, that should only be spawned by the shafts itself. Now not spawnable manually.",
+        "Fixed null reference exception on new shaft creation. Carrage was incorrectly trying to initialize before being correctly assigned to the shaft network. Now gracefully handles this.",
+        "Added Logic Motherboard support of Quantity, Export/Import slot details, and Recipe Hash."
+      ]
+    },
+    {
+      "version": "0.1.1377.6640",
+      "notes": [
+        "Fixed Import and Export Slot Quantity was not reporting quantity for consumables (such as ingots). It was only supporting quantity checking for stackables. Now correctly reports quantity for stackable and consumable.",
+        "Added Chute Bin logic support for slot. Now will report slot occupied (0 or 1), slot occupant type (hash), and slot quantity (stackable or consumable quantity).",
+        "Changed Product Code read/write on fabricators to RecipeHash.",
+        "Added logic reading of contents of Import and Export slots. Now can read the contents using ImportSlotHash and ExportSlotHash. Each type of item has a unique hash. A gold ingot in a slot would give a hash of 226410516. This means you can check if the contents of an export or import slot is of a certain type, and then implement logic accordingly.",
+        "Fixed insidious bug with Approximately implementation that resulted in large numbers in logic system not being correctly managed.",
+        "Changed Logic system to use \"double\" precision as a base, rather than \"float\", due to precision issues. Devices still tend to use floats for implementation. Some devices will be moved to double (such as energy) due to precision issues. These issues remain and will be fixed when this is changed.",
+        "Added Logic reading and writing of current product code to basic fabricators (printers). You can now read the \"product code\" which will give you an integer that is a reference to that product. You can store this value easily in memory using a Logic Reader. When you subsequently \"write\" that value back, as a Product code again, it will set that printer to that recipe. This allow you to automatically control what a printer is producing, and potentially make automated factories."
+      ]
+    },
+    {
+      "version": "0.1.1376.6636",
+      "notes": [
+        "Added logic hooks for Elevators. Any elevator (both shafts and levels) will return the ElevatorLevel being the current level of the carrage on the local elevator network. You can also set the ElevatorLevel, which will make the carrage try to go to that level. And you can read the ElevatorSpeed, which is how fast the elevator is going. Where the carrage is missing, error values will be returned (like -1 for the ElevatorLevel).",
+        "Reverted Destroyed Build States and Thermodynamics changes as they were causing issues."
+      ]
+    },
+    {
+      "version": "0.1.1375.6633",
+      "notes": [
+        "Added first pass of Elevator support. Build Kit (Elevator) on the Electronics Printer. Two current placable blocks: Elevator shafts and Levels. When a level is placed, an elevator carrage will be created. You can only merge elevator networks where only one of them contains a carrage. The levels require power to operate their doors. Note: this is only the first pass and they may substantially change! Be very careful with this while they are on the beta branch in your saves. KNOWN ISSUE: They will not work as expected on motherships. Next update will ensure they work correctly on motherships.",
+        "Added more broken build states to frames. Structures will now break to a corresponding build state if there is one, otherwise they will break to the next available build state down",
+        "Fixed broken structures being able to be deconstructed instantly by any object",
+        "Allow both radiative and convective heat transfer at the same time on Things (e.g. radiators). Radiators should no longer be less effective if placed in an atmosphere.",
+        "Added broken build state to steel frame",
+        "Fixed missing gun hit particle",
+        "Added give up option when going unconscious. You can now kill yourself on becoming unconscious and respawn immediately, instead of waiting for death."
+      ]
+    },
     {
       "version": "0.1.1373.6615",
       "notes": [
@@ -2227,160 +2430,7 @@
       "notes": [
         "Added Iron wall recipe.",
         "All tools are now paintable.",
-        "Random color assigned to all player spawned equipment on first creation.",
-        "Changed mineables time.",
-        "Spacesuit, Jetpack, and Helmet are now paintable.",
-        "Increased ore vein density.",
-        "Fixed locker causing errors when saved with wall position (NOTE: will break existing lockers in games!)",
-        "Fixed bench able to be rotated at odd angles.",
-        "Added Iron Wall and Kit.",
-        "Adjusted castbar second line spacing",
-        "Small font size changes on progress bar UI.",
-        "updated burn temps for several items.",
-        "Changes made by altering the overall graphics settings are now reflected in the display for affected advanced settings.",
-        "Changed default shadow distance for Fantastic quality to 200 from 50.",
-        "Fixed bug where pressing escape while in the in-game version of the save or settings screen would return to game instead of back to the in-game menu.",
-        "Escape key now closes prompts and alerts as well.",
-        "Added code support for credits screen.",
-        "Added escape key handling for main menu.",
-        "First pass on Credits screen",
-        "Fixed Centrifuge and Furnace dropping completed ingots when only ores placed in when deconstructed (should drop reagent mixes).",
-        "Fixed Active Vents, Engines, and Cooler/Heaters not registering their ConnectedPipeNetwork correctly. Brute force check occurs in OnAtmosphericTick to check for networks.",
-        "Furnace recipe temps decreased, since thermodynamics cools the furnace now.",
-        "All alloys have furnace recipes that make themselves now.",
-        "Added three new reagents for medical system.",
-        "Fixed Manufacturing machines outputting slag not the ingots that were placed in them. Now ingots are dropped by all the manufacturing devices that accept ingots (such as fabricators).",
-        "Fixed Invar name displayed as Electrum.",
-        "Propane is now named \"Volatiles\".",
-        "Canisters and Tanks now paintable.",
-        "Added status command on dedicated server",
-        "Added two new types of ice. Now Oxite, Water Ice, and Volatiles ice.",
-        "Portable Gas Tanks can now have Gas Canisters inserted into them. The canisters will be pressurized to the tank pressure.",
-        "increased all .25 values to .5 to prevent display rounding, and floating point issues.",
-        "Added access key to dedicated server administrator. Only one connection is valid to run command.",
-        "Fixed gap on dropdown",
-        "Fixed suit not being removed from body when destroyed. Possibly affected other things as well.",
-        "updated crack texture to tile better",
-        "fixed mars material missing crack Texture",
-        "fixed ores not streaming to clients",
-        "fixed server not displaying updated mineable visualizers",
-        "Added music channel to mixer and all associated settings page.",
-        "Fixed bug where texture quality drop-down was not initializing to the current value.",
-        "Fixed bug where Antialiasing was not included in a video page reset to defaults.",
-        "Fixed some typos and missing spaces in some settings menu options.",
-        "Tidied up damage slider and image for slots",
-        "Updated social media buttons position",
-        "Fixed funky transparency on interactions when locking mask",
-        "Fixed misaligned interaction and inventory panel on PanelClothing",
-        "Updated social media buttons",
-        "made fabricator recipe use silicon",
-        "updated dynamiccratepipesupplies to be the 2nd spawn in crate for a survival game."
-      ]
-    },
-    {
-      "version": "0.1.986.4815",
-      "notes": [
-        "Fixed current job on fabricators not showing for clients.",
-        "Fixed unable to delete current job on fabricator.",
-        "reduced electronics printer passive power usage.",
-        "reduced several autolathe recipe costs, removed steel from some mid tier recipes.",
-        "increased arcfurnace recipe power usage.",
-        "Fixed Gas Sensor spawning from its own kit. Now spawns from the generic sensor kit.",
-        "Updated administrator console of dedicated server",
-        "Fixed cannot change recipe buttons when device is turned off or powered down.",
-        "Cable Coil now a tool, and spawns by default in the ToolBelt.",
-        "Duct Tape now a tool, and can be placed in toolbelt.",
-        "Added Portable Scrubbers and Air Conditioners to the Electronics Printer.",
-        "Road Flares now stack 20 and spawn by default.",
-        "Fixed OrganBrain exception for connection failed clients on reload. For now humans who have no OrganBrain are deleted. Better solution to come later in early access.",
-        "Traversing over airlock doors and other flat edge objects should now be smoother",
-        "Improved server command parse. Command takes space with double quotes.",
-        "Fixed admin server bug.",
-        "Fixed wrong mapname on steam server browser."
-      ]
-    },
-    {
-      "version": "0.1.985.4800",
-      "notes": [
-        "Added Chemistry Station. Makes Heal pills from Flour currently (will change).",
-        "Fixed exploded Gas Canisters in welding torches being offset when exploded. ExplosionMessage now sends LocalPosition instead of position.",
-        "Improved dedicated server commands. String parameters can take space with double quotes.",
-        "Missing fern material"
-      ]
-    },
-    {
-      "version": "0.1.984.4793",
-      "notes": [
-        "Add cereal bar.",
-        "4 slot wide display for 8, 12, and 16 slot counts.",
-        "Added fern plant.",
-        "Added Angle Grinder. Used for final stage of breaking down Frames.",
-        "Increased toolbelt slots to 8.",
-        "Made toolbelt slots hidden. They were too small, and nobody really noticed what was in them anyway.",
-        "Stairs now placed as gray color rather than white.",
-        "Reduced initial tank composition for standard gas canisters.",
-        "Fixed bug where social media buttons stayed selected when you alt tabbed back into the game.",
-        "Added battieres to electronics printer",
-        "Added social media buttons on the main menu.  Now everyone can relax.",
-        "Fixed bug where double-click to save didn't correctly issue overwrite confirmation prompts."
-      ]
-    },
-    {
-      "version": "0.1.983.4785",
-      "notes": [
-        "Fixed TextMeshPro NRE",
-        "New Social Media panel (disabled)"
-      ]
-    },
-    {
-      "version": "0.1.982.4783",
-      "notes": [
-        "Fixed solar panel spawning in non default position.",
-        "Road flares are stackable. Right click still activates one of them, which will be put in your hand if available.",
-        "First pass on new Kick/Ban prompts",
-        "First pass on new Server Info join prompt",
-        "Improved solar panel operation. Now can rotate horizontally left/right in degrees, and vertically in extension percent, using wrench. Feedback provided in tooltips.",
-        "Added Solar Panel Horizontal and Vertical settings to Logic Motherboard as an action.",
-        "Added Solar Panel Generation Rate to Logic Motherboard as a condition.",
-        "Electronic fabricator recipes expanded",
-        "Fixed prompts having jumpy titles",
-        "Updated main menu camera movement",
-        "Added more room for Map Name in Join World menu"
-      ]
-    },
-    {
-      "version": "0.1.981.4774",
-      "notes": [
-        "Added Silicon Ore and Ingot. Used to creating glass and glass based products.",
-        "Added admin commands (save, shutdown)",
-        "Added ServerNoticeMessage message",
-        "Schedule audio channel update for after frame."
-      ]
-    },
-    {
-      "version": "0.1.980.4763",
-      "notes": [
-        "Added stop function to Autolathe.",
-        "Fixed sun incorrect settings on light in world 3.",
-        "Fixed power not being reset for APC at end of tick.",
-        "Updated Join Menu to support Map name properly"
-      ]
-    },
-    {
-      "version": "0.1.979.4759",
-      "notes": [
-        "reverted green material",
-        "added missing texture",
-        "Added visualizer to terrain for mineables",
-        "Added more settings to XML",
-        "Attempted to make vein generation better",
-        "Changed prefab ServerListItem.prefab to include map name",
-        "Added functionality for displaying map to server browser list.",
-        "First pass of angle grinder.",
-        "Added test gas data to base ores.",
-        "Increased mineables drop sizes",
-        "Reverted crates with broken interactables.",
-        "Fixed ice not minable."
+        "Random color assigned to all player spawned equipment on first creation."
       ]
     }
   ]
