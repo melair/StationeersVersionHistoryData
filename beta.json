@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1411.6759",
-    "date": "2018-06-29T00:00:00+01:00"
+    "version": "0.1.1412.6764",
+    "date": "2018-06-30T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1412.6764",
+      "notes": [
+        "Changed Ingot stacks spawned by the debug menu will now contain the maximum quantity.",
+        "Added Kit (Portable Generator) can be made on Electronics Printer.",
+        "Fixed Inability to force feed heal/stun pills or split stacks of them.  Also added blueprints for precision placement mode.  Masoneer #0001.",
+        "Fixed skeletons reappearing on load. You should no longer see spooky skeletons that have disappeared pop up again when loading a save."
+      ]
+    },
     {
       "version": "0.1.1411.6759",
       "notes": [
@@ -2421,16 +2430,7 @@
         "Animals will now navigate room space if available",
         "Chickens added",
         "chicks added",
-        "fertilized eggs added",
-        "Further changes to A* system. Should no longer occasionally get hung on null path"
-      ]
-    },
-    {
-      "version": "0.1.987.4855",
-      "notes": [
-        "Added Iron wall recipe.",
-        "All tools are now paintable.",
-        "Random color assigned to all player spawned equipment on first creation."
+        "fertilized eggs added"
       ]
     }
   ]

@@ -1,4 +1,16 @@
 {
+  "0.1.1412.6764": {
+    "notes": [
+      "Changed Ingot stacks spawned by the debug menu will now contain the maximum quantity.",
+      "Added Kit (Portable Generator) can be made on Electronics Printer.",
+      "Fixed Inability to force feed heal/stun pills or split stacks of them.  Also added blueprints for precision placement mode.  Masoneer #0001.",
+      "Fixed skeletons reappearing on load. You should no longer see spooky skeletons that have disappeared pop up again when loading a save."
+    ],
+    "releases": {
+      "built": "2018-06-30T00:00:00+01:00",
+      "beta": "2018-06-30T05:01:11+01:00"
+    }
+  },
   "0.1.1411.6759": {
     "notes": [
       "Removed writing Flag variable to motherboard as there were multiplayer issues. Can still read. Will be reviewed in future.",
