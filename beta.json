@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1416.6775",
+    "version": "0.1.1417.6776",
     "date": "2018-07-02T00:00:00+01:00"
   },
   "history": [
@@ -2436,8 +2436,7 @@
         "Reverted double destroy fix, removed OnFireTick destroying the object. Let OnDamageUpdated handle destruction of things when burned.",
         "Splitting stacks now retains the original stacks colour",
         "entity in and out of ragdoll as it goes in and out of slots",
-        "entities get out of the slot they are in when they become alive",
-        "correctly set gas composition of volatile ice to contain volatile gas."
+        "entities get out of the slot they are in when they become alive"
       ]
     }
   ]
