@@ -1,4 +1,21 @@
 {
+  "0.1.1420.6788": {
+    "notes": [
+      "Fixed Prevented already dead players not being removed and spawning a skeleton every half second.",
+      "Added Logic Batch Reader. This functions much the same as the Batch Writer. You select a device \"type\" on the network, the variable you want to read, and then the method you want to read them via (Sum, Average, Minimum, Maximum). You could use this to read the Sum of the power output from solars, for example, or find the maximum stack setting across a bunch of stackers. You could combine it with a bunch of slot readers, to reach the total amount of quantity on a bunch of slots. Constructable on the I/O logic kit.",
+      "Fixed visibility of solar panel. It was always displaying a minimum of 17%",
+      "Changed the tooltip on the solar panel from displaying visibility to displaying the more useful and relevant efficiency",
+      "fixed portable GPR throwing a null when it reads a bedrock voxel",
+      "Fixed occasional bug with Radiator or Pipe Label placement onto a pipe whose rotation includes small floating point precision errors. (Credit: Eearslya, Risu)",
+      "Fixed unlimited door label text. There's now a 32 character limit on the displayed text on a composite door and each world will be split if longer than 8 characters.",
+      "Updated Language files for German and Spanish (Credit: Bonbon_kocher & socramazibi)",
+      "Fixed inconsistent egg shell stacking behaviour. (Credit: jpdoulos on the Steam Bug Board)"
+    ],
+    "releases": {
+      "built": "2018-07-02T00:00:00+01:00",
+      "beta": "2018-07-02T06:01:11+01:00"
+    }
+  },
   "0.1.1417.6776": {
     "notes": [
 

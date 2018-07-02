@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1417.6776",
+    "version": "0.1.1420.6788",
     "date": "2018-07-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1420.6788",
+      "notes": [
+        "Fixed Prevented already dead players not being removed and spawning a skeleton every half second.",
+        "Added Logic Batch Reader. This functions much the same as the Batch Writer. You select a device \"type\" on the network, the variable you want to read, and then the method you want to read them via (Sum, Average, Minimum, Maximum). You could use this to read the Sum of the power output from solars, for example, or find the maximum stack setting across a bunch of stackers. You could combine it with a bunch of slot readers, to reach the total amount of quantity on a bunch of slots. Constructable on the I/O logic kit.",
+        "Fixed visibility of solar panel. It was always displaying a minimum of 17%",
+        "Changed the tooltip on the solar panel from displaying visibility to displaying the more useful and relevant efficiency",
+        "fixed portable GPR throwing a null when it reads a bedrock voxel",
+        "Fixed occasional bug with Radiator or Pipe Label placement onto a pipe whose rotation includes small floating point precision errors. (Credit: Eearslya, Risu)",
+        "Fixed unlimited door label text. There's now a 32 character limit on the displayed text on a composite door and each world will be split if longer than 8 characters.",
+        "Updated Language files for German and Spanish (Credit: Bonbon_kocher & socramazibi)",
+        "Fixed inconsistent egg shell stacking behaviour. (Credit: jpdoulos on the Steam Bug Board)"
+      ]
+    },
     {
       "version": "0.1.1415.6773",
       "notes": [
@@ -2426,17 +2440,7 @@
         "Fixed wires that were indestructable could still be destroyed.",
         "Fixed ChatText NRE in dedicated server",
         "Fixed NRE when active vent trying to initialize when network connection has not been found.",
-        "Added QuantityModifer key. Was previously hardcoded. Default is LeftAlt.",
-        "Added indestructable damage type to allow support for indestructable objects in the tutorial.",
-        "Updated patch notes formats",
-        "Changed Egg Hatch, Chick Grow & LayEgg Timers to roughly 5minutes each",
-        "All Animals will now eat food when hungry",
-        "More A* changes. Will now distance check for food inside thread and return food back to requester RegisterNewSearchTask will currently search for the closest plant",
-        "Tooltip system. Game will display tips to the player during the loading screen.",
-        "Reverted double destroy fix, removed OnFireTick destroying the object. Let OnDamageUpdated handle destruction of things when burned.",
-        "Splitting stacks now retains the original stacks colour",
-        "entity in and out of ragdoll as it goes in and out of slots",
-        "entities get out of the slot they are in when they become alive"
+        "Added QuantityModifer key. Was previously hardcoded. Default is LeftAlt."
       ]
     }
   ]
