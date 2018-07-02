@@ -1,4 +1,13 @@
 {
+  "0.1.1424.6801": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-03T00:00:00+01:00",
+      "beta": "2018-07-02T22:01:12+01:00"
+    }
+  },
   "0.1.1423.6800": {
     "notes": [
       "Added drop ability on Inventory Mouse control.",
