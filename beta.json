@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1422.6793",
-    "date": "2018-07-02T00:00:00+01:00"
+    "version": "0.1.1423.6800",
+    "date": "2018-07-03T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1423.6800",
+      "notes": [
+        "Added drop ability on Inventory Mouse control.",
+        "Added second pass of Mouse Inventory control. You can not drag and drop to move or swap items in your inventory. You can also use the interactions for master slots.",
+        "Fixed Slot Reader was not serializing the selected slot. Now correctly saves and loads the slot index."
+      ]
+    },
     {
       "version": "0.1.1422.6793",
       "notes": [
@@ -2436,15 +2444,6 @@
       "notes": [
         "Limited patch notes upto 1500 lines",
         "Removed button from remote control tool"
-      ]
-    },
-    {
-      "version": "0.1.990.4899",
-      "notes": [
-        "Fixed max player setting.",
-        "Added a reset on the _gasMixture used by the mixers to calculate output so it doesn't get cumulatively larger every tick.",
-        "Added a first pass for a tutorial overlay",
-        "Extended timeout 4000 ms"
       ]
     }
   ]

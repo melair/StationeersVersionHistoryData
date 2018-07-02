@@ -1,4 +1,15 @@
 {
+  "0.1.1423.6800": {
+    "notes": [
+      "Added drop ability on Inventory Mouse control.",
+      "Added second pass of Mouse Inventory control. You can not drag and drop to move or swap items in your inventory. You can also use the interactions for master slots.",
+      "Fixed Slot Reader was not serializing the selected slot. Now correctly saves and loads the slot index."
+    ],
+    "releases": {
+      "built": "2018-07-03T00:00:00+01:00",
+      "beta": "2018-07-02T18:01:11+01:00"
+    }
+  },
   "0.1.1422.6793": {
     "notes": [
       "Added Chute Inlet lock state controls input. If you want to stop a chute inlet from stopping collecting, set its lock state to one. Setting to lock zero resumes it. Credit: Drazuam from twitch for idea.",
