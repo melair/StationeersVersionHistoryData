@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1421.6791",
+    "version": "0.1.1422.6793",
     "date": "2018-07-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1422.6793",
+      "notes": [
+        "Added Chute Inlet lock state controls input. If you want to stop a chute inlet from stopping collecting, set its lock state to one. Setting to lock zero resumes it. Credit: Drazuam from twitch for idea.",
+        "Added more input mouse functionality. Key inventory state remembers what you had selected with the mouse.",
+        "Fixed Could power on/off items in hands that should not have been custom interactable."
+      ]
+    },
     {
       "version": "0.1.1421.6791",
       "notes": [
@@ -2436,11 +2444,7 @@
         "Fixed max player setting.",
         "Added a reset on the _gasMixture used by the mixers to calculate output so it doesn't get cumulatively larger every tick.",
         "Added a first pass for a tutorial overlay",
-        "Extended timeout 4000 ms",
-        "Fixed Loading panel bug. It didn't disappear when server closed during joining",
-        "Updated New World thumbnails",
-        "Animals now go Unconscious from oxygen deprivation and die from hunger. Feed them wheat, corn or Soybeans (they'll auto path to it when hungry)",
-        "Added spray on extinguisher"
+        "Extended timeout 4000 ms"
       ]
     }
   ]

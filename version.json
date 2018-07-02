@@ -1,4 +1,15 @@
 {
+  "0.1.1422.6793": {
+    "notes": [
+      "Added Chute Inlet lock state controls input. If you want to stop a chute inlet from stopping collecting, set its lock state to one. Setting to lock zero resumes it. Credit: Drazuam from twitch for idea.",
+      "Added more input mouse functionality. Key inventory state remembers what you had selected with the mouse.",
+      "Fixed Could power on/off items in hands that should not have been custom interactable."
+    ],
+    "releases": {
+      "built": "2018-07-02T00:00:00+01:00",
+      "beta": "2018-07-02T09:01:10+01:00"
+    }
+  },
   "0.1.1421.6791": {
     "notes": [
       "Added Light state status icon. This will show if you are wearing a helmet with a light. It will show the current light state, and the key required to change it. This helps prompt players for the hotkey to turn their lights on and off.",
