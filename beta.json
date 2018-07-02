@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1420.6788",
+    "version": "0.1.1421.6791",
     "date": "2018-07-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1421.6791",
+      "notes": [
+        "Added Light state status icon. This will show if you are wearing a helmet with a light. It will show the current light state, and the key required to change it. This helps prompt players for the hotkey to turn their lights on and off.",
+        "Added Active Hand Power state status icon. This will show if you have something in your hands with a On/Off state. This helps new players learn the hotkey to quickly toggle something on and off - such as a tablet or a mining drill.",
+        "Fixed bug with windows being closed when pressing left or right mouse button.",
+        "Fixed some missing localization strings for Logic Systems (much more to follow)."
+      ]
+    },
     {
       "version": "0.1.1420.6788",
       "notes": [
@@ -2432,15 +2441,6 @@
         "Updated New World thumbnails",
         "Animals now go Unconscious from oxygen deprivation and die from hunger. Feed them wheat, corn or Soybeans (they'll auto path to it when hungry)",
         "Added spray on extinguisher"
-      ]
-    },
-    {
-      "version": "0.1.989.4889",
-      "notes": [
-        "Fixed wires that were indestructable could still be destroyed.",
-        "Fixed ChatText NRE in dedicated server",
-        "Fixed NRE when active vent trying to initialize when network connection has not been found.",
-        "Added QuantityModifer key. Was previously hardcoded. Default is LeftAlt."
       ]
     }
   ]

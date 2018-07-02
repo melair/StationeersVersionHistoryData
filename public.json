@@ -1,9 +1,59 @@
 {
   "current": {
-    "version": "0.1.1411.6759",
-    "date": "2018-06-29T00:00:00+01:00"
+    "version": "0.1.1420.6788",
+    "date": "2018-07-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1420.6788",
+      "notes": [
+        "Fixed Prevented already dead players not being removed and spawning a skeleton every half second.",
+        "Added Logic Batch Reader. This functions much the same as the Batch Writer. You select a device \"type\" on the network, the variable you want to read, and then the method you want to read them via (Sum, Average, Minimum, Maximum). You could use this to read the Sum of the power output from solars, for example, or find the maximum stack setting across a bunch of stackers. You could combine it with a bunch of slot readers, to reach the total amount of quantity on a bunch of slots. Constructable on the I/O logic kit.",
+        "Fixed visibility of solar panel. It was always displaying a minimum of 17%",
+        "Changed the tooltip on the solar panel from displaying visibility to displaying the more useful and relevant efficiency",
+        "fixed portable GPR throwing a null when it reads a bedrock voxel",
+        "Fixed occasional bug with Radiator or Pipe Label placement onto a pipe whose rotation includes small floating point precision errors. (Credit: Eearslya, Risu)",
+        "Fixed unlimited door label text. There's now a 32 character limit on the displayed text on a composite door and each world will be split if longer than 8 characters.",
+        "Updated Language files for German and Spanish (Credit: Bonbon_kocher & socramazibi)",
+        "Fixed inconsistent egg shell stacking behaviour. (Credit: jpdoulos on the Steam Bug Board)"
+      ]
+    },
+    {
+      "version": "0.1.1415.6773",
+      "notes": [
+        "Fixed alt-tabbing caused issues with the draft mouse inventory control system.",
+        "Added crowbar tooltip message for Area Power Control.",
+        "Added automatic replacement of LEFT ALT to the new bind RIGHT ALT, as LEFT ALT is now used for mouse inventory control. If you want to do small changes, you now by default will use RIGHT ALT.",
+        "Fixed null reference when reverse going through Logic Slot Reader."
+      ]
+    },
+    {
+      "version": "0.1.1414.6769",
+      "notes": [
+        "Fixed missing material from vending machine causing alpha tearing on texture.",
+        "Removed logic functionality for import and export on devices. This has been depreciated for the Slot Reader. Note: This will break anything relying on Import or Export variables in the logic system - you will need to replace the Logic Reader with a Logic Slot Reader and configure it.",
+        "Added Slot Reader. This allows you to configure to read a particular slot in a device. Different slot types will give different options. For example, stacks would allow you to read stack quantity, hash type, damage state, and more. Gas Canister slots allow the reading of Pressure and Temperature, directly. This provides much more power than the previous system. Note: This change will cause Logic Readers that used the old Import/Export variables to be broken, as well as hydroponics stations."
+      ]
+    },
+    {
+      "version": "0.1.1413.6767",
+      "notes": [
+        "Added Vending Machine. This structure holds up to 100 items, and can be connected to both import and export to chutes. To dispense items can be selected via buttons, with the currently selected item displayed on a screen. However, you can also request items by setting a Hash reference to the item type. The vending machine will then dispense the first stack it can find that matches that hash, and export it. This allows you to make fully automated factories much easier, as you have a smart storage system.",
+        "Fixed missing blueprints for many items.",
+        "Added first pass of Mouse Inventory control. Hold LEFT ALT to bring up mouse cursor.",
+        "Fixed some furnace strings not localized.",
+        "Added 3d printer effect to simple fabricators."
+      ]
+    },
+    {
+      "version": "0.1.1412.6764",
+      "notes": [
+        "Changed Ingot stacks spawned by the debug menu will now contain the maximum quantity.",
+        "Added Kit (Portable Generator) can be made on Electronics Printer.",
+        "Fixed Inability to force feed heal/stun pills or split stacks of them.  Also added blueprints for precision placement mode.  Masoneer #0001.",
+        "Fixed skeletons reappearing on load. You should no longer see spooky skeletons that have disappeared pop up again when loading a save."
+      ]
+    },
     {
       "version": "0.1.1411.6759",
       "notes": [
@@ -2390,47 +2440,7 @@
         "Fixed wires that were indestructable could still be destroyed.",
         "Fixed ChatText NRE in dedicated server",
         "Fixed NRE when active vent trying to initialize when network connection has not been found.",
-        "Added QuantityModifer key. Was previously hardcoded. Default is LeftAlt.",
-        "Added indestructable damage type to allow support for indestructable objects in the tutorial.",
-        "Updated patch notes formats",
-        "Changed Egg Hatch, Chick Grow & LayEgg Timers to roughly 5minutes each",
-        "All Animals will now eat food when hungry",
-        "More A* changes. Will now distance check for food inside thread and return food back to requester RegisterNewSearchTask will currently search for the closest plant",
-        "Tooltip system. Game will display tips to the player during the loading screen.",
-        "Reverted double destroy fix, removed OnFireTick destroying the object. Let OnDamageUpdated handle destruction of things when burned.",
-        "Splitting stacks now retains the original stacks colour",
-        "entity in and out of ragdoll as it goes in and out of slots",
-        "entities get out of the slot they are in when they become alive",
-        "correctly set gas composition of volatile ice to contain volatile gas.",
-        "Added ban/unban/kick commands to dedicated server administrator",
-        "Fixed missing locker name string.",
-        "Fixed objects too large for container slots. Now scaling objects based on slot interactable size.",
-        "Fixed clients still being animated on disconnect.",
-        "Entity can now ONLY enter slots type entity",
-        "CustomColors moved to GameManager.",
-        "Fixed colors not correctly initializing for joining players.",
-        "Fixed exploded gas tanks staying in the air when exploded. Stopped exploded things from becoming kinematic.",
-        "Possible fix for double destroy on burn. Wrapped all destroys in QueuedForDestroy",
-        "Brain now applied damage to all Entities but EnemyNpc if no atmosphere",
-        "Fixed ore density on dedicated server"
-      ]
-    },
-    {
-      "version": "0.1.988.4856",
-      "notes": [
-        "Animals will now navigate room space if available",
-        "Chickens added",
-        "chicks added",
-        "fertilized eggs added",
-        "Further changes to A* system. Should no longer occasionally get hung on null path"
-      ]
-    },
-    {
-      "version": "0.1.987.4855",
-      "notes": [
-        "Added Iron wall recipe.",
-        "All tools are now paintable.",
-        "Random color assigned to all player spawned equipment on first creation."
+        "Added QuantityModifer key. Was previously hardcoded. Default is LeftAlt."
       ]
     }
   ]
