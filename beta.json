@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1424.6801",
+    "version": "0.1.1425.6813",
     "date": "2018-07-03T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1425.6813",
+      "notes": [
+        "Fixed could place Sleeper, Solid Fuel Generator, and Locker without a frame below. Now requires a frame below it.",
+        "Fixed glitches when dragging a primary slot item in mouse inventory control. Now only shows orange when opened, not when attempting to drag.",
+        "Added temporary icons to let player know what they are doing when they drag with mouse inventory control.",
+        "Fixed plants growing in hydroponics trays and stations disappearing too early on clients.",
+        "Fixed objects were not being scaled correctly when put into slots. Now correctly scale objects that are placed in slots so that they fit if the slot is smaller than they are.",
+        "Added caching of interactable and slot bounds. Previously, the game was generating them for every object on the objects creation. This could cause delays and problems when loading assets. Now this is cached when the asset is made or changed so running games do not need to generate them."
+      ]
+    },
     {
       "version": "0.1.1423.6800",
       "notes": [
@@ -2432,18 +2443,7 @@
         "Npc's should no longer try to look at a Zero'd vector",
         "reduced number of ores in space world",
         "Reverted and made settings page change again",
-        "fixed splitting colored stacks for clients",
-        "Threaded all remaining Animal functions",
-        "First page of settings screen had been disabled.  Re-enabled it.",
-        "FertilizedEgg now requires atmosphere and a minimum temp of 15* to hatch",
-        "water now spreads and evaporates correctly on planets"
-      ]
-    },
-    {
-      "version": "0.1.991.4904",
-      "notes": [
-        "Limited patch notes upto 1500 lines",
-        "Removed button from remote control tool"
+        "fixed splitting colored stacks for clients"
       ]
     }
   ]
