@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1425.6813",
-    "date": "2018-07-03T00:00:00+01:00"
+    "version": "0.1.1426.6815",
+    "date": "2018-07-04T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1426.6815",
+      "notes": [
+        "Refactored Inventory control for keyboard and mouse. Now features docked windows, use keys to open and close or click with mouse to change. Allows multiple windows to be open, scrolling between all open slots and interactions. Mouse now allows movement between slots within players inventory. Better support for language and keyboard changes, and reduce memory and garbage collection significantly by pooling windows and slots. Unified event-based slot management means that keyboard and mouse control results (should) be unified and (should) reduce the maintenance cost of running dual systems."
+      ]
+    },
     {
       "version": "0.1.1425.6813",
       "notes": [
@@ -2441,9 +2447,7 @@
         "Fixed issue with internal slots within another slot not being hidden correctly on load",
         "Added draft of menu theme, including AudioTools class to manage fadein/out.",
         "Npc's should no longer try to look at a Zero'd vector",
-        "reduced number of ores in space world",
-        "Reverted and made settings page change again",
-        "fixed splitting colored stacks for clients"
+        "reduced number of ores in space world"
       ]
     }
   ]
