@@ -1,4 +1,24 @@
 {
+  "0.1.1432.6826": {
+    "notes": [
+      "Increased Pressure Regulator max setting from 100 atm to 200 atm.",
+      "Fixed junk collider left in scene that caused collision issue on new map."
+    ],
+    "releases": {
+      "built": "2018-07-04T00:00:00+01:00",
+      "beta": "2018-07-03T17:01:10+01:00"
+    }
+  },
+  "0.1.1431.6824": {
+    "notes": [
+      "Added Hide All Windows key, defaults to Tilde (BackQuote).",
+      "Fixed numerous inventory bugs, such as null references related to dropping items into interaction buttons."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1428.6818": {
     "notes": [
       "Fixed various bugs with new Inventory system. Many state issues fixed, such as active hand opening and closing. Also fixed the construction cursor."

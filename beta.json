@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1428.6818",
+    "version": "0.1.1432.6826",
     "date": "2018-07-04T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1432.6826",
+      "notes": [
+        "Increased Pressure Regulator max setting from 100 atm to 200 atm.",
+        "Fixed junk collider left in scene that caused collision issue on new map."
+      ]
+    },
+    {
+      "version": "0.1.1431.6824",
+      "notes": [
+        "Added Hide All Windows key, defaults to Tilde (BackQuote).",
+        "Fixed numerous inventory bugs, such as null references related to dropping items into interaction buttons."
+      ]
+    },
     {
       "version": "0.1.1428.6818",
       "notes": [
@@ -2445,13 +2459,7 @@
         "Tweaks made to throwing animation",
         "Fixed rotation locks on some structures",
         "Fixed 'to many threads' bug when joining server with password",
-        "Removed clients ability to request atmos thread restart on server. If a client's thread was unrecoverable and continued to crash it would crash the server and all the clients by spamming the request.",
-        "Fixed wrong player steam avatar.",
-        "Changed PrecisionPlaceCursor to have internal fill colour",
-        "Updated PrecisionPlacement so it places on center position instead of bounds.",
-        "PrecisionPlacement now uses correct orientation keys",
-        "Fixed issue with internal slots within another slot not being hidden correctly on load",
-        "Added draft of menu theme, including AudioTools class to manage fadein/out."
+        "Removed clients ability to request atmos thread restart on server. If a client's thread was unrecoverable and continued to crash it would crash the server and all the clients by spamming the request."
       ]
     }
   ]
