@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1426.6815",
+    "version": "0.1.1428.6818",
     "date": "2018-07-04T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1428.6818",
+      "notes": [
+        "Fixed various bugs with new Inventory system. Many state issues fixed, such as active hand opening and closing. Also fixed the construction cursor."
+      ]
+    },
     {
       "version": "0.1.1426.6815",
       "notes": [
@@ -2445,9 +2451,7 @@
         "Updated PrecisionPlacement so it places on center position instead of bounds.",
         "PrecisionPlacement now uses correct orientation keys",
         "Fixed issue with internal slots within another slot not being hidden correctly on load",
-        "Added draft of menu theme, including AudioTools class to manage fadein/out.",
-        "Npc's should no longer try to look at a Zero'd vector",
-        "reduced number of ores in space world"
+        "Added draft of menu theme, including AudioTools class to manage fadein/out."
       ]
     }
   ]
