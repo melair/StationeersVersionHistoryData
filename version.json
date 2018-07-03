@@ -1,4 +1,13 @@
 {
+  "0.1.1433.6828": {
+    "notes": [
+      "Fixed Batch Reader displaying wrong type. Credit: Risu via discord."
+    ],
+    "releases": {
+      "built": "2018-07-04T00:00:00+01:00",
+      "beta": "2018-07-03T22:01:15+01:00"
+    }
+  },
   "0.1.1432.6826": {
     "notes": [
       "Increased Pressure Regulator max setting from 100 atm to 200 atm.",

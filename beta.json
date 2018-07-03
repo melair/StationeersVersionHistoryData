@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1432.6826",
+    "version": "0.1.1433.6828",
     "date": "2018-07-04T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1433.6828",
+      "notes": [
+        "Fixed Batch Reader displaying wrong type. Credit: Risu via discord."
+      ]
+    },
     {
       "version": "0.1.1432.6826",
       "notes": [
@@ -2457,9 +2463,7 @@
         "Added first pass of tutorial system, from main menu.",
         "Added first pass of new Spacesuit Storage.",
         "Tweaks made to throwing animation",
-        "Fixed rotation locks on some structures",
-        "Fixed 'to many threads' bug when joining server with password",
-        "Removed clients ability to request atmos thread restart on server. If a client's thread was unrecoverable and continued to crash it would crash the server and all the clients by spamming the request."
+        "Fixed rotation locks on some structures"
       ]
     }
   ]
