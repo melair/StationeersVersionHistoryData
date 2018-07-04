@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1433.6828",
+    "version": "0.1.1434.6840",
     "date": "2018-07-04T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1434.6840",
+      "notes": [
+        "Added TerrainGeneration class and moved a lot of code from WorldManager to TerrainGeneration",
+        "Changed some heavily used parts of Chunk Object to use Grid3 instead of Vector3 to gain some performance.",
+        "Changed default keybind for QuantityModifier to C from RightAlt based on community feedback. Note: this will not affect existing bindings, so you will have to manually change it yourself. It will only affect new installs or those who reset their controls.",
+        "Added ImportCount and ExportCount settings to all devices that Import/Export. These counters increase whenever something is imported or exported. You can clear the value by writing anything greater than one to the ClearMemory flag on the device. This makes keeping count far easier. If you insert a stack of 50 iron ore into the stacker while it has a stack size output set to one, ImportCount will increase by one but once the stack is finished exporting, the ExportCount will have increased by 50.",
+        "Fixed Error when changing Anti-Aliasing setting via the main menu after leaving a game (Thanks virusek20).",
+        "Fixed mouse drag cursor UI scale not being correctly set on load, and only when scaled. Now initialized on window setup.",
+        "Fixed Circuitboard (Hash Display) was not craftable. Now added to Electronics Printer and Fabricator.",
+        "Fixed hash errors with displaying the hash for an object in a localized tooltip. Credit: Risu via discord for the new Regex line.",
+        "Added all logic processors (compare, math, etc...) now expose setting attribute to logic network for read only access. This reduces the need for additional logic writer + memory to read the results. Credit: Otti via Discord."
+      ]
+    },
     {
       "version": "0.1.1433.6828",
       "notes": [
@@ -2449,21 +2463,7 @@
         "Added tutorial prompt on first run of the game.",
         "Added success message when you complete tutorial so you can return to menu.",
         "Updated wall temperatures to allow them to burn",
-        "increased the vein size of the rarest ores, slightly decreased the size of coal, and increased drop quantities in rare ores.",
-        "Tweaked checkboxes on quest panel",
-        "Increased energy requirements for most recipes",
-        "Tweaked quest panel spacing",
-        "Added dynamic objects to fabricator",
-        "Fixed clients not being able to correctly precisionPlace"
-      ]
-    },
-    {
-      "version": "0.1.992.4929",
-      "notes": [
-        "Added first pass of tutorial system, from main menu.",
-        "Added first pass of new Spacesuit Storage.",
-        "Tweaks made to throwing animation",
-        "Fixed rotation locks on some structures"
+        "increased the vein size of the rarest ores, slightly decreased the size of coal, and increased drop quantities in rare ores."
       ]
     }
   ]
