@@ -1,4 +1,19 @@
 {
+  "0.1.1437.6862": {
+    "notes": [
+      "Fixed Wall Arch variant was not set to 'Block Gravity', so a room completed with them would not properly have gravity applied as per other wall types and frames.",
+      "Fixed 'Large Panel' wall variant not blocking air or sunlight. Masoneer Bug List #0121 (Credit: JawnyCat)",
+      "Fixed player climb infinitely after ladder removed. (Masoneer Bug#0152 - Credit Austin5003)",
+      "Fixed Sorter white-list drop down box was sometimes appear empty if they had been cleaned up prematurely. (Credit: Risu)",
+      "Fixed Slot type on CartridgeGuide so it can now be placed correctly into a tablet.",
+      "Fixed sleepers kicking humans out when loading a save.",
+      "Fixed error with initializing object pools before mining manager was initialized. Was throwing an error on starting game."
+    ],
+    "releases": {
+      "built": "2018-07-05T00:00:00+01:00",
+      "beta": "2018-07-05T03:01:10+01:00"
+    }
+  },
   "0.1.1436.6852": {
     "notes": [
       "Fixed Players can no longer mouse-drag a Dynamic Item being held by the handle into their free hand and carry it.",

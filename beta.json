@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1436.6852",
+    "version": "0.1.1437.6862",
     "date": "2018-07-05T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1437.6862",
+      "notes": [
+        "Fixed Wall Arch variant was not set to 'Block Gravity', so a room completed with them would not properly have gravity applied as per other wall types and frames.",
+        "Fixed 'Large Panel' wall variant not blocking air or sunlight. Masoneer Bug List #0121 (Credit: JawnyCat)",
+        "Fixed player climb infinitely after ladder removed. (Masoneer Bug#0152 - Credit Austin5003)",
+        "Fixed Sorter white-list drop down box was sometimes appear empty if they had been cleaned up prematurely. (Credit: Risu)",
+        "Fixed Slot type on CartridgeGuide so it can now be placed correctly into a tablet.",
+        "Fixed sleepers kicking humans out when loading a save.",
+        "Fixed error with initializing object pools before mining manager was initialized. Was throwing an error on starting game."
+      ]
+    },
     {
       "version": "0.1.1436.6852",
       "notes": [
@@ -2459,14 +2471,7 @@
         "Increased copper's minimum drop amount.",
         "Fixed score board and admin panel in dedicated server",
         "Fixed quest panel position",
-        "Adjusted welcome screen",
-        "Disabled debug options in tutorial mode",
-        "Changed Atmos Debug button to only be usable in creative mode.",
-        "Organs no longer deleted OnDamageDestroyed as it was causing several NRE's",
-        "Characters can now correctly transition to dead state without falling through the terrain",
-        "Added validity check on menu cut scene depth of field",
-        "Fixed kick/ban menu for host player",
-        "Fixed wrong save path."
+        "Adjusted welcome screen"
       ]
     }
   ]
