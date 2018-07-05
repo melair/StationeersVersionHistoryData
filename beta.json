@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1437.6862",
+    "version": "0.1.1438.6867",
     "date": "2018-07-05T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1438.6867",
+      "notes": [
+        "Fixed Pipe Analyzer now paintable in kit/item form and will properly perserve its colour when deconstructed.",
+        "Fixed Interaction UI buttons not getting cleared out between games, causing errors if you left a game with some visible and started a new one. (Credit: Eearslya)"
+      ]
+    },
     {
       "version": "0.1.1437.6862",
       "notes": [
@@ -2468,10 +2475,7 @@
         "Added construction kits for machines.",
         "Force creative mode in editor",
         "Increased slightly Coal, Copper, and Gold max and min vein sizes.",
-        "Increased copper's minimum drop amount.",
-        "Fixed score board and admin panel in dedicated server",
-        "Fixed quest panel position",
-        "Adjusted welcome screen"
+        "Increased copper's minimum drop amount."
       ]
     }
   ]

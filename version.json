@@ -1,4 +1,14 @@
 {
+  "0.1.1438.6867": {
+    "notes": [
+      "Fixed Pipe Analyzer now paintable in kit/item form and will properly perserve its colour when deconstructed.",
+      "Fixed Interaction UI buttons not getting cleared out between games, causing errors if you left a game with some visible and started a new one. (Credit: Eearslya)"
+    ],
+    "releases": {
+      "built": "2018-07-05T00:00:00+01:00",
+      "beta": "2018-07-05T10:01:10+01:00"
+    }
+  },
   "0.1.1437.6862": {
     "notes": [
       "Fixed Wall Arch variant was not set to 'Block Gravity', so a room completed with them would not properly have gravity applied as per other wall types and frames.",
