@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1439.6870",
+    "version": "0.1.1441.6878",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1441.6878",
+      "notes": [
+        "Fixed incorrect glass material on new Vending Machine model.",
+        "Added new tutorial."
+      ]
+    },
     {
       "version": "0.1.1439.6870",
       "notes": [
@@ -2476,10 +2483,7 @@
         "Adjusted ChemlightBlue Handposition",
         "Fixed ItemKitDoor, ItemKitEngineSmall, and ItemKitLocker not spawning anything.",
         "Added extra cleanup steps when closing tutorial scene.",
-        "Added new construction kit thumbnails.",
-        "Fixed jittering player on connect",
-        "Fixed bug with tutorial event bindings not clearing properly and affecting players who went on to play in a normal game.",
-        "Added construction kits for machines."
+        "Added new construction kit thumbnails."
       ]
     }
   ]

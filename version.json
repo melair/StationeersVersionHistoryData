@@ -1,4 +1,14 @@
 {
+  "0.1.1441.6878": {
+    "notes": [
+      "Fixed incorrect glass material on new Vending Machine model.",
+      "Added new tutorial."
+    ],
+    "releases": {
+      "built": "2018-07-06T00:00:00+01:00",
+      "beta": "2018-07-05T17:01:12+01:00"
+    }
+  },
   "0.1.1439.6870": {
     "notes": [
       "Added proper Vending Machine model as a replacement for existing placeholder.",
