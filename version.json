@@ -1,4 +1,13 @@
 {
+  "0.1.1446.6889": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-06T00:00:00+01:00",
+      "beta": "2018-07-06T00:01:13+01:00"
+    }
+  },
   "0.1.1444.6887": {
     "notes": [
       "Fixed nulreference exception with Bioprinter. Credit: GamersCircle."

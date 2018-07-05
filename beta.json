@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1444.6887",
+    "version": "0.1.1446.6889",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
@@ -2485,12 +2485,6 @@
         "Fix exit game popup allowing you to save when leaving tutorial level.",
         "Updated tutorial text to specify you have to hold the belt slot key to equip your belt EVEN THOUGH it is CLEARLY demonstrated in the examples of HELMET and SUIT and JETPACK that you JUST DID, KELSEY.",
         "Tweaked loading screens"
-      ]
-    },
-    {
-      "version": "0.1.994.4970",
-      "notes": [
-        "Added Hydraulic Pipe Bender. Used to construction atmospheric devices and pipes."
       ]
     }
   ]
