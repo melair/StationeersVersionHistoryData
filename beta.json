@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1443.6885",
+    "version": "0.1.1444.6887",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1444.6887",
+      "notes": [
+        "Fixed nulreference exception with Bioprinter. Credit: GamersCircle."
+      ]
+    },
     {
       "version": "0.1.1443.6885",
       "notes": [
@@ -2484,9 +2490,7 @@
     {
       "version": "0.1.994.4970",
       "notes": [
-        "Added Hydraulic Pipe Bender. Used to construction atmospheric devices and pipes.",
-        "Updated tutorial complete screen",
-        "Adjusted ChemlightBlue Handposition"
+        "Added Hydraulic Pipe Bender. Used to construction atmospheric devices and pipes."
       ]
     }
   ]

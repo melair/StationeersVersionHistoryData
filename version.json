@@ -1,4 +1,13 @@
 {
+  "0.1.1444.6887": {
+    "notes": [
+      "Fixed nulreference exception with Bioprinter. Credit: GamersCircle."
+    ],
+    "releases": {
+      "built": "2018-07-06T00:00:00+01:00",
+      "beta": "2018-07-05T19:01:12+01:00"
+    }
+  },
   "0.1.1443.6885": {
     "notes": [
       "Added new mouse inventory control icons."
