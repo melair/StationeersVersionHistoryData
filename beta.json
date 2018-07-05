@@ -1,9 +1,26 @@
 {
   "current": {
-    "version": "0.1.1434.6840",
-    "date": "2018-07-04T00:00:00+01:00"
+    "version": "0.1.1436.6852",
+    "date": "2018-07-05T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1436.6852",
+      "notes": [
+        "Fixed Players can no longer mouse-drag a Dynamic Item being held by the handle into their free hand and carry it.",
+        "Fixed abnormal rotation behaviour.",
+        "Changed ores to use an object pool (Bonus, now ores maintain their rotation between saves!)",
+        "Refactored some parts of chunks/\"crystals\" as I touched them"
+      ]
+    },
+    {
+      "version": "0.1.1435.6847",
+      "notes": [
+        "Fixed Batch Reader not sending Type change to server, and not changing. Credit: Draz.",
+        "Fixed thing names not showing up correctly on eReader Cartridges for Chinese, Japanese and Korean.",
+        "Refactored Asteroid and ChunkObject. Just removing some useless/unused code in preparations for larger changes."
+      ]
+    },
     {
       "version": "0.1.1434.6840",
       "notes": [
@@ -2450,20 +2467,6 @@
         "Added validity check on menu cut scene depth of field",
         "Fixed kick/ban menu for host player",
         "Fixed wrong save path."
-      ]
-    },
-    {
-      "version": "0.1.993.4943",
-      "notes": [
-        "Fixed main menu camera for cutscene was being moved by the game during exit to menu.",
-        "Added GameMode to WorldSettings. Moon = survival mars/space = creative",
-        "Added new main menu scene.",
-        "Fixed cables not burning if mounted on wall. SmallGrids now work on all neighbour SmallGrid's atmospheres in OnFireTick(one atmosphere per tick).",
-        "Disabled save button in Tutorial",
-        "Added tutorial prompt on first run of the game.",
-        "Added success message when you complete tutorial so you can return to menu.",
-        "Updated wall temperatures to allow them to burn",
-        "increased the vein size of the rarest ores, slightly decreased the size of coal, and increased drop quantities in rare ores."
       ]
     }
   ]

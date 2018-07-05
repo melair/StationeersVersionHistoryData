@@ -1,4 +1,27 @@
 {
+  "0.1.1436.6852": {
+    "notes": [
+      "Fixed Players can no longer mouse-drag a Dynamic Item being held by the handle into their free hand and carry it.",
+      "Fixed abnormal rotation behaviour.",
+      "Changed ores to use an object pool (Bonus, now ores maintain their rotation between saves!)",
+      "Refactored some parts of chunks/\"crystals\" as I touched them"
+    ],
+    "releases": {
+      "built": "2018-07-05T00:00:00+01:00",
+      "beta": "2018-07-05T01:01:11+01:00"
+    }
+  },
+  "0.1.1435.6847": {
+    "notes": [
+      "Fixed Batch Reader not sending Type change to server, and not changing. Credit: Draz.",
+      "Fixed thing names not showing up correctly on eReader Cartridges for Chinese, Japanese and Korean.",
+      "Refactored Asteroid and ChunkObject. Just removing some useless/unused code in preparations for larger changes."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1434.6840": {
     "notes": [
       "Added TerrainGeneration class and moved a lot of code from WorldManager to TerrainGeneration",
