@@ -1,9 +1,147 @@
 {
   "current": {
-    "version": "0.1.1420.6788",
-    "date": "2018-07-02T00:00:00+01:00"
+    "version": "0.1.1443.6885",
+    "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1443.6885",
+      "notes": [
+        "Added new mouse inventory control icons."
+      ]
+    },
+    {
+      "version": "0.1.1441.6878",
+      "notes": [
+        "Fixed incorrect glass material on new Vending Machine model.",
+        "Added new tutorial."
+      ]
+    },
+    {
+      "version": "0.1.1439.6870",
+      "notes": [
+        "Added proper Vending Machine model as a replacement for existing placeholder.",
+        "Fixed Issue where inventory window titles would calculate bounds incorrectly and block ability to click on inventory slots directly above or below them."
+      ]
+    },
+    {
+      "version": "0.1.1438.6867",
+      "notes": [
+        "Fixed Pipe Analyzer now paintable in kit/item form and will properly perserve its colour when deconstructed.",
+        "Fixed Interaction UI buttons not getting cleared out between games, causing errors if you left a game with some visible and started a new one. (Credit: Eearslya)"
+      ]
+    },
+    {
+      "version": "0.1.1437.6862",
+      "notes": [
+        "Fixed Wall Arch variant was not set to 'Block Gravity', so a room completed with them would not properly have gravity applied as per other wall types and frames.",
+        "Fixed 'Large Panel' wall variant not blocking air or sunlight. Masoneer Bug List #0121 (Credit: JawnyCat)",
+        "Fixed player climb infinitely after ladder removed. (Masoneer Bug#0152 - Credit Austin5003)",
+        "Fixed Sorter white-list drop down box was sometimes appear empty if they had been cleaned up prematurely. (Credit: Risu)",
+        "Fixed Slot type on CartridgeGuide so it can now be placed correctly into a tablet.",
+        "Fixed sleepers kicking humans out when loading a save.",
+        "Fixed error with initializing object pools before mining manager was initialized. Was throwing an error on starting game."
+      ]
+    },
+    {
+      "version": "0.1.1436.6852",
+      "notes": [
+        "Fixed Players can no longer mouse-drag a Dynamic Item being held by the handle into their free hand and carry it.",
+        "Fixed abnormal rotation behaviour.",
+        "Changed ores to use an object pool (Bonus, now ores maintain their rotation between saves!)",
+        "Refactored some parts of chunks/\"crystals\" as I touched them"
+      ]
+    },
+    {
+      "version": "0.1.1435.6847",
+      "notes": [
+        "Fixed Batch Reader not sending Type change to server, and not changing. Credit: Draz.",
+        "Fixed thing names not showing up correctly on eReader Cartridges for Chinese, Japanese and Korean.",
+        "Refactored Asteroid and ChunkObject. Just removing some useless/unused code in preparations for larger changes."
+      ]
+    },
+    {
+      "version": "0.1.1434.6840",
+      "notes": [
+        "Added TerrainGeneration class and moved a lot of code from WorldManager to TerrainGeneration",
+        "Changed some heavily used parts of Chunk Object to use Grid3 instead of Vector3 to gain some performance.",
+        "Changed default keybind for QuantityModifier to C from RightAlt based on community feedback. Note: this will not affect existing bindings, so you will have to manually change it yourself. It will only affect new installs or those who reset their controls.",
+        "Added ImportCount and ExportCount settings to all devices that Import/Export. These counters increase whenever something is imported or exported. You can clear the value by writing anything greater than one to the ClearMemory flag on the device. This makes keeping count far easier. If you insert a stack of 50 iron ore into the stacker while it has a stack size output set to one, ImportCount will increase by one but once the stack is finished exporting, the ExportCount will have increased by 50.",
+        "Fixed Error when changing Anti-Aliasing setting via the main menu after leaving a game (Thanks virusek20).",
+        "Fixed mouse drag cursor UI scale not being correctly set on load, and only when scaled. Now initialized on window setup.",
+        "Fixed Circuitboard (Hash Display) was not craftable. Now added to Electronics Printer and Fabricator.",
+        "Fixed hash errors with displaying the hash for an object in a localized tooltip. Credit: Risu via discord for the new Regex line.",
+        "Added all logic processors (compare, math, etc...) now expose setting attribute to logic network for read only access. This reduces the need for additional logic writer + memory to read the results. Credit: Otti via Discord."
+      ]
+    },
+    {
+      "version": "0.1.1433.6828",
+      "notes": [
+        "Fixed Batch Reader displaying wrong type. Credit: Risu via discord."
+      ]
+    },
+    {
+      "version": "0.1.1432.6826",
+      "notes": [
+        "Increased Pressure Regulator max setting from 100 atm to 200 atm.",
+        "Fixed junk collider left in scene that caused collision issue on new map."
+      ]
+    },
+    {
+      "version": "0.1.1431.6824",
+      "notes": [
+        "Added Hide All Windows key, defaults to Tilde (BackQuote).",
+        "Fixed numerous inventory bugs, such as null references related to dropping items into interaction buttons."
+      ]
+    },
+    {
+      "version": "0.1.1428.6818",
+      "notes": [
+        "Fixed various bugs with new Inventory system. Many state issues fixed, such as active hand opening and closing. Also fixed the construction cursor."
+      ]
+    },
+    {
+      "version": "0.1.1426.6815",
+      "notes": [
+        "Refactored Inventory control for keyboard and mouse. Now features docked windows, use keys to open and close or click with mouse to change. Allows multiple windows to be open, scrolling between all open slots and interactions. Mouse now allows movement between slots within players inventory. Better support for language and keyboard changes, and reduce memory and garbage collection significantly by pooling windows and slots. Unified event-based slot management means that keyboard and mouse control results (should) be unified and (should) reduce the maintenance cost of running dual systems."
+      ]
+    },
+    {
+      "version": "0.1.1425.6813",
+      "notes": [
+        "Fixed could place Sleeper, Solid Fuel Generator, and Locker without a frame below. Now requires a frame below it.",
+        "Fixed glitches when dragging a primary slot item in mouse inventory control. Now only shows orange when opened, not when attempting to drag.",
+        "Added temporary icons to let player know what they are doing when they drag with mouse inventory control.",
+        "Fixed plants growing in hydroponics trays and stations disappearing too early on clients.",
+        "Fixed objects were not being scaled correctly when put into slots. Now correctly scale objects that are placed in slots so that they fit if the slot is smaller than they are.",
+        "Added caching of interactable and slot bounds. Previously, the game was generating them for every object on the objects creation. This could cause delays and problems when loading assets. Now this is cached when the asset is made or changed so running games do not need to generate them."
+      ]
+    },
+    {
+      "version": "0.1.1423.6800",
+      "notes": [
+        "Added drop ability on Inventory Mouse control.",
+        "Added second pass of Mouse Inventory control. You can not drag and drop to move or swap items in your inventory. You can also use the interactions for master slots.",
+        "Fixed Slot Reader was not serializing the selected slot. Now correctly saves and loads the slot index."
+      ]
+    },
+    {
+      "version": "0.1.1422.6793",
+      "notes": [
+        "Added Chute Inlet lock state controls input. If you want to stop a chute inlet from stopping collecting, set its lock state to one. Setting to lock zero resumes it. Credit: Drazuam from twitch for idea.",
+        "Added more input mouse functionality. Key inventory state remembers what you had selected with the mouse.",
+        "Fixed Could power on/off items in hands that should not have been custom interactable."
+      ]
+    },
+    {
+      "version": "0.1.1421.6791",
+      "notes": [
+        "Added Light state status icon. This will show if you are wearing a helmet with a light. It will show the current light state, and the key required to change it. This helps prompt players for the hotkey to turn their lights on and off.",
+        "Added Active Hand Power state status icon. This will show if you have something in your hands with a On/Off state. This helps new players learn the hotkey to quickly toggle something on and off - such as a tablet or a mining drill.",
+        "Fixed bug with windows being closed when pressing left or right mouse button.",
+        "Fixed some missing localization strings for Logic Systems (much more to follow)."
+      ]
+    },
     {
       "version": "0.1.1420.6788",
       "notes": [
@@ -2348,99 +2486,7 @@
       "notes": [
         "Added Hydraulic Pipe Bender. Used to construction atmospheric devices and pipes.",
         "Updated tutorial complete screen",
-        "Adjusted ChemlightBlue Handposition",
-        "Fixed ItemKitDoor, ItemKitEngineSmall, and ItemKitLocker not spawning anything.",
-        "Added extra cleanup steps when closing tutorial scene.",
-        "Added new construction kit thumbnails.",
-        "Fixed jittering player on connect",
-        "Fixed bug with tutorial event bindings not clearing properly and affecting players who went on to play in a normal game.",
-        "Added construction kits for machines.",
-        "Force creative mode in editor",
-        "Increased slightly Coal, Copper, and Gold max and min vein sizes.",
-        "Increased copper's minimum drop amount.",
-        "Fixed score board and admin panel in dedicated server",
-        "Fixed quest panel position",
-        "Adjusted welcome screen",
-        "Disabled debug options in tutorial mode",
-        "Changed Atmos Debug button to only be usable in creative mode.",
-        "Organs no longer deleted OnDamageDestroyed as it was causing several NRE's",
-        "Characters can now correctly transition to dead state without falling through the terrain",
-        "Added validity check on menu cut scene depth of field",
-        "Fixed kick/ban menu for host player",
-        "Fixed wrong save path."
-      ]
-    },
-    {
-      "version": "0.1.993.4943",
-      "notes": [
-        "Fixed main menu camera for cutscene was being moved by the game during exit to menu.",
-        "Added GameMode to WorldSettings. Moon = survival mars/space = creative",
-        "Added new main menu scene.",
-        "Fixed cables not burning if mounted on wall. SmallGrids now work on all neighbour SmallGrid's atmospheres in OnFireTick(one atmosphere per tick).",
-        "Disabled save button in Tutorial",
-        "Added tutorial prompt on first run of the game.",
-        "Added success message when you complete tutorial so you can return to menu.",
-        "Updated wall temperatures to allow them to burn",
-        "increased the vein size of the rarest ores, slightly decreased the size of coal, and increased drop quantities in rare ores.",
-        "Tweaked checkboxes on quest panel",
-        "Increased energy requirements for most recipes",
-        "Tweaked quest panel spacing",
-        "Added dynamic objects to fabricator",
-        "Fixed clients not being able to correctly precisionPlace"
-      ]
-    },
-    {
-      "version": "0.1.992.4929",
-      "notes": [
-        "Added first pass of tutorial system, from main menu.",
-        "Added first pass of new Spacesuit Storage.",
-        "Tweaks made to throwing animation",
-        "Fixed rotation locks on some structures",
-        "Fixed 'to many threads' bug when joining server with password",
-        "Removed clients ability to request atmos thread restart on server. If a client's thread was unrecoverable and continued to crash it would crash the server and all the clients by spamming the request.",
-        "Fixed wrong player steam avatar.",
-        "Changed PrecisionPlaceCursor to have internal fill colour",
-        "Updated PrecisionPlacement so it places on center position instead of bounds.",
-        "PrecisionPlacement now uses correct orientation keys",
-        "Fixed issue with internal slots within another slot not being hidden correctly on load",
-        "Added draft of menu theme, including AudioTools class to manage fadein/out.",
-        "Npc's should no longer try to look at a Zero'd vector",
-        "reduced number of ores in space world",
-        "Reverted and made settings page change again",
-        "fixed splitting colored stacks for clients",
-        "Threaded all remaining Animal functions",
-        "First page of settings screen had been disabled.  Re-enabled it.",
-        "FertilizedEgg now requires atmosphere and a minimum temp of 15* to hatch",
-        "water now spreads and evaporates correctly on planets"
-      ]
-    },
-    {
-      "version": "0.1.991.4904",
-      "notes": [
-        "Limited patch notes upto 1500 lines",
-        "Removed button from remote control tool"
-      ]
-    },
-    {
-      "version": "0.1.990.4899",
-      "notes": [
-        "Fixed max player setting.",
-        "Added a reset on the _gasMixture used by the mixers to calculate output so it doesn't get cumulatively larger every tick.",
-        "Added a first pass for a tutorial overlay",
-        "Extended timeout 4000 ms",
-        "Fixed Loading panel bug. It didn't disappear when server closed during joining",
-        "Updated New World thumbnails",
-        "Animals now go Unconscious from oxygen deprivation and die from hunger. Feed them wheat, corn or Soybeans (they'll auto path to it when hungry)",
-        "Added spray on extinguisher"
-      ]
-    },
-    {
-      "version": "0.1.989.4889",
-      "notes": [
-        "Fixed wires that were indestructable could still be destroyed.",
-        "Fixed ChatText NRE in dedicated server",
-        "Fixed NRE when active vent trying to initialize when network connection has not been found.",
-        "Added QuantityModifer key. Was previously hardcoded. Default is LeftAlt."
+        "Adjusted ChemlightBlue Handposition"
       ]
     }
   ]

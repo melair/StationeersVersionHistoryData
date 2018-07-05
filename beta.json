@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1441.6878",
+    "version": "0.1.1443.6885",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1443.6885",
+      "notes": [
+        "Added new mouse inventory control icons."
+      ]
+    },
     {
       "version": "0.1.1441.6878",
       "notes": [
@@ -2480,10 +2486,7 @@
       "notes": [
         "Added Hydraulic Pipe Bender. Used to construction atmospheric devices and pipes.",
         "Updated tutorial complete screen",
-        "Adjusted ChemlightBlue Handposition",
-        "Fixed ItemKitDoor, ItemKitEngineSmall, and ItemKitLocker not spawning anything.",
-        "Added extra cleanup steps when closing tutorial scene.",
-        "Added new construction kit thumbnails."
+        "Adjusted ChemlightBlue Handposition"
       ]
     }
   ]
