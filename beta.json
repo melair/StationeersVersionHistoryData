@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1449.6902",
-    "date": "2018-07-06T00:00:00+01:00"
+    "version": "0.1.1451.6907",
+    "date": "2018-07-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1450.6905",
+      "notes": [
+        "Fixed interactions sometimes get disabled and are not able to reinitialize until removed. Now get correctly set and reinitialized.",
+        "Fixed RAND function on Math Unary always returning the same random number for all logic units. Now each logic unit will generate its own randomized seed for each random function."
+      ]
+    },
     {
       "version": "0.1.1449.6902",
       "notes": [
@@ -2485,11 +2492,7 @@
     {
       "version": "0.1.998.4983",
       "notes": [
-        "Fixed keys for game tips and tutorial were not localized.",
-        "Synced recipes across different classes.",
-        "adjusted composite walls to require 1 copper.",
-        "Reduced recipe cost for early fabrication machines.",
-        "removed electrum requirement for sorter, and logic mobos."
+        "Fixed keys for game tips and tutorial were not localized."
       ]
     }
   ]

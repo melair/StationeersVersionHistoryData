@@ -1,4 +1,23 @@
 {
+  "0.1.1451.6907": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-07T00:00:00+01:00",
+      "beta": "2018-07-06T14:01:11+01:00"
+    }
+  },
+  "0.1.1450.6905": {
+    "notes": [
+      "Fixed interactions sometimes get disabled and are not able to reinitialize until removed. Now get correctly set and reinitialized.",
+      "Fixed RAND function on Math Unary always returning the same random number for all logic units. Now each logic unit will generate its own randomized seed for each random function."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1449.6902": {
     "notes": [
       "Added RAND and SQRT to LogicMathUnary. RAND returns a random (double precision) number between 0 and whatever you input, even tick. SQRT returns the square root of the provided input."
