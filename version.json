@@ -1,11 +1,22 @@
 {
+  "0.1.1449.6902": {
+    "notes": [
+      "Added RAND and SQRT to LogicMathUnary. RAND returns a random (double precision) number between 0 and whatever you input, even tick. SQRT returns the square root of the provided input."
+    ],
+    "releases": {
+      "built": "2018-07-06T00:00:00+01:00",
+      "public": "2018-07-06T07:01:12+01:00",
+      "beta": "2018-07-06T07:01:12+01:00"
+    }
+  },
   "0.1.1448.6899": {
     "notes": [
       "Fixed progression problems with tutorial. Now prompts more for what to hold when welding. Drag task now correctly updates for canister. Prompt to clear hands after cooking task, instead of tablet which is likely already dropped."
     ],
     "releases": {
       "built": "2018-07-06T00:00:00+01:00",
-      "beta": "2018-07-06T06:01:12+01:00"
+      "beta": "2018-07-06T06:01:12+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1447.6897": {
@@ -21,7 +32,8 @@
     ],
     "releases": {
       "built": "2018-07-06T00:00:00+01:00",
-      "beta": "2018-07-06T05:01:26+01:00"
+      "beta": "2018-07-06T05:01:26+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1446.6889": {

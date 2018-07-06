@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1448.6899",
+    "version": "0.1.1449.6902",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1449.6902",
+      "notes": [
+        "Added RAND and SQRT to LogicMathUnary. RAND returns a random (double precision) number between 0 and whatever you input, even tick. SQRT returns the square root of the provided input."
+      ]
+    },
     {
       "version": "0.1.1448.6899",
       "notes": [
@@ -2483,9 +2489,7 @@
         "Synced recipes across different classes.",
         "adjusted composite walls to require 1 copper.",
         "Reduced recipe cost for early fabrication machines.",
-        "removed electrum requirement for sorter, and logic mobos.",
-        "Added PipeBender recipes",
-        "Removed redundant recipes from autolathe that fit better on sub machines"
+        "removed electrum requirement for sorter, and logic mobos."
       ]
     }
   ]
