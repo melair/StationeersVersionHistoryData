@@ -1,4 +1,13 @@
 {
+  "0.1.1448.6899": {
+    "notes": [
+      "Fixed progression problems with tutorial. Now prompts more for what to hold when welding. Drag task now correctly updates for canister. Prompt to clear hands after cooking task, instead of tablet which is likely already dropped."
+    ],
+    "releases": {
+      "built": "2018-07-06T00:00:00+01:00",
+      "beta": "2018-07-06T06:01:12+01:00"
+    }
+  },
   "0.1.1447.6897": {
     "notes": [
       "Fixed error when loading a mod that contained changes to mineral spawn rates.",

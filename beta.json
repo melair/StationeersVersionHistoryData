@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1447.6897",
+    "version": "0.1.1448.6899",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1448.6899",
+      "notes": [
+        "Fixed progression problems with tutorial. Now prompts more for what to hold when welding. Drag task now correctly updates for canister. Prompt to clear hands after cooking task, instead of tablet which is likely already dropped."
+      ]
+    },
     {
       "version": "0.1.1447.6897",
       "notes": [
@@ -2479,9 +2485,7 @@
         "Reduced recipe cost for early fabrication machines.",
         "removed electrum requirement for sorter, and logic mobos.",
         "Added PipeBender recipes",
-        "Removed redundant recipes from autolathe that fit better on sub machines",
-        "Changed composite wall recipe from steel to  more iron, to allow early game windows",
-        "Added sorter and stacker construction kits so they are no longer spawned from the conveyor kits."
+        "Removed redundant recipes from autolathe that fit better on sub machines"
       ]
     }
   ]
