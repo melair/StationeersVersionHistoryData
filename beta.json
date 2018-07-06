@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1446.6889",
+    "version": "0.1.1447.6897",
     "date": "2018-07-06T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1447.6897",
+      "notes": [
+        "Fixed error when loading a mod that contained changes to mineral spawn rates.",
+        "Fixed gas canister inventory text pressure values not updating in player inventory on loading an old world. Now correctly update every frame, even if loaded in before the player.",
+        "Fixed invalid drag and drop icon missing from animation.",
+        "Fixed null reference breaking game when exiting tutorial prematurely. Now gracefully resets when player exits Tutorial.",
+        "Fixed progression bugs when repeating tutorial without restarting game. Now resets progressing each time you start the tutorial.",
+        "Fixed issue where you wouldn't be able to consume the muffin to complete a tutorial step if your hunger rate was set to 0.",
+        "Fixed error on load if the currently selected recipe on a crafting machine is for an object that does not have a blueprint wireframe created.",
+        "Fixed missing blueprint for DynamicGPR"
+      ]
+    },
     {
       "version": "0.1.1444.6887",
       "notes": [
@@ -2468,23 +2481,7 @@
         "Added PipeBender recipes",
         "Removed redundant recipes from autolathe that fit better on sub machines",
         "Changed composite wall recipe from steel to  more iron, to allow early game windows",
-        "Added sorter and stacker construction kits so they are no longer spawned from the conveyor kits.",
-        "Fixed wrong color on clients"
-      ]
-    },
-    {
-      "version": "0.1.997.4978",
-      "notes": [
-        "Fixed items in dynamic crates being invisible on load",
-        "Updated fabrication machines for new kit prefabs"
-      ]
-    },
-    {
-      "version": "0.1.995.4973",
-      "notes": [
-        "Fix exit game popup allowing you to save when leaving tutorial level.",
-        "Updated tutorial text to specify you have to hold the belt slot key to equip your belt EVEN THOUGH it is CLEARLY demonstrated in the examples of HELMET and SUIT and JETPACK that you JUST DID, KELSEY.",
-        "Tweaked loading screens"
+        "Added sorter and stacker construction kits so they are no longer spawned from the conveyor kits."
       ]
     }
   ]

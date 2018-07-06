@@ -1,4 +1,20 @@
 {
+  "0.1.1447.6897": {
+    "notes": [
+      "Fixed error when loading a mod that contained changes to mineral spawn rates.",
+      "Fixed gas canister inventory text pressure values not updating in player inventory on loading an old world. Now correctly update every frame, even if loaded in before the player.",
+      "Fixed invalid drag and drop icon missing from animation.",
+      "Fixed null reference breaking game when exiting tutorial prematurely. Now gracefully resets when player exits Tutorial.",
+      "Fixed progression bugs when repeating tutorial without restarting game. Now resets progressing each time you start the tutorial.",
+      "Fixed issue where you wouldn't be able to consume the muffin to complete a tutorial step if your hunger rate was set to 0.",
+      "Fixed error on load if the currently selected recipe on a crafting machine is for an object that does not have a blueprint wireframe created.",
+      "Fixed missing blueprint for DynamicGPR"
+    ],
+    "releases": {
+      "built": "2018-07-06T00:00:00+01:00",
+      "beta": "2018-07-06T05:01:26+01:00"
+    }
+  },
   "0.1.1446.6889": {
     "notes": [
 
