@@ -1,4 +1,28 @@
 {
+  "0.1.1454.6920": {
+    "notes": [
+      "Fixed Furnace changes for ice causing ice in hidden slots (like mining belt) to continue to melt in sun. Now no longer allow this as it was before.",
+      "Fixed Labeller setting directly on non-logic devices was not being applied for non-host clients. Now server correctly processes non-logic setting requests from a client using a Labeller.",
+      "Added Stacker wheel can now be set to a value directly with the labeller."
+    ],
+    "releases": {
+      "built": "2018-07-07T00:00:00+01:00",
+      "beta": "2018-07-07T12:01:11+01:00"
+    }
+  },
+  "0.1.1453.6916": {
+    "notes": [
+      "Fixed Gas Canisters not updating their values. Last time only fixed it for things with showing interactables (the suit) but not for the backpack.",
+      "Added Drag and Drop insert functionality. Able to insert items directly into some items just by dragging over the item. For example, dragging steel sheets directly onto a backpack in the backpack slot will allow you to insert the steel sheets directly into it, without the need to open it up.",
+      "Fixed jetpack not hovering properly when in gravity. Now counteracts gravity completely.",
+      "Changed Construction Cursor to offset based on bounds of what is being created. This means small objects will be closer to the player and their grid selection will be more consistent.",
+      "Added Road Flare will ignite Internal Atmosphere of its parent if in a slot, for example in a furnace."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1452.6911": {
     "notes": [
       "Fixed furnace producing infinite amounts of gas. Now the ore will only be smelted into its reagents if the furnace is above its flashpoint temperature. There are still some gas exploits remaining that will be fixed later. Note: this will alter how you create ores with a brand new furnace. The ice will eventually cool down the inside of the furnace, so you will need to heat the furnace up with their the sun or another gas or an igniter to get it started.",

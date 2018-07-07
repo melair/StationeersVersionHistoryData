@@ -1,9 +1,27 @@
 {
   "current": {
-    "version": "0.1.1452.6911",
+    "version": "0.1.1454.6920",
     "date": "2018-07-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1454.6920",
+      "notes": [
+        "Fixed Furnace changes for ice causing ice in hidden slots (like mining belt) to continue to melt in sun. Now no longer allow this as it was before.",
+        "Fixed Labeller setting directly on non-logic devices was not being applied for non-host clients. Now server correctly processes non-logic setting requests from a client using a Labeller.",
+        "Added Stacker wheel can now be set to a value directly with the labeller."
+      ]
+    },
+    {
+      "version": "0.1.1453.6916",
+      "notes": [
+        "Fixed Gas Canisters not updating their values. Last time only fixed it for things with showing interactables (the suit) but not for the backpack.",
+        "Added Drag and Drop insert functionality. Able to insert items directly into some items just by dragging over the item. For example, dragging steel sheets directly onto a backpack in the backpack slot will allow you to insert the steel sheets directly into it, without the need to open it up.",
+        "Fixed jetpack not hovering properly when in gravity. Now counteracts gravity completely.",
+        "Changed Construction Cursor to offset based on bounds of what is being created. This means small objects will be closer to the player and their grid selection will be more consistent.",
+        "Added Road Flare will ignite Internal Atmosphere of its parent if in a slot, for example in a furnace."
+      ]
+    },
     {
       "version": "0.1.1452.6911",
       "notes": [
@@ -2478,21 +2496,7 @@
         "Added functionality to suit storage. Now will fill tanks and recharge battery when suit is inserted and all pipes and cables connected.",
         "Fixed mining drill not working on load",
         "Added thumbnail for pipe bender kit.",
-        "Added atmos cartridge to backpack on spawn.",
-        "Fixed solar panel deconstructing not producing a construction kit."
-      ]
-    },
-    {
-      "version": "0.1.999.4996",
-      "notes": [
-        "Fixed starting crate stackable quantities were not clamped.",
-        "Fixed Space Helmet light is pointing too far down.",
-        "Fixed ElectronicReader cartridge was not showing Hydrolic Pipe Bender recipes.",
-        "Added survival starting item spawn. Now spawns two crates with construction supplies, one crate with organic supplies, an oxygen tank, and portable atmospherics.",
-        "Fixed button anchors on welcome screen",
-        "Fixed suit leaks showing after suit destroyed. Disabled all leak reference visualizers when destroyed.",
-        "New wave emote added",
-        "Emotes are now reset with animation events rather then coroutine."
+        "Added atmos cartridge to backpack on spawn."
       ]
     }
   ]
