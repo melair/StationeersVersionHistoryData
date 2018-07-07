@@ -1,4 +1,22 @@
 {
+  "0.1.1459.6933": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-08T00:00:00+01:00",
+      "beta": "2018-07-07T20:01:11+01:00"
+    }
+  },
+  "0.1.1458.6931": {
+    "notes": [
+      "Added first pass of mouse drag and drop from world. With mouse enabled (Left Alt), click and drag an object from the world to a slot. Currently Move, Insert, and Merge are supported. Swap is not supported yet."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1457.6929": {
     "notes": [
 

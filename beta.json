@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1457.6929",
+    "version": "0.1.1459.6933",
     "date": "2018-07-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1458.6931",
+      "notes": [
+        "Added first pass of mouse drag and drop from world. With mouse enabled (Left Alt), click and drag an object from the world to a slot. Currently Move, Insert, and Merge are supported. Swap is not supported yet."
+      ]
+    },
     {
       "version": "0.1.1455.6924",
       "notes": [
@@ -2495,10 +2501,7 @@
         "Fixed welder tanks exploding after a period of time due to thermodynamics, when located inside the welder.",
         "Fixed Activate button on HydraulicPipeBender not working.",
         "Fixed HydraulicPipeBender not generating recipes.",
-        "Added entry tool for fabricator",
-        "Moved Dynamic large object construction to Pipe bending machine",
-        "Adjusted position of the screwdriver in the hand",
-        "Removed old suit storage kit item."
+        "Added entry tool for fabricator"
       ]
     }
   ]
