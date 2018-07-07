@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1451.6907",
+    "version": "0.1.1452.6911",
     "date": "2018-07-07T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1452.6911",
+      "notes": [
+        "Fixed furnace producing infinite amounts of gas. Now the ore will only be smelted into its reagents if the furnace is above its flashpoint temperature. There are still some gas exploits remaining that will be fixed later. Note: this will alter how you create ores with a brand new furnace. The ice will eventually cool down the inside of the furnace, so you will need to heat the furnace up with their the sun or another gas or an igniter to get it started.",
+        "Fixed Ground Penetrating Radar was missing it's blueprint.",
+        "Added Reagent Reader. This logic unit is able to read the current recipe, reagent contents, and required reagents for any manufacturing device and report the quantity for that reagent. Buildable off the Logic I/O kit."
+      ]
+    },
     {
       "version": "0.1.1450.6905",
       "notes": [
@@ -2484,15 +2492,7 @@
         "Fixed button anchors on welcome screen",
         "Fixed suit leaks showing after suit destroyed. Disabled all leak reference visualizers when destroyed.",
         "New wave emote added",
-        "Emotes are now reset with animation events rather then coroutine.",
-        "updated old crates to new kits.",
-        "added coal and iron steel recipe."
-      ]
-    },
-    {
-      "version": "0.1.998.4983",
-      "notes": [
-        "Fixed keys for game tips and tutorial were not localized."
+        "Emotes are now reset with animation events rather then coroutine."
       ]
     }
   ]
