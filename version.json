@@ -1,4 +1,14 @@
 {
+  "0.1.1461.6938": {
+    "notes": [
+      "Fixed unable to move character as client.",
+      "Fixed Suit Storage and Pipe Connectors were not mixing, they were just meeting some pressure requirements. Now they will fully mix their atmospheres."
+    ],
+    "releases": {
+      "built": "2018-07-08T00:00:00+01:00",
+      "beta": "2018-07-08T03:01:12+01:00"
+    }
+  },
   "0.1.1460.6935": {
     "notes": [
       "Fixed running in DX9 with Volumetric Light enabled causing errors and broken rendering. Now Volumetric Lighting (and Atmospheric Scattering) are automatically disabled when running in DX9, and cannot be turned on."

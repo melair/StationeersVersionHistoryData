@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1460.6935",
+    "version": "0.1.1461.6938",
     "date": "2018-07-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1461.6938",
+      "notes": [
+        "Fixed unable to move character as client.",
+        "Fixed Suit Storage and Pipe Connectors were not mixing, they were just meeting some pressure requirements. Now they will fully mix their atmospheres."
+      ]
+    },
     {
       "version": "0.1.1460.6935",
       "notes": [
@@ -2499,13 +2506,6 @@
         "Fixed tips not localized correctly. Added Localized Font to TextTips",
         "Increased Dynamic large thing pipe bender construction times.",
         "Removed old suit storage and gas sensor from fabricator."
-      ]
-    },
-    {
-      "version": "0.1.1000.5010",
-      "notes": [
-        "Fixed welder tanks exploding after a period of time due to thermodynamics, when located inside the welder.",
-        "Fixed Activate button on HydraulicPipeBender not working."
       ]
     }
   ]
