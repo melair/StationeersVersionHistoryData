@@ -1,4 +1,14 @@
 {
+  "0.1.1462.6941": {
+    "notes": [
+      "Fixed null ref when clicking in world when using drag and drop from world but cursor hasn't cast to anything.",
+      "Added tooltip information to furnace indicating furnace is not hot enough to melt provided item. Also provides information that activate button can be used to melt ice that is placed inside it."
+    ],
+    "releases": {
+      "built": "2018-07-08T00:00:00+01:00",
+      "beta": "2018-07-08T04:01:12+01:00"
+    }
+  },
   "0.1.1461.6938": {
     "notes": [
       "Fixed unable to move character as client.",
