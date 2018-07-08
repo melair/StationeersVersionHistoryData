@@ -1,4 +1,13 @@
 {
+  "0.1.1463.6944": {
+    "notes": [
+      "Added first pass of new window based controls assignment. Now when you click a control assignment, it brings up a new window and prompts you to begin recording the new control. Second pass will include checking for duplicate assignments and prompting the player."
+    ],
+    "releases": {
+      "built": "2018-07-08T00:00:00+01:00",
+      "beta": "2018-07-08T08:01:11+01:00"
+    }
+  },
   "0.1.1462.6941": {
     "notes": [
       "Fixed null ref when clicking in world when using drag and drop from world but cursor hasn't cast to anything.",
