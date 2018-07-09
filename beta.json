@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1470.6969",
-    "date": "2018-07-09T00:00:00+01:00"
+    "version": "0.1.1471.6974",
+    "date": "2018-07-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1471.6974",
+      "notes": [
+        "Added category headings to controls assignment menu to provide more clarity.",
+        "Added HUD turning on while hovering over HUD scale, to allow you to better configure what HUD scale you want to set.",
+        "Added save window placement on exit. Now will reload with the window state when it was saved. Also saves which is the active hand, and what slot was selected with the current highlight.",
+        "Refactored control saving and loading. Solved unable to assign defaults for controls after previous refactor.",
+        "Added JetPack Stabilizer on/off, includes optional binding to turn on and off.",
+        "Added two extra slots to JetPack."
+      ]
+    },
     {
       "version": "0.1.1470.6969",
       "notes": [
@@ -2490,21 +2501,6 @@
         "Added Stacker to autolathe",
         "Removed controller support completely as it was incomplete and was causing some people to spin",
         "Offline players will now drop Draggable items, including players"
-      ]
-    },
-    {
-      "version": "0.1.1010.5051",
-      "notes": [
-        "Fixed many devices that were deconstruction into nothing. Air Conditioner, Arc Furnace deconstruct to Furnance, Battery, Computer, Filtration."
-      ]
-    },
-    {
-      "version": "0.1.1009.5049",
-      "notes": [
-        "Fixed initializing problem on dedicated server",
-        "fixed nulls causing connection issues",
-        "Fixed Incorrect drop position when dropping Unconscious Players",
-        "Fixed default button position in settings menu"
       ]
     }
   ]
