@@ -1,4 +1,13 @@
 {
+  "0.1.1472.6976": {
+    "notes": [
+      "Fixed nul ref when changing controls after having played a session and left back to main menu. Was caused by cleanup events being skipped. Now ensured that cleanup events occur, removing old UI windows when players leaves a session."
+    ],
+    "releases": {
+      "built": "2018-07-10T00:00:00+01:00",
+      "beta": "2018-07-09T18:01:11+01:00"
+    }
+  },
   "0.1.1471.6974": {
     "notes": [
       "Added category headings to controls assignment menu to provide more clarity.",

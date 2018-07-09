@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1471.6974",
+    "version": "0.1.1472.6976",
     "date": "2018-07-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1472.6976",
+      "notes": [
+        "Fixed nul ref when changing controls after having played a session and left back to main menu. Was caused by cleanup events being skipped. Now ensured that cleanup events occur, removing old UI windows when players leaves a session."
+      ]
+    },
     {
       "version": "0.1.1471.6974",
       "notes": [
@@ -2499,8 +2505,7 @@
         "Added default linux dedicated server commands",
         "Fixed own suit getting frustum culled - enabled UpdateWhenOffscreen on Spacesuit Mesh Renderer",
         "Added Stacker to autolathe",
-        "Removed controller support completely as it was incomplete and was causing some people to spin",
-        "Offline players will now drop Draggable items, including players"
+        "Removed controller support completely as it was incomplete and was causing some people to spin"
       ]
     }
   ]
