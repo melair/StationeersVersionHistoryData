@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1472.6976",
+    "version": "0.1.1473.6977",
     "date": "2018-07-10T00:00:00+01:00"
   },
   "history": [
@@ -2504,8 +2504,7 @@
         "Fixed Issue with being unable to pickup and drop Unconscious players on Dedicated Server",
         "Added default linux dedicated server commands",
         "Fixed own suit getting frustum culled - enabled UpdateWhenOffscreen on Spacesuit Mesh Renderer",
-        "Added Stacker to autolathe",
-        "Removed controller support completely as it was incomplete and was causing some people to spin"
+        "Added Stacker to autolathe"
       ]
     }
   ]

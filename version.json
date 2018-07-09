@@ -1,4 +1,13 @@
 {
+  "0.1.1473.6977": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-10T00:00:00+01:00",
+      "beta": "2018-07-09T22:01:12+01:00"
+    }
+  },
   "0.1.1472.6976": {
     "notes": [
       "Fixed nul ref when changing controls after having played a session and left back to main menu. Was caused by cleanup events being skipped. Now ensured that cleanup events occur, removing old UI windows when players leaves a session."
