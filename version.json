@@ -1,4 +1,43 @@
 {
+  "0.1.1469.6964": {
+    "notes": [
+      "Added optional keybindings for Suit pressure/temperature when worn in suit slot, and jetpack thrust up/down when in Backpack slot.",
+      "Added thrust interactables to Jetpack for changing thrust. Displays in the top status what current thrust is.",
+      "Fixed thrust unusually strong when using jetpack in gravity environment.",
+      "Fixed nulref on certain devices when loading, thanks to active vent fix."
+    ],
+    "releases": {
+      "built": "2018-07-09T00:00:00+01:00",
+      "beta": "2018-07-09T08:07:39+01:00"
+    }
+  },
+  "0.1.1467.6960": {
+    "notes": [
+      "Fixed inability to respawn after loading a game in which you're dead.",
+      "Fixed Active Vents losing their pipe network, typically when a network they are connected to is merging with a large network (also occurred with engines). Sometimes in a merge their current pipe input network was being nulled when removed was occurring after the add was being processed. Now only nulls if the removed network is their current one.",
+      "Fixed Logic Motherboard Actions for Activate not able to be changed.",
+      "Fixed Mouse Button assignment to hotkeys showing badly in the hints, such as on status indicators or slots. Now assignments can show as an image."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1464.6952": {
+    "notes": [
+      "Added support for all device button and key assignments to game controls. This will allow you to bind any buttons on your mouse to any of the controls. This includes gamepad buttons, however no axis support (yet).",
+      "Added conflict checking to controls scheme, and a window poping up to advise players when a conflict exists. This warning will show in the main menu screen when a conflict exists. Any conflicts in the controls scheme will show in the conflict assignment window itself in red.",
+      "Fixed invalid drag and drop results were still being actioned, allowing you to put things into slots you should not able to. Now results of drag and drop correctly enforced.",
+      "Fixed items in hands not updating their status correctly. For example, opening a canister in your hands. Now objects in hands correctly update their status. (Credit: Carlen White via Discord).",
+      "Fixed chatting or labelling was causing inventory actions (such as InventorySelect, F) to run. Now while chat typing or labelling, Inventory controls are disabled. Mouse control still enabled for typing but only with the mouse - not F key.",
+      "Fixed closed inventory windows and slots can still be interacted with by pressing InventorySelect. Now when slot is hidden, cannot be interacted with.",
+      "Fixed player status in the top right not updating while MouseControl activated. Most noticable while changing the pressure using the PressureUp interaction. Now this window runs independently and will continue to animate."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1463.6944": {
     "notes": [
       "Added first pass of new window based controls assignment. Now when you click a control assignment, it brings up a new window and prompts you to begin recording the new control. Second pass will include checking for duplicate assignments and prompting the player."
