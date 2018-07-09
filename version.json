@@ -1,4 +1,15 @@
 {
+  "0.1.1470.6969": {
+    "notes": [
+      "Fixed jetpack not allowing movement (beta only).",
+      "Added AtmosAnalyser will report if in a room or in world, to help with debugging.",
+      "Added hungerRate command to dedicated server RCON"
+    ],
+    "releases": {
+      "built": "2018-07-09T00:00:00+01:00",
+      "beta": "2018-07-09T09:01:11+01:00"
+    }
+  },
   "0.1.1469.6964": {
     "notes": [
       "Added optional keybindings for Suit pressure/temperature when worn in suit slot, and jetpack thrust up/down when in Backpack slot.",

@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1469.6964",
+    "version": "0.1.1470.6969",
     "date": "2018-07-09T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1470.6969",
+      "notes": [
+        "Fixed jetpack not allowing movement (beta only).",
+        "Added AtmosAnalyser will report if in a room or in world, to help with debugging.",
+        "Added hungerRate command to dedicated server RCON"
+      ]
+    },
     {
       "version": "0.1.1469.6964",
       "notes": [
@@ -2497,19 +2505,6 @@
         "fixed nulls causing connection issues",
         "Fixed Incorrect drop position when dropping Unconscious Players",
         "Fixed default button position in settings menu"
-      ]
-    },
-    {
-      "version": "0.1.1008.5044",
-      "notes": [
-        "Fixed various kits. Autolathe, Electronics Printer, Sleeper, Solid Fuel Generator, and Storage Lockers - not spawning their kits correctly when deconstructed."
-      ]
-    },
-    {
-      "version": "0.1.1007.5042",
-      "notes": [
-        "Fixed water visualizer always running causing severe performance issues for some.",
-        "Fixed Autolathe & SolidFuelGenerator not respawning after deconstruction"
       ]
     }
   ]
