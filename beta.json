@@ -1,9 +1,28 @@
 {
   "current": {
-    "version": "0.1.1473.6977",
+    "version": "0.1.1475.6995",
     "date": "2018-07-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1475.6995",
+      "notes": [
+        "Fixed Possible NullCheckException error when trying to save slot window state, preventing game save.",
+        "Reverted changes from recent commits that modified the terrain generation to resolve multiplayer problems"
+      ]
+    },
+    {
+      "version": "0.1.1474.6989",
+      "notes": [
+        "Extended Terrain Generation slightly",
+        "Significantly reduced the number of times each chunk needs to be recalculated and applied to chunks.",
+        "Fixed more InventoryWindowManager references to stop them running on dedicated server",
+        "Fixed With chunks not loading properly if there is only one player connected to a dedicated server",
+        "Fixed stacker setting causing exception when set using Logic. Now correctly allows setting via logic without breaking.",
+        "Fixed dedicated server issue with InventoryWindowManager being called",
+        "Fixed missing reference of InventoryWindowManager in InventoryManager in base scene"
+      ]
+    },
     {
       "version": "0.1.1472.6976",
       "notes": [
@@ -2481,30 +2500,6 @@
         "Fixed out of range exception when deconstructing StructureFiltration",
         "Fixed bug with movement behavior when cursor was on screen",
         "Fixed small transformer and Door not deconstructing into the correct kits."
-      ]
-    },
-    {
-      "version": "0.1.1013.5070",
-      "notes": [
-        "Increased default burn times for all structures and items."
-      ]
-    },
-    {
-      "version": "0.1.1012.5068",
-      "notes": [
-        "Removed remaining axis controls",
-        "Increased gold spawn rate, and vein size."
-      ]
-    },
-    {
-      "version": "0.1.1011.5065",
-      "notes": [
-        "Fixed potential NRE when Human enters Dead State",
-        "Fixed issue with being unable to transition out of Dead state",
-        "Fixed Issue with being unable to pickup and drop Unconscious players on Dedicated Server",
-        "Added default linux dedicated server commands",
-        "Fixed own suit getting frustum culled - enabled UpdateWhenOffscreen on Spacesuit Mesh Renderer",
-        "Added Stacker to autolathe"
       ]
     }
   ]

@@ -1,4 +1,29 @@
 {
+  "0.1.1475.6995": {
+    "notes": [
+      "Fixed Possible NullCheckException error when trying to save slot window state, preventing game save.",
+      "Reverted changes from recent commits that modified the terrain generation to resolve multiplayer problems"
+    ],
+    "releases": {
+      "built": "2018-07-10T00:00:00+01:00",
+      "beta": "2018-07-10T08:01:10+01:00"
+    }
+  },
+  "0.1.1474.6989": {
+    "notes": [
+      "Extended Terrain Generation slightly",
+      "Significantly reduced the number of times each chunk needs to be recalculated and applied to chunks.",
+      "Fixed more InventoryWindowManager references to stop them running on dedicated server",
+      "Fixed With chunks not loading properly if there is only one player connected to a dedicated server",
+      "Fixed stacker setting causing exception when set using Logic. Now correctly allows setting via logic without breaking.",
+      "Fixed dedicated server issue with InventoryWindowManager being called",
+      "Fixed missing reference of InventoryWindowManager in InventoryManager in base scene"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1473.6977": {
     "notes": [
 
