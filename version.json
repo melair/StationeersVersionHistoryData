@@ -1,4 +1,22 @@
 {
+  "0.1.1477.6998": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-11T00:00:00+01:00",
+      "beta": "2018-07-10T23:01:11+01:00"
+    }
+  },
+  "0.1.1476.6997": {
+    "notes": [
+      "Fixed top of helmet visible after leaving a slot (chair, sleeper etc)."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1475.6995": {
     "notes": [
       "Fixed Possible NullCheckException error when trying to save slot window state, preventing game save.",

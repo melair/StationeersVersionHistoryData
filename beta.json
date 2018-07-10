@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1475.6995",
-    "date": "2018-07-10T00:00:00+01:00"
+    "version": "0.1.1477.6998",
+    "date": "2018-07-11T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1476.6997",
+      "notes": [
+        "Fixed top of helmet visible after leaving a slot (chair, sleeper etc)."
+      ]
+    },
     {
       "version": "0.1.1475.6995",
       "notes": [
@@ -2497,9 +2503,7 @@
         "Added active vent to pipe bender recipes.",
         "Improved loadworld command for dedicated server. If file doesn't exist, it will save it when autosave is enabled.",
         "Fixed thermodynamics scale value for things not affecting the solar constant heating values. This meant that when we reduced the thermodynamics scale for welders, it actually made them MORE explosive. Now we can scale the solar heating effect for different items. The welder will now prevent solar heating.",
-        "Fixed out of range exception when deconstructing StructureFiltration",
-        "Fixed bug with movement behavior when cursor was on screen",
-        "Fixed small transformer and Door not deconstructing into the correct kits."
+        "Fixed out of range exception when deconstructing StructureFiltration"
       ]
     }
   ]
