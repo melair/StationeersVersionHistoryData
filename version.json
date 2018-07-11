@@ -1,4 +1,36 @@
 {
+  "0.1.1482.7011": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-11T00:00:00+01:00",
+      "beta": "2018-07-11T02:01:14+01:00"
+    }
+  },
+  "0.1.1481.7009": {
+    "notes": [
+      "Added setting for toggling Lens Flares on/off. Default is on."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
+  "0.1.1478.7003": {
+    "notes": [
+      "Fixed nulref in inventory. Caused by premature destruction of inventory windows. Now tutorial proceeds, and inventory windows are no longer prematurely destroyed on brain assignment to body.",
+      "Fixed world drag to inventory showing incorrect invalid icons. Now world drag is not initated incorrecly when dragging from inventory to inventory.",
+      "Fixed chunks updating ore visualizers properly",
+      "Fixed error caused when UI tried to set a button as active before any buttons had been created.",
+      "Refactored settings system. Largely the end user will not notice many changes, possibly a little faster. Mostly this new system makes it much easier and less prone to bugs for developers to add new settings.",
+      "Added Ambient Occlusion setting. This allows users to control the level of ambient occlusion provided by the game, if they are running the game on a lower-end computer they can set it lower. Previously the game has been defaulting to \"ultra\", the highest setting for ambient occlusion. AO helps make the flat color texturing of objects in stationeers \"pop\" and look much nicer."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1477.6998": {
     "notes": [
 
