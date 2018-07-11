@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1482.7011",
+    "version": "0.1.1484.7020",
     "date": "2018-07-11T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1484.7020",
+      "notes": [
+        "Refactor Character Movement. Important! Character movement when grounded has been moved from force based, to velocity based. This means that the character will no longer feel floaty when walking. When you push a direction to move, your character will move in that direction at the set speed, rather than applying a force in that direction.",
+        "Added real world gravity settings for worlds. Now the moon and mars are set to their real world gravity settings. Room gravity will still be applied at as earth gravity. You character will \"stick\" to the world somewhat when moving, so you shouldn't fly off when running around the terrain so long as you are not going too fast.",
+        "Fixed issue with starting conditions not being parsed correctly for scenarios.",
+        "Added a SmartRotate feature that will attempt to rotate objects only through options that achieve the best matches.",
+        "Changed BatteryCharger placement so that it needs to be placed against a surface.",
+        "Moved Mouse settings from Misc to Controls settings tab."
+      ]
+    },
     {
       "version": "0.1.1481.7009",
       "notes": [
@@ -2497,14 +2508,7 @@
         "Added spray paints to the fabricator.",
         "Added composite floor grating to autolathe",
         "Fixed Electronic Reader displaying pressure values 0.1 of the value they should be. Now correctly displaying pressure readings.",
-        "Fixed issue with head occasionally attaching itself to hands",
-        "Fixed potential looping coroutine on ragdoll",
-        "FertilizedEgg should now only hatch if not inside a slot",
-        "Added steamclient dlls to dedicated server build",
-        "Fixed save world commands.",
-        "Added maxplayer, password commands for dedicated server",
-        "Moved Chutes to autolathe from PipeBender; and some general time balancing.",
-        "Fixed Furnace could only be rotated in the Y direction."
+        "Fixed issue with head occasionally attaching itself to hands"
       ]
     }
   ]
