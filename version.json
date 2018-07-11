@@ -1,4 +1,13 @@
 {
+  "0.1.1489.7034": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-12T00:00:00+01:00",
+      "beta": "2018-07-11T22:01:11+01:00"
+    }
+  },
   "0.1.1488.7033": {
     "notes": [
       "Fixed nulref when scrolling with mouse wheel (down in particular).",
