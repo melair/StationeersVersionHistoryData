@@ -1,4 +1,24 @@
 {
+  "0.1.1486.7028": {
+    "notes": [
+      "Fixed new character controller not allowing proper jetpack movement in rooms, not jumping well enough in rooms, jumping too far in low gravity, and walking over objects being too strong."
+    ],
+    "releases": {
+      "built": "2018-07-12T00:00:00+01:00",
+      "beta": "2018-07-11T16:01:11+01:00"
+    }
+  },
+  "0.1.1485.7025": {
+    "notes": [
+      "Added new world first pass, Europa.",
+      "Fixed hunger rate not loading on dedicated servers.",
+      "Added color controls to terrain shader for ores"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1484.7020": {
     "notes": [
       "Refactor Character Movement. Important! Character movement when grounded has been moved from force based, to velocity based. This means that the character will no longer feel floaty when walking. When you push a direction to move, your character will move in that direction at the set speed, rather than applying a force in that direction.",

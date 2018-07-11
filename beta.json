@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1484.7020",
-    "date": "2018-07-11T00:00:00+01:00"
+    "version": "0.1.1486.7028",
+    "date": "2018-07-12T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1486.7028",
+      "notes": [
+        "Fixed new character controller not allowing proper jetpack movement in rooms, not jumping well enough in rooms, jumping too far in low gravity, and walking over objects being too strong."
+      ]
+    },
+    {
+      "version": "0.1.1485.7025",
+      "notes": [
+        "Added new world first pass, Europa.",
+        "Fixed hunger rate not loading on dedicated servers.",
+        "Added color controls to terrain shader for ores"
+      ]
+    },
     {
       "version": "0.1.1484.7020",
       "notes": [
@@ -2502,13 +2516,7 @@
         "Added Tool Manufactory. Used for building tools, similar to the autolathe.",
         "Fixed able to turn internals off with I key, even when the helmet is locked (thanks to TheRawDizzle on twitch!). Now cannot do this if locked.",
         "Added Labeller. Has a battery in it and is used to rename things. Can rename tools, anything draggable, and devices.",
-        "Added Tracking Beacon. When powered and turned on, will show up in all tracker cartridges. Use this to mark locations and find your way to it. Can be painted to show different colors.",
-        "Fixed bug with Tracker cartridge not correctly initializing.",
-        "Added extra starting crate. Filled with spray cans to paint things, a labeller to name things, a beacon, and roadflares.",
-        "Added spray paints to the fabricator.",
-        "Added composite floor grating to autolathe",
-        "Fixed Electronic Reader displaying pressure values 0.1 of the value they should be. Now correctly displaying pressure readings.",
-        "Fixed issue with head occasionally attaching itself to hands"
+        "Added Tracking Beacon. When powered and turned on, will show up in all tracker cartridges. Use this to mark locations and find your way to it. Can be painted to show different colors."
       ]
     }
   ]
