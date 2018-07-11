@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1486.7028",
+    "version": "0.1.1488.7033",
     "date": "2018-07-12T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1488.7033",
+      "notes": [
+        "Fixed nulref when scrolling with mouse wheel (down in particular).",
+        "Fixed new world menu kept populating worlds each time you visit it."
+      ]
+    },
+    {
+      "version": "0.1.1487.7030",
+      "notes": [
+        "Fixed missing Europa Skybox (only works on new worlds)."
+      ]
+    },
     {
       "version": "0.1.1486.7028",
       "notes": [
@@ -2511,12 +2524,7 @@
       "notes": [
         "Fixed effects missing from Electronics Printer, and Hydraulic Pipe Bender.",
         "Fixed issue with all simple manufacturing machines that would become broken when their output was connected to a chute and the chute was already full. Now the machine will wait a few seconds in case the chute becomes empty, if it doesnt, the machine will stop.",
-        "Fixed some positioning of new buttons in Join World menu",
-        "Added recipes to new tool manufactory",
-        "Added Tool Manufactory. Used for building tools, similar to the autolathe.",
-        "Fixed able to turn internals off with I key, even when the helmet is locked (thanks to TheRawDizzle on twitch!). Now cannot do this if locked.",
-        "Added Labeller. Has a battery in it and is used to rename things. Can rename tools, anything draggable, and devices.",
-        "Added Tracking Beacon. When powered and turned on, will show up in all tracker cartridges. Use this to mark locations and find your way to it. Can be painted to show different colors."
+        "Fixed some positioning of new buttons in Join World menu"
       ]
     }
   ]

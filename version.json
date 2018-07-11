@@ -1,4 +1,23 @@
 {
+  "0.1.1488.7033": {
+    "notes": [
+      "Fixed nulref when scrolling with mouse wheel (down in particular).",
+      "Fixed new world menu kept populating worlds each time you visit it."
+    ],
+    "releases": {
+      "built": "2018-07-12T00:00:00+01:00",
+      "beta": "2018-07-11T17:01:11+01:00"
+    }
+  },
+  "0.1.1487.7030": {
+    "notes": [
+      "Fixed missing Europa Skybox (only works on new worlds)."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1486.7028": {
     "notes": [
       "Fixed new character controller not allowing proper jetpack movement in rooms, not jumping well enough in rooms, jumping too far in low gravity, and walking over objects being too strong."
