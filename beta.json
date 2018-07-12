@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1490.7061",
+    "version": "0.1.1491.7065",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1491.7065",
+      "notes": [
+        "Fixed reloading resets harvestable quantity. If you took a potato, saved, and reloaded, you could get three potaoes again instead of one. Now the quantity to harvest is correctly serialized.",
+        "Fixed ordering of slots/interactables when scrolling with mousewheel would sometimes be out of order. Now sorting is applied every time a button is added, ensuring that buttons will scroll sequentially when using the mouse wheel."
+      ]
+    },
     {
       "version": "0.1.1490.7061",
       "notes": [
@@ -2511,10 +2518,7 @@
         "Fixed BuildState out of bounds",
         "Fixed Entry Tool for blast door",
         "Added extended tooltip option. This is enabled by default and provides additional information when a player is constructing something. Such as, if there are multiple construction options available, what the placement type is, what is needed to upgrade to the next level, and what the rotation keys are.",
-        "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that.",
-        "Added new status icon for being inside a slot",
-        "Updated fabricator with chem station recipe.",
-        "Added dedicated server OS icons"
+        "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that."
       ]
     }
   ]

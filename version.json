@@ -1,4 +1,14 @@
 {
+  "0.1.1491.7065": {
+    "notes": [
+      "Fixed reloading resets harvestable quantity. If you took a potato, saved, and reloaded, you could get three potaoes again instead of one. Now the quantity to harvest is correctly serialized.",
+      "Fixed ordering of slots/interactables when scrolling with mousewheel would sometimes be out of order. Now sorting is applied every time a button is added, ensuring that buttons will scroll sequentially when using the mouse wheel."
+    ],
+    "releases": {
+      "built": "2018-07-13T00:00:00+01:00",
+      "beta": "2018-07-12T17:01:11+01:00"
+    }
+  },
   "0.1.1490.7061": {
     "notes": [
       "Added planet support to skyboxes. Europa now has Jupiter and the Moon has Earth.",
