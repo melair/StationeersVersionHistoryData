@@ -1,9 +1,29 @@
 {
   "current": {
-    "version": "0.1.1489.7034",
-    "date": "2018-07-12T00:00:00+01:00"
+    "version": "0.1.1490.7061",
+    "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1490.7061",
+      "notes": [
+        "Added planet support to skyboxes. Europa now has Jupiter and the Moon has Earth.",
+        "Added solar energy scale. Different worlds will output different levels of solar energy, affecting the efficiency of solar panels and growing plants using sunlight.",
+        "Fixed atmosphere hitting absolute zero on mars at night.",
+        "Added planetary atmosphere changing depending on time of day. You're now able to define temperature curves in worldsettings.xml",
+        "Added path-based localization file parsing.  This means all translation files no longer have to be located in the same folder, allowing translations to be included with mods or custom scenarios.",
+        "Added fall-back translations.  Previously if the translation library for a particular language was missing an entry, that entry was replaced with an error string.  It will now use the English version where the version for the current language setting is unavailable.",
+        "Added Configurable Voice Notifications. You can now enable/disable individual voice notifications in the Audio settings menu. These are saved with the rest of the game settings.",
+        "Updated the terrain shader to support secularity and set the appropriate values for each world type.",
+        "Fixed some SmartRotate variables hadn't been set on the prefabs",
+        "Readded allowing both radiative and convective heat transfer at the same time.",
+        "Fixed can paint StellarAnchor kit, and paint applied to Mothership kit will be applied to structure when placed.",
+        "Fixed could not return to game when the leave session popup shown.",
+        "Worked with Petr to make some artistic changes to the EuropaIce terrain material",
+        "Added so that terrain loads much further bellow the player while up in the air",
+        "Improved chunk generation spread like ripple."
+      ]
+    },
     {
       "version": "0.1.1488.7033",
       "notes": [
@@ -2494,36 +2514,7 @@
         "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that.",
         "Added new status icon for being inside a slot",
         "Updated fabricator with chem station recipe.",
-        "Added dedicated server OS icons",
-        "Fixed pipe bender making old sensor item.",
-        "Added Tool Manufactury recipe to autolathe"
-      ]
-    },
-    {
-      "version": "0.1.1021.5130",
-      "notes": [
-        "Added settings button to Welcome (first launch) panel."
-      ]
-    },
-    {
-      "version": "0.1.1017.5125",
-      "notes": [
-        "Fixed recipes missing from Electronic Reader for Tool Manufactory.",
-        "Fixed Tracker not refreshing current target status (such as rename, or power off).",
-        "Changed flares to spawn outside the crate because they were bugged."
-      ]
-    },
-    {
-      "version": "0.1.1016.5123",
-      "notes": [
-        "Fixed Stairs deconstructing into nothing. Now correctly deconstructs into its kit."
-      ]
-    },
-    {
-      "version": "0.1.1015.5119",
-      "notes": [
-        "Fixed effects missing from Electronics Printer, and Hydraulic Pipe Bender.",
-        "Fixed issue with all simple manufacturing machines that would become broken when their output was connected to a chute and the chute was already full. Now the machine will wait a few seconds in case the chute becomes empty, if it doesnt, the machine will stop."
+        "Added dedicated server OS icons"
       ]
     }
   ]
