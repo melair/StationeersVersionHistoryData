@@ -1,4 +1,13 @@
 {
+  "0.1.1492.7067": {
+    "notes": [
+      "Added first pass of Hardsuit & Hardsuit Helmet. Exactly the same functions as the Spacesuit for now. Second pass will have more."
+    ],
+    "releases": {
+      "built": "2018-07-13T00:00:00+01:00",
+      "beta": "2018-07-12T22:01:12+01:00"
+    }
+  },
   "0.1.1491.7065": {
     "notes": [
       "Fixed reloading resets harvestable quantity. If you took a potato, saved, and reloaded, you could get three potaoes again instead of one. Now the quantity to harvest is correctly serialized.",

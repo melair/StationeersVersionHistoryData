@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1491.7065",
+    "version": "0.1.1492.7067",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1492.7067",
+      "notes": [
+        "Added first pass of Hardsuit & Hardsuit Helmet. Exactly the same functions as the Spacesuit for now. Second pass will have more."
+      ]
+    },
     {
       "version": "0.1.1491.7065",
       "notes": [
@@ -2516,9 +2522,7 @@
         "Added key mappings to status indicators. For examples, beside the jetpack symbol there will be the key for toggling it.",
         "Added new status indicator for \"in slot\". This shows when you are inside something, and provides the key mapping to get out. This should stop people getting stuck in chairs during the tutorial.",
         "Fixed BuildState out of bounds",
-        "Fixed Entry Tool for blast door",
-        "Added extended tooltip option. This is enabled by default and provides additional information when a player is constructing something. Such as, if there are multiple construction options available, what the placement type is, what is needed to upgrade to the next level, and what the rotation keys are.",
-        "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that."
+        "Fixed Entry Tool for blast door"
       ]
     }
   ]
