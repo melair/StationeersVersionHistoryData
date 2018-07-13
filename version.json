@@ -1,4 +1,13 @@
 {
+  "0.1.1499.7107": {
+    "notes": [
+      "Added ladder kit to Autolathe."
+    ],
+    "releases": {
+      "built": "2018-07-13T00:00:00+01:00",
+      "beta": "2018-07-13T12:01:13+01:00"
+    }
+  },
   "0.1.1498.7105": {
     "notes": [
       "Fixed ladders able to be placed on top of each other. Now must be placed separately. They will not collide with anything else.",

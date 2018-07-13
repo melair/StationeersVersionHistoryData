@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1498.7105",
+    "version": "0.1.1499.7107",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1499.7107",
+      "notes": [
+        "Added ladder kit to Autolathe."
+      ]
+    },
     {
       "version": "0.1.1498.7105",
       "notes": [
@@ -2521,12 +2527,6 @@
         "Fixed issue with Client side physics calling Unnecessarily",
         "Fixed issue with Character Ragdoll Jittering client side",
         "Character RagDoll should now correctly collides with its own joints"
-      ]
-    },
-    {
-      "version": "0.1.1027.5176",
-      "notes": [
-        "Fixed suit sounds were not working. Breathing sounds will now play correctly when atmospherics are working on the suit."
       ]
     }
   ]
