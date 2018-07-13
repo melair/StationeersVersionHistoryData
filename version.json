@@ -1,4 +1,26 @@
 {
+  "0.1.1494.7092": {
+    "notes": [
+      "Added Trilight Ambient lighting settings for each world, scaled based on current solar strength. This means that nights will remain very dark, but during the day, there will be color specific ambient light in shadowed areas.",
+      "Removed helmets auto-flushing (purging their contents) when closed. Now when closed it will still have some of the current atmosphere in it, and you'll need to auto purge.",
+      "Fixed powered items would remain powered after their battery was removed. Now check is again correctly applied, was broken due to fixing another bug. This meands portable lights will power off when the battery is removed, as they used too and should - but were not.",
+      "Tweaked player movement speeds for both land and with jetpack.",
+      "Added height efficiency scale for jetpack. Reduces effectiveness of the jetpack at high altitudes on worlds. Does not apply in space worlds. Does not apply in rooms (so rooms built at altitudes, the jetpack will work. This is done to reduce players travelling to extreme altitudes with the jetpack.",
+      "Tweaked Insulation and damage factors for spacesuits. The default suit is not as insulating as previous, but the new hardsuit provides excellent insulation.",
+      "Updated Localized translations for Spanish, French, German, Russian and Traditional Chinese.",
+      "Fixed wall geometry rotation bug",
+      "Fixed edge case where respawning while in a loaded world caused an exception which broke the resetting of user interface.",
+      "Fixed UV seam on the Europa's Jupiter.",
+      "Fixed Moon not tidally locked to earth.",
+      "Fixed Atmospheric Scattering not being correctly set in Main Menu.",
+      "Fixed Draggable objects too easy to move around, flying off easily in low gravity environment and glitching too easy. Was caused by mass being set to same as player. These now have five times the mass of the player. This should make them more stable when run into by player.",
+      "Added Suit damage variation. Hardsuit absorbs far more damage on collisions than the normal suit. Uniforms also absorb damage. Players will take brute damage to their whole body after suit and uniform is destroyed."
+    ],
+    "releases": {
+      "built": "2018-07-13T00:00:00+01:00",
+      "beta": "2018-07-13T06:01:11+01:00"
+    }
+  },
   "0.1.1493.7078": {
     "notes": [
       "Fixed GameMode being overwritten when loading a game. Now all other values are still overwritten, except for GameMode.",
