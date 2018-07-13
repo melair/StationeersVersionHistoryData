@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1496.7096",
+    "version": "0.1.1497.7099",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1497.7099",
+      "notes": [
+        "Fixed day was ten times longer than it should have been. Now back to regular settings.",
+        "Added Spacesuit creation to Autolathe, to allow replacement spacesuits."
+      ]
+    },
     {
       "version": "0.1.1496.7096",
       "notes": [
@@ -2516,13 +2523,6 @@
         "Added Daylight Sensor now also outputs solar angle (when in sunlight). Also reports sun state and solar angle in tooltip when directly viewed. This can be used with a Logic Motherboard (inserted into a computer) to create a logic system to automatically orientate solars towards the sun.",
         "Added stacker variant with power and data cable on the other side.",
         "Fixed issue with client crashing when leaving the tutorial."
-      ]
-    },
-    {
-      "version": "0.1.1026.5167",
-      "notes": [
-        "Fixed issue with network sync when Dragging Characters",
-        "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range."
       ]
     }
   ]
