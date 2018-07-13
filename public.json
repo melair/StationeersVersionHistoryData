@@ -1,9 +1,26 @@
 {
   "current": {
-    "version": "0.1.1496.7096",
+    "version": "0.1.1498.7105",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1498.7105",
+      "notes": [
+        "Fixed ladders able to be placed on top of each other. Now must be placed separately. They will not collide with anything else.",
+        "Fixed bug with not being able to get off ladders.",
+        "Added tooltip to Construction indicating how to use Autoconnect when multiconstructing. Autoconnect how makes an attempt when you first activate it.",
+        "Tweaked Hardsuit. Now able to heat/cool up to twice as much as the normal suit, but it will use twice as much energy in doing so.",
+        "Added Hardsuit to Electronics Printer, so you can make it there as well."
+      ]
+    },
+    {
+      "version": "0.1.1497.7099",
+      "notes": [
+        "Fixed day was ten times longer than it should have been. Now back to regular settings.",
+        "Added Spacesuit creation to Autolathe, to allow replacement spacesuits."
+      ]
+    },
     {
       "version": "0.1.1496.7096",
       "notes": [
@@ -2509,20 +2526,7 @@
     {
       "version": "0.1.1027.5176",
       "notes": [
-        "Fixed suit sounds were not working. Breathing sounds will now play correctly when atmospherics are working on the suit.",
-        "added beacon to tool manufactory.",
-        "Added variant on Small Transformer. Has the Input and Output locations swapped.",
-        "Fixed Atmospherics Manager Exception. Sometimes a serious exception occurred when the Atmospheres were changed while being processed on the thread. While this shouldn't happen, it was happening. Now if it happens the manager will gracefully continue.",
-        "Added Daylight Sensor now also outputs solar angle (when in sunlight). Also reports sun state and solar angle in tooltip when directly viewed. This can be used with a Logic Motherboard (inserted into a computer) to create a logic system to automatically orientate solars towards the sun.",
-        "Added stacker variant with power and data cable on the other side.",
-        "Fixed issue with client crashing when leaving the tutorial."
-      ]
-    },
-    {
-      "version": "0.1.1026.5167",
-      "notes": [
-        "Fixed issue with network sync when Dragging Characters",
-        "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range."
+        "Fixed suit sounds were not working. Breathing sounds will now play correctly when atmospherics are working on the suit."
       ]
     }
   ]
