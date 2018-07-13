@@ -1,4 +1,16 @@
 {
+  "0.1.1493.7078": {
+    "notes": [
+      "Fixed GameMode being overwritten when loading a game. Now all other values are still overwritten, except for GameMode.",
+      "Fixed hardsuit materials all messed up as they were a different order from the normal suit, so it didn't show correct painting and status state.",
+      "Fixed NullReferenceExceptions on dedicated servers related to skyboxes.",
+      "Fixed reflections on mars(and moon) when reflections are on in the settings"
+    ],
+    "releases": {
+      "built": "2018-07-13T00:00:00+01:00",
+      "beta": "2018-07-13T01:01:13+01:00"
+    }
+  },
   "0.1.1492.7067": {
     "notes": [
       "Added first pass of Hardsuit & Hardsuit Helmet. Exactly the same functions as the Spacesuit for now. Second pass will have more."

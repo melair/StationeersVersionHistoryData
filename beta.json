@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1492.7067",
+    "version": "0.1.1493.7078",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1493.7078",
+      "notes": [
+        "Fixed GameMode being overwritten when loading a game. Now all other values are still overwritten, except for GameMode.",
+        "Fixed hardsuit materials all messed up as they were a different order from the normal suit, so it didn't show correct painting and status state.",
+        "Fixed NullReferenceExceptions on dedicated servers related to skyboxes.",
+        "Fixed reflections on mars(and moon) when reflections are on in the settings"
+      ]
+    },
     {
       "version": "0.1.1492.7067",
       "notes": [
@@ -2517,12 +2526,7 @@
         "Fixed glass door dropping airlock kit. Now drops DoorKit.",
         "Fixed key indicators for slots did not update to their new mappings. Now when keybindings are changed, the correct slot keys are displayed.",
         "Added key indicators to status icons. For example, when internals can be toggled on and off, the current keybinding shows beside the icon. Jetpack and In slot key bindings will show.",
-        "Fixed broken LogicMotherboard",
-        "Fixed broken AtmosphericsManager",
-        "Added key mappings to status indicators. For examples, beside the jetpack symbol there will be the key for toggling it.",
-        "Added new status indicator for \"in slot\". This shows when you are inside something, and provides the key mapping to get out. This should stop people getting stuck in chairs during the tutorial.",
-        "Fixed BuildState out of bounds",
-        "Fixed Entry Tool for blast door"
+        "Fixed broken LogicMotherboard"
       ]
     }
   ]
