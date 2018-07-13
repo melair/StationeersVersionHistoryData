@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1498.7105",
-    "date": "2018-07-13T00:00:00+01:00"
+    "version": "0.1.1501.7112",
+    "date": "2018-07-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1500.7110",
+      "notes": [
+        "Added Microwave and Reagent Processor to Electronics Printer."
+      ]
+    },
+    {
+      "version": "0.1.1499.7107",
+      "notes": [
+        "Added ladder kit to Autolathe."
+      ]
+    },
     {
       "version": "0.1.1498.7105",
       "notes": [
@@ -2517,16 +2529,7 @@
       "notes": [
         "Changed uniform, nuclear battery and rifle recipes temporarily to address carbon and uranium issues.",
         "Added additional error message states to Portable Scrubber to tell you why it is not working.",
-        "Fixed further issues Ragdoll ReParenting killing fps",
-        "Fixed issue with Client side physics calling Unnecessarily",
-        "Fixed issue with Character Ragdoll Jittering client side",
-        "Character RagDoll should now correctly collides with its own joints"
-      ]
-    },
-    {
-      "version": "0.1.1027.5176",
-      "notes": [
-        "Fixed suit sounds were not working. Breathing sounds will now play correctly when atmospherics are working on the suit."
+        "Fixed further issues Ragdoll ReParenting killing fps"
       ]
     }
   ]
