@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1500.7110",
+    "version": "0.1.1501.7112",
     "date": "2018-07-14T00:00:00+01:00"
   },
   "history": [
@@ -2529,8 +2529,7 @@
       "notes": [
         "Changed uniform, nuclear battery and rifle recipes temporarily to address carbon and uranium issues.",
         "Added additional error message states to Portable Scrubber to tell you why it is not working.",
-        "Fixed further issues Ragdoll ReParenting killing fps",
-        "Fixed issue with Client side physics calling Unnecessarily"
+        "Fixed further issues Ragdoll ReParenting killing fps"
       ]
     }
   ]
