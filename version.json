@@ -1,4 +1,17 @@
 {
+  "0.1.1498.7105": {
+    "notes": [
+      "Fixed ladders able to be placed on top of each other. Now must be placed separately. They will not collide with anything else.",
+      "Fixed bug with not being able to get off ladders.",
+      "Added tooltip to Construction indicating how to use Autoconnect when multiconstructing. Autoconnect how makes an attempt when you first activate it.",
+      "Tweaked Hardsuit. Now able to heat/cool up to twice as much as the normal suit, but it will use twice as much energy in doing so.",
+      "Added Hardsuit to Electronics Printer, so you can make it there as well."
+    ],
+    "releases": {
+      "built": "2018-07-13T00:00:00+01:00",
+      "beta": "2018-07-13T10:01:12+01:00"
+    }
+  },
   "0.1.1497.7099": {
     "notes": [
       "Fixed day was ten times longer than it should have been. Now back to regular settings.",
