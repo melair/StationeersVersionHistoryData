@@ -1,4 +1,13 @@
 {
+  "0.1.1500.7110": {
+    "notes": [
+      "Added Microwave and Reagent Processor to Electronics Printer."
+    ],
+    "releases": {
+      "built": "2018-07-14T00:00:00+01:00",
+      "beta": "2018-07-13T15:01:14+01:00"
+    }
+  },
   "0.1.1499.7107": {
     "notes": [
       "Added ladder kit to Autolathe."
