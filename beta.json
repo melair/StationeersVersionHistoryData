@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1494.7092",
+    "version": "0.1.1496.7096",
     "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1496.7096",
+      "notes": [
+        "Fixed players able to change direction and velocity while flying through the air without using jetpack."
+      ]
+    },
+    {
+      "version": "0.1.1495.7094",
+      "notes": [
+        "Added recipe for 'hard suit' and 'hard suit helmet' to fabricator"
+      ]
+    },
     {
       "version": "0.1.1494.7092",
       "notes": [
@@ -2510,15 +2522,7 @@
       "version": "0.1.1026.5167",
       "notes": [
         "Fixed issue with network sync when Dragging Characters",
-        "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range.",
-        "Removed carbon requirement for duct tape and pipe anaylzer, and put ductape recipe on toolmanufacturer",
-        "Added null check to prevent errors when running ClearDisconnectedPlayers function while a sound is playing."
-      ]
-    },
-    {
-      "version": "0.1.1025.5162",
-      "notes": [
-        "Fixed Labeller unable to be turned on through interaction menu. Now shows up when cycling through interactions."
+        "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range."
       ]
     }
   ]

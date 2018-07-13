@@ -1,9 +1,282 @@
 {
   "current": {
-    "version": "0.1.1451.6907",
-    "date": "2018-07-07T00:00:00+01:00"
+    "version": "0.1.1496.7096",
+    "date": "2018-07-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1496.7096",
+      "notes": [
+        "Fixed players able to change direction and velocity while flying through the air without using jetpack."
+      ]
+    },
+    {
+      "version": "0.1.1495.7094",
+      "notes": [
+        "Added recipe for 'hard suit' and 'hard suit helmet' to fabricator"
+      ]
+    },
+    {
+      "version": "0.1.1494.7092",
+      "notes": [
+        "Added Trilight Ambient lighting settings for each world, scaled based on current solar strength. This means that nights will remain very dark, but during the day, there will be color specific ambient light in shadowed areas.",
+        "Removed helmets auto-flushing (purging their contents) when closed. Now when closed it will still have some of the current atmosphere in it, and you'll need to auto purge.",
+        "Fixed powered items would remain powered after their battery was removed. Now check is again correctly applied, was broken due to fixing another bug. This meands portable lights will power off when the battery is removed, as they used too and should - but were not.",
+        "Tweaked player movement speeds for both land and with jetpack.",
+        "Added height efficiency scale for jetpack. Reduces effectiveness of the jetpack at high altitudes on worlds. Does not apply in space worlds. Does not apply in rooms (so rooms built at altitudes, the jetpack will work. This is done to reduce players travelling to extreme altitudes with the jetpack.",
+        "Tweaked Insulation and damage factors for spacesuits. The default suit is not as insulating as previous, but the new hardsuit provides excellent insulation.",
+        "Updated Localized translations for Spanish, French, German, Russian and Traditional Chinese.",
+        "Fixed wall geometry rotation bug",
+        "Fixed edge case where respawning while in a loaded world caused an exception which broke the resetting of user interface.",
+        "Fixed UV seam on the Europa's Jupiter.",
+        "Fixed Moon not tidally locked to earth.",
+        "Fixed Atmospheric Scattering not being correctly set in Main Menu.",
+        "Fixed Draggable objects too easy to move around, flying off easily in low gravity environment and glitching too easy. Was caused by mass being set to same as player. These now have five times the mass of the player. This should make them more stable when run into by player.",
+        "Added Suit damage variation. Hardsuit absorbs far more damage on collisions than the normal suit. Uniforms also absorb damage. Players will take brute damage to their whole body after suit and uniform is destroyed."
+      ]
+    },
+    {
+      "version": "0.1.1493.7078",
+      "notes": [
+        "Fixed GameMode being overwritten when loading a game. Now all other values are still overwritten, except for GameMode.",
+        "Fixed hardsuit materials all messed up as they were a different order from the normal suit, so it didn't show correct painting and status state.",
+        "Fixed NullReferenceExceptions on dedicated servers related to skyboxes.",
+        "Fixed reflections on mars(and moon) when reflections are on in the settings"
+      ]
+    },
+    {
+      "version": "0.1.1492.7067",
+      "notes": [
+        "Added first pass of Hardsuit & Hardsuit Helmet. Exactly the same functions as the Spacesuit for now. Second pass will have more."
+      ]
+    },
+    {
+      "version": "0.1.1491.7065",
+      "notes": [
+        "Fixed reloading resets harvestable quantity. If you took a potato, saved, and reloaded, you could get three potaoes again instead of one. Now the quantity to harvest is correctly serialized.",
+        "Fixed ordering of slots/interactables when scrolling with mousewheel would sometimes be out of order. Now sorting is applied every time a button is added, ensuring that buttons will scroll sequentially when using the mouse wheel."
+      ]
+    },
+    {
+      "version": "0.1.1490.7061",
+      "notes": [
+        "Added planet support to skyboxes. Europa now has Jupiter and the Moon has Earth.",
+        "Added solar energy scale. Different worlds will output different levels of solar energy, affecting the efficiency of solar panels and growing plants using sunlight.",
+        "Fixed atmosphere hitting absolute zero on mars at night.",
+        "Added planetary atmosphere changing depending on time of day. You're now able to define temperature curves in worldsettings.xml",
+        "Added path-based localization file parsing.  This means all translation files no longer have to be located in the same folder, allowing translations to be included with mods or custom scenarios.",
+        "Added fall-back translations.  Previously if the translation library for a particular language was missing an entry, that entry was replaced with an error string.  It will now use the English version where the version for the current language setting is unavailable.",
+        "Added Configurable Voice Notifications. You can now enable/disable individual voice notifications in the Audio settings menu. These are saved with the rest of the game settings.",
+        "Updated the terrain shader to support secularity and set the appropriate values for each world type.",
+        "Fixed some SmartRotate variables hadn't been set on the prefabs",
+        "Readded allowing both radiative and convective heat transfer at the same time.",
+        "Fixed can paint StellarAnchor kit, and paint applied to Mothership kit will be applied to structure when placed.",
+        "Fixed could not return to game when the leave session popup shown.",
+        "Worked with Petr to make some artistic changes to the EuropaIce terrain material",
+        "Added so that terrain loads much further bellow the player while up in the air",
+        "Improved chunk generation spread like ripple."
+      ]
+    },
+    {
+      "version": "0.1.1488.7033",
+      "notes": [
+        "Fixed nulref when scrolling with mouse wheel (down in particular).",
+        "Fixed new world menu kept populating worlds each time you visit it."
+      ]
+    },
+    {
+      "version": "0.1.1487.7030",
+      "notes": [
+        "Fixed missing Europa Skybox (only works on new worlds)."
+      ]
+    },
+    {
+      "version": "0.1.1486.7028",
+      "notes": [
+        "Fixed new character controller not allowing proper jetpack movement in rooms, not jumping well enough in rooms, jumping too far in low gravity, and walking over objects being too strong."
+      ]
+    },
+    {
+      "version": "0.1.1485.7025",
+      "notes": [
+        "Added new world first pass, Europa.",
+        "Fixed hunger rate not loading on dedicated servers.",
+        "Added color controls to terrain shader for ores"
+      ]
+    },
+    {
+      "version": "0.1.1484.7020",
+      "notes": [
+        "Refactor Character Movement. Important! Character movement when grounded has been moved from force based, to velocity based. This means that the character will no longer feel floaty when walking. When you push a direction to move, your character will move in that direction at the set speed, rather than applying a force in that direction.",
+        "Added real world gravity settings for worlds. Now the moon and mars are set to their real world gravity settings. Room gravity will still be applied at as earth gravity. You character will \"stick\" to the world somewhat when moving, so you shouldn't fly off when running around the terrain so long as you are not going too fast.",
+        "Fixed issue with starting conditions not being parsed correctly for scenarios.",
+        "Added a SmartRotate feature that will attempt to rotate objects only through options that achieve the best matches.",
+        "Changed BatteryCharger placement so that it needs to be placed against a surface.",
+        "Moved Mouse settings from Misc to Controls settings tab."
+      ]
+    },
+    {
+      "version": "0.1.1481.7009",
+      "notes": [
+        "Added setting for toggling Lens Flares on/off. Default is on."
+      ]
+    },
+    {
+      "version": "0.1.1478.7003",
+      "notes": [
+        "Fixed nulref in inventory. Caused by premature destruction of inventory windows. Now tutorial proceeds, and inventory windows are no longer prematurely destroyed on brain assignment to body.",
+        "Fixed world drag to inventory showing incorrect invalid icons. Now world drag is not initated incorrecly when dragging from inventory to inventory.",
+        "Fixed chunks updating ore visualizers properly",
+        "Fixed error caused when UI tried to set a button as active before any buttons had been created.",
+        "Refactored settings system. Largely the end user will not notice many changes, possibly a little faster. Mostly this new system makes it much easier and less prone to bugs for developers to add new settings.",
+        "Added Ambient Occlusion setting. This allows users to control the level of ambient occlusion provided by the game, if they are running the game on a lower-end computer they can set it lower. Previously the game has been defaulting to \"ultra\", the highest setting for ambient occlusion. AO helps make the flat color texturing of objects in stationeers \"pop\" and look much nicer."
+      ]
+    },
+    {
+      "version": "0.1.1476.6997",
+      "notes": [
+        "Fixed top of helmet visible after leaving a slot (chair, sleeper etc)."
+      ]
+    },
+    {
+      "version": "0.1.1475.6995",
+      "notes": [
+        "Fixed Possible NullCheckException error when trying to save slot window state, preventing game save.",
+        "Reverted changes from recent commits that modified the terrain generation to resolve multiplayer problems"
+      ]
+    },
+    {
+      "version": "0.1.1474.6989",
+      "notes": [
+        "Extended Terrain Generation slightly",
+        "Significantly reduced the number of times each chunk needs to be recalculated and applied to chunks.",
+        "Fixed more InventoryWindowManager references to stop them running on dedicated server",
+        "Fixed With chunks not loading properly if there is only one player connected to a dedicated server",
+        "Fixed stacker setting causing exception when set using Logic. Now correctly allows setting via logic without breaking.",
+        "Fixed dedicated server issue with InventoryWindowManager being called",
+        "Fixed missing reference of InventoryWindowManager in InventoryManager in base scene"
+      ]
+    },
+    {
+      "version": "0.1.1472.6976",
+      "notes": [
+        "Fixed nul ref when changing controls after having played a session and left back to main menu. Was caused by cleanup events being skipped. Now ensured that cleanup events occur, removing old UI windows when players leaves a session."
+      ]
+    },
+    {
+      "version": "0.1.1471.6974",
+      "notes": [
+        "Added category headings to controls assignment menu to provide more clarity.",
+        "Added HUD turning on while hovering over HUD scale, to allow you to better configure what HUD scale you want to set.",
+        "Added save window placement on exit. Now will reload with the window state when it was saved. Also saves which is the active hand, and what slot was selected with the current highlight.",
+        "Refactored control saving and loading. Solved unable to assign defaults for controls after previous refactor.",
+        "Added JetPack Stabilizer on/off, includes optional binding to turn on and off.",
+        "Added two extra slots to JetPack."
+      ]
+    },
+    {
+      "version": "0.1.1470.6969",
+      "notes": [
+        "Fixed jetpack not allowing movement (beta only).",
+        "Added AtmosAnalyser will report if in a room or in world, to help with debugging.",
+        "Added hungerRate command to dedicated server RCON"
+      ]
+    },
+    {
+      "version": "0.1.1469.6964",
+      "notes": [
+        "Added optional keybindings for Suit pressure/temperature when worn in suit slot, and jetpack thrust up/down when in Backpack slot.",
+        "Added thrust interactables to Jetpack for changing thrust. Displays in the top status what current thrust is.",
+        "Fixed thrust unusually strong when using jetpack in gravity environment.",
+        "Fixed nulref on certain devices when loading, thanks to active vent fix."
+      ]
+    },
+    {
+      "version": "0.1.1467.6960",
+      "notes": [
+        "Fixed inability to respawn after loading a game in which you're dead.",
+        "Fixed Active Vents losing their pipe network, typically when a network they are connected to is merging with a large network (also occurred with engines). Sometimes in a merge their current pipe input network was being nulled when removed was occurring after the add was being processed. Now only nulls if the removed network is their current one.",
+        "Fixed Logic Motherboard Actions for Activate not able to be changed.",
+        "Fixed Mouse Button assignment to hotkeys showing badly in the hints, such as on status indicators or slots. Now assignments can show as an image."
+      ]
+    },
+    {
+      "version": "0.1.1464.6952",
+      "notes": [
+        "Added support for all device button and key assignments to game controls. This will allow you to bind any buttons on your mouse to any of the controls. This includes gamepad buttons, however no axis support (yet).",
+        "Added conflict checking to controls scheme, and a window poping up to advise players when a conflict exists. This warning will show in the main menu screen when a conflict exists. Any conflicts in the controls scheme will show in the conflict assignment window itself in red.",
+        "Fixed invalid drag and drop results were still being actioned, allowing you to put things into slots you should not able to. Now results of drag and drop correctly enforced.",
+        "Fixed items in hands not updating their status correctly. For example, opening a canister in your hands. Now objects in hands correctly update their status. (Credit: Carlen White via Discord).",
+        "Fixed chatting or labelling was causing inventory actions (such as InventorySelect, F) to run. Now while chat typing or labelling, Inventory controls are disabled. Mouse control still enabled for typing but only with the mouse - not F key.",
+        "Fixed closed inventory windows and slots can still be interacted with by pressing InventorySelect. Now when slot is hidden, cannot be interacted with.",
+        "Fixed player status in the top right not updating while MouseControl activated. Most noticable while changing the pressure using the PressureUp interaction. Now this window runs independently and will continue to animate."
+      ]
+    },
+    {
+      "version": "0.1.1463.6944",
+      "notes": [
+        "Added first pass of new window based controls assignment. Now when you click a control assignment, it brings up a new window and prompts you to begin recording the new control. Second pass will include checking for duplicate assignments and prompting the player."
+      ]
+    },
+    {
+      "version": "0.1.1462.6941",
+      "notes": [
+        "Fixed null ref when clicking in world when using drag and drop from world but cursor hasn't cast to anything.",
+        "Added tooltip information to furnace indicating furnace is not hot enough to melt provided item. Also provides information that activate button can be used to melt ice that is placed inside it."
+      ]
+    },
+    {
+      "version": "0.1.1461.6938",
+      "notes": [
+        "Fixed unable to move character as client.",
+        "Fixed Suit Storage and Pipe Connectors were not mixing, they were just meeting some pressure requirements. Now they will fully mix their atmospheres."
+      ]
+    },
+    {
+      "version": "0.1.1460.6935",
+      "notes": [
+        "Fixed running in DX9 with Volumetric Light enabled causing errors and broken rendering. Now Volumetric Lighting (and Atmospheric Scattering) are automatically disabled when running in DX9, and cannot be turned on."
+      ]
+    },
+    {
+      "version": "0.1.1458.6931",
+      "notes": [
+        "Added first pass of mouse drag and drop from world. With mouse enabled (Left Alt), click and drag an object from the world to a slot. Currently Move, Insert, and Merge are supported. Swap is not supported yet."
+      ]
+    },
+    {
+      "version": "0.1.1455.6924",
+      "notes": [
+        "Added Atmospheric Scattering for Mars world. This adds atmospheric scattered fog to the world, that varies with the daytime. Must be enabled in Video options. Disabled by default until performance impact assessed. Known issue: makes the sun very large.",
+        "Fixed able to interact with Sorter and Vending machine export slots."
+      ]
+    },
+    {
+      "version": "0.1.1454.6920",
+      "notes": [
+        "Fixed Furnace changes for ice causing ice in hidden slots (like mining belt) to continue to melt in sun. Now no longer allow this as it was before.",
+        "Fixed Labeller setting directly on non-logic devices was not being applied for non-host clients. Now server correctly processes non-logic setting requests from a client using a Labeller.",
+        "Added Stacker wheel can now be set to a value directly with the labeller."
+      ]
+    },
+    {
+      "version": "0.1.1453.6916",
+      "notes": [
+        "Fixed Gas Canisters not updating their values. Last time only fixed it for things with showing interactables (the suit) but not for the backpack.",
+        "Added Drag and Drop insert functionality. Able to insert items directly into some items just by dragging over the item. For example, dragging steel sheets directly onto a backpack in the backpack slot will allow you to insert the steel sheets directly into it, without the need to open it up.",
+        "Fixed jetpack not hovering properly when in gravity. Now counteracts gravity completely.",
+        "Changed Construction Cursor to offset based on bounds of what is being created. This means small objects will be closer to the player and their grid selection will be more consistent.",
+        "Added Road Flare will ignite Internal Atmosphere of its parent if in a slot, for example in a furnace."
+      ]
+    },
+    {
+      "version": "0.1.1452.6911",
+      "notes": [
+        "Fixed furnace producing infinite amounts of gas. Now the ore will only be smelted into its reagents if the furnace is above its flashpoint temperature. There are still some gas exploits remaining that will be fixed later. Note: this will alter how you create ores with a brand new furnace. The ice will eventually cool down the inside of the furnace, so you will need to heat the furnace up with their the sun or another gas or an igniter to get it started.",
+        "Fixed Ground Penetrating Radar was missing it's blueprint.",
+        "Added Reagent Reader. This logic unit is able to read the current recipe, reagent contents, and required reagents for any manufacturing device and report the quantity for that reagent. Buildable off the Logic I/O kit."
+      ]
+    },
     {
       "version": "0.1.1450.6905",
       "notes": [
@@ -2249,250 +2522,7 @@
       "version": "0.1.1026.5167",
       "notes": [
         "Fixed issue with network sync when Dragging Characters",
-        "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range.",
-        "Removed carbon requirement for duct tape and pipe anaylzer, and put ductape recipe on toolmanufacturer",
-        "Added null check to prevent errors when running ClearDisconnectedPlayers function while a sound is playing."
-      ]
-    },
-    {
-      "version": "0.1.1025.5162",
-      "notes": [
-        "Fixed Labeller unable to be turned on through interaction menu. Now shows up when cycling through interactions."
-      ]
-    },
-    {
-      "version": "0.1.1024.5160",
-      "notes": [
-        "Fixed steel frames inaccessable on first build (credit to: FlimFlamm on discord who found it).",
-        "Added Button for server hosts to remove all disconnected players accessed from the bottom of the in-game menu.",
-        "Removed F1 in-game key reference screen until it can be updated to reflect current key bindings."
-      ]
-    },
-    {
-      "version": "0.1.1023.5157",
-      "notes": [
-        "Added functionality to prompt panel to support inescapable prompts, and made the escape key invoke whatever action was bound to the 'cancel' button (for respawning)."
-      ]
-    },
-    {
-      "version": "0.1.1022.5154",
-      "notes": [
-        "Fixed Road Flares, and other objects such as corn, appearing out of slots to clients. Now correctly initialized.",
-        "Tweaked power draw on Beacons, cut down power consumption to a fifth of what it was.",
-        "Fixed entry tool",
-        "Fixed active slot not being selected when returning to game from the menu.",
-        "Fixed glass door dropping airlock kit. Now drops DoorKit.",
-        "Fixed key indicators for slots did not update to their new mappings. Now when keybindings are changed, the correct slot keys are displayed.",
-        "Added key indicators to status icons. For example, when internals can be toggled on and off, the current keybinding shows beside the icon. Jetpack and In slot key bindings will show.",
-        "Fixed broken LogicMotherboard",
-        "Fixed broken AtmosphericsManager",
-        "Added key mappings to status indicators. For examples, beside the jetpack symbol there will be the key for toggling it.",
-        "Added new status indicator for \"in slot\". This shows when you are inside something, and provides the key mapping to get out. This should stop people getting stuck in chairs during the tutorial.",
-        "Fixed BuildState out of bounds",
-        "Fixed Entry Tool for blast door",
-        "Added extended tooltip option. This is enabled by default and provides additional information when a player is constructing something. Such as, if there are multiple construction options available, what the placement type is, what is needed to upgrade to the next level, and what the rotation keys are.",
-        "Fixed tooltip obscuring players construction. Now top of the tooltip is anchored to the object, the rest of the tooltip extends below that.",
-        "Added new status icon for being inside a slot",
-        "Updated fabricator with chem station recipe.",
-        "Added dedicated server OS icons",
-        "Fixed pipe bender making old sensor item.",
-        "Added Tool Manufactury recipe to autolathe"
-      ]
-    },
-    {
-      "version": "0.1.1021.5130",
-      "notes": [
-        "Added settings button to Welcome (first launch) panel."
-      ]
-    },
-    {
-      "version": "0.1.1017.5125",
-      "notes": [
-        "Fixed recipes missing from Electronic Reader for Tool Manufactory.",
-        "Fixed Tracker not refreshing current target status (such as rename, or power off).",
-        "Changed flares to spawn outside the crate because they were bugged."
-      ]
-    },
-    {
-      "version": "0.1.1016.5123",
-      "notes": [
-        "Fixed Stairs deconstructing into nothing. Now correctly deconstructs into its kit."
-      ]
-    },
-    {
-      "version": "0.1.1015.5119",
-      "notes": [
-        "Fixed effects missing from Electronics Printer, and Hydraulic Pipe Bender.",
-        "Fixed issue with all simple manufacturing machines that would become broken when their output was connected to a chute and the chute was already full. Now the machine will wait a few seconds in case the chute becomes empty, if it doesnt, the machine will stop.",
-        "Fixed some positioning of new buttons in Join World menu",
-        "Added recipes to new tool manufactory",
-        "Added Tool Manufactory. Used for building tools, similar to the autolathe.",
-        "Fixed able to turn internals off with I key, even when the helmet is locked (thanks to TheRawDizzle on twitch!). Now cannot do this if locked.",
-        "Added Labeller. Has a battery in it and is used to rename things. Can rename tools, anything draggable, and devices.",
-        "Added Tracking Beacon. When powered and turned on, will show up in all tracker cartridges. Use this to mark locations and find your way to it. Can be painted to show different colors.",
-        "Fixed bug with Tracker cartridge not correctly initializing.",
-        "Added extra starting crate. Filled with spray cans to paint things, a labeller to name things, a beacon, and roadflares.",
-        "Added spray paints to the fabricator.",
-        "Added composite floor grating to autolathe",
-        "Fixed Electronic Reader displaying pressure values 0.1 of the value they should be. Now correctly displaying pressure readings.",
-        "Fixed issue with head occasionally attaching itself to hands",
-        "Fixed potential looping coroutine on ragdoll",
-        "FertilizedEgg should now only hatch if not inside a slot",
-        "Added steamclient dlls to dedicated server build",
-        "Fixed save world commands.",
-        "Added maxplayer, password commands for dedicated server",
-        "Moved Chutes to autolathe from PipeBender; and some general time balancing.",
-        "Fixed Furnace could only be rotated in the Y direction.",
-        "Modified values in default.ini",
-        "Fixed issue with parts on character going invisible when dragging them",
-        "Fixed Ragdoll Re-Parenting issue killing FPS",
-        "Fixed null reference on manufacturing motherboard when inserted into a computer. Sometimes would not be initialized correctly and would cause an exception.",
-        "Changed New World options to make it clear where Creative mode is"
-      ]
-    },
-    {
-      "version": "0.1.1014.5083",
-      "notes": [
-        "Fixed Autolathe, PipeBender, and Electronics Printer recipe exception meant that if you save the game in that state, it could not be loaded. Now check on load of the recipe is valid.",
-        "Fixed bug where players would receive out of range exception when deconstructing a structure with no Entry tool set but quantity set",
-        "Added active vent to pipe bender recipes.",
-        "Improved loadworld command for dedicated server. If file doesn't exist, it will save it when autosave is enabled.",
-        "Fixed thermodynamics scale value for things not affecting the solar constant heating values. This meant that when we reduced the thermodynamics scale for welders, it actually made them MORE explosive. Now we can scale the solar heating effect for different items. The welder will now prevent solar heating.",
-        "Fixed out of range exception when deconstructing StructureFiltration",
-        "Fixed bug with movement behavior when cursor was on screen",
-        "Fixed small transformer and Door not deconstructing into the correct kits."
-      ]
-    },
-    {
-      "version": "0.1.1013.5070",
-      "notes": [
-        "Increased default burn times for all structures and items."
-      ]
-    },
-    {
-      "version": "0.1.1012.5068",
-      "notes": [
-        "Removed remaining axis controls",
-        "Increased gold spawn rate, and vein size."
-      ]
-    },
-    {
-      "version": "0.1.1011.5065",
-      "notes": [
-        "Fixed potential NRE when Human enters Dead State",
-        "Fixed issue with being unable to transition out of Dead state",
-        "Fixed Issue with being unable to pickup and drop Unconscious players on Dedicated Server",
-        "Added default linux dedicated server commands",
-        "Fixed own suit getting frustum culled - enabled UpdateWhenOffscreen on Spacesuit Mesh Renderer",
-        "Added Stacker to autolathe",
-        "Removed controller support completely as it was incomplete and was causing some people to spin",
-        "Offline players will now drop Draggable items, including players"
-      ]
-    },
-    {
-      "version": "0.1.1010.5051",
-      "notes": [
-        "Fixed many devices that were deconstruction into nothing. Air Conditioner, Arc Furnace deconstruct to Furnance, Battery, Computer, Filtration."
-      ]
-    },
-    {
-      "version": "0.1.1009.5049",
-      "notes": [
-        "Fixed initializing problem on dedicated server",
-        "fixed nulls causing connection issues",
-        "Fixed Incorrect drop position when dropping Unconscious Players",
-        "Fixed default button position in settings menu"
-      ]
-    },
-    {
-      "version": "0.1.1008.5044",
-      "notes": [
-        "Fixed various kits. Autolathe, Electronics Printer, Sleeper, Solid Fuel Generator, and Storage Lockers - not spawning their kits correctly when deconstructed."
-      ]
-    },
-    {
-      "version": "0.1.1007.5042",
-      "notes": [
-        "Fixed water visualizer always running causing severe performance issues for some.",
-        "Fixed Autolathe & SolidFuelGenerator not respawning after deconstruction",
-        "Fixed Tutorial servers will now be hidden even if advertise server is enabled.",
-        "Added Invert Mouse checkbox on Misc options screen.",
-        "Added Stairs to autolathe."
-      ]
-    },
-    {
-      "version": "0.1.1006.5034",
-      "notes": [
-        "Fixed Kit (Locker) was spawning obsolete Locker. Now correctly spawns. You will need to deconstruct any old lockers and replace them.",
-        "Disabled Mars map on dedicated server. It will be switched to Moon at this moment."
-      ]
-    },
-    {
-      "version": "0.1.1003.5027",
-      "notes": [
-        "Advertising of servers now disabled by default."
-      ]
-    },
-    {
-      "version": "0.1.1002.5024",
-      "notes": [
-        "Fixed tutorials not localized",
-        "Fixed Item Battery Charger wrong position in crates.",
-        "Fixed world shadow effect artifacts.",
-        "Reduced cost of regulators, increased pipe analysers."
-      ]
-    },
-    {
-      "version": "0.1.1001.5020",
-      "notes": [
-        "Fixed Battery Charger slots were not correctly configured and would not charge.",
-        "Fixed ArgumentException: The requested value 'Very High' was not found.",
-        "Increased base times on multiple recipes",
-        "Fixed tablet display so it doesn't always turn on when moved to hands",
-        "Added cartridges to electronics fab, and increased base time for most recipes.",
-        "Added new battery charger model.",
-        "Fixed tips not localized correctly. Added Localized Font to TextTips",
-        "Increased Dynamic large thing pipe bender construction times.",
-        "Removed old suit storage and gas sensor from fabricator."
-      ]
-    },
-    {
-      "version": "0.1.1000.5010",
-      "notes": [
-        "Fixed welder tanks exploding after a period of time due to thermodynamics, when located inside the welder.",
-        "Fixed Activate button on HydraulicPipeBender not working.",
-        "Fixed HydraulicPipeBender not generating recipes.",
-        "Added entry tool for fabricator",
-        "Moved Dynamic large object construction to Pipe bending machine",
-        "Adjusted position of the screwdriver in the hand",
-        "Removed old suit storage kit item.",
-        "Added russian_tips.xml, updated russian.xml. (Thanks guys!)",
-        "Added functionality to suit storage. Now will fill tanks and recharge battery when suit is inserted and all pipes and cables connected.",
-        "Fixed mining drill not working on load",
-        "Added thumbnail for pipe bender kit.",
-        "Added atmos cartridge to backpack on spawn.",
-        "Fixed solar panel deconstructing not producing a construction kit."
-      ]
-    },
-    {
-      "version": "0.1.999.4996",
-      "notes": [
-        "Fixed starting crate stackable quantities were not clamped.",
-        "Fixed Space Helmet light is pointing too far down.",
-        "Fixed ElectronicReader cartridge was not showing Hydrolic Pipe Bender recipes.",
-        "Added survival starting item spawn. Now spawns two crates with construction supplies, one crate with organic supplies, an oxygen tank, and portable atmospherics.",
-        "Fixed button anchors on welcome screen",
-        "Fixed suit leaks showing after suit destroyed. Disabled all leak reference visualizers when destroyed.",
-        "New wave emote added",
-        "Emotes are now reset with animation events rather then coroutine.",
-        "updated old crates to new kits.",
-        "added coal and iron steel recipe."
-      ]
-    },
-    {
-      "version": "0.1.998.4983",
-      "notes": [
-        "Fixed keys for game tips and tutorial were not localized."
+        "Fixed saves being broken by facial hair. Force facial hair index to 0 if out of range."
       ]
     }
   ]
