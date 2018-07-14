@@ -1,4 +1,17 @@
 {
+  "0.1.1506.7128": {
+    "notes": [
+      "Fixed construction not cancelled when pressing MouseControl, causing bugs. Now construction is cancelled automatically when player activates MouseControl.",
+      "Fixed Wall Iron has wrong blueprint grid bounds, was displaying a box in a grid instead of the bounding box of the wall.",
+      "Fixed atmospheric exception associated with Pipe bursting. Showed as a \"max lower than min\" error, causing an atmospheric exception that was unrecoverable.",
+      "Fixed atmospheres able to be loaded with extreme values. When an error occurs with the atmospheric system, it was possible extreme values could end up stored as junk. Now the game will detect these and strip them on load.",
+      "Fixed atmospheres able to exist in invalid locations. For some reason, atmospheres have been able to continue existing when they should not, such as under frames. Now the atmospheric manager will check for these, and schedule them for destruction if needed. This is a bandaid fix, a more elegant solution will come later."
+    ],
+    "releases": {
+      "built": "2018-07-15T00:00:00+01:00",
+      "beta": "2018-07-14T17:01:12+01:00"
+    }
+  },
   "0.1.1505.7124": {
     "notes": [
       "Fixed double jumping.",

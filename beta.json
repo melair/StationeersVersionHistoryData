@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1505.7124",
-    "date": "2018-07-14T00:00:00+01:00"
+    "version": "0.1.1506.7128",
+    "date": "2018-07-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1506.7128",
+      "notes": [
+        "Fixed construction not cancelled when pressing MouseControl, causing bugs. Now construction is cancelled automatically when player activates MouseControl.",
+        "Fixed Wall Iron has wrong blueprint grid bounds, was displaying a box in a grid instead of the bounding box of the wall.",
+        "Fixed atmospheric exception associated with Pipe bursting. Showed as a \"max lower than min\" error, causing an atmospheric exception that was unrecoverable.",
+        "Fixed atmospheres able to be loaded with extreme values. When an error occurs with the atmospheric system, it was possible extreme values could end up stored as junk. Now the game will detect these and strip them on load.",
+        "Fixed atmospheres able to exist in invalid locations. For some reason, atmospheres have been able to continue existing when they should not, such as under frames. Now the atmospheric manager will check for these, and schedule them for destruction if needed. This is a bandaid fix, a more elegant solution will come later."
+      ]
+    },
     {
       "version": "0.1.1505.7124",
       "notes": [
@@ -2526,17 +2536,7 @@
         "Added option to invert the mouse wheel when scrolling through an item inventory (on Misc page of settings screen).",
         "Fixed issue with clear disconnected players button not working after dedicated server command was added.",
         "Fixed issue with main menu Stationeer not being able to breathe through his nose (his mouth is now closed).",
-        "Fixed NRE on Save/Load screen resulting in missing menu when exiting a game.",
-        "Adjusted collision of Airlock. Now allows pipes cables to be passed along the top of it, the same with other airlocks.",
-        "Added battery cells are renamable with a labeller, when it is powered and turned on."
-      ]
-    },
-    {
-      "version": "0.1.1029.5194",
-      "notes": [
-        "Fixed broken LogicMotherboard, SolarControl, AirlockControl on dedicated server.",
-        "Fixed Motherboards.LogicState sync when deleting on connect.",
-        "Changed Tablet to be a tool so it can be inside the toolbelt."
+        "Fixed NRE on Save/Load screen resulting in missing menu when exiting a game."
       ]
     }
   ]
