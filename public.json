@@ -1,9 +1,35 @@
 {
   "current": {
-    "version": "0.1.1501.7112",
+    "version": "0.1.1505.7124",
     "date": "2018-07-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1505.7124",
+      "notes": [
+        "Fixed double jumping.",
+        "Added scaled environment damage to lungs. Will take damage faster the hotter/colder it is.",
+        "Added efficiency to suit based on damage. The more damaged the suit, the less efficiently it will work."
+      ]
+    },
+    {
+      "version": "0.1.1504.7122",
+      "notes": [
+        "Changed Standard spacesuit and helmet will now catch of fire in a hot environment. Used hardsuit in dangerous environments.",
+        "Added Headlamp that provides illumination without having to wear a helmet."
+      ]
+    },
+    {
+      "version": "0.1.1502.7117",
+      "notes": [
+        "Tweaked charatcer movement controller, fixing the \"launching\" in air when up against an item or the terrain. Jumping is now also more like how it was. If you are close to the ground, the jump is basically the same on all planets. However, if you jump off terrain into the air it will depend on the gravity of the planet.",
+        "Added slot status icons for item on fire, and item leaking.",
+        "Added Suit Storage kit to Pipe Bender.",
+        "Fixed null ref when loading into a game where no button had previously been scrolled too.",
+        "Added a recoil force to firearms that will push you back. Most noticeable in low or zero gravity",
+        "Fixed able to interact with export slot on Pipe Bender. Now it is not interactable."
+      ]
+    },
     {
       "version": "0.1.1500.7110",
       "notes": [
@@ -2510,26 +2536,7 @@
       "notes": [
         "Fixed broken LogicMotherboard, SolarControl, AirlockControl on dedicated server.",
         "Fixed Motherboards.LogicState sync when deleting on connect.",
-        "Changed Tablet to be a tool so it can be inside the toolbelt.",
-        "Fixed Logic Motherboard condition and actions entered as floats had to be entered twice to register properly. This caused logic motherboards based on floats to not work correctly.",
-        "Updated clearall command",
-        "Added clearall remote command on dedicated server. It will delete disconnected players.",
-        "Fixed NRE KeyManager on dedicated server",
-        "Fixed Speech recognition changes preventing dedicated server from compiling successfully.",
-        "Enabled steam workshop",
-        "Small further improvements made to Client Side Physics",
-        "Fixed joining timeout in high latency",
-        "Fixed Beacon Recipe.",
-        "Fixed Changed default autosave time to 5 minutes.",
-        "Fixed Voice Recognition now disabled by default.  Added extra checks to ensure it doesn't initialize if not running Windows 10."
-      ]
-    },
-    {
-      "version": "0.1.1028.5180",
-      "notes": [
-        "Changed uniform, nuclear battery and rifle recipes temporarily to address carbon and uranium issues.",
-        "Added additional error message states to Portable Scrubber to tell you why it is not working.",
-        "Fixed further issues Ragdoll ReParenting killing fps"
+        "Changed Tablet to be a tool so it can be inside the toolbelt."
       ]
     }
   ]
