@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1504.7122",
+    "version": "0.1.1505.7124",
     "date": "2018-07-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1505.7124",
+      "notes": [
+        "Fixed double jumping.",
+        "Added scaled environment damage to lungs. Will take damage faster the hotter/colder it is.",
+        "Added efficiency to suit based on damage. The more damaged the suit, the less efficiently it will work."
+      ]
+    },
     {
       "version": "0.1.1504.7122",
       "notes": [
@@ -2528,11 +2536,7 @@
       "notes": [
         "Fixed broken LogicMotherboard, SolarControl, AirlockControl on dedicated server.",
         "Fixed Motherboards.LogicState sync when deleting on connect.",
-        "Changed Tablet to be a tool so it can be inside the toolbelt.",
-        "Fixed Logic Motherboard condition and actions entered as floats had to be entered twice to register properly. This caused logic motherboards based on floats to not work correctly.",
-        "Updated clearall command",
-        "Added clearall remote command on dedicated server. It will delete disconnected players.",
-        "Fixed NRE KeyManager on dedicated server"
+        "Changed Tablet to be a tool so it can be inside the toolbelt."
       ]
     }
   ]

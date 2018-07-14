@@ -1,4 +1,15 @@
 {
+  "0.1.1505.7124": {
+    "notes": [
+      "Fixed double jumping.",
+      "Added scaled environment damage to lungs. Will take damage faster the hotter/colder it is.",
+      "Added efficiency to suit based on damage. The more damaged the suit, the less efficiently it will work."
+    ],
+    "releases": {
+      "built": "2018-07-14T00:00:00+01:00",
+      "beta": "2018-07-14T07:01:11+01:00"
+    }
+  },
   "0.1.1504.7122": {
     "notes": [
       "Changed Standard spacesuit and helmet will now catch of fire in a hot environment. Used hardsuit in dangerous environments.",
