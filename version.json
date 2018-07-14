@@ -1,4 +1,27 @@
 {
+  "0.1.1503.7119": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-14T00:00:00+01:00",
+      "beta": "2018-07-14T05:01:11+01:00"
+    }
+  },
+  "0.1.1502.7117": {
+    "notes": [
+      "Tweaked charatcer movement controller, fixing the \"launching\" in air when up against an item or the terrain. Jumping is now also more like how it was. If you are close to the ground, the jump is basically the same on all planets. However, if you jump off terrain into the air it will depend on the gravity of the planet.",
+      "Added slot status icons for item on fire, and item leaking.",
+      "Added Suit Storage kit to Pipe Bender.",
+      "Fixed null ref when loading into a game where no button had previously been scrolled too.",
+      "Added a recoil force to firearms that will push you back. Most noticeable in low or zero gravity",
+      "Fixed able to interact with export slot on Pipe Bender. Now it is not interactable."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1501.7112": {
     "notes": [
 
