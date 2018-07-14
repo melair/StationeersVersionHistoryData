@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1503.7119",
+    "version": "0.1.1504.7122",
     "date": "2018-07-14T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1504.7122",
+      "notes": [
+        "Changed Standard spacesuit and helmet will now catch of fire in a hot environment. Used hardsuit in dangerous environments.",
+        "Added Headlamp that provides illumination without having to wear a helmet."
+      ]
+    },
     {
       "version": "0.1.1502.7117",
       "notes": [
@@ -2525,10 +2532,7 @@
         "Fixed Logic Motherboard condition and actions entered as floats had to be entered twice to register properly. This caused logic motherboards based on floats to not work correctly.",
         "Updated clearall command",
         "Added clearall remote command on dedicated server. It will delete disconnected players.",
-        "Fixed NRE KeyManager on dedicated server",
-        "Fixed Speech recognition changes preventing dedicated server from compiling successfully.",
-        "Enabled steam workshop",
-        "Small further improvements made to Client Side Physics"
+        "Fixed NRE KeyManager on dedicated server"
       ]
     }
   ]
