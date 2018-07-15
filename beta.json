@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1506.7128",
+    "version": "0.1.1507.7132",
     "date": "2018-07-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1507.7132",
+      "notes": [
+        "Fixed major bugs with atmosphere and room generation. Sometimes when voxel changes were registered (through mining) in an enclosed space, a global atmosphere was incorrectly created - causing the inhalation of the existing room. A number of checks and balances have been implemented now to prevent this occuring. Note: while mining voxels you may release small pockets of the global atmosphere. This means that you will notice some changes in temperature as you mine areas out, but it should no longer initiate catastrophic loss of rooms. NOTE: known bug is airlocks failing to always initiate room generation."
+      ]
+    },
     {
       "version": "0.1.1506.7128",
       "notes": [
@@ -2534,9 +2540,7 @@
         "Added basic logic circuitry first pass. Includes Logic Reader (pulls selected values off devices, input and output network), Memory Unit (passive item that is used to store floats, can be accessed by two data networks), Math Unit (applies math operators to two selected inputs, and writes result as setting), and Logic Writer (applies setting value to devices). This allows you to apply very complex systems in the game.",
         "Fixed Out of range exception on Eye colour when loading into game",
         "Added option to invert the mouse wheel when scrolling through an item inventory (on Misc page of settings screen).",
-        "Fixed issue with clear disconnected players button not working after dedicated server command was added.",
-        "Fixed issue with main menu Stationeer not being able to breathe through his nose (his mouth is now closed).",
-        "Fixed NRE on Save/Load screen resulting in missing menu when exiting a game."
+        "Fixed issue with clear disconnected players button not working after dedicated server command was added."
       ]
     }
   ]

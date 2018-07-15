@@ -1,4 +1,13 @@
 {
+  "0.1.1507.7132": {
+    "notes": [
+      "Fixed major bugs with atmosphere and room generation. Sometimes when voxel changes were registered (through mining) in an enclosed space, a global atmosphere was incorrectly created - causing the inhalation of the existing room. A number of checks and balances have been implemented now to prevent this occuring. Note: while mining voxels you may release small pockets of the global atmosphere. This means that you will notice some changes in temperature as you mine areas out, but it should no longer initiate catastrophic loss of rooms. NOTE: known bug is airlocks failing to always initiate room generation."
+    ],
+    "releases": {
+      "built": "2018-07-15T00:00:00+01:00",
+      "beta": "2018-07-15T12:01:15+01:00"
+    }
+  },
   "0.1.1506.7128": {
     "notes": [
       "Fixed construction not cancelled when pressing MouseControl, causing bugs. Now construction is cancelled automatically when player activates MouseControl.",
