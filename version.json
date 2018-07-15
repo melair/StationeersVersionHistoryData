@@ -1,4 +1,18 @@
 {
+  "0.1.1508.7137": {
+    "notes": [
+      "Added undock ability for Inventory Windows. Click and drag the window title bar of the window you want to move, and let go where you want it. This slot will always open there now. This will persist with your save. If you would like to redock the window, click the redock button and it will return to its original location. You can reset the window position in the Settings menu if they get off screen for any reason.",
+      "Added Close All Windows button, that also indicates what current control binding for it is. Only shows while a window is open.",
+      "Added new UI for Inventory Windows.",
+      "Added new math functions to Unary Math Logic: Sin, Cos, Tan, Asin, Acos, Atan. Did not imagine people would have needed these but they might come in handy with required trig for different solar angles.",
+      "Added new math functions to Math Processor. Atan2 (y = input2, x = input1), Pow, and log just because. Again these will be useful to mathematicians who want to auto orientate their solars.",
+      "Added Mining Drill \"flatten\" mode. When turned to flatten, the drill will not destroy terrain lower than the position the player is at. This is useful if you want to perfectly flatten an area around you. Default mode is the current mode. This can be toggled in the interaction menu for the drill."
+    ],
+    "releases": {
+      "built": "2018-07-16T00:00:00+01:00",
+      "beta": "2018-07-15T16:01:11+01:00"
+    }
+  },
   "0.1.1507.7132": {
     "notes": [
       "Fixed major bugs with atmosphere and room generation. Sometimes when voxel changes were registered (through mining) in an enclosed space, a global atmosphere was incorrectly created - causing the inhalation of the existing room. A number of checks and balances have been implemented now to prevent this occuring. Note: while mining voxels you may release small pockets of the global atmosphere. This means that you will notice some changes in temperature as you mine areas out, but it should no longer initiate catastrophic loss of rooms. NOTE: known bug is airlocks failing to always initiate room generation."
