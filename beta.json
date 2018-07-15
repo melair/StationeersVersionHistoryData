@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1508.7137",
+    "version": "0.1.1509.7138",
     "date": "2018-07-16T00:00:00+01:00"
   },
   "history": [
@@ -2539,8 +2539,7 @@
       "notes": [
         "Added Logic device recipes",
         "Synced recipes from smaller machines to the fabricator",
-        "Removed more invalid recipe reagents, replacing them with mainly iron.",
-        "Added new Kits for logic components. Kit (Logic Processor), Kit (Logic Memory), Kit (Logic I/O)."
+        "Removed more invalid recipe reagents, replacing them with mainly iron."
       ]
     }
   ]

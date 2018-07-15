@@ -1,4 +1,13 @@
 {
+  "0.1.1509.7138": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-16T00:00:00+01:00",
+      "beta": "2018-07-15T22:01:14+01:00"
+    }
+  },
   "0.1.1508.7137": {
     "notes": [
       "Added undock ability for Inventory Windows. Click and drag the window title bar of the window you want to move, and let go where you want it. This slot will always open there now. This will persist with your save. If you would like to redock the window, click the redock button and it will return to its original location. You can reset the window position in the Settings menu if they get off screen for any reason.",
