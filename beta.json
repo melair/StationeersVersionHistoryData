@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1511.7157",
+    "version": "0.1.1514.7163",
     "date": "2018-07-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1513.7161",
+      "notes": [
+        "Fixed cursor tooltip remaining on."
+      ]
+    },
     {
       "version": "0.1.1511.7157",
       "notes": [
@@ -2528,14 +2534,7 @@
     {
       "version": "0.1.1035.5224",
       "notes": [
-        "Fixed SolarPanel writing to actual rotation value not target when being set via a logic unit.",
-        "Fixed exception with solars when assessing vertical state."
-      ]
-    },
-    {
-      "version": "0.1.1034.5221",
-      "notes": [
-        "Fixed error with Logic Processors not allow client changes."
+        "Fixed SolarPanel writing to actual rotation value not target when being set via a logic unit."
       ]
     }
   ]

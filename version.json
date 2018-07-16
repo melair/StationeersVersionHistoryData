@@ -1,4 +1,22 @@
 {
+  "0.1.1514.7163": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-16T00:00:00+01:00",
+      "beta": "2018-07-16T09:01:17+01:00"
+    }
+  },
+  "0.1.1513.7161": {
+    "notes": [
+      "Fixed cursor tooltip remaining on."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1511.7157": {
     "notes": [
       "Changed Batteries and Battery cells so that they will drain power slowly when in freezing environments. They will still lose power inside other things (such as a suit), but they will lose less power based on how insulated their parent is."
