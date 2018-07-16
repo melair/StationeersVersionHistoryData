@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1514.7163",
+    "version": "0.1.1515.7166",
     "date": "2018-07-16T00:00:00+01:00"
   },
   "history": [
@@ -2529,12 +2529,6 @@
         "Exposed more thing states and values to logic system, such as Import and Export device slot state and stackable quantities.",
         "Refactor of the new logic unit system to be unified with the Logic Motherboard system. Now exposed nearly all interactable states to logic units for read/write and ensured thread safe.",
         "Fixed misaligned settings in Misc Settings menu"
-      ]
-    },
-    {
-      "version": "0.1.1035.5224",
-      "notes": [
-        "Fixed SolarPanel writing to actual rotation value not target when being set via a logic unit."
       ]
     }
   ]
