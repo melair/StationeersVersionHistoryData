@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1515.7166",
+    "version": "0.1.1516.7169",
     "date": "2018-07-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1516.7169",
+      "notes": [
+        "Moved recipe for Hardsuit and Hardsuit Helmet from Electronics Printer, to the Tool Manufactory.",
+        "Added first pass of turbine generator. Generates 90W of energy from 1 atmosphere of pressure moving through it. Moves up to 1 atm per tick, so capable of generating 180W per second.",
+        "Changed power consumation rate of Volume pump. It will use power based on it's setting.",
+        "Added PowerGenerated logic variable. This reports how much power is being generated currently on the device. Added to the Solid, Gas, and Turbine generators."
+      ]
+    },
     {
       "version": "0.1.1513.7161",
       "notes": [
@@ -2525,10 +2534,7 @@
         "Fixed bug where logic writer could only write variables that it could also read from.",
         "Fixed issue with Speech recognition initializing on non-supported operating Systems",
         "Adjusted social media icons. They now highlight in their brand colors.",
-        "Enabled workshop button on the main menu, opens the community workshop page in the Steam overlay.",
-        "Exposed more thing states and values to logic system, such as Import and Export device slot state and stackable quantities.",
-        "Refactor of the new logic unit system to be unified with the Logic Motherboard system. Now exposed nearly all interactable states to logic units for read/write and ensured thread safe.",
-        "Fixed misaligned settings in Misc Settings menu"
+        "Enabled workshop button on the main menu, opens the community workshop page in the Steam overlay."
       ]
     }
   ]

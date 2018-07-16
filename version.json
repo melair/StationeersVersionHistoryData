@@ -1,4 +1,16 @@
 {
+  "0.1.1516.7169": {
+    "notes": [
+      "Moved recipe for Hardsuit and Hardsuit Helmet from Electronics Printer, to the Tool Manufactory.",
+      "Added first pass of turbine generator. Generates 90W of energy from 1 atmosphere of pressure moving through it. Moves up to 1 atm per tick, so capable of generating 180W per second.",
+      "Changed power consumation rate of Volume pump. It will use power based on it's setting.",
+      "Added PowerGenerated logic variable. This reports how much power is being generated currently on the device. Added to the Solid, Gas, and Turbine generators."
+    ],
+    "releases": {
+      "built": "2018-07-16T00:00:00+01:00",
+      "beta": "2018-07-16T12:01:15+01:00"
+    }
+  },
   "0.1.1515.7166": {
     "notes": [
 
