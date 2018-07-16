@@ -1,4 +1,13 @@
 {
+  "0.1.1517.7172": {
+    "notes": [
+      "Fixed Composite Roll covers breaking logic when placed over top of them, and networks were reset. They would be registered as devices and take over the assignments for the logic. Now they are registered correctly as Other."
+    ],
+    "releases": {
+      "built": "2018-07-17T00:00:00+01:00",
+      "beta": "2018-07-16T22:01:16+01:00"
+    }
+  },
   "0.1.1516.7169": {
     "notes": [
       "Moved recipe for Hardsuit and Hardsuit Helmet from Electronics Printer, to the Tool Manufactory.",

@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1516.7169",
-    "date": "2018-07-16T00:00:00+01:00"
+    "version": "0.1.1517.7172",
+    "date": "2018-07-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1517.7172",
+      "notes": [
+        "Fixed Composite Roll covers breaking logic when placed over top of them, and networks were reset. They would be registered as devices and take over the assignments for the logic. Now they are registered correctly as Other."
+      ]
+    },
     {
       "version": "0.1.1516.7169",
       "notes": [
@@ -2532,9 +2538,7 @@
         "Fixed Client side jittering of stationary objects",
         "Added logic switch. Allows you to manually set a logic state of 1 or 0 without having any tools.",
         "Fixed bug where logic writer could only write variables that it could also read from.",
-        "Fixed issue with Speech recognition initializing on non-supported operating Systems",
-        "Adjusted social media icons. They now highlight in their brand colors.",
-        "Enabled workshop button on the main menu, opens the community workshop page in the Steam overlay."
+        "Fixed issue with Speech recognition initializing on non-supported operating Systems"
       ]
     }
   ]
