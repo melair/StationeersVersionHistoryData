@@ -1,9 +1,27 @@
 {
   "current": {
-    "version": "0.1.1509.7138",
+    "version": "0.1.1511.7157",
     "date": "2018-07-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1511.7157",
+      "notes": [
+        "Changed Batteries and Battery cells so that they will drain power slowly when in freezing environments. They will still lose power inside other things (such as a suit), but they will lose less power based on how insulated their parent is."
+      ]
+    },
+    {
+      "version": "0.1.1510.7155",
+      "notes": [
+        "Added buff to Portable Air Conditioner. It will now be 5x more effective at heating, but it will use power 5x more in doing so. This simply means it is faster at heating.",
+        "Changed Gas Generator to require particular atmospheric operating conditions. A min and max temperature, and a minimum pressure. Outside of these the generator will shut down. Also, it now outputs only some of the combusted energy as power, the rest is outputted as heat into the waste pipe.",
+        "Fixed Stacker locking out when filled with over 500 ingots",
+        "Fixed Inventory Windows able to be dragged out of bounds. Now cannot drag inventory window outside of window canvas.",
+        "Fixed performance issues with rebuilding and merging large networks. Community team on Discord provided a new solution that is very optimized compared to old one. This should reduce the lag when merging large cable, pipe, and chute networks. (Credit: #modding on Discord).",
+        "Increased Jump Force slightly. Tapping jump lightly will produce a very small jump. Pressing and hold jump key to do a maximum jump.",
+        "Added new modes for solar sensor - horizontal and vertical angles. Mode 1 is horizontal, mode 2 is vertical."
+      ]
+    },
     {
       "version": "0.1.1508.7137",
       "notes": [
@@ -2517,29 +2535,7 @@
     {
       "version": "0.1.1034.5221",
       "notes": [
-        "Fixed error with Logic Processors not allow client changes.",
-        "Fixed incorrect button labelling on Logic Writer."
-      ]
-    },
-    {
-      "version": "0.1.1033.5218",
-      "notes": [
-        "Fixed wrong blueprints showing for new logic items."
-      ]
-    },
-    {
-      "version": "0.1.1032.5216",
-      "notes": [
-        "Fixed Logic Compare was not configured to have it's states and therefore could not power on.",
-        "Removed ItemSecurityCamera from spawnables. Old legacy asset and was crashing dedicated servers."
-      ]
-    },
-    {
-      "version": "0.1.1031.5213",
-      "notes": [
-        "Added Logic device recipes",
-        "Synced recipes from smaller machines to the fabricator",
-        "Removed more invalid recipe reagents, replacing them with mainly iron."
+        "Fixed error with Logic Processors not allow client changes."
       ]
     }
   ]

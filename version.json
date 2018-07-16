@@ -1,4 +1,28 @@
 {
+  "0.1.1511.7157": {
+    "notes": [
+      "Changed Batteries and Battery cells so that they will drain power slowly when in freezing environments. They will still lose power inside other things (such as a suit), but they will lose less power based on how insulated their parent is."
+    ],
+    "releases": {
+      "built": "2018-07-16T00:00:00+01:00",
+      "beta": "2018-07-16T07:01:18+01:00"
+    }
+  },
+  "0.1.1510.7155": {
+    "notes": [
+      "Added buff to Portable Air Conditioner. It will now be 5x more effective at heating, but it will use power 5x more in doing so. This simply means it is faster at heating.",
+      "Changed Gas Generator to require particular atmospheric operating conditions. A min and max temperature, and a minimum pressure. Outside of these the generator will shut down. Also, it now outputs only some of the combusted energy as power, the rest is outputted as heat into the waste pipe.",
+      "Fixed Stacker locking out when filled with over 500 ingots",
+      "Fixed Inventory Windows able to be dragged out of bounds. Now cannot drag inventory window outside of window canvas.",
+      "Fixed performance issues with rebuilding and merging large networks. Community team on Discord provided a new solution that is very optimized compared to old one. This should reduce the lag when merging large cable, pipe, and chute networks. (Credit: #modding on Discord).",
+      "Increased Jump Force slightly. Tapping jump lightly will produce a very small jump. Pressing and hold jump key to do a maximum jump.",
+      "Added new modes for solar sensor - horizontal and vertical angles. Mode 1 is horizontal, mode 2 is vertical."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1509.7138": {
     "notes": [
 
