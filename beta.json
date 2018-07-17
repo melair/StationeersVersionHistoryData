@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1520.7185",
+    "version": "0.1.1521.7187",
     "date": "2018-07-17T00:00:00+01:00"
   },
   "history": [
@@ -2541,8 +2541,7 @@
     {
       "version": "0.1.1039.5262",
       "notes": [
-        "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened.",
-        "Fixed null reference exception when setting mode of an LED to a value that was not an acceptable color."
+        "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened."
       ]
     }
   ]
