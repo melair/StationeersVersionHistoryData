@@ -1,4 +1,29 @@
 {
+  "0.1.1520.7185": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-17T00:00:00+01:00",
+      "beta": "2018-07-17T10:01:33+01:00"
+    }
+  },
+  "0.1.1519.7182": {
+    "notes": [
+      "Changed Gas Filters to be a consumable. Each Gas Filter will last roughly 2 hours. We will introduce different gas filters that will last longer. Once they reach zero they will be useless, but can be recycled.",
+      "Fixed batteries in low pressure environments were still taking cold damage at same rate. Now scales down below one atmosphere. This means on mars, the battery loss rate due to cold will be about 3% of what it would be in a cold room or on Europa.",
+      "Refactored Reagent Processor and Chemistry station to support new medical recipes. Fern and some ingots can now be ground into powder using the Reagent Processor. This can then be used in the Chemistry Station to make various new recipes for medicine.",
+      "Changed quantity for Milk and SoyOil. This will cause old saves to load very low quantities of these. They were changed in line with the refactor of the reagent system.",
+      "Added Milk can be made at the Chemistry Station from Potassium Iodide (ground up fern) and Soy Oil.",
+      "Added Heal Pill and Stun Pill can be made at Chemistry station from Potassium Iodide, Electrum, Silver, and Invar. Exact recipes look up EReader Cartridge. Note: Powders for minerals must be made using Ingots at the Reagent Grinder.",
+      "Changed cereal bar recipe to require 150g of Flour.",
+      "Changed Flour, Milk, and SoyOil to display the quantities of their units, not the percentage remaining."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1518.7180": {
     "notes": [
       "Fixed Console Monitor placement bug",

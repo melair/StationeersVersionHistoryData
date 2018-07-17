@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1518.7180",
+    "version": "0.1.1520.7185",
     "date": "2018-07-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1519.7182",
+      "notes": [
+        "Changed Gas Filters to be a consumable. Each Gas Filter will last roughly 2 hours. We will introduce different gas filters that will last longer. Once they reach zero they will be useless, but can be recycled.",
+        "Fixed batteries in low pressure environments were still taking cold damage at same rate. Now scales down below one atmosphere. This means on mars, the battery loss rate due to cold will be about 3% of what it would be in a cold room or on Europa.",
+        "Refactored Reagent Processor and Chemistry station to support new medical recipes. Fern and some ingots can now be ground into powder using the Reagent Processor. This can then be used in the Chemistry Station to make various new recipes for medicine.",
+        "Changed quantity for Milk and SoyOil. This will cause old saves to load very low quantities of these. They were changed in line with the refactor of the reagent system.",
+        "Added Milk can be made at the Chemistry Station from Potassium Iodide (ground up fern) and Soy Oil.",
+        "Added Heal Pill and Stun Pill can be made at Chemistry station from Potassium Iodide, Electrum, Silver, and Invar. Exact recipes look up EReader Cartridge. Note: Powders for minerals must be made using Ingots at the Reagent Grinder.",
+        "Changed cereal bar recipe to require 150g of Flour.",
+        "Changed Flour, Milk, and SoyOil to display the quantities of their units, not the percentage remaining."
+      ]
+    },
     {
       "version": "0.1.1518.7180",
       "notes": [
@@ -2529,15 +2542,7 @@
       "version": "0.1.1039.5262",
       "notes": [
         "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened.",
-        "Fixed null reference exception when setting mode of an LED to a value that was not an acceptable color.",
-        "Fixed Arc Furnace chute bug. If the arc furnace was connected to a chute, when it finished its current stack it would grab the next without exporting the one inside it. Now the arc furnace will stop its current activity if it has finished the stack it is smelting.",
-        "Fixed machines not being able to drop solder ingots",
-        "Fixed broken AirlockControl on dedicated server. You can open/close airlock on dedicated server.",
-        "Fixed (possibly) double inventory bug - force panel to clear whether or not parent present. 'Split Half/Split All' interactions should no long show up doubled.",
-        "Added community provided French, Polish, and Spanish language translations. Added German tips file. Select a new language under the MISC settings header.",
-        "Added setting to adjust the transparency of tooltip and progress bar backgrounds (Tooltip Opacity on Game Options page).",
-        "Improved joining logic by changing conditions to complete loading data. It allows you to join high latency server.",
-        "Fixed occasional NRE when saving out LogicWriter configuration."
+        "Fixed null reference exception when setting mode of an LED to a value that was not an acceptable color."
       ]
     }
   ]
