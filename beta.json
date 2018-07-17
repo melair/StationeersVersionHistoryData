@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1523.7193",
-    "date": "2018-07-17T00:00:00+01:00"
+    "version": "0.1.1524.7196",
+    "date": "2018-07-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1524.7196",
+      "notes": [
+        "Added filter caution and critical visual warnings (audio to be recorded). Will show when suit worn that does not contain a filter or contains empty or low filters.",
+        "Fixed Nutrition full indicator would get stuck on warning indicator."
+      ]
+    },
     {
       "version": "0.1.1523.7193",
       "notes": [
@@ -2543,10 +2550,7 @@
         "Reverted chunk streaming changes from 5283 until issues can be fixed.",
         "Changed the way that clients render chunks to reduce joining times. Clients still receive all chunk messages and create the chunks as they are received but only generate and apply the visual and collision meshes when needed.",
         "Added favorite popup menu to join panel and fixed black camera filter on main menu.",
-        "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers",
-        "Fixed wrong playtime in scoreboard.",
-        "Fixed typo in starter crate names.  Game now literally playable.",
-        "Fixed label replacing menu background on failure to load/connect."
+        "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers"
       ]
     }
   ]

@@ -1,4 +1,14 @@
 {
+  "0.1.1524.7196": {
+    "notes": [
+      "Added filter caution and critical visual warnings (audio to be recorded). Will show when suit worn that does not contain a filter or contains empty or low filters.",
+      "Fixed Nutrition full indicator would get stuck on warning indicator."
+    ],
+    "releases": {
+      "built": "2018-07-18T00:00:00+01:00",
+      "beta": "2018-07-17T14:01:11+01:00"
+    }
+  },
   "0.1.1523.7193": {
     "notes": [
       "Changed suit to report error when filter used up or if when worn on entity it has a bad atmosphere.",
