@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1524.7196",
+    "version": "0.1.1525.7197",
     "date": "2018-07-18T00:00:00+01:00"
   },
   "history": [
@@ -2549,8 +2549,7 @@
         "Added three LED console displays. Can be written to using the Logic Writer and will display values. Constructable from the Console construction kit.",
         "Reverted chunk streaming changes from 5283 until issues can be fixed.",
         "Changed the way that clients render chunks to reduce joining times. Clients still receive all chunk messages and create the chunks as they are received but only generate and apply the visual and collision meshes when needed.",
-        "Added favorite popup menu to join panel and fixed black camera filter on main menu.",
-        "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers"
+        "Added favorite popup menu to join panel and fixed black camera filter on main menu."
       ]
     }
   ]

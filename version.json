@@ -1,4 +1,13 @@
 {
+  "0.1.1525.7197": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-18T00:00:00+01:00",
+      "beta": "2018-07-17T22:01:16+01:00"
+    }
+  },
   "0.1.1524.7196": {
     "notes": [
       "Added filter caution and critical visual warnings (audio to be recorded). Will show when suit worn that does not contain a filter or contains empty or low filters.",
