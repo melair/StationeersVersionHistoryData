@@ -1,9 +1,25 @@
 {
   "current": {
-    "version": "0.1.1521.7187",
+    "version": "0.1.1523.7193",
     "date": "2018-07-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1523.7193",
+      "notes": [
+        "Changed suit to report error when filter used up or if when worn on entity it has a bad atmosphere.",
+        "Changed filters to only get used when actually filtering something. If it is not filtering something, it will not degrade.",
+        "Added fitration machine and scrubber will now report errors if they contain a filter than is fully spent."
+      ]
+    },
+    {
+      "version": "0.1.1522.7190",
+      "notes": [
+        "Fixed recycling used Filters would output unlimited quantity of materials.",
+        "Added can use crowbar to force open unpowered and unlocked elevator level doors.",
+        "Fixed suits still using their atmospheric functions while in the suit storage. Now processing will be paused while in suit storage. Suit and helmet atmospheres will also be purged while in suit storage."
+      ]
+    },
     {
       "version": "0.1.1519.7182",
       "notes": [
@@ -2530,18 +2546,7 @@
         "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers",
         "Fixed wrong playtime in scoreboard.",
         "Fixed typo in starter crate names.  Game now literally playable.",
-        "Fixed label replacing menu background on failure to load/connect.",
-        "Added limited ability to bind keys to mouse actions and vice versa.  Only supports 3-button mice for now.",
-        "Increased oxygen consumption for humans. Now consume oxygen at x10 the rate they used too. This means you are much more likely to run out of air. However, it also means you produce x10 the amount of CO2 that you used too.",
-        "Fixed pipe labels not drawing on load. Labels will no longer show up as blank when loading from a save.",
-        "Fixed Solar Panel read/write via logic uses different units. Now there is the base version (Vertical/Horizontal) that is in the master units (degrees, percent) and the ratio (0..1).",
-        "Fixed broken state on dedicated server. It wasn't updating state. It's related to Logic Motherboard, solar angle in Daylight Sensor, MotionSensor, Engine rotation. Now you can control solar panel with LogicMotherboard on dedicated server."
-      ]
-    },
-    {
-      "version": "0.1.1039.5262",
-      "notes": [
-        "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened."
+        "Fixed label replacing menu background on failure to load/connect."
       ]
     }
   ]

@@ -1,4 +1,26 @@
 {
+  "0.1.1523.7193": {
+    "notes": [
+      "Changed suit to report error when filter used up or if when worn on entity it has a bad atmosphere.",
+      "Changed filters to only get used when actually filtering something. If it is not filtering something, it will not degrade.",
+      "Added fitration machine and scrubber will now report errors if they contain a filter than is fully spent."
+    ],
+    "releases": {
+      "built": "2018-07-17T00:00:00+01:00",
+      "beta": "2018-07-17T13:01:16+01:00"
+    }
+  },
+  "0.1.1522.7190": {
+    "notes": [
+      "Fixed recycling used Filters would output unlimited quantity of materials.",
+      "Added can use crowbar to force open unpowered and unlocked elevator level doors.",
+      "Fixed suits still using their atmospheric functions while in the suit storage. Now processing will be paused while in suit storage. Suit and helmet atmospheres will also be purged while in suit storage."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1521.7187": {
     "notes": [
 
