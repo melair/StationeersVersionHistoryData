@@ -1,4 +1,20 @@
 {
+  "0.1.1518.7180": {
+    "notes": [
+      "Fixed Console Monitor placement bug",
+      "Fixed tooltip position becoming offset wrong.",
+      "Fixed Turbine Kit and Prefab missing from game.",
+      "Changed Cos, Sin, Tan, Asin, Acos, Atan, Atan2 to output in degrees not radians. Note: This will completely change logic if you were basing them on radians.",
+      "Fixed respawn breaking inventory for clients and host. Now inventory windows will work correctly even after your body has decayed.",
+      "Fixed Chute Outlet now pays attention to both chute and data when using automatic rotation.",
+      "Fixed Chute Inlet now pays attention to both Chute and Data for automatic rotation.",
+      "Fixed precedence issue with heat convection calculations, heat should no longer erroneously transfer from cold thing to hot atmosphere. (Thanks again, Zaneo!)"
+    ],
+    "releases": {
+      "built": "2018-07-17T00:00:00+01:00",
+      "beta": "2018-07-17T07:01:15+01:00"
+    }
+  },
   "0.1.1517.7172": {
     "notes": [
       "Fixed Composite Roll covers breaking logic when placed over top of them, and networks were reset. They would be registered as devices and take over the assignments for the logic. Now they are registered correctly as Other."

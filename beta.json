@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1517.7172",
+    "version": "0.1.1518.7180",
     "date": "2018-07-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1518.7180",
+      "notes": [
+        "Fixed Console Monitor placement bug",
+        "Fixed tooltip position becoming offset wrong.",
+        "Fixed Turbine Kit and Prefab missing from game.",
+        "Changed Cos, Sin, Tan, Asin, Acos, Atan, Atan2 to output in degrees not radians. Note: This will completely change logic if you were basing them on radians.",
+        "Fixed respawn breaking inventory for clients and host. Now inventory windows will work correctly even after your body has decayed.",
+        "Fixed Chute Outlet now pays attention to both chute and data when using automatic rotation.",
+        "Fixed Chute Inlet now pays attention to both Chute and Data for automatic rotation.",
+        "Fixed precedence issue with heat convection calculations, heat should no longer erroneously transfer from cold thing to hot atmosphere. (Thanks again, Zaneo!)"
+      ]
+    },
     {
       "version": "0.1.1517.7172",
       "notes": [
@@ -2525,20 +2538,6 @@
         "Added setting to adjust the transparency of tooltip and progress bar backgrounds (Tooltip Opacity on Game Options page).",
         "Improved joining logic by changing conditions to complete loading data. It allows you to join high latency server.",
         "Fixed occasional NRE when saving out LogicWriter configuration."
-      ]
-    },
-    {
-      "version": "0.1.1037.5245",
-      "notes": [
-        "Fixed Logic Min/Max and Logic Select button was not doing anything when interacted with screwdriver. Now you can correctly change this using a screwdriver.",
-        "Fixed cables burning forever. Cables will now extinguish if it's in vacuum or doesn't have a valid surrounding atmosphere.",
-        "Added logic unit Min/Max (has old select functionality). Logic Select now does proper select functionality. Takes a 0 and a 1 line, and outputs the result based on the select input.",
-        "Fixed broken map on space in dedicated server. When it loads saved world, it forced to set Moon type. It will use proper worldtype.",
-        "Added Field of View adjustment and wave emote hotkeys to the keybinding screen from hardcoded keys (numpad +/-).",
-        "Fixed Client side jittering of stationary objects",
-        "Added logic switch. Allows you to manually set a logic state of 1 or 0 without having any tools.",
-        "Fixed bug where logic writer could only write variables that it could also read from.",
-        "Fixed issue with Speech recognition initializing on non-supported operating Systems"
       ]
     }
   ]
