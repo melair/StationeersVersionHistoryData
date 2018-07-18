@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1528.7213",
+    "version": "0.1.1531.7217",
     "date": "2018-07-19T00:00:00+01:00"
   },
   "history": [
@@ -2544,12 +2544,6 @@
       "version": "0.1.1045.5307",
       "notes": [
         "Reimplemented chunk streaming changes using the existing chunk IsRendered system and reduced the number of mesh and minable regenerations. Result is improved joining times and faster chunk generation."
-      ]
-    },
-    {
-      "version": "0.1.1044.5305",
-      "notes": [
-        "Fixed network problem when joining server which has large chunk data and high latency."
       ]
     }
   ]
