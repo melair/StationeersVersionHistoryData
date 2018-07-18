@@ -1,4 +1,28 @@
 {
+  "0.1.1526.7209": {
+    "notes": [
+      "Fixed not enough reagents in tutorial to complete recipe creation task.",
+      "Added sounds to jetpack for movement.",
+      "Fixed bug when reverb not set correctly for items on load or player join server. Now reverb is correctly set when loading into a helmet.",
+      "Added warning and critical status indicators for Air Tank low, when wearing a suit. Voice notifications to follow later.",
+      "Fixed slight drift on jetpack when stabilizer active. Now stabilizer will keep the player stationary to the best of it's ability.",
+      "Fixed when adding reagents to microwave (or chem station) when below the use quantity, the full quantity was added. Now scales reagents added if quantity is below use quantity.",
+      "Improvement VolumePump now works with Automatic Rotate",
+      "Improvement Automatic Rotate now works with Pressure Regulators.",
+      "Added Unloader. Will empty all slots of the provided item. Constructed from stacker kit.",
+      "Removed unloading ability from stacker.",
+      "Changed fern reagent to Fenoxitone.",
+      "Improvement Passive Vent can now use Automatic Rotation",
+      "Fixed Gas Filters would continue to exist even after being negative, achieved by putting them in the Arc Furnace.",
+      "Fixed Battery and Battery Cells could go into negative with quantity of energy. Now clamped so they will not dip below zero and then take much longer to charge.",
+      "Improvement Automatic Rotate works with Hydroponics Tray.",
+      "Improvement Automatic Rotation added to Digital Valves and Valves."
+    ],
+    "releases": {
+      "built": "2018-07-18T00:00:00+01:00",
+      "beta": "2018-07-18T08:01:11+01:00"
+    }
+  },
   "0.1.1525.7197": {
     "notes": [
 

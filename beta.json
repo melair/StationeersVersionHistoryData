@@ -1,9 +1,30 @@
 {
   "current": {
-    "version": "0.1.1525.7197",
+    "version": "0.1.1526.7209",
     "date": "2018-07-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1526.7209",
+      "notes": [
+        "Fixed not enough reagents in tutorial to complete recipe creation task.",
+        "Added sounds to jetpack for movement.",
+        "Fixed bug when reverb not set correctly for items on load or player join server. Now reverb is correctly set when loading into a helmet.",
+        "Added warning and critical status indicators for Air Tank low, when wearing a suit. Voice notifications to follow later.",
+        "Fixed slight drift on jetpack when stabilizer active. Now stabilizer will keep the player stationary to the best of it's ability.",
+        "Fixed when adding reagents to microwave (or chem station) when below the use quantity, the full quantity was added. Now scales reagents added if quantity is below use quantity.",
+        "Improvement VolumePump now works with Automatic Rotate",
+        "Improvement Automatic Rotate now works with Pressure Regulators.",
+        "Added Unloader. Will empty all slots of the provided item. Constructed from stacker kit.",
+        "Removed unloading ability from stacker.",
+        "Changed fern reagent to Fenoxitone.",
+        "Improvement Passive Vent can now use Automatic Rotation",
+        "Fixed Gas Filters would continue to exist even after being negative, achieved by putting them in the Arc Furnace.",
+        "Fixed Battery and Battery Cells could go into negative with quantity of energy. Now clamped so they will not dip below zero and then take much longer to charge.",
+        "Improvement Automatic Rotate works with Hydroponics Tray.",
+        "Improvement Automatic Rotation added to Digital Valves and Valves."
+      ]
+    },
     {
       "version": "0.1.1524.7196",
       "notes": [
@@ -2528,28 +2549,6 @@
       "notes": [
         "Improved scrollbars in menus and they now autohide.",
         "Tweaked Join World menu overall. Now includes a new server info panel along with some other minor tweaks."
-      ]
-    },
-    {
-      "version": "0.1.1041.5297",
-      "notes": [
-        "Reduced surface area scale of the radiator.",
-        "Reduced power usage of logic devices.",
-        "Increased power usage of the computer.",
-        "Reduced power usage of Tool Manufactory, Pipe Bender and suit storage.",
-        "Added new model and texture for Copper, Gold, Ice, Iron, and Volatile deposits.",
-        "Fixed Pipe Radiator was always radiating, and never convecting. This meant that a radiator would remove heat from a pipe network without even convecting it into their air around it. This was because it could never find an atmosphere.",
-        "Fixed Autosave was not pulling atmospheres in a thread-safe way and sometimes causing a collection modified error. Now serializes using a safe itteration through atmosphere data.",
-        "Area Power Controller now charges its battery even when it is turned off, and will work even if an output cable is not connected.",
-        "Added signs. You can now place 1x1 or 2x1 signs and write text to them with the labeller.",
-        "Made pipe labels transparent. Label text will now show up on the pipes without the white background of the label.",
-        "Added new option for solar panels. Now contains a variant that has a separate data connection. This provides better support for logic control.",
-        "Adjusted Pipe Radiator surface area x5 to provide more consistent radiation and convection.",
-        "Removed pipe radiator buff. They were x1000 times more effective than a normal pipe and it was causing weird math issues. Now they are x10 more effective than the same sized item.",
-        "Added three LED console displays. Can be written to using the Logic Writer and will display values. Constructable from the Console construction kit.",
-        "Reverted chunk streaming changes from 5283 until issues can be fixed.",
-        "Changed the way that clients render chunks to reduce joining times. Clients still receive all chunk messages and create the chunks as they are received but only generate and apply the visual and collision meshes when needed.",
-        "Added favorite popup menu to join panel and fixed black camera filter on main menu."
       ]
     }
   ]
