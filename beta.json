@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1531.7217",
+    "version": "0.1.1532.7218",
     "date": "2018-07-19T00:00:00+01:00"
   },
   "history": [
@@ -2538,12 +2538,6 @@
         "Added Mod command to Math Processor. Allows the % math function to be applied. Format is Input1 % Input2.",
         "Fixed bug where construction blueprint cursor is not correctly cleared upon quitting a game.",
         "Fixed drop position. Item will now drop where the player is looking."
-      ]
-    },
-    {
-      "version": "0.1.1045.5307",
-      "notes": [
-        "Reimplemented chunk streaming changes using the existing chunk IsRendered system and reduced the number of mesh and minable regenerations. Result is improved joining times and faster chunk generation."
       ]
     }
   ]
