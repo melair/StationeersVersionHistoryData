@@ -1,4 +1,15 @@
 {
+  "0.1.1528.7213": {
+    "notes": [
+      "Added sound effects to elevator.",
+      "Adjusted jump to provide a more consistent result.",
+      "Fixed getting struck after jumping or walking, often on the edge of frames, or the edge of objects (such as containers)."
+    ],
+    "releases": {
+      "built": "2018-07-19T00:00:00+01:00",
+      "beta": "2018-07-18T15:01:11+01:00"
+    }
+  },
   "0.1.1527.7211": {
     "notes": [
 

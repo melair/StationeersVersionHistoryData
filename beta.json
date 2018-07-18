@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1527.7211",
-    "date": "2018-07-18T00:00:00+01:00"
+    "version": "0.1.1528.7213",
+    "date": "2018-07-19T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1528.7213",
+      "notes": [
+        "Added sound effects to elevator.",
+        "Adjusted jump to provide a more consistent result.",
+        "Fixed getting struck after jumping or walking, often on the edge of frames, or the edge of objects (such as containers)."
+      ]
+    },
     {
       "version": "0.1.1526.7209",
       "notes": [
@@ -2542,13 +2550,6 @@
       "version": "0.1.1044.5305",
       "notes": [
         "Fixed network problem when joining server which has large chunk data and high latency."
-      ]
-    },
-    {
-      "version": "0.1.1042.5301",
-      "notes": [
-        "Improved scrollbars in menus and they now autohide.",
-        "Tweaked Join World menu overall. Now includes a new server info panel along with some other minor tweaks."
       ]
     }
   ]
