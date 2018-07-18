@@ -1,4 +1,13 @@
 {
+  "0.1.1527.7211": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-18T00:00:00+01:00",
+      "beta": "2018-07-18T12:01:12+01:00"
+    }
+  },
   "0.1.1526.7209": {
     "notes": [
       "Fixed not enough reagents in tutorial to complete recipe creation task.",
