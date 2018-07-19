@@ -1,4 +1,26 @@
 {
+  "0.1.1533.7233": {
+    "notes": [
+      "Added small locker. This holds only four slots, and is constructed as a variant of Kit (Locker).",
+      "Changed Kit (Locker) to use 2 kits when constructing the large locker, small locker will only use 1 kit.",
+      "Fixed issue where construction cursor could remain up despite changing hands, dropping the construction kit or moving it using the mouse.",
+      "Added voice notifications for Jetpack, Air Tank, and Filters.",
+      "Fixed voice notifications running on load of the game.",
+      "Fixed World atmosphere being created when deconstruction a grid, causing room to get very cold on Europa.",
+      "Fixed issue with pipes not exploding at high pressures due to a change in random chance calculation.",
+      "Added Ladder End and Ladder Platform, buildable off the Ladder kit. Place these to have intermediary floors you can get off at. Press jump key to get off at intermediate floors. Ladder end makes it easier to get on a ladder above a ladder platform.",
+      "Fixed ladders launching you forward when you get off them.",
+      "Fixed incorrect radian conversion with new math functions.",
+      "Fixed coal not outputting any gas when used in the solid generator. Now outputs hot CO2 and pollutant when used in solid gen.",
+      "Changed Logic Math and Unary Math to take in degrees, not radians. They were previously changed to output degrees, but they were still taking in radians. Now you will need to pass in degrees and you will also get out degrees.",
+      "Fixed Orientation of screens on angled consoles.",
+      "Fixed exceptions when connecting to dedicated server."
+    ],
+    "releases": {
+      "built": "2018-07-19T00:00:00+01:00",
+      "beta": "2018-07-19T09:01:12+01:00"
+    }
+  },
   "0.1.1532.7218": {
     "notes": [
 

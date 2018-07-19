@@ -1,9 +1,28 @@
 {
   "current": {
-    "version": "0.1.1532.7218",
+    "version": "0.1.1533.7233",
     "date": "2018-07-19T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1533.7233",
+      "notes": [
+        "Added small locker. This holds only four slots, and is constructed as a variant of Kit (Locker).",
+        "Changed Kit (Locker) to use 2 kits when constructing the large locker, small locker will only use 1 kit.",
+        "Fixed issue where construction cursor could remain up despite changing hands, dropping the construction kit or moving it using the mouse.",
+        "Added voice notifications for Jetpack, Air Tank, and Filters.",
+        "Fixed voice notifications running on load of the game.",
+        "Fixed World atmosphere being created when deconstruction a grid, causing room to get very cold on Europa.",
+        "Fixed issue with pipes not exploding at high pressures due to a change in random chance calculation.",
+        "Added Ladder End and Ladder Platform, buildable off the Ladder kit. Place these to have intermediary floors you can get off at. Press jump key to get off at intermediate floors. Ladder end makes it easier to get on a ladder above a ladder platform.",
+        "Fixed ladders launching you forward when you get off them.",
+        "Fixed incorrect radian conversion with new math functions.",
+        "Fixed coal not outputting any gas when used in the solid generator. Now outputs hot CO2 and pollutant when used in solid gen.",
+        "Changed Logic Math and Unary Math to take in degrees, not radians. They were previously changed to output degrees, but they were still taking in radians. Now you will need to pass in degrees and you will also get out degrees.",
+        "Fixed Orientation of screens on angled consoles.",
+        "Fixed exceptions when connecting to dedicated server."
+      ]
+    },
     {
       "version": "0.1.1528.7213",
       "notes": [
@@ -2519,25 +2538,7 @@
         "Added revised community French and Spanish translations. Added new language for Portuguese translations.",
         "Added a new Logic Switch and a Logic Button variant on the Kit (Logic Switch).",
         "Added Batch Writer to logic system. This allows you to write values to all types of an object on the output network. Note that this only writes to objects of the exact same type, so variants of the same type will be considered different objects. The use example is that one batch writer will allow you to write to every single solar on a given network.",
-        "Fixed bug with Logic Writer network message not being received when switching logic writer type due to wrong network header being sent.",
-        "Fixed splitting stackable items. When splitting, the new stack would sometimes clip thought the floor and be lost. Split item/s now fall in front of the player",
-        "If the player has a free hand, splitting a stackable will now place the new stack in the free hand.",
-        "Fixed exception when opening loading screen with too few saves.",
-        "Fixed host not regenerating and applying mesh when terrain was mined outside of the chunk render distance. The host needs up to date collision mesh for all chunks.",
-        "Fixed minables being rendered when out side of chunk render distance on the server",
-        "Added sign recipe to autolathe.",
-        "Allowed atmosphere analyser cartridge to read small gas canisters.",
-        "Fixed analyzer text of water to H2O instead of HO2",
-        "Fixed huge world saves when saving rooms."
-      ]
-    },
-    {
-      "version": "0.1.1047.5315",
-      "notes": [
-        "Disabled Frustrum culling for computers. Possible cause of FPS drops when looking away from a logic motherboard computer setup. This was because sometimes the computer was being hidden/rendered multiple times in a frame, forcing many position updates for the UI below.",
-        "Added Mod command to Math Processor. Allows the % math function to be applied. Format is Input1 % Input2.",
-        "Fixed bug where construction blueprint cursor is not correctly cleared upon quitting a game.",
-        "Fixed drop position. Item will now drop where the player is looking."
+        "Fixed bug with Logic Writer network message not being received when switching logic writer type due to wrong network header being sent."
       ]
     }
   ]
