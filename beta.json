@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1533.7233",
-    "date": "2018-07-19T00:00:00+01:00"
+    "version": "0.1.1534.7235",
+    "date": "2018-07-20T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1534.7235",
+      "notes": [
+        "Added first pass of mouse control of world slots and interactions. With mouse control enabled, you can now directly interact with slots and interactables in the world. Such as opening a crate, and swapping items in your inventory with it.",
+        "Added Filtration Machines and Suits will not display Filter error state for a used up filter, if another filter of the same type that is not used up exists."
+      ]
+    },
     {
       "version": "0.1.1533.7233",
       "notes": [
@@ -2535,10 +2542,7 @@
         "Added Unary Math unit to logic system. Able to perform Abs, Ceil, Floor, Round, Exp, and Log functions on input numbers.",
         "Added chat fade delay which will auto-hide chat and console text after a delay.  Default 10 seconds, set to max to disable.",
         "Clamped auto-save interval values between 60 - 3600 (1-30 minutes, default 2 minutes).",
-        "Added revised community French and Spanish translations. Added new language for Portuguese translations.",
-        "Added a new Logic Switch and a Logic Button variant on the Kit (Logic Switch).",
-        "Added Batch Writer to logic system. This allows you to write values to all types of an object on the output network. Note that this only writes to objects of the exact same type, so variants of the same type will be considered different objects. The use example is that one batch writer will allow you to write to every single solar on a given network.",
-        "Fixed bug with Logic Writer network message not being received when switching logic writer type due to wrong network header being sent."
+        "Added revised community French and Spanish translations. Added new language for Portuguese translations."
       ]
     }
   ]

@@ -1,4 +1,14 @@
 {
+  "0.1.1534.7235": {
+    "notes": [
+      "Added first pass of mouse control of world slots and interactions. With mouse control enabled, you can now directly interact with slots and interactables in the world. Such as opening a crate, and swapping items in your inventory with it.",
+      "Added Filtration Machines and Suits will not display Filter error state for a used up filter, if another filter of the same type that is not used up exists."
+    ],
+    "releases": {
+      "built": "2018-07-20T00:00:00+01:00",
+      "beta": "2018-07-19T16:01:11+01:00"
+    }
+  },
   "0.1.1533.7233": {
     "notes": [
       "Added small locker. This holds only four slots, and is constructed as a variant of Kit (Locker).",
