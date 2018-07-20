@@ -1,9 +1,186 @@
 {
   "current": {
-    "version": "0.1.1508.7137",
-    "date": "2018-07-16T00:00:00+01:00"
+    "version": "0.1.1544.7268",
+    "date": "2018-07-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1543.7267",
+      "notes": [
+        "Fixed incorrect atmosphere unit settings on gas canister, portable generator, scrubber, gas sensor, and generator."
+      ]
+    },
+    {
+      "version": "0.1.1540.7263",
+      "notes": [
+        "Fixed Pipe Meter, Pipe Analyser, and Gas Generator reporting in incorrect units.",
+        "Added advanced airlock control circuitboard. Allows assignment of an internal and external door, with a matching internal and external pump. You can set the internal and external pressure that will be met. When cycling the circuitboard will completely clear the room with its designated vent, before refilling the room with the designated pump. Useful for airlocks in environments where you have matching, but different, atmospheres instead of vacuums.",
+        "Fixed gas filters providing too much when recycled.",
+        "Updated translation text for Spanish, Japanese, Russian, Simplified Chinese, Traditional Chinese. [Thanks socramazibi, YuanYu, -Ulitka- and lill in Discord]",
+        "Updated Tutorial translations for Japanese and Traditional Chinese [Thanks lill and YuanYu]",
+        "Added Italian language option [Grazie Mekko]",
+        "Fixed NullReferenceException when placing an elevator due to linked sound issue.",
+        "Fixed Airlock Control would open/close doors randomly on network changes and power loss. Now will initialize with it's previous state.",
+        "Fixed rotation of battery charger and active vent."
+      ]
+    },
+    {
+      "version": "0.1.1536.7250",
+      "notes": [
+        "Added Batch Slot Reader. Works the same as the Slot Reader, but reads data from the selected slot and variable of all of a device type. Has the Average, Sum, Max, and Min methods of batch reading.",
+        "Fixed bug with Batch Reader not sending correct network message for update. Could have resulted in visual desync issues with Batch Reader settings for clients.",
+        "Added chunk render distance (configurable setting). This turns off chunks that are not close to you, offering significant performance improvement. Changing the settings slider affects how far chunks are rendered, so you can configure the distance to best suit your computer specifications.",
+        "refactored chunk mesh generation to improve performance",
+        "Fixed recycling gas filters produces too much reagents.",
+        "Fixed able to world interact with objects while dragging items in and out of world inventory.",
+        "Fixed Filtration Machine filtered connections are confusing. Now the filtered connections are labelled \"filtered\", \"unfiltered\", and \"input\". Strings have also been made available to localization.",
+        "Fixed Construction Cursors not being correctly cancelled if removing the constructor from the active hand slot using the InventorySelect key (default F).",
+        "Fixed stacker would produce zero percent filters when splitting. Now this cannot happen, however Gas Filters are also now disabled from having their quantity changed by the stacker anyway."
+      ]
+    },
+    {
+      "version": "0.1.1534.7235",
+      "notes": [
+        "Added first pass of mouse control of world slots and interactions. With mouse control enabled, you can now directly interact with slots and interactables in the world. Such as opening a crate, and swapping items in your inventory with it.",
+        "Added Filtration Machines and Suits will not display Filter error state for a used up filter, if another filter of the same type that is not used up exists."
+      ]
+    },
+    {
+      "version": "0.1.1533.7233",
+      "notes": [
+        "Added small locker. This holds only four slots, and is constructed as a variant of Kit (Locker).",
+        "Changed Kit (Locker) to use 2 kits when constructing the large locker, small locker will only use 1 kit.",
+        "Fixed issue where construction cursor could remain up despite changing hands, dropping the construction kit or moving it using the mouse.",
+        "Added voice notifications for Jetpack, Air Tank, and Filters.",
+        "Fixed voice notifications running on load of the game.",
+        "Fixed World atmosphere being created when deconstruction a grid, causing room to get very cold on Europa.",
+        "Fixed issue with pipes not exploding at high pressures due to a change in random chance calculation.",
+        "Added Ladder End and Ladder Platform, buildable off the Ladder kit. Place these to have intermediary floors you can get off at. Press jump key to get off at intermediate floors. Ladder end makes it easier to get on a ladder above a ladder platform.",
+        "Fixed ladders launching you forward when you get off them.",
+        "Fixed incorrect radian conversion with new math functions.",
+        "Fixed coal not outputting any gas when used in the solid generator. Now outputs hot CO2 and pollutant when used in solid gen.",
+        "Changed Logic Math and Unary Math to take in degrees, not radians. They were previously changed to output degrees, but they were still taking in radians. Now you will need to pass in degrees and you will also get out degrees.",
+        "Fixed Orientation of screens on angled consoles.",
+        "Fixed exceptions when connecting to dedicated server."
+      ]
+    },
+    {
+      "version": "0.1.1528.7213",
+      "notes": [
+        "Added sound effects to elevator.",
+        "Adjusted jump to provide a more consistent result.",
+        "Fixed getting struck after jumping or walking, often on the edge of frames, or the edge of objects (such as containers)."
+      ]
+    },
+    {
+      "version": "0.1.1526.7209",
+      "notes": [
+        "Fixed not enough reagents in tutorial to complete recipe creation task.",
+        "Added sounds to jetpack for movement.",
+        "Fixed bug when reverb not set correctly for items on load or player join server. Now reverb is correctly set when loading into a helmet.",
+        "Added warning and critical status indicators for Air Tank low, when wearing a suit. Voice notifications to follow later.",
+        "Fixed slight drift on jetpack when stabilizer active. Now stabilizer will keep the player stationary to the best of it's ability.",
+        "Fixed when adding reagents to microwave (or chem station) when below the use quantity, the full quantity was added. Now scales reagents added if quantity is below use quantity.",
+        "Improvement VolumePump now works with Automatic Rotate",
+        "Improvement Automatic Rotate now works with Pressure Regulators.",
+        "Added Unloader. Will empty all slots of the provided item. Constructed from stacker kit.",
+        "Removed unloading ability from stacker.",
+        "Changed fern reagent to Fenoxitone.",
+        "Improvement Passive Vent can now use Automatic Rotation",
+        "Fixed Gas Filters would continue to exist even after being negative, achieved by putting them in the Arc Furnace.",
+        "Fixed Battery and Battery Cells could go into negative with quantity of energy. Now clamped so they will not dip below zero and then take much longer to charge.",
+        "Improvement Automatic Rotate works with Hydroponics Tray.",
+        "Improvement Automatic Rotation added to Digital Valves and Valves."
+      ]
+    },
+    {
+      "version": "0.1.1524.7196",
+      "notes": [
+        "Added filter caution and critical visual warnings (audio to be recorded). Will show when suit worn that does not contain a filter or contains empty or low filters.",
+        "Fixed Nutrition full indicator would get stuck on warning indicator."
+      ]
+    },
+    {
+      "version": "0.1.1523.7193",
+      "notes": [
+        "Changed suit to report error when filter used up or if when worn on entity it has a bad atmosphere.",
+        "Changed filters to only get used when actually filtering something. If it is not filtering something, it will not degrade.",
+        "Added fitration machine and scrubber will now report errors if they contain a filter than is fully spent."
+      ]
+    },
+    {
+      "version": "0.1.1522.7190",
+      "notes": [
+        "Fixed recycling used Filters would output unlimited quantity of materials.",
+        "Added can use crowbar to force open unpowered and unlocked elevator level doors.",
+        "Fixed suits still using their atmospheric functions while in the suit storage. Now processing will be paused while in suit storage. Suit and helmet atmospheres will also be purged while in suit storage."
+      ]
+    },
+    {
+      "version": "0.1.1519.7182",
+      "notes": [
+        "Changed Gas Filters to be a consumable. Each Gas Filter will last roughly 2 hours. We will introduce different gas filters that will last longer. Once they reach zero they will be useless, but can be recycled.",
+        "Fixed batteries in low pressure environments were still taking cold damage at same rate. Now scales down below one atmosphere. This means on mars, the battery loss rate due to cold will be about 3% of what it would be in a cold room or on Europa.",
+        "Refactored Reagent Processor and Chemistry station to support new medical recipes. Fern and some ingots can now be ground into powder using the Reagent Processor. This can then be used in the Chemistry Station to make various new recipes for medicine.",
+        "Changed quantity for Milk and SoyOil. This will cause old saves to load very low quantities of these. They were changed in line with the refactor of the reagent system.",
+        "Added Milk can be made at the Chemistry Station from Potassium Iodide (ground up fern) and Soy Oil.",
+        "Added Heal Pill and Stun Pill can be made at Chemistry station from Potassium Iodide, Electrum, Silver, and Invar. Exact recipes look up EReader Cartridge. Note: Powders for minerals must be made using Ingots at the Reagent Grinder.",
+        "Changed cereal bar recipe to require 150g of Flour.",
+        "Changed Flour, Milk, and SoyOil to display the quantities of their units, not the percentage remaining."
+      ]
+    },
+    {
+      "version": "0.1.1518.7180",
+      "notes": [
+        "Fixed Console Monitor placement bug",
+        "Fixed tooltip position becoming offset wrong.",
+        "Fixed Turbine Kit and Prefab missing from game.",
+        "Changed Cos, Sin, Tan, Asin, Acos, Atan, Atan2 to output in degrees not radians. Note: This will completely change logic if you were basing them on radians.",
+        "Fixed respawn breaking inventory for clients and host. Now inventory windows will work correctly even after your body has decayed.",
+        "Fixed Chute Outlet now pays attention to both chute and data when using automatic rotation.",
+        "Fixed Chute Inlet now pays attention to both Chute and Data for automatic rotation.",
+        "Fixed precedence issue with heat convection calculations, heat should no longer erroneously transfer from cold thing to hot atmosphere. (Thanks again, Zaneo!)"
+      ]
+    },
+    {
+      "version": "0.1.1517.7172",
+      "notes": [
+        "Fixed Composite Roll covers breaking logic when placed over top of them, and networks were reset. They would be registered as devices and take over the assignments for the logic. Now they are registered correctly as Other."
+      ]
+    },
+    {
+      "version": "0.1.1516.7169",
+      "notes": [
+        "Moved recipe for Hardsuit and Hardsuit Helmet from Electronics Printer, to the Tool Manufactory.",
+        "Added first pass of turbine generator. Generates 90W of energy from 1 atmosphere of pressure moving through it. Moves up to 1 atm per tick, so capable of generating 180W per second.",
+        "Changed power consumation rate of Volume pump. It will use power based on it's setting.",
+        "Added PowerGenerated logic variable. This reports how much power is being generated currently on the device. Added to the Solid, Gas, and Turbine generators."
+      ]
+    },
+    {
+      "version": "0.1.1513.7161",
+      "notes": [
+        "Fixed cursor tooltip remaining on."
+      ]
+    },
+    {
+      "version": "0.1.1511.7157",
+      "notes": [
+        "Changed Batteries and Battery cells so that they will drain power slowly when in freezing environments. They will still lose power inside other things (such as a suit), but they will lose less power based on how insulated their parent is."
+      ]
+    },
+    {
+      "version": "0.1.1510.7155",
+      "notes": [
+        "Added buff to Portable Air Conditioner. It will now be 5x more effective at heating, but it will use power 5x more in doing so. This simply means it is faster at heating.",
+        "Changed Gas Generator to require particular atmospheric operating conditions. A min and max temperature, and a minimum pressure. Outside of these the generator will shut down. Also, it now outputs only some of the combusted energy as power, the rest is outputted as heat into the waste pipe.",
+        "Fixed Stacker locking out when filled with over 500 ingots",
+        "Fixed Inventory Windows able to be dragged out of bounds. Now cannot drag inventory window outside of window canvas.",
+        "Fixed performance issues with rebuilding and merging large networks. Community team on Discord provided a new solution that is very optimized compared to old one. This should reduce the lag when merging large cable, pipe, and chute networks. (Credit: #modding on Discord).",
+        "Increased Jump Force slightly. Tapping jump lightly will produce a very small jump. Pressing and hold jump key to do a maximum jump.",
+        "Added new modes for solar sensor - horizontal and vertical angles. Mode 1 is horizontal, mode 2 is vertical."
+      ]
+    },
     {
       "version": "0.1.1508.7137",
       "notes": [
@@ -2355,192 +2532,7 @@
         "Updated Ore Coal material with new textures",
         "Fixed gas mask would retain its atmosphere when not worn. It could heat up and cause huge issues with atmosphere around it. Now when you are not wearing it, it will share its contents with the atmosphere so that this can't happen.",
         "Fixed, in almost all cases, the sun casting light through terrain. Sun light and flare fade out as it hits the horizon on planets. Not changed in space.",
-        "Fixed issue with PlayerCharacters occasionally dropping through ground when loading a large world",
-        "Fixed transformers would always try to meet the entire demand of their child networks. This mean that they would overuse power. Now they will work together to meet a child networks power requirements.",
-        "Fixed transformers would not work unless their entire power requirement was met (which was usually the entire network load). Now they will flow through even part of their power requirement. They will be considered powered if they meet the network requirement, even if they don't meet their own setting. This means you only need to set the maximum requirement on a transformer, and not the exact amount.",
-        "Fixed Batteries (and other power storage) would not evenly charge. Now two (or more) batteries will split the charge available between them. Previously a bug meant that many devices would request infinite amounts of power during a power tick, forcing the use of transformers. Now if you place two batteries off a single solid generator, 10kW per battery will be applied. Previously the first battery would take all 20kW.",
-        "Added Required power info to the Network Analyser. This value is how much the network wants, versus potential which is how much it can provide, and actual which is how much it is providing. Helps with debugging power networks.",
-        "Fixed solar panels giving tiny amounts of power when they should not. This was due to floating point errors.",
-        "Fixed linux dedicated server fails to start when Blocked.txt doesn't exist."
-      ]
-    },
-    {
-      "version": "0.1.1054.5355",
-      "notes": [
-        "Fixed broken dedicated server on linux. It couldn't load world data.",
-        "Fixed rooms not loading back in after save. This resulted in atmospheric loss, and zero gravity (in space) in places that were previously rooms.",
-        "Added flare recipe to the tool manufactory"
-      ]
-    },
-    {
-      "version": "0.1.1052.5350",
-      "notes": [
-        "Fixed null reference exception that could occur on save due to room thread changing and altering. This was caused by the fix that would stop large saves with invalid rooms being initialized."
-      ]
-    },
-    {
-      "version": "0.1.1051.5348",
-      "notes": [
-        "Made visual crystals less strict so more crystals are visible",
-        "Fixed null reference exception on Atmospheric Manager when air tank is null but waste tank is full.",
-        "Colliders on thrown objects will no longer be turned off if there's an object close to it when it was thrown. This should help prevent items being thrown through objects"
-      ]
-    },
-    {
-      "version": "0.1.1050.5341",
-      "notes": [
-        "Updated new ore types. New Uranium, copper, gold, silver, and coal models."
-      ]
-    },
-    {
-      "version": "0.1.1048.5331",
-      "notes": [
-        "Added applying chunk progress in loading screen.",
-        "Added Unary Math unit to logic system. Able to perform Abs, Ceil, Floor, Round, Exp, and Log functions on input numbers.",
-        "Added chat fade delay which will auto-hide chat and console text after a delay.  Default 10 seconds, set to max to disable.",
-        "Clamped auto-save interval values between 60 - 3600 (1-30 minutes, default 2 minutes).",
-        "Added revised community French and Spanish translations. Added new language for Portuguese translations.",
-        "Added a new Logic Switch and a Logic Button variant on the Kit (Logic Switch).",
-        "Added Batch Writer to logic system. This allows you to write values to all types of an object on the output network. Note that this only writes to objects of the exact same type, so variants of the same type will be considered different objects. The use example is that one batch writer will allow you to write to every single solar on a given network.",
-        "Fixed bug with Logic Writer network message not being received when switching logic writer type due to wrong network header being sent.",
-        "Fixed splitting stackable items. When splitting, the new stack would sometimes clip thought the floor and be lost. Split item/s now fall in front of the player",
-        "If the player has a free hand, splitting a stackable will now place the new stack in the free hand.",
-        "Fixed exception when opening loading screen with too few saves.",
-        "Fixed host not regenerating and applying mesh when terrain was mined outside of the chunk render distance. The host needs up to date collision mesh for all chunks.",
-        "Fixed minables being rendered when out side of chunk render distance on the server",
-        "Added sign recipe to autolathe.",
-        "Allowed atmosphere analyser cartridge to read small gas canisters.",
-        "Fixed analyzer text of water to H2O instead of HO2",
-        "Fixed huge world saves when saving rooms."
-      ]
-    },
-    {
-      "version": "0.1.1047.5315",
-      "notes": [
-        "Disabled Frustrum culling for computers. Possible cause of FPS drops when looking away from a logic motherboard computer setup. This was because sometimes the computer was being hidden/rendered multiple times in a frame, forcing many position updates for the UI below.",
-        "Added Mod command to Math Processor. Allows the % math function to be applied. Format is Input1 % Input2.",
-        "Fixed bug where construction blueprint cursor is not correctly cleared upon quitting a game.",
-        "Fixed drop position. Item will now drop where the player is looking."
-      ]
-    },
-    {
-      "version": "0.1.1045.5307",
-      "notes": [
-        "Reimplemented chunk streaming changes using the existing chunk IsRendered system and reduced the number of mesh and minable regenerations. Result is improved joining times and faster chunk generation."
-      ]
-    },
-    {
-      "version": "0.1.1044.5305",
-      "notes": [
-        "Fixed network problem when joining server which has large chunk data and high latency."
-      ]
-    },
-    {
-      "version": "0.1.1042.5301",
-      "notes": [
-        "Improved scrollbars in menus and they now autohide.",
-        "Tweaked Join World menu overall. Now includes a new server info panel along with some other minor tweaks."
-      ]
-    },
-    {
-      "version": "0.1.1041.5297",
-      "notes": [
-        "Reduced surface area scale of the radiator.",
-        "Reduced power usage of logic devices.",
-        "Increased power usage of the computer.",
-        "Reduced power usage of Tool Manufactory, Pipe Bender and suit storage.",
-        "Added new model and texture for Copper, Gold, Ice, Iron, and Volatile deposits.",
-        "Fixed Pipe Radiator was always radiating, and never convecting. This meant that a radiator would remove heat from a pipe network without even convecting it into their air around it. This was because it could never find an atmosphere.",
-        "Fixed Autosave was not pulling atmospheres in a thread-safe way and sometimes causing a collection modified error. Now serializes using a safe itteration through atmosphere data.",
-        "Area Power Controller now charges its battery even when it is turned off, and will work even if an output cable is not connected.",
-        "Added signs. You can now place 1x1 or 2x1 signs and write text to them with the labeller.",
-        "Made pipe labels transparent. Label text will now show up on the pipes without the white background of the label.",
-        "Added new option for solar panels. Now contains a variant that has a separate data connection. This provides better support for logic control.",
-        "Adjusted Pipe Radiator surface area x5 to provide more consistent radiation and convection.",
-        "Removed pipe radiator buff. They were x1000 times more effective than a normal pipe and it was causing weird math issues. Now they are x10 more effective than the same sized item.",
-        "Added three LED console displays. Can be written to using the Logic Writer and will display values. Constructable from the Console construction kit.",
-        "Reverted chunk streaming changes from 5283 until issues can be fixed.",
-        "Changed the way that clients render chunks to reduce joining times. Clients still receive all chunk messages and create the chunks as they are received but only generate and apply the visual and collision meshes when needed.",
-        "Added favorite popup menu to join panel and fixed black camera filter on main menu.",
-        "Fixed issues with certain MonoBehaviours being instantiated incorrectly. Causing occasional SetWorldEnvironments NRE when joining servers",
-        "Fixed wrong playtime in scoreboard.",
-        "Fixed typo in starter crate names.  Game now literally playable.",
-        "Fixed label replacing menu background on failure to load/connect.",
-        "Added limited ability to bind keys to mouse actions and vice versa.  Only supports 3-button mice for now.",
-        "Increased oxygen consumption for humans. Now consume oxygen at x10 the rate they used too. This means you are much more likely to run out of air. However, it also means you produce x10 the amount of CO2 that you used too.",
-        "Fixed pipe labels not drawing on load. Labels will no longer show up as blank when loading from a save.",
-        "Fixed Solar Panel read/write via logic uses different units. Now there is the base version (Vertical/Horizontal) that is in the master units (degrees, percent) and the ratio (0..1).",
-        "Fixed broken state on dedicated server. It wasn't updating state. It's related to Logic Motherboard, solar angle in Daylight Sensor, MotionSensor, Engine rotation. Now you can control solar panel with LogicMotherboard on dedicated server."
-      ]
-    },
-    {
-      "version": "0.1.1039.5262",
-      "notes": [
-        "Fixed null reference exception with LogicWriter when adding a cable that is about to be deleted. Also broke saves when this happened.",
-        "Fixed null reference exception when setting mode of an LED to a value that was not an acceptable color.",
-        "Fixed Arc Furnace chute bug. If the arc furnace was connected to a chute, when it finished its current stack it would grab the next without exporting the one inside it. Now the arc furnace will stop its current activity if it has finished the stack it is smelting.",
-        "Fixed machines not being able to drop solder ingots",
-        "Fixed broken AirlockControl on dedicated server. You can open/close airlock on dedicated server.",
-        "Fixed (possibly) double inventory bug - force panel to clear whether or not parent present. 'Split Half/Split All' interactions should no long show up doubled.",
-        "Added community provided French, Polish, and Spanish language translations. Added German tips file. Select a new language under the MISC settings header.",
-        "Added setting to adjust the transparency of tooltip and progress bar backgrounds (Tooltip Opacity on Game Options page).",
-        "Improved joining logic by changing conditions to complete loading data. It allows you to join high latency server.",
-        "Fixed occasional NRE when saving out LogicWriter configuration."
-      ]
-    },
-    {
-      "version": "0.1.1037.5245",
-      "notes": [
-        "Fixed Logic Min/Max and Logic Select button was not doing anything when interacted with screwdriver. Now you can correctly change this using a screwdriver.",
-        "Fixed cables burning forever. Cables will now extinguish if it's in vacuum or doesn't have a valid surrounding atmosphere.",
-        "Added logic unit Min/Max (has old select functionality). Logic Select now does proper select functionality. Takes a 0 and a 1 line, and outputs the result based on the select input.",
-        "Fixed broken map on space in dedicated server. When it loads saved world, it forced to set Moon type. It will use proper worldtype.",
-        "Added Field of View adjustment and wave emote hotkeys to the keybinding screen from hardcoded keys (numpad +/-).",
-        "Fixed Client side jittering of stationary objects",
-        "Added logic switch. Allows you to manually set a logic state of 1 or 0 without having any tools.",
-        "Fixed bug where logic writer could only write variables that it could also read from.",
-        "Fixed issue with Speech recognition initializing on non-supported operating Systems",
-        "Adjusted social media icons. They now highlight in their brand colors.",
-        "Enabled workshop button on the main menu, opens the community workshop page in the Steam overlay.",
-        "Exposed more thing states and values to logic system, such as Import and Export device slot state and stackable quantities.",
-        "Refactor of the new logic unit system to be unified with the Logic Motherboard system. Now exposed nearly all interactable states to logic units for read/write and ensured thread safe.",
-        "Fixed misaligned settings in Misc Settings menu"
-      ]
-    },
-    {
-      "version": "0.1.1035.5224",
-      "notes": [
-        "Fixed SolarPanel writing to actual rotation value not target when being set via a logic unit.",
-        "Fixed exception with solars when assessing vertical state."
-      ]
-    },
-    {
-      "version": "0.1.1034.5221",
-      "notes": [
-        "Fixed error with Logic Processors not allow client changes.",
-        "Fixed incorrect button labelling on Logic Writer."
-      ]
-    },
-    {
-      "version": "0.1.1033.5218",
-      "notes": [
-        "Fixed wrong blueprints showing for new logic items."
-      ]
-    },
-    {
-      "version": "0.1.1032.5216",
-      "notes": [
-        "Fixed Logic Compare was not configured to have it's states and therefore could not power on.",
-        "Removed ItemSecurityCamera from spawnables. Old legacy asset and was crashing dedicated servers."
-      ]
-    },
-    {
-      "version": "0.1.1031.5213",
-      "notes": [
-        "Added Logic device recipes",
-        "Synced recipes from smaller machines to the fabricator",
-        "Removed more invalid recipe reagents, replacing them with mainly iron.",
-        "Added new Kits for logic components. Kit (Logic Processor), Kit (Logic Memory), Kit (Logic I/O)."
+        "Fixed issue with PlayerCharacters occasionally dropping through ground when loading a large world"
       ]
     }
   ]
