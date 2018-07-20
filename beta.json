@@ -1,9 +1,29 @@
 {
   "current": {
-    "version": "0.1.1538.7256",
-    "date": "2018-07-20T00:00:00+01:00"
+    "version": "0.1.1543.7267",
+    "date": "2018-07-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1543.7267",
+      "notes": [
+        "Fixed incorrect atmosphere unit settings on gas canister, portable generator, scrubber, gas sensor, and generator."
+      ]
+    },
+    {
+      "version": "0.1.1540.7263",
+      "notes": [
+        "Fixed Pipe Meter, Pipe Analyser, and Gas Generator reporting in incorrect units.",
+        "Added advanced airlock control circuitboard. Allows assignment of an internal and external door, with a matching internal and external pump. You can set the internal and external pressure that will be met. When cycling the circuitboard will completely clear the room with its designated vent, before refilling the room with the designated pump. Useful for airlocks in environments where you have matching, but different, atmospheres instead of vacuums.",
+        "Fixed gas filters providing too much when recycled.",
+        "Updated translation text for Spanish, Japanese, Russian, Simplified Chinese, Traditional Chinese. [Thanks socramazibi, YuanYu, -Ulitka- and lill in Discord]",
+        "Updated Tutorial translations for Japanese and Traditional Chinese [Thanks lill and YuanYu]",
+        "Added Italian language option [Grazie Mekko]",
+        "Fixed NullReferenceException when placing an elevator due to linked sound issue.",
+        "Fixed Airlock Control would open/close doors randomly on network changes and power loss. Now will initialize with it's previous state.",
+        "Fixed rotation of battery charger and active vent."
+      ]
+    },
     {
       "version": "0.1.1536.7250",
       "notes": [
@@ -2513,26 +2533,7 @@
         "Fixed gas mask would retain its atmosphere when not worn. It could heat up and cause huge issues with atmosphere around it. Now when you are not wearing it, it will share its contents with the atmosphere so that this can't happen.",
         "Fixed, in almost all cases, the sun casting light through terrain. Sun light and flare fade out as it hits the horizon on planets. Not changed in space.",
         "Fixed issue with PlayerCharacters occasionally dropping through ground when loading a large world",
-        "Fixed transformers would always try to meet the entire demand of their child networks. This mean that they would overuse power. Now they will work together to meet a child networks power requirements.",
-        "Fixed transformers would not work unless their entire power requirement was met (which was usually the entire network load). Now they will flow through even part of their power requirement. They will be considered powered if they meet the network requirement, even if they don't meet their own setting. This means you only need to set the maximum requirement on a transformer, and not the exact amount.",
-        "Fixed Batteries (and other power storage) would not evenly charge. Now two (or more) batteries will split the charge available between them. Previously a bug meant that many devices would request infinite amounts of power during a power tick, forcing the use of transformers. Now if you place two batteries off a single solid generator, 10kW per battery will be applied. Previously the first battery would take all 20kW.",
-        "Added Required power info to the Network Analyser. This value is how much the network wants, versus potential which is how much it can provide, and actual which is how much it is providing. Helps with debugging power networks.",
-        "Fixed solar panels giving tiny amounts of power when they should not. This was due to floating point errors.",
-        "Fixed linux dedicated server fails to start when Blocked.txt doesn't exist."
-      ]
-    },
-    {
-      "version": "0.1.1054.5355",
-      "notes": [
-        "Fixed broken dedicated server on linux. It couldn't load world data.",
-        "Fixed rooms not loading back in after save. This resulted in atmospheric loss, and zero gravity (in space) in places that were previously rooms.",
-        "Added flare recipe to the tool manufactory"
-      ]
-    },
-    {
-      "version": "0.1.1052.5350",
-      "notes": [
-        "Fixed null reference exception that could occur on save due to room thread changing and altering. This was caused by the fix that would stop large saves with invalid rooms being initialized."
+        "Fixed transformers would always try to meet the entire demand of their child networks. This mean that they would overuse power. Now they will work together to meet a child networks power requirements."
       ]
     }
   ]

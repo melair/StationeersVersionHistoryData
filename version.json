@@ -1,4 +1,30 @@
 {
+  "0.1.1543.7267": {
+    "notes": [
+      "Fixed incorrect atmosphere unit settings on gas canister, portable generator, scrubber, gas sensor, and generator."
+    ],
+    "releases": {
+      "built": "2018-07-21T00:00:00+01:00",
+      "beta": "2018-07-20T14:01:14+01:00"
+    }
+  },
+  "0.1.1540.7263": {
+    "notes": [
+      "Fixed Pipe Meter, Pipe Analyser, and Gas Generator reporting in incorrect units.",
+      "Added advanced airlock control circuitboard. Allows assignment of an internal and external door, with a matching internal and external pump. You can set the internal and external pressure that will be met. When cycling the circuitboard will completely clear the room with its designated vent, before refilling the room with the designated pump. Useful for airlocks in environments where you have matching, but different, atmospheres instead of vacuums.",
+      "Fixed gas filters providing too much when recycled.",
+      "Updated translation text for Spanish, Japanese, Russian, Simplified Chinese, Traditional Chinese. [Thanks socramazibi, YuanYu, -Ulitka- and lill in Discord]",
+      "Updated Tutorial translations for Japanese and Traditional Chinese [Thanks lill and YuanYu]",
+      "Added Italian language option [Grazie Mekko]",
+      "Fixed NullReferenceException when placing an elevator due to linked sound issue.",
+      "Fixed Airlock Control would open/close doors randomly on network changes and power loss. Now will initialize with it's previous state.",
+      "Fixed rotation of battery charger and active vent."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1538.7256": {
     "notes": [
 
