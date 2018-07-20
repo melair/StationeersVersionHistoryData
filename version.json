@@ -1,4 +1,13 @@
 {
+  "0.1.1544.7268": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-21T00:00:00+01:00",
+      "beta": "2018-07-20T16:01:15+01:00"
+    }
+  },
   "0.1.1543.7267": {
     "notes": [
       "Fixed incorrect atmosphere unit settings on gas canister, portable generator, scrubber, gas sensor, and generator."
