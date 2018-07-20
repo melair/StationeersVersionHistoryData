@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1534.7235",
+    "version": "0.1.1536.7250",
     "date": "2018-07-20T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1536.7250",
+      "notes": [
+        "Added Batch Slot Reader. Works the same as the Slot Reader, but reads data from the selected slot and variable of all of a device type. Has the Average, Sum, Max, and Min methods of batch reading.",
+        "Fixed bug with Batch Reader not sending correct network message for update. Could have resulted in visual desync issues with Batch Reader settings for clients.",
+        "Added chunk render distance (configurable setting). This turns off chunks that are not close to you, offering significant performance improvement. Changing the settings slider affects how far chunks are rendered, so you can configure the distance to best suit your computer specifications.",
+        "refactored chunk mesh generation to improve performance",
+        "Fixed recycling gas filters produces too much reagents.",
+        "Fixed able to world interact with objects while dragging items in and out of world inventory.",
+        "Fixed Filtration Machine filtered connections are confusing. Now the filtered connections are labelled \"filtered\", \"unfiltered\", and \"input\". Strings have also been made available to localization.",
+        "Fixed Construction Cursors not being correctly cancelled if removing the constructor from the active hand slot using the InventorySelect key (default F).",
+        "Fixed stacker would produce zero percent filters when splitting. Now this cannot happen, however Gas Filters are also now disabled from having their quantity changed by the stacker anyway."
+      ]
+    },
     {
       "version": "0.1.1534.7235",
       "notes": [
@@ -2524,25 +2538,7 @@
     {
       "version": "0.1.1051.5348",
       "notes": [
-        "Made visual crystals less strict so more crystals are visible",
-        "Fixed null reference exception on Atmospheric Manager when air tank is null but waste tank is full.",
-        "Colliders on thrown objects will no longer be turned off if there's an object close to it when it was thrown. This should help prevent items being thrown through objects"
-      ]
-    },
-    {
-      "version": "0.1.1050.5341",
-      "notes": [
-        "Updated new ore types. New Uranium, copper, gold, silver, and coal models."
-      ]
-    },
-    {
-      "version": "0.1.1048.5331",
-      "notes": [
-        "Added applying chunk progress in loading screen.",
-        "Added Unary Math unit to logic system. Able to perform Abs, Ceil, Floor, Round, Exp, and Log functions on input numbers.",
-        "Added chat fade delay which will auto-hide chat and console text after a delay.  Default 10 seconds, set to max to disable.",
-        "Clamped auto-save interval values between 60 - 3600 (1-30 minutes, default 2 minutes).",
-        "Added revised community French and Spanish translations. Added new language for Portuguese translations."
+        "Made visual crystals less strict so more crystals are visible"
       ]
     }
   ]
