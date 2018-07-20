@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1536.7250",
+    "version": "0.1.1537.7254",
     "date": "2018-07-20T00:00:00+01:00"
   },
   "history": [
@@ -2533,12 +2533,6 @@
       "version": "0.1.1052.5350",
       "notes": [
         "Fixed null reference exception that could occur on save due to room thread changing and altering. This was caused by the fix that would stop large saves with invalid rooms being initialized."
-      ]
-    },
-    {
-      "version": "0.1.1051.5348",
-      "notes": [
-        "Made visual crystals less strict so more crystals are visible"
       ]
     }
   ]
