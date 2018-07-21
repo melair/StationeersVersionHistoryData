@@ -1,4 +1,26 @@
 {
+  "0.1.1549.7283": {
+    "notes": [
+      "Added kit for Portable Tank creation in the pipe bender, rather than making the tank itself as it tended to clip out and fly around.",
+      "Fixed not able to crowbar elevator open and closed.",
+      "Added logic values for tanks and battery to Suit Storage."
+    ],
+    "releases": {
+      "built": "2018-07-21T00:00:00+01:00",
+      "beta": "2018-07-21T08:01:11+01:00"
+    }
+  },
+  "0.1.1548.7281": {
+    "notes": [
+      "Added Trigger Plate. Activates a value or activates logic when something is within the trigger zone. Constructable from Kit (Trigger Plate) manufactured on the Electronics Printer.",
+      "Fixed cereal bar using 150g of flour instead of 50g.",
+      "Fixed constant drain of propellant when in zero gravity environments."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1546.7274": {
     "notes": [
       "Added ability to use logic to read Quantity value from Pipe Analyzer which will return TotalMoles for the attached pipe network. [Thanks JeepGuy]"
