@@ -1,4 +1,14 @@
 {
+  "0.1.1545.7272": {
+    "notes": [
+      "Fixed Switching hand to an empty slot while using the mining drill resulting in a null error requiring a restart to resolve.",
+      "Fixed Inability to launch tutorial due to corrupt translation file."
+    ],
+    "releases": {
+      "built": "2018-07-21T00:00:00+01:00",
+      "beta": "2018-07-21T02:01:12+01:00"
+    }
+  },
   "0.1.1544.7268": {
     "notes": [
 

@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1544.7268",
+    "version": "0.1.1545.7272",
     "date": "2018-07-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1545.7272",
+      "notes": [
+        "Fixed Switching hand to an empty slot while using the mining drill resulting in a null error requiring a restart to resolve.",
+        "Fixed Inability to launch tutorial due to corrupt translation file."
+      ]
+    },
     {
       "version": "0.1.1543.7267",
       "notes": [
@@ -2529,10 +2536,7 @@
         "Fixed players lungs were heating up to fast due to increased oxygen requirements. Now energy released due to heat is not scaled based on oxygen usage of the entity. This fixes players overheating very fast when suit air conditioning is turned off.",
         "Fixed more circumstances of welders exploding, and players thermodynamics not making sense. Now solar heating is a seperate value. When suit AC is turned off, players suit will get hotter in the sun, and cooler in the shade (due to radiation of heat). Welders will still not heat up in the sun, but will allow quite a lot of heat convection/radiation. This means that they will radiate any excess heat away over time. But it does mean if doing lots of welding in a hot environment, you need to make sure the welder tank does not overpressurize.",
         "Fixed batteries requesting more power than they can store. Batteries will now request up to their maximum power delta (difference between their storage capacity, and their current power stored). This means they will stop requesting power when they are full. Batteries will take and provide up to their maximum power delta in on tick, however, so use transformers to regulate this or you will blow wires.",
-        "Updated Ore Coal material with new textures",
-        "Fixed gas mask would retain its atmosphere when not worn. It could heat up and cause huge issues with atmosphere around it. Now when you are not wearing it, it will share its contents with the atmosphere so that this can't happen.",
-        "Fixed, in almost all cases, the sun casting light through terrain. Sun light and flare fade out as it hits the horizon on planets. Not changed in space.",
-        "Fixed issue with PlayerCharacters occasionally dropping through ground when loading a large world"
+        "Updated Ore Coal material with new textures"
       ]
     }
   ]
