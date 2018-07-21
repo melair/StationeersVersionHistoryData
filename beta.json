@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1545.7272",
+    "version": "0.1.1546.7274",
     "date": "2018-07-21T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1546.7274",
+      "notes": [
+        "Added ability to use logic to read Quantity value from Pipe Analyzer which will return TotalMoles for the attached pipe network. [Thanks JeepGuy]"
+      ]
+    },
     {
       "version": "0.1.1545.7272",
       "notes": [
@@ -2534,9 +2540,7 @@
         "Fixed furnace arrows rotating weirdly. Furnace pressure arrow should no longer rotate out of the furnace.",
         "Fixed asteroids not being rendered on load making them very hard to find. Space now renders all chunks on load.",
         "Fixed players lungs were heating up to fast due to increased oxygen requirements. Now energy released due to heat is not scaled based on oxygen usage of the entity. This fixes players overheating very fast when suit air conditioning is turned off.",
-        "Fixed more circumstances of welders exploding, and players thermodynamics not making sense. Now solar heating is a seperate value. When suit AC is turned off, players suit will get hotter in the sun, and cooler in the shade (due to radiation of heat). Welders will still not heat up in the sun, but will allow quite a lot of heat convection/radiation. This means that they will radiate any excess heat away over time. But it does mean if doing lots of welding in a hot environment, you need to make sure the welder tank does not overpressurize.",
-        "Fixed batteries requesting more power than they can store. Batteries will now request up to their maximum power delta (difference between their storage capacity, and their current power stored). This means they will stop requesting power when they are full. Batteries will take and provide up to their maximum power delta in on tick, however, so use transformers to regulate this or you will blow wires.",
-        "Updated Ore Coal material with new textures"
+        "Fixed more circumstances of welders exploding, and players thermodynamics not making sense. Now solar heating is a seperate value. When suit AC is turned off, players suit will get hotter in the sun, and cooler in the shade (due to radiation of heat). Welders will still not heat up in the sun, but will allow quite a lot of heat convection/radiation. This means that they will radiate any excess heat away over time. But it does mean if doing lots of welding in a hot environment, you need to make sure the welder tank does not overpressurize."
       ]
     }
   ]

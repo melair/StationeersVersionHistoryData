@@ -1,4 +1,13 @@
 {
+  "0.1.1546.7274": {
+    "notes": [
+      "Added ability to use logic to read Quantity value from Pipe Analyzer which will return TotalMoles for the attached pipe network. [Thanks JeepGuy]"
+    ],
+    "releases": {
+      "built": "2018-07-21T00:00:00+01:00",
+      "beta": "2018-07-21T03:01:11+01:00"
+    }
+  },
   "0.1.1545.7272": {
     "notes": [
       "Fixed Switching hand to an empty slot while using the mining drill resulting in a null error requiring a restart to resolve.",
