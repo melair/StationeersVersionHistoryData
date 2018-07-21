@@ -1,4 +1,13 @@
 {
+  "0.1.1550.7285": {
+    "notes": [
+      "Fixed Jetpack Caution notification not occurring, only jetpack critical."
+    ],
+    "releases": {
+      "built": "2018-07-22T00:00:00+01:00",
+      "beta": "2018-07-21T15:01:13+01:00"
+    }
+  },
   "0.1.1549.7283": {
     "notes": [
       "Added kit for Portable Tank creation in the pipe bender, rather than making the tank itself as it tended to clip out and fly around.",
