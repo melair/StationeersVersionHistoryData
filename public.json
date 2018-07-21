@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1549.7283",
-    "date": "2018-07-21T00:00:00+01:00"
+    "version": "0.1.1550.7285",
+    "date": "2018-07-22T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1550.7285",
+      "notes": [
+        "Fixed Jetpack Caution notification not occurring, only jetpack critical."
+      ]
+    },
     {
       "version": "0.1.1549.7283",
       "notes": [
@@ -2539,12 +2545,6 @@
         "Fixed items spawned from stackers not saving.",
         "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything.",
         "Added small screws to Logic Memory. Large screws provide increments of 100 (10 if holding ALT). Small screws provide increments of 1 (0.1 if holding ALT)."
-      ]
-    },
-    {
-      "version": "0.1.1056.5380",
-      "notes": [
-        "Fixed Power Controller abnormal behavior. They were discharging one tick, and then recharging the next. Now they will follow a steady state. Also, power controllers without a battery will act as a passthrough if there is any power available in the upstream network."
       ]
     }
   ]
