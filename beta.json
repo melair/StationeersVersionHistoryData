@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1550.7285",
-    "date": "2018-07-22T00:00:00+01:00"
+    "version": "0.1.1551.7286",
+    "date": "2018-07-23T00:00:00+01:00"
   },
   "history": [
     {
@@ -2543,8 +2543,7 @@
         "Fixed bug where power usage for circuits reset to defaults.",
         "Fixed signs not dropping kits on deconstruct, and large sign now uses 2 kits.",
         "Fixed items spawned from stackers not saving.",
-        "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything.",
-        "Added small screws to Logic Memory. Large screws provide increments of 100 (10 if holding ALT). Small screws provide increments of 1 (0.1 if holding ALT)."
+        "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything."
       ]
     }
   ]

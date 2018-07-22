@@ -1,4 +1,13 @@
 {
+  "0.1.1551.7286": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-23T00:00:00+01:00",
+      "beta": "2018-07-22T22:01:11+01:00"
+    }
+  },
   "0.1.1550.7285": {
     "notes": [
       "Fixed Jetpack Caution notification not occurring, only jetpack critical."
