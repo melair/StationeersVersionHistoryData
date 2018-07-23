@@ -1,9 +1,30 @@
 {
   "current": {
-    "version": "0.1.1551.7286",
-    "date": "2018-07-23T00:00:00+01:00"
+    "version": "0.1.1552.7302",
+    "date": "2018-07-24T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1552.7302",
+      "notes": [
+        "Updated translations for several languages.",
+        "Added Finnish translations.",
+        "Improvement Added Automatic Rotate to WallLight.",
+        "Improvement Added SmartRotate to WallHeater",
+        "Improvement Implemented AutomaticRotate for WallCooler.",
+        "Improvement SmartRotate implemented for TransformerSmall and TransformerSmallReversed",
+        "Improvement added Automaticrotate to RTG.",
+        "Improvement SmartRotate implemented for flashing light.",
+        "Improvement Automatic Rotate works with Logic Compare, Math, Unary, Min/Max, and Select.",
+        "Improvement Automatic rotate applied to Logic Button, Lever, Switch, and Dial.",
+        "Improvement Automatic Rotation implemented for ReagentReader, BatchReader, SlotReader, LogicMirror, BatchWriter, LogicWriter, LogicReader, and BatchSlotReader.",
+        "Improvement Automatic Rotate works for Igniter.",
+        "Improvement Automatic rotate implemented on Daylight, Gas, and Motion Sensor.",
+        "Improvement Console works with automatic Rotate",
+        "New Feature Automatic Rotation implemented for FaceMounted objects.",
+        "Fixed missing shake effect on ores caused by terrain refactor"
+      ]
+    },
     {
       "version": "0.1.1550.7285",
       "notes": [
@@ -2519,31 +2540,7 @@
     {
       "version": "0.1.1060.5416",
       "notes": [
-        "Added clearallinterval command which is clear disconnected player from dedicated server. Default and minimum value is 60 seconds.",
-        "Fixed issue with items being able to be dropped through floors."
-      ]
-    },
-    {
-      "version": "0.1.1058.5405",
-      "notes": [
-        "Added text display to slots for Circuitboards, Motherboards, and Cartridges as a temporary solution so you know what they are instead of needing to drop them.",
-        "Reduced the cost of steel frames and sheets.  Players using steel as a construction material will be rewarded by not needing to use as many resources.",
-        "Fixed issue where players would put open gas canisters into portable tanks, welders, etc..., and the canisters would leak all the air out. Now when a gas canister is inserted into something, it will be automatically closed.",
-        "Added recycler recipe to autolathe and fabricator.",
-        "Fixed glass recipe on fabricator to match that of autolathe",
-        "Fixed suit atmospherics will continue to use a gas canister when it is open. Now the suit will close tanks when using atmospheres, to avoid putting gas into waste tanks when they are open.",
-        "Added Recycler. Made from Kit (Recycler). Put things into this and receive resources back. Resources come out as generic reagent mixes, and will usually need to be placed into the Centrifuge to separate out into component ores for smelting. Also useful for turning ingots into ore again.",
-        "Changed Reagent mixtures from floats to double, to avoid floating point issues.",
-        "Draggable items now require you to be closer then 3 meters to interact with"
-      ]
-    },
-    {
-      "version": "0.1.1057.5396",
-      "notes": [
-        "Fixed bug where power usage for circuits reset to defaults.",
-        "Fixed signs not dropping kits on deconstruct, and large sign now uses 2 kits.",
-        "Fixed items spawned from stackers not saving.",
-        "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything."
+        "Added clearallinterval command which is clear disconnected player from dedicated server. Default and minimum value is 60 seconds."
       ]
     }
   ]

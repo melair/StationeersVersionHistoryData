@@ -1,4 +1,28 @@
 {
+  "0.1.1552.7302": {
+    "notes": [
+      "Updated translations for several languages.",
+      "Added Finnish translations.",
+      "Improvement Added Automatic Rotate to WallLight.",
+      "Improvement Added SmartRotate to WallHeater",
+      "Improvement Implemented AutomaticRotate for WallCooler.",
+      "Improvement SmartRotate implemented for TransformerSmall and TransformerSmallReversed",
+      "Improvement added Automaticrotate to RTG.",
+      "Improvement SmartRotate implemented for flashing light.",
+      "Improvement Automatic Rotate works with Logic Compare, Math, Unary, Min/Max, and Select.",
+      "Improvement Automatic rotate applied to Logic Button, Lever, Switch, and Dial.",
+      "Improvement Automatic Rotation implemented for ReagentReader, BatchReader, SlotReader, LogicMirror, BatchWriter, LogicWriter, LogicReader, and BatchSlotReader.",
+      "Improvement Automatic Rotate works for Igniter.",
+      "Improvement Automatic rotate implemented on Daylight, Gas, and Motion Sensor.",
+      "Improvement Console works with automatic Rotate",
+      "New Feature Automatic Rotation implemented for FaceMounted objects.",
+      "Fixed missing shake effect on ores caused by terrain refactor"
+    ],
+    "releases": {
+      "built": "2018-07-24T00:00:00+01:00",
+      "beta": "2018-07-23T22:01:14+01:00"
+    }
+  },
   "0.1.1551.7286": {
     "notes": [
 
