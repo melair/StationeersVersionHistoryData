@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1553.7304",
-    "date": "2018-07-24T00:00:00+01:00"
+    "version": "0.1.1555.7313",
+    "date": "2018-07-25T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1554.7312",
+      "notes": [
+        "Improvement Logic Memory now uses Autorotate.",
+        "Added player will automatically take off when turn jetpack on",
+        "Added Mission Event trigger for plant growth states.",
+        "Improvement Added autorotate to pipe/cable mounted objects."
+      ]
+    },
     {
       "version": "0.1.1553.7304",
       "notes": [
@@ -2527,20 +2536,6 @@
       "version": "0.1.1066.5437",
       "notes": [
         "Fixed Reagent mixtures in Furnace and Recycler could sometimes spam small values for clients. Now reagent mixtures are correctly cleared on clients when they receive an update."
-      ]
-    },
-    {
-      "version": "0.1.1062.5426",
-      "notes": [
-        "Fixed bug with Area Power Controller using increasing amounts of power when operating off battery. Caused batteries to drain completely very fast.",
-        "Fixed Logic Compare NotEquals always reporting false. Was not implemented, so always returning 0. Now returns 1 if values are not approximately equal (within float variant)."
-      ]
-    },
-    {
-      "version": "0.1.1061.5421",
-      "notes": [
-        "Fixed Reconnecting players spawning inside of grids. Now players position is reset client side if there has been a delay taking control.",
-        "Fixed OnThreadUpdate not running on dedicated servers. Dedicated servers should now work correctly with Daylight Sensors"
       ]
     }
   ]

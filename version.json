@@ -1,4 +1,25 @@
 {
+  "0.1.1555.7313": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-25T00:00:00+01:00",
+      "beta": "2018-07-24T23:01:11+01:00"
+    }
+  },
+  "0.1.1554.7312": {
+    "notes": [
+      "Improvement Logic Memory now uses Autorotate.",
+      "Added player will automatically take off when turn jetpack on",
+      "Added Mission Event trigger for plant growth states.",
+      "Improvement Added autorotate to pipe/cable mounted objects."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1553.7304": {
     "notes": [
       "Fixed top placement bug for FaceMount'able objects."
