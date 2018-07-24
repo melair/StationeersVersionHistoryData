@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1552.7302",
+    "version": "0.1.1553.7304",
     "date": "2018-07-24T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1553.7304",
+      "notes": [
+        "Fixed top placement bug for FaceMount'able objects."
+      ]
+    },
     {
       "version": "0.1.1552.7302",
       "notes": [
@@ -2535,12 +2541,6 @@
       "notes": [
         "Fixed Reconnecting players spawning inside of grids. Now players position is reset client side if there has been a delay taking control.",
         "Fixed OnThreadUpdate not running on dedicated servers. Dedicated servers should now work correctly with Daylight Sensors"
-      ]
-    },
-    {
-      "version": "0.1.1060.5416",
-      "notes": [
-        "Added clearallinterval command which is clear disconnected player from dedicated server. Default and minimum value is 60 seconds."
       ]
     }
   ]

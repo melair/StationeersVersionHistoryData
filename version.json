@@ -1,4 +1,13 @@
 {
+  "0.1.1553.7304": {
+    "notes": [
+      "Fixed top placement bug for FaceMount'able objects."
+    ],
+    "releases": {
+      "built": "2018-07-24T00:00:00+01:00",
+      "beta": "2018-07-24T02:01:13+01:00"
+    }
+  },
   "0.1.1552.7302": {
     "notes": [
       "Updated translations for several languages.",
