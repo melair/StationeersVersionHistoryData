@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1555.7313",
-    "date": "2018-07-25T00:00:00+01:00"
+    "version": "0.1.1556.7321",
+    "date": "2018-07-26T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1556.7321",
+      "notes": [
+        "First pass on new exploding mechanics. Explosions now apply brute and stun damage.",
+        "Improvement Can autorotate Console Monitor, LED (Small, Medium, and Large), Dual and Console."
+      ]
+    },
     {
       "version": "0.1.1554.7312",
       "notes": [
