@@ -1,4 +1,18 @@
 {
+  "0.1.1558.7334": {
+    "notes": [
+      "Fixed custom key assignments not saving correctly.",
+      "Fixed Elevator placement erroring when placed in same voxel as a wall.",
+      "added z axis padding on the prefab so that it correctly registered as occupying 2 voxels.",
+      "added ConConstruct checks so that the voxel with the carriage in it does the structure style checks and the voxel with the back end in it does wall style checks. However because ElevatorShaft can't inherit from Wall directly, and the CanConstruct checks in Structure are override'n and ignored in Device this is quite messy IMO. Could probably do with consideration of a better way to do it at some point.",
+      "Fixed Angled console so that it is free mount again.",
+      "Fixed issue with new world screen entries being duplicated if coming from the workshop screen."
+    ],
+    "releases": {
+      "built": "2018-07-27T00:00:00+01:00",
+      "beta": "2018-07-26T22:01:13+01:00"
+    }
+  },
   "0.1.1557.7324": {
     "notes": [
       "Fixed issue with drag-and-drop thumbnails and drag-to-slot."

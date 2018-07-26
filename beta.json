@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1557.7324",
-    "date": "2018-07-26T00:00:00+01:00"
+    "version": "0.1.1558.7334",
+    "date": "2018-07-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1558.7334",
+      "notes": [
+        "Fixed custom key assignments not saving correctly.",
+        "Fixed Elevator placement erroring when placed in same voxel as a wall.",
+        "added z axis padding on the prefab so that it correctly registered as occupying 2 voxels.",
+        "added ConConstruct checks so that the voxel with the carriage in it does the structure style checks and the voxel with the back end in it does wall style checks. However because ElevatorShaft can't inherit from Wall directly, and the CanConstruct checks in Structure are override'n and ignored in Device this is quite messy IMO. Could probably do with consideration of a better way to do it at some point.",
+        "Fixed Angled console so that it is free mount again.",
+        "Fixed issue with new world screen entries being duplicated if coming from the workshop screen."
+      ]
+    },
     {
       "version": "0.1.1557.7324",
       "notes": [
@@ -2531,18 +2542,7 @@
     {
       "version": "0.1.1068.5451",
       "notes": [
-        "Changed tutorial due to feedback from players. Now highlights exist for construction requirements. Added using microwave to make a recipe. Reduced edgecases that could make the tutorial incompletable. Prepared tutorial for localization by community.",
-        "Added ToolManufactory recipe to fabricator.",
-        "added missing angle grinder to fabricator",
-        "Exposed Activate action on Furnace to Logic system. Now setting Activate to 1 will cause the furnace to ignite its internal atmosphere.",
-        "Fixed portable light causing collision with character and propelling them around. Now can safely carry the portable light"
-      ]
-    },
-    {
-      "version": "0.1.1067.5445",
-      "notes": [
-        "Fixed SolarControl wasn't updated connected SolarPanel on dedicated server.",
-        "Added more detailed tooltips for power tools, such as telling the player when their power tool does not have enough battery charge to complete a task."
+        "Changed tutorial due to feedback from players. Now highlights exist for construction requirements. Added using microwave to make a recipe. Reduced edgecases that could make the tutorial incompletable. Prepared tutorial for localization by community."
       ]
     }
   ]
