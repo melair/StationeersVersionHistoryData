@@ -1,4 +1,13 @@
 {
+  "0.1.1557.7324": {
+    "notes": [
+      "Fixed issue with drag-and-drop thumbnails and drag-to-slot."
+    ],
+    "releases": {
+      "built": "2018-07-26T00:00:00+01:00",
+      "beta": "2018-07-26T01:01:11+01:00"
+    }
+  },
   "0.1.1556.7321": {
     "notes": [
       "First pass on new exploding mechanics. Explosions now apply brute and stun damage.",

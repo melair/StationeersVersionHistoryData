@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1556.7321",
+    "version": "0.1.1557.7324",
     "date": "2018-07-26T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1557.7324",
+      "notes": [
+        "Fixed issue with drag-and-drop thumbnails and drag-to-slot."
+      ]
+    },
     {
       "version": "0.1.1556.7321",
       "notes": [
@@ -2537,12 +2543,6 @@
       "notes": [
         "Fixed SolarControl wasn't updated connected SolarPanel on dedicated server.",
         "Added more detailed tooltips for power tools, such as telling the player when their power tool does not have enough battery charge to complete a task."
-      ]
-    },
-    {
-      "version": "0.1.1066.5437",
-      "notes": [
-        "Fixed Reagent mixtures in Furnace and Recycler could sometimes spam small values for clients. Now reagent mixtures are correctly cleared on clients when they receive an update."
       ]
     }
   ]
