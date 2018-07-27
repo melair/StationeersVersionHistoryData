@@ -1,4 +1,19 @@
 {
+  "0.1.1560.7350": {
+    "notes": [
+      "Added additional organics crate to default starting conditions. Includes flowers, and more food.",
+      "Replaced set of Road Flares in Construction Crate in default start with an Advanced Airlock Circuitboard.",
+      "Added Medium and Heavy variants of gas filters. Medium filters last five times as long as the normal filters. Heavy filters last 20 times as long as the normal filters. They can be constructed on the Atmos Printer (Pipe Bender).",
+      "Removed Paint from being made at the tool manufactory. Now this is done by the Paint Mixer appliance.",
+      "Added Paint Mixer appliance. Use color dyes and soy oil mixed together to make the various spray cans. Make this appliance on the Electronics Printer or the Fabricator.",
+      "Added Colored Flowers. Grow these and then grind them up in the Reagent Processor to produce dyes for making paints.",
+      "Fixed Angled console placement."
+    ],
+    "releases": {
+      "built": "2018-07-27T00:00:00+01:00",
+      "beta": "2018-07-27T06:01:11+01:00"
+    }
+  },
   "0.1.1558.7334": {
     "notes": [
       "Fixed custom key assignments not saving correctly.",

@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1558.7334",
+    "version": "0.1.1560.7350",
     "date": "2018-07-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1560.7350",
+      "notes": [
+        "Added additional organics crate to default starting conditions. Includes flowers, and more food.",
+        "Replaced set of Road Flares in Construction Crate in default start with an Advanced Airlock Circuitboard.",
+        "Added Medium and Heavy variants of gas filters. Medium filters last five times as long as the normal filters. Heavy filters last 20 times as long as the normal filters. They can be constructed on the Atmos Printer (Pipe Bender).",
+        "Removed Paint from being made at the tool manufactory. Now this is done by the Paint Mixer appliance.",
+        "Added Paint Mixer appliance. Use color dyes and soy oil mixed together to make the various spray cans. Make this appliance on the Electronics Printer or the Fabricator.",
+        "Added Colored Flowers. Grow these and then grind them up in the Reagent Processor to produce dyes for making paints.",
+        "Fixed Angled console placement."
+      ]
+    },
     {
       "version": "0.1.1558.7334",
       "notes": [
@@ -2533,16 +2545,7 @@
       "notes": [
         "Added recipe number to tutorial, so that places know which recipe they need to find as there are a lot of recipes.",
         "Fixed reversed transformer variant doesnt change the input/output and is actually the same as the master variant. Now correctly swapped inputs and outputs.",
-        "Fixed bug with labeller causing out of range exception when dropped while entering input. Now if the labeller is dropped or the device being renamed is destroyed, the input window will be automatically closed.",
-        "Fixed possible bug with centrifuge when importing \"bad\" stacks. If the stack had an error, could result in massive stacks in the game.",
-        "Fixed game locks up when deconstructing device that has extremely high number of reagents in it. Devices will now drop a maximum of 200 stacks when being deconstructed. Some \"bad\" stacks were causing huge reagent mixes, and then these broke the centrifuge.",
-        "Fixed able to put items inside their own slots, causing the game to lock up. Now cannot put items inside other items."
-      ]
-    },
-    {
-      "version": "0.1.1068.5451",
-      "notes": [
-        "Changed tutorial due to feedback from players. Now highlights exist for construction requirements. Added using microwave to make a recipe. Reduced edgecases that could make the tutorial incompletable. Prepared tutorial for localization by community."
+        "Fixed bug with labeller causing out of range exception when dropped while entering input. Now if the labeller is dropped or the device being renamed is destroyed, the input window will be automatically closed."
       ]
     }
   ]
