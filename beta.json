@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1560.7350",
+    "version": "0.1.1561.7357",
     "date": "2018-07-27T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1561.7357",
+      "notes": [
+        "Fixed Attempted to reduce instances of NaN batteries in cold environments.  Should also clear their broken state on save load.",
+        "Updated Localization files for German, Italian, Russian, Simplified Chinese, Traditional Chinese, Spanish and Suomi (Finnish).",
+        "Fixed issue preventing placement of cables directly behind the Elevator.",
+        "Fixed issue causing null reference exceptions when trying to use the Solid Fuel Generator due to missing GeneratorOre value.",
+        "Fixed flickering placement for facemount objects."
+      ]
+    },
     {
       "version": "0.1.1560.7350",
       "notes": [
@@ -2538,14 +2548,6 @@
       "notes": [
         "Fixed airlock control circuitboard reassigns exterior and interior airlock doors when they loose connection, resulting in confusing setups when the wires have been cut. Circuitboard will continue to remember interior/exterior doors but release them if they are not usable.",
         "Fixed stacker caused ingots passed through it to not be saved. Now correctly initializes new stacks so that they are saved (and then loaded) correctly."
-      ]
-    },
-    {
-      "version": "0.1.1072.5462",
-      "notes": [
-        "Added recipe number to tutorial, so that places know which recipe they need to find as there are a lot of recipes.",
-        "Fixed reversed transformer variant doesnt change the input/output and is actually the same as the master variant. Now correctly swapped inputs and outputs.",
-        "Fixed bug with labeller causing out of range exception when dropped while entering input. Now if the labeller is dropped or the device being renamed is destroyed, the input window will be automatically closed."
       ]
     }
   ]

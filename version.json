@@ -1,4 +1,17 @@
 {
+  "0.1.1561.7357": {
+    "notes": [
+      "Fixed Attempted to reduce instances of NaN batteries in cold environments.  Should also clear their broken state on save load.",
+      "Updated Localization files for German, Italian, Russian, Simplified Chinese, Traditional Chinese, Spanish and Suomi (Finnish).",
+      "Fixed issue preventing placement of cables directly behind the Elevator.",
+      "Fixed issue causing null reference exceptions when trying to use the Solid Fuel Generator due to missing GeneratorOre value.",
+      "Fixed flickering placement for facemount objects."
+    ],
+    "releases": {
+      "built": "2018-07-27T00:00:00+01:00",
+      "beta": "2018-07-27T09:01:11+01:00"
+    }
+  },
   "0.1.1560.7350": {
     "notes": [
       "Added additional organics crate to default starting conditions. Includes flowers, and more food.",
