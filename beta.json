@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1562.7363",
+    "version": "0.1.1564.7373",
     "date": "2018-07-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1563.7371",
+      "notes": [
+        "Fixed Ore orientation randomly changing while being mined by changing the shake effecting position to rotation",
+        "Changed handling of reagent mixes in the Recycler and Centrifuge to try and reduce instances of machine inventories growing exponentially.",
+        "Added lateral movement even when height efficiency is low.",
+        "Fixed bug causing jetpack stabilization not working while using the labeller.",
+        "Changed QuantityUsed value for Soy Oil and all Color reagents to 1 from 5 and 10 respectively.",
+        "Fixed jetpacks sending to many messages."
+      ]
+    },
     {
       "version": "0.1.1562.7363",
       "notes": [
@@ -2528,21 +2539,7 @@
         "Fixed LEDs color changing on reload. When first placed it would be white, but on load it would be blue, even though the mode was correctly set. Now the color is correctly initialized on load.",
         "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED.",
         "Fixed Logic Min/Max unit was saying \"Greater\" mode when it was actually \"Less\" mode (and vice versa). Now correctly reports it's current mode.",
-        "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed.",
-        "Fixed Logic Writers writing to Lock values did nothing for all devices (particularly Airlocks and Chute outlets). Was trying to write to powered state. Now correctly writes to Lock state, very useful for locking the doors and chutes."
-      ]
-    },
-    {
-      "version": "0.1.1078.5476",
-      "notes": [
-        "Fixed solar panel seperate data variant also allowed power from the data cable, as well as data, effectively doubling the power output. Now power is only allowed through the power connection."
-      ]
-    },
-    {
-      "version": "0.1.1077.5474",
-      "notes": [
-        "Fixed Jetpack not stabilizing when Text Input Panel was visible. Characters in Jetpack modes should now have their velocity slowed when Text Input Panel is visible.",
-        "Fixed ToggleInfo Keybind (F4 Default) sometimes breaking the GameMenu from appearing. Game Menu should now appear when ToggleInfo panel is displayed"
+        "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed."
       ]
     }
   ]

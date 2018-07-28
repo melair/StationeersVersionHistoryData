@@ -1,4 +1,27 @@
 {
+  "0.1.1564.7373": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-28T00:00:00+01:00",
+      "beta": "2018-07-28T07:01:24+01:00"
+    }
+  },
+  "0.1.1563.7371": {
+    "notes": [
+      "Fixed Ore orientation randomly changing while being mined by changing the shake effecting position to rotation",
+      "Changed handling of reagent mixes in the Recycler and Centrifuge to try and reduce instances of machine inventories growing exponentially.",
+      "Added lateral movement even when height efficiency is low.",
+      "Fixed bug causing jetpack stabilization not working while using the labeller.",
+      "Changed QuantityUsed value for Soy Oil and all Color reagents to 1 from 5 and 10 respectively.",
+      "Fixed jetpacks sending to many messages."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1562.7363": {
     "notes": [
       "Increased amount of Soy Oil returned per soy bean processed in the reagent grinder.",
