@@ -1,9 +1,111 @@
 {
   "current": {
-    "version": "0.1.1550.7285",
-    "date": "2018-07-22T00:00:00+01:00"
+    "version": "0.1.1564.7373",
+    "date": "2018-07-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1563.7371",
+      "notes": [
+        "Fixed Ore orientation randomly changing while being mined by changing the shake effecting position to rotation",
+        "Changed handling of reagent mixes in the Recycler and Centrifuge to try and reduce instances of machine inventories growing exponentially.",
+        "Added lateral movement even when height efficiency is low.",
+        "Fixed bug causing jetpack stabilization not working while using the labeller.",
+        "Changed QuantityUsed value for Soy Oil and all Color reagents to 1 from 5 and 10 respectively.",
+        "Fixed jetpacks sending to many messages."
+      ]
+    },
+    {
+      "version": "0.1.1562.7363",
+      "notes": [
+        "Increased amount of Soy Oil returned per soy bean processed in the reagent grinder.",
+        "Reduced cost of paint recipes.",
+        "Added Flower recipes to Organics printer in case you need to replace starting supply in survival.",
+        "Fixed Red Flower thumbnail now shows a red flower instead of a yellow one."
+      ]
+    },
+    {
+      "version": "0.1.1561.7357",
+      "notes": [
+        "Fixed Attempted to reduce instances of NaN batteries in cold environments.  Should also clear their broken state on save load.",
+        "Updated Localization files for German, Italian, Russian, Simplified Chinese, Traditional Chinese, Spanish and Suomi (Finnish).",
+        "Fixed issue preventing placement of cables directly behind the Elevator.",
+        "Fixed issue causing null reference exceptions when trying to use the Solid Fuel Generator due to missing GeneratorOre value.",
+        "Fixed flickering placement for facemount objects."
+      ]
+    },
+    {
+      "version": "0.1.1560.7350",
+      "notes": [
+        "Added additional organics crate to default starting conditions. Includes flowers, and more food.",
+        "Replaced set of Road Flares in Construction Crate in default start with an Advanced Airlock Circuitboard.",
+        "Added Medium and Heavy variants of gas filters. Medium filters last five times as long as the normal filters. Heavy filters last 20 times as long as the normal filters. They can be constructed on the Atmos Printer (Pipe Bender).",
+        "Removed Paint from being made at the tool manufactory. Now this is done by the Paint Mixer appliance.",
+        "Added Paint Mixer appliance. Use color dyes and soy oil mixed together to make the various spray cans. Make this appliance on the Electronics Printer or the Fabricator.",
+        "Added Colored Flowers. Grow these and then grind them up in the Reagent Processor to produce dyes for making paints.",
+        "Fixed Angled console placement."
+      ]
+    },
+    {
+      "version": "0.1.1558.7334",
+      "notes": [
+        "Fixed custom key assignments not saving correctly.",
+        "Fixed Elevator placement erroring when placed in same voxel as a wall.",
+        "added z axis padding on the prefab so that it correctly registered as occupying 2 voxels.",
+        "added ConConstruct checks so that the voxel with the carriage in it does the structure style checks and the voxel with the back end in it does wall style checks. However because ElevatorShaft can't inherit from Wall directly, and the CanConstruct checks in Structure are override'n and ignored in Device this is quite messy IMO. Could probably do with consideration of a better way to do it at some point.",
+        "Fixed Angled console so that it is free mount again.",
+        "Fixed issue with new world screen entries being duplicated if coming from the workshop screen."
+      ]
+    },
+    {
+      "version": "0.1.1557.7324",
+      "notes": [
+        "Fixed issue with drag-and-drop thumbnails and drag-to-slot."
+      ]
+    },
+    {
+      "version": "0.1.1556.7321",
+      "notes": [
+        "First pass on new exploding mechanics. Explosions now apply brute and stun damage.",
+        "Improvement Can autorotate Console Monitor, LED (Small, Medium, and Large), Dual and Console."
+      ]
+    },
+    {
+      "version": "0.1.1554.7312",
+      "notes": [
+        "Improvement Logic Memory now uses Autorotate.",
+        "Added player will automatically take off when turn jetpack on",
+        "Added Mission Event trigger for plant growth states.",
+        "Improvement Added autorotate to pipe/cable mounted objects."
+      ]
+    },
+    {
+      "version": "0.1.1553.7304",
+      "notes": [
+        "Fixed top placement bug for FaceMount'able objects."
+      ]
+    },
+    {
+      "version": "0.1.1552.7302",
+      "notes": [
+        "Updated translations for several languages.",
+        "Added Finnish translations.",
+        "Improvement Added Automatic Rotate to WallLight.",
+        "Improvement Added SmartRotate to WallHeater",
+        "Improvement Implemented AutomaticRotate for WallCooler.",
+        "Improvement SmartRotate implemented for TransformerSmall and TransformerSmallReversed",
+        "Improvement added Automaticrotate to RTG.",
+        "Improvement SmartRotate implemented for flashing light.",
+        "Improvement Automatic Rotate works with Logic Compare, Math, Unary, Min/Max, and Select.",
+        "Improvement Automatic rotate applied to Logic Button, Lever, Switch, and Dial.",
+        "Improvement Automatic Rotation implemented for ReagentReader, BatchReader, SlotReader, LogicMirror, BatchWriter, LogicWriter, LogicReader, and BatchSlotReader.",
+        "Improvement Automatic Rotate works for Igniter.",
+        "Improvement Automatic rotate implemented on Daylight, Gas, and Motion Sensor.",
+        "Improvement Console works with automatic Rotate",
+        "New Feature Automatic Rotation implemented for FaceMounted objects.",
+        "Fixed missing shake effect on ores caused by terrain refactor"
+      ]
+    },
     {
       "version": "0.1.1550.7285",
       "notes": [
@@ -2437,114 +2539,7 @@
         "Fixed LEDs color changing on reload. When first placed it would be white, but on load it would be blue, even though the mode was correctly set. Now the color is correctly initialized on load.",
         "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED.",
         "Fixed Logic Min/Max unit was saying \"Greater\" mode when it was actually \"Less\" mode (and vice versa). Now correctly reports it's current mode.",
-        "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed.",
-        "Fixed Logic Writers writing to Lock values did nothing for all devices (particularly Airlocks and Chute outlets). Was trying to write to powered state. Now correctly writes to Lock state, very useful for locking the doors and chutes."
-      ]
-    },
-    {
-      "version": "0.1.1078.5476",
-      "notes": [
-        "Fixed solar panel seperate data variant also allowed power from the data cable, as well as data, effectively doubling the power output. Now power is only allowed through the power connection."
-      ]
-    },
-    {
-      "version": "0.1.1077.5474",
-      "notes": [
-        "Fixed Jetpack not stabilizing when Text Input Panel was visible. Characters in Jetpack modes should now have their velocity slowed when Text Input Panel is visible.",
-        "Fixed ToggleInfo Keybind (F4 Default) sometimes breaking the GameMenu from appearing. Game Menu should now appear when ToggleInfo panel is displayed"
-      ]
-    },
-    {
-      "version": "0.1.1076.5471",
-      "notes": [
-        "Fixed issue with Character rotating 90* in slot when Chat panel was active",
-        "Fixed being able to jump while cursor is visible"
-      ]
-    },
-    {
-      "version": "0.1.1075.5468",
-      "notes": [
-        "Fixed airlock control circuitboard reassigns exterior and interior airlock doors when they loose connection, resulting in confusing setups when the wires have been cut. Circuitboard will continue to remember interior/exterior doors but release them if they are not usable.",
-        "Fixed stacker caused ingots passed through it to not be saved. Now correctly initializes new stacks so that they are saved (and then loaded) correctly."
-      ]
-    },
-    {
-      "version": "0.1.1072.5462",
-      "notes": [
-        "Added recipe number to tutorial, so that places know which recipe they need to find as there are a lot of recipes.",
-        "Fixed reversed transformer variant doesnt change the input/output and is actually the same as the master variant. Now correctly swapped inputs and outputs.",
-        "Fixed bug with labeller causing out of range exception when dropped while entering input. Now if the labeller is dropped or the device being renamed is destroyed, the input window will be automatically closed.",
-        "Fixed possible bug with centrifuge when importing \"bad\" stacks. If the stack had an error, could result in massive stacks in the game.",
-        "Fixed game locks up when deconstructing device that has extremely high number of reagents in it. Devices will now drop a maximum of 200 stacks when being deconstructed. Some \"bad\" stacks were causing huge reagent mixes, and then these broke the centrifuge.",
-        "Fixed able to put items inside their own slots, causing the game to lock up. Now cannot put items inside other items."
-      ]
-    },
-    {
-      "version": "0.1.1068.5451",
-      "notes": [
-        "Changed tutorial due to feedback from players. Now highlights exist for construction requirements. Added using microwave to make a recipe. Reduced edgecases that could make the tutorial incompletable. Prepared tutorial for localization by community.",
-        "Added ToolManufactory recipe to fabricator.",
-        "added missing angle grinder to fabricator",
-        "Exposed Activate action on Furnace to Logic system. Now setting Activate to 1 will cause the furnace to ignite its internal atmosphere.",
-        "Fixed portable light causing collision with character and propelling them around. Now can safely carry the portable light"
-      ]
-    },
-    {
-      "version": "0.1.1067.5445",
-      "notes": [
-        "Fixed SolarControl wasn't updated connected SolarPanel on dedicated server.",
-        "Added more detailed tooltips for power tools, such as telling the player when their power tool does not have enough battery charge to complete a task."
-      ]
-    },
-    {
-      "version": "0.1.1066.5437",
-      "notes": [
-        "Fixed Reagent mixtures in Furnace and Recycler could sometimes spam small values for clients. Now reagent mixtures are correctly cleared on clients when they receive an update."
-      ]
-    },
-    {
-      "version": "0.1.1062.5426",
-      "notes": [
-        "Fixed bug with Area Power Controller using increasing amounts of power when operating off battery. Caused batteries to drain completely very fast.",
-        "Fixed Logic Compare NotEquals always reporting false. Was not implemented, so always returning 0. Now returns 1 if values are not approximately equal (within float variant)."
-      ]
-    },
-    {
-      "version": "0.1.1061.5421",
-      "notes": [
-        "Fixed Reconnecting players spawning inside of grids. Now players position is reset client side if there has been a delay taking control.",
-        "Fixed OnThreadUpdate not running on dedicated servers. Dedicated servers should now work correctly with Daylight Sensors"
-      ]
-    },
-    {
-      "version": "0.1.1060.5416",
-      "notes": [
-        "Added clearallinterval command which is clear disconnected player from dedicated server. Default and minimum value is 60 seconds.",
-        "Fixed issue with items being able to be dropped through floors."
-      ]
-    },
-    {
-      "version": "0.1.1058.5405",
-      "notes": [
-        "Added text display to slots for Circuitboards, Motherboards, and Cartridges as a temporary solution so you know what they are instead of needing to drop them.",
-        "Reduced the cost of steel frames and sheets.  Players using steel as a construction material will be rewarded by not needing to use as many resources.",
-        "Fixed issue where players would put open gas canisters into portable tanks, welders, etc..., and the canisters would leak all the air out. Now when a gas canister is inserted into something, it will be automatically closed.",
-        "Added recycler recipe to autolathe and fabricator.",
-        "Fixed glass recipe on fabricator to match that of autolathe",
-        "Fixed suit atmospherics will continue to use a gas canister when it is open. Now the suit will close tanks when using atmospheres, to avoid putting gas into waste tanks when they are open.",
-        "Added Recycler. Made from Kit (Recycler). Put things into this and receive resources back. Resources come out as generic reagent mixes, and will usually need to be placed into the Centrifuge to separate out into component ores for smelting. Also useful for turning ingots into ore again.",
-        "Changed Reagent mixtures from floats to double, to avoid floating point issues.",
-        "Draggable items now require you to be closer then 3 meters to interact with"
-      ]
-    },
-    {
-      "version": "0.1.1057.5396",
-      "notes": [
-        "Fixed bug where power usage for circuits reset to defaults.",
-        "Fixed signs not dropping kits on deconstruct, and large sign now uses 2 kits.",
-        "Fixed items spawned from stackers not saving.",
-        "Fixed floating point errors for reagents causing ratio issues with furnace. This meant that despite looking like you had the ratios, it was possible to not produce anything.",
-        "Added small screws to Logic Memory. Large screws provide increments of 100 (10 if holding ALT). Small screws provide increments of 1 (0.1 if holding ALT)."
+        "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed."
       ]
     }
   ]
