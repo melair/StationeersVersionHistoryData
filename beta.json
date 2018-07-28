@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1561.7357",
-    "date": "2018-07-27T00:00:00+01:00"
+    "version": "0.1.1562.7363",
+    "date": "2018-07-28T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1562.7363",
+      "notes": [
+        "Increased amount of Soy Oil returned per soy bean processed in the reagent grinder.",
+        "Reduced cost of paint recipes.",
+        "Added Flower recipes to Organics printer in case you need to replace starting supply in survival.",
+        "Fixed Red Flower thumbnail now shows a red flower instead of a yellow one."
+      ]
+    },
     {
       "version": "0.1.1561.7357",
       "notes": [
@@ -2534,20 +2543,6 @@
       "notes": [
         "Fixed Jetpack not stabilizing when Text Input Panel was visible. Characters in Jetpack modes should now have their velocity slowed when Text Input Panel is visible.",
         "Fixed ToggleInfo Keybind (F4 Default) sometimes breaking the GameMenu from appearing. Game Menu should now appear when ToggleInfo panel is displayed"
-      ]
-    },
-    {
-      "version": "0.1.1076.5471",
-      "notes": [
-        "Fixed issue with Character rotating 90* in slot when Chat panel was active",
-        "Fixed being able to jump while cursor is visible"
-      ]
-    },
-    {
-      "version": "0.1.1075.5468",
-      "notes": [
-        "Fixed airlock control circuitboard reassigns exterior and interior airlock doors when they loose connection, resulting in confusing setups when the wires have been cut. Circuitboard will continue to remember interior/exterior doors but release them if they are not usable.",
-        "Fixed stacker caused ingots passed through it to not be saved. Now correctly initializes new stacks so that they are saved (and then loaded) correctly."
       ]
     }
   ]

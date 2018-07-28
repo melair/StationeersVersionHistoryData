@@ -1,4 +1,16 @@
 {
+  "0.1.1562.7363": {
+    "notes": [
+      "Increased amount of Soy Oil returned per soy bean processed in the reagent grinder.",
+      "Reduced cost of paint recipes.",
+      "Added Flower recipes to Organics printer in case you need to replace starting supply in survival.",
+      "Fixed Red Flower thumbnail now shows a red flower instead of a yellow one."
+    ],
+    "releases": {
+      "built": "2018-07-28T00:00:00+01:00",
+      "beta": "2018-07-28T03:01:11+01:00"
+    }
+  },
   "0.1.1561.7357": {
     "notes": [
       "Fixed Attempted to reduce instances of NaN batteries in cold environments.  Should also clear their broken state on save load.",
