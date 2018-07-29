@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1564.7373",
-    "date": "2018-07-28T00:00:00+01:00"
+    "version": "0.1.1566.7375",
+    "date": "2018-07-30T00:00:00+01:00"
   },
   "history": [
     {
@@ -2537,9 +2537,7 @@
         "Fixed gameplay tips were not being cleared between language changes. Meant that english tips were being shown for other languages. Now will show tips only from the supplied language. No tip will be shown if there are no localized tips for the current language.",
         "Fixed out of range exceptions when writing incompatible logic values to mode (such as setting LED mode to -99), and possibly other state values. Now the state values for OnOff, Lock, etc... are clamped to binary values. Mode is clamped to the number of ModeStrings the object has, so the number of valid mode states.",
         "Fixed LEDs color changing on reload. When first placed it would be white, but on load it would be blue, even though the mode was correctly set. Now the color is correctly initialized on load.",
-        "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED.",
-        "Fixed Logic Min/Max unit was saying \"Greater\" mode when it was actually \"Less\" mode (and vice versa). Now correctly reports it's current mode.",
-        "Fixed when deconstructing or deconstructing locker while the door closed, all the items would be correctly ejected but would be invisible. Now they are correctly set to visible when the the locker is destroyed."
+        "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED."
       ]
     }
   ]
