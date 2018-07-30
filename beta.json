@@ -1,9 +1,22 @@
 {
   "current": {
-    "version": "0.1.1566.7375",
+    "version": "0.1.1567.7381",
     "date": "2018-07-30T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1567.7381",
+      "notes": [
+        "Fixed not being able to climb on ladders if they were placed below 0 on the Y axis.",
+        "Fixed a bug where if you clear a item blueprint aligned to a mothership then bring another blueprint up without moving the new one won't be aligned to the mothership axes but otherwise acts as though it is.",
+        "Fixed Autorotate not finding all options on Mothership Grid",
+        "Fixed Autorotate not adjusting rotations for Mothership Grid",
+        "Fixed Holding or tapping the autorotate key while moving between world grid and mothership grid would sometimes cause the placement to not align with the grid",
+        "Updated Localization entries for French, Italian, Portuguese, Russian, Simplified Chinese, Traditional Chinese, Suomi and Spanish.",
+        "Changed ratio of Carbon obtained from putting Coal into the Reagent Grinder from 5:1 to 1:10.",
+        "Fixed NullReferenceException on jetpacks not belonging to players, or players not wearing jetpacks."
+      ]
+    },
     {
       "version": "0.1.1563.7371",
       "notes": [
@@ -2525,19 +2538,6 @@
         "Fixed Active Vents not serializing their Pressure settings. Now correctly serializes their internal and external safeties. Possible fix for needing to reset active vents on load, as they were not storing their settings. Note: this will probably only work from the next time you load your game. So you will need to load, save, and then reload to see if it works.",
         "Possible fix for various dedicated server initialization issues. Initialization on dedicated server has been changed to be similar to that which clients do, which might fix the many initialization problems on dedicated servers, such as active vents not working or logic units needing to be powered on/off on server restart.",
         "Fixed Airlock Control Circuitboard exceptions and failing to correctly remove assigned devices. Now when an assigned airlock is deselected, the airlock is correctly removed. This should fix another edge case where airlock controllers would switch door assignments."
-      ]
-    },
-    {
-      "version": "0.1.1080.5488",
-      "notes": [
-        "Added Mode to LED Displays. When you change the mode, you change the color setting for the display. This can be used with the Logic Writer to change the current color of the text in the LED display.",
-        "Added cable analyzer recipe to the electronics printer.",
-        "Added Cable Analyzer. This device can be built from a Kit (Cable Analyzer). Display shows the Actual, Required, and Potential power (in Watts) for the network the cable sits on. It also exposes this to Logic Units, allowing you to much more easily use the logic units to manage your power.",
-        "Added tutorial translations for French and Spanish.",
-        "Fixed gameplay tips were not being cleared between language changes. Meant that english tips were being shown for other languages. Now will show tips only from the supplied language. No tip will be shown if there are no localized tips for the current language.",
-        "Fixed out of range exceptions when writing incompatible logic values to mode (such as setting LED mode to -99), and possibly other state values. Now the state values for OnOff, Lock, etc... are clamped to binary values. Mode is clamped to the number of ModeStrings the object has, so the number of valid mode states.",
-        "Fixed LEDs color changing on reload. When first placed it would be white, but on load it would be blue, even though the mode was correctly set. Now the color is correctly initialized on load.",
-        "Changed Wall light kit name to Kit (Lights) in english translation, to better indicated that it can make both wall lights and the LED."
       ]
     }
   ]

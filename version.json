@@ -1,4 +1,20 @@
 {
+  "0.1.1567.7381": {
+    "notes": [
+      "Fixed not being able to climb on ladders if they were placed below 0 on the Y axis.",
+      "Fixed a bug where if you clear a item blueprint aligned to a mothership then bring another blueprint up without moving the new one won't be aligned to the mothership axes but otherwise acts as though it is.",
+      "Fixed Autorotate not finding all options on Mothership Grid",
+      "Fixed Autorotate not adjusting rotations for Mothership Grid",
+      "Fixed Holding or tapping the autorotate key while moving between world grid and mothership grid would sometimes cause the placement to not align with the grid",
+      "Updated Localization entries for French, Italian, Portuguese, Russian, Simplified Chinese, Traditional Chinese, Suomi and Spanish.",
+      "Changed ratio of Carbon obtained from putting Coal into the Reagent Grinder from 5:1 to 1:10.",
+      "Fixed NullReferenceException on jetpacks not belonging to players, or players not wearing jetpacks."
+    ],
+    "releases": {
+      "built": "2018-07-30T00:00:00+01:00",
+      "beta": "2018-07-30T09:01:13+01:00"
+    }
+  },
   "0.1.1566.7375": {
     "notes": [
 
