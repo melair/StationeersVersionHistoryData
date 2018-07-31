@@ -1,4 +1,22 @@
 {
+  "0.1.1569.7385": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-07-31T00:00:00+01:00",
+      "beta": "2018-07-31T04:01:15+01:00"
+    }
+  },
+  "0.1.1568.7383": {
+    "notes": [
+      "Added Scenario Menu.  No official scenarios are included yet, but support for workshop scenarios has been enabled.  This will be better detailed in the next patch and documentation on how to build your own scenario will be provided in the #modding channel in Discord when it's ready.  The Scenario button will be disabled if no valid scenarios are detected in your enabled mods."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1567.7381": {
     "notes": [
       "Fixed not being able to climb on ladders if they were placed below 0 on the Y axis.",

@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1567.7381",
-    "date": "2018-07-30T00:00:00+01:00"
+    "version": "0.1.1569.7385",
+    "date": "2018-07-31T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1568.7383",
+      "notes": [
+        "Added Scenario Menu.  No official scenarios are included yet, but support for workshop scenarios has been enabled.  This will be better detailed in the next patch and documentation on how to build your own scenario will be provided in the #modding channel in Discord when it's ready.  The Scenario button will be disabled if no valid scenarios are detected in your enabled mods."
+      ]
+    },
     {
       "version": "0.1.1567.7381",
       "notes": [
@@ -2534,10 +2540,7 @@
     {
       "version": "0.1.1081.5491",
       "notes": [
-        "Fixed Microwave not informing player that recipe not continuing due to no power. Now tells player in tooltip that the device does not have power.",
-        "Fixed Active Vents not serializing their Pressure settings. Now correctly serializes their internal and external safeties. Possible fix for needing to reset active vents on load, as they were not storing their settings. Note: this will probably only work from the next time you load your game. So you will need to load, save, and then reload to see if it works.",
-        "Possible fix for various dedicated server initialization issues. Initialization on dedicated server has been changed to be similar to that which clients do, which might fix the many initialization problems on dedicated servers, such as active vents not working or logic units needing to be powered on/off on server restart.",
-        "Fixed Airlock Control Circuitboard exceptions and failing to correctly remove assigned devices. Now when an assigned airlock is deselected, the airlock is correctly removed. This should fix another edge case where airlock controllers would switch door assignments."
+        "Fixed Microwave not informing player that recipe not continuing due to no power. Now tells player in tooltip that the device does not have power."
       ]
     }
   ]
