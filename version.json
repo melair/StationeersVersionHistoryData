@@ -1,4 +1,17 @@
 {
+  "0.1.1570.7392": {
+    "notes": [
+      "Improvement Autorotate now works with AreaPowerControl.",
+      "Improvement Autorotate now works with ActiveVent",
+      "Improvement Autorotate works with LED; Wall Light; DiodeSlide; and Wall Light Long Wide, Long Angled, and Long.",
+      "Improvement Autorotate works with Conveyor Corner, Straight Long, Straight, Straight Short and Riser.",
+      "Improvement Extended Autorotate to work with grid objects that can't rotate in any direction."
+    ],
+    "releases": {
+      "built": "2018-08-01T00:00:00+01:00",
+      "beta": "2018-07-31T22:01:11+01:00"
+    }
+  },
   "0.1.1569.7385": {
     "notes": [
 
