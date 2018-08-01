@@ -1,4 +1,27 @@
 {
+  "0.1.1572.7400": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-02T00:00:00+01:00",
+      "beta": "2018-08-01T23:01:11+01:00"
+    }
+  },
+  "0.1.1571.7399": {
+    "notes": [
+      "Improvement Autorotate now works with Tank Connector.",
+      "Improvement Autorotate now works with SolarPanels.",
+      "Improvement Autorotate now works with PowerConnector.",
+      "Improvement Autorotate now works with Air Conditioner, Electrolyzer, and Filtration",
+      "Improvement Autorotate now works with GasMixer",
+      "Improvement Autorotate now works with Beacon"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1570.7392": {
     "notes": [
       "Improvement Autorotate now works with AreaPowerControl.",

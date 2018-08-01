@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1570.7392",
-    "date": "2018-08-01T00:00:00+01:00"
+    "version": "0.1.1572.7400",
+    "date": "2018-08-02T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1571.7399",
+      "notes": [
+        "Improvement Autorotate now works with Tank Connector.",
+        "Improvement Autorotate now works with SolarPanels.",
+        "Improvement Autorotate now works with PowerConnector.",
+        "Improvement Autorotate now works with Air Conditioner, Electrolyzer, and Filtration",
+        "Improvement Autorotate now works with GasMixer",
+        "Improvement Autorotate now works with Beacon"
+      ]
+    },
     {
       "version": "0.1.1570.7392",
       "notes": [
@@ -2521,22 +2532,7 @@
     {
       "version": "0.1.1086.5505",
       "notes": [
-        "Changed wall light distance setting from 4m to 7m. Now will provide light across a larger area, as requested by the community.",
-        "Fixed Large Tank and other internal atmosphere devices (such as the sleeper) only mix to meet pressure, they dont mix the energy and contents states. Now they completely mix with connected atmospheres.",
-        "Fixed Light Occlusion and Atmosphere world position updates not occurring on dedicated servers. Caused light issues for dedicated server logic systems and growing plants and solar heating of atmospheres."
-      ]
-    },
-    {
-      "version": "0.1.1085.5501",
-      "notes": [
-        "Updated community provided Russian translations."
-      ]
-    },
-    {
-      "version": "0.1.1083.5497",
-      "notes": [
-        "Fixed atmospheric loss due to ungenerated room cells. Rooms were not being correctly generated in some instances, such as below floor grates when there was voxels below. This caused the atmospherics system to consider below the grates as a vacuum and ablate the atmosphere dramatically, causing loss. Note: this will only affect NEW room generation! To force new room generation, lift up wall tiles and room generation will be forced for the grids above and below that wall piece. This was also the cause of zero gravity bugs in creative stations.",
-        "Added Idle logic readable to Arc Furnace. Will report 1 when nothing imported, and nothing being exported. Useful for making automated arc furnace systems."
+        "Changed wall light distance setting from 4m to 7m. Now will provide light across a larger area, as requested by the community."
       ]
     }
   ]
