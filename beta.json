@@ -1,9 +1,20 @@
 {
   "current": {
-    "version": "0.1.1572.7400",
-    "date": "2018-08-02T00:00:00+01:00"
+    "version": "0.1.1576.7414",
+    "date": "2018-08-03T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1573.7410",
+      "notes": [
+        "Improvement Autorotate now works with Computer",
+        "Improvement Autorotate now works with Contrifuge",
+        "Improvement Autorotate now works with Bench, Chair, and Control Chair",
+        "Improvement Autorotate now works with Battery",
+        "Improvement Autorotate now works with Autolathe.",
+        "Improvement Autorotate now works with Arc Furnace"
+      ]
+    },
     {
       "version": "0.1.1571.7399",
       "notes": [
@@ -2514,25 +2525,6 @@
       "version": "0.1.1089.5513",
       "notes": [
         "Fixed Logic Motherboard missing a lot of functionality that were added to the Logic Units. This has now been unified with the logic units, so assessments available on one should also be on the other."
-      ]
-    },
-    {
-      "version": "0.1.1087.5508",
-      "notes": [
-        "Fixed Construction Kits were not displaying an error message when there was not enough in the kit to build the current cursor device. Now correctly states that not enough is in the kit, and shows the cursor as red.",
-        "Fixed some missing strings for other languages.",
-        "Removed old LED Medium and Large displays. These will no longer appear in your game, and you will need to place new ones. Small displays placements are unchanged.",
-        "Replaced Mode change for LED light and display color, instead of using \"Mode\" setting you now use \"Color\" setting.",
-        "Added functionality on LED Display for different display modes. Current number (default), percent (input a ratio, i.e. 1 == 100%, 0 == 0%), and power (in watts).",
-        "Added new LED Displays. They can handle alphanumeric and special characters much better than previously, and will be updated with new functionality in the coming weeks. New LED displays have a standardized button and input placement, for easier use.",
-        "Fixed bug with display formatting for units. Negative values were sometimes considered \"micro\" units and were formatted incorrectly.",
-        "Unified Logic Motherboard and Logic Unit value setting."
-      ]
-    },
-    {
-      "version": "0.1.1086.5505",
-      "notes": [
-        "Changed wall light distance setting from 4m to 7m. Now will provide light across a larger area, as requested by the community."
       ]
     }
   ]
