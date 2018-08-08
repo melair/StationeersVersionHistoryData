@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1582.7450",
-    "date": "2018-08-08T00:00:00+01:00"
+    "version": "0.1.1584.7452",
+    "date": "2018-08-09T00:00:00+01:00"
   },
   "history": [
     {
@@ -2505,12 +2505,6 @@
         "Optimized memory allocations. Unity GC(garbage collector) runs more often and unloaded unused assets to reduce memory usage. There is no chance to run GC on persistent dedicated server yet. We will do it soon.",
         "Fixed InvalidOperationException: Steamworks is not initialized. Modifed not to throw exception while updating steam stats",
         "Fixed could not see other languages on chatting panel."
-      ]
-    },
-    {
-      "version": "0.1.1099.5549",
-      "notes": [
-        "Added respawn mechanic. Game will now ask if you want to respawn or exit to menu on death."
       ]
     }
   ]

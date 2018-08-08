@@ -1,4 +1,13 @@
 {
+  "0.1.1584.7452": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-09T00:00:00+01:00",
+      "beta": "2018-08-08T23:01:11+01:00"
+    }
+  },
   "0.1.1582.7450": {
     "notes": [
       "Reverted addition of Autorotate to Gyroscope, Cryotube and HydraulicPipeBender due Unity issues preventing build from finishing.",
