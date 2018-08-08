@@ -1,9 +1,40 @@
 {
   "current": {
-    "version": "0.1.1578.7417",
-    "date": "2018-08-06T00:00:00+01:00"
+    "version": "0.1.1582.7450",
+    "date": "2018-08-08T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1582.7450",
+      "notes": [
+        "Reverted addition of Autorotate to Gyroscope, Cryotube and HydraulicPipeBender due Unity issues preventing build from finishing.",
+        "Fixed AreaPowerControl consuming power but not adding that power to the inserted battery if it was powered off."
+      ]
+    },
+    {
+      "version": "0.1.1581.7447",
+      "notes": [
+        "Improvement Autorotate now works with Sorter",
+        "Improvement Autorotate now works with SolidFuelGenerator",
+        "Improvement Autorotate now works with Sleeper",
+        "Improvement Autorotate now works with SecurityPrinter",
+        "Improvement Autorotate now works with the rocket engines",
+        "Improvement Autorotate now works with Recycler",
+        "Improvement Autorotate now works with OrganicsPrinter",
+        "Improvement Autorotate now works with HydroponicsStation",
+        "Improvement Autorotate now works with HydraulicPipeBender",
+        "Improvement Autorotate now works with Gyroscope",
+        "Fixed Log and Pow logic math functions were using Input2 twice, instead of Input1, Input2.  Should now be using both inputs correctly.",
+        "Improvement Autorotate now works with GasTankStorage",
+        "Improvement Autorotate now works with GasGenerator",
+        "Improvement Autorotate now works with Furnace",
+        "Improvement Autorotate now works with Fabricator",
+        "Fixed credits button taking you to the scenarios menu.",
+        "Improvement Autorotate now works with ElectronicsPrinter",
+        "Improvement Autorotate now woks with CryoTube",
+        "Fix Attachment connection directions on AirConditioner"
+      ]
+    },
     {
       "version": "0.1.1573.7410",
       "notes": [
@@ -2480,51 +2511,6 @@
       "version": "0.1.1099.5549",
       "notes": [
         "Added respawn mechanic. Game will now ask if you want to respawn or exit to menu on death."
-      ]
-    },
-    {
-      "version": "0.1.1097.5535",
-      "notes": [
-        "Added extra visual feedback on key binding screen, and a prompt if you attempt to bind actions to mouse buttons.",
-        "Fixed Bug where game would attempt to auto-save during Tutorial.",
-        "Fixed wrong player count on dedicated server. Players could connect to dedicated server upto max player count - 1. It was fixed upto max player count.",
-        "Disabled WaterVisualizer on dedicated server. It's a visualizer only on client."
-      ]
-    },
-    {
-      "version": "0.1.1095.5529",
-      "notes": [
-        "Fixed LED Displays were displaying their values offset when they were placed in certain orientations. Now values will be correctly centered in all orientations.",
-        "Fixed some devices were adding energy from power usage to atmospheres that had only a small quantity of moles. For now, most devices will stop heating the atmosphere if it is below the Armstrong Limit (6kPa). In future, this will probably be lowered, as it is not realistic, but this will help with flash fires caused during decompression."
-      ]
-    },
-    {
-      "version": "0.1.1094.5526",
-      "notes": [
-        "Fixed Air Conditioner not being able to be powered on. Now AC can be powered on correctly, it will not draw power through it's data network, and it will close itself when turned off or looses power."
-      ]
-    },
-    {
-      "version": "0.1.1093.5524",
-      "notes": [
-        "Fixed bug with flood fill room generation generating junk values. Previous fix caused the junk rooms to return. When you would mine a voxel, this would cause an attempt at room generation. If all faces were closed, it would succeed and create a tiny one-grid room. Now this is checked for and prevented. Existing rooms will not be removed by this change, this only affects new rooms. Junk rooms are unlikely to have much ill effect but might cause gravity issues for the space world.",
-        "Fixed Air Conditioner double used power when heating. Now AC applies its passive energy use, and retains its active energy use to apply during power tick. Reported by Zaneo via email/discord.",
-        "Lowered view distance for Wall Lights, as their increased lighting distance was causing signficant frame drop.",
-        "Fixed cannot spraypaint pipe analyser. Now can be painted just like other devices and objects. Reported by Lizza on steam.",
-        "Fixed ices would melt when in subzero temperature even when in direct sunlight. Now ices will not melt, even if direct sunlight, if they are below freezing point. Reported by [BS] Fridge Lord on steam forums.",
-        "Fixed painted LED not changing color variable. This meant if you manually painted an LED, it would not change its color variable and would load with the default color (0). Now the color state is changed."
-      ]
-    },
-    {
-      "version": "0.1.1092.5517",
-      "notes": [
-        "Added support for localized text to most alert and prompt popups."
-      ]
-    },
-    {
-      "version": "0.1.1089.5513",
-      "notes": [
-        "Fixed Logic Motherboard missing a lot of functionality that were added to the Logic Units. This has now been unified with the logic units, so assessments available on one should also be on the other."
       ]
     }
   ]
