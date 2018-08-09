@@ -1,9 +1,27 @@
 {
   "current": {
-    "version": "0.1.1584.7452",
-    "date": "2018-08-09T00:00:00+01:00"
+    "version": "0.1.1585.7466",
+    "date": "2018-08-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1585.7466",
+      "notes": [
+        "Fixed Index Out Of Range error caused by GetPercentageString if a status update percentage went over 200.",
+        "Improvement Garbage collection improvements to Jetpack.",
+        "Fixed ConsoleMonitor Autorotate bug.",
+        "Improvement Autorotate now works with Transformer",
+        "Improvement Autorotate now works with TorpedoTube",
+        "Improvement Autorotate now works with Unloader, ToolManufactory, and VendingMachine.",
+        "Improvement Autorotate now (theoretically) works with TankSmallAir and TankSmallFuel.",
+        "Improvement Autorotate now works with TankBig and TankSmall",
+        "Improvement Autorotate now works with SuitStorage",
+        "Improvement Autorotate now works with StellarAnchor",
+        "Improvement Autorotate now works with StackerReverse.",
+        "Improvement Autorotate now works with Stacker",
+        "Rereverted addition of Autorotate to Gyroscope, Cryotube and HydraulicPipeBender"
+      ]
+    },
     {
       "version": "0.1.1582.7450",
       "notes": [
@@ -2479,32 +2497,7 @@
         "Fixed Camera being moveable when Dead",
         "Decay Stage added to Human. 3 minutes after dying you will now drop all items and turn into Skeleton. Skeletons represent a dead player who has no chance of being revived.",
         "Organ death now results in major Brute damage to player (Any organ failure will put you into Dead state)",
-        "Fixed bug with Brute damage not being able to decrease if it was at cap",
-        "Fixed spawning in wrong position (fixes wrong tutorial spawn position and fixes falling through terrain)",
-        "Fixed small items falling through terrain when moving Fast"
-      ]
-    },
-    {
-      "version": "0.1.1102.5564",
-      "notes": [
-        "Fixed NRE when Logic Displays attempted to render a character they didn't have a mesh for."
-      ]
-    },
-    {
-      "version": "0.1.1101.5559",
-      "notes": [
-        "Fixed voxels sometimes losing density on loading world.",
-        "Disabled Workshop button while mod UI is implemented.",
-        "Reduced loading time and optimized memory usage on host player.Removed unnecessary sequences when loading.",
-        "Deleted nav mesh properly when leaving game.It caused freezing. It's faster than before."
-      ]
-    },
-    {
-      "version": "0.1.1100.5553",
-      "notes": [
-        "Optimized memory allocations. Unity GC(garbage collector) runs more often and unloaded unused assets to reduce memory usage. There is no chance to run GC on persistent dedicated server yet. We will do it soon.",
-        "Fixed InvalidOperationException: Steamworks is not initialized. Modifed not to throw exception while updating steam stats",
-        "Fixed could not see other languages on chatting panel."
+        "Fixed bug with Brute damage not being able to decrease if it was at cap"
       ]
     }
   ]

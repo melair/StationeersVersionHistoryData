@@ -1,4 +1,25 @@
 {
+  "0.1.1585.7466": {
+    "notes": [
+      "Fixed Index Out Of Range error caused by GetPercentageString if a status update percentage went over 200.",
+      "Improvement Garbage collection improvements to Jetpack.",
+      "Fixed ConsoleMonitor Autorotate bug.",
+      "Improvement Autorotate now works with Transformer",
+      "Improvement Autorotate now works with TorpedoTube",
+      "Improvement Autorotate now works with Unloader, ToolManufactory, and VendingMachine.",
+      "Improvement Autorotate now (theoretically) works with TankSmallAir and TankSmallFuel.",
+      "Improvement Autorotate now works with TankBig and TankSmall",
+      "Improvement Autorotate now works with SuitStorage",
+      "Improvement Autorotate now works with StellarAnchor",
+      "Improvement Autorotate now works with StackerReverse.",
+      "Improvement Autorotate now works with Stacker",
+      "Rereverted addition of Autorotate to Gyroscope, Cryotube and HydraulicPipeBender"
+    ],
+    "releases": {
+      "built": "2018-08-10T00:00:00+01:00",
+      "beta": "2018-08-09T22:01:13+01:00"
+    }
+  },
   "0.1.1584.7452": {
     "notes": [
 
