@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1585.7466",
+    "version": "0.1.1586.7476",
     "date": "2018-08-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1586.7476",
+      "notes": [
+        "Added Pumpkin. Provides a lot of nutrition but grows slowly. Can be turned into Pumpkin Pie with other ingredients.",
+        "Added Rice. Grows fast but does not provide much nutrition. Will be used in future recipes.",
+        "Added mushrooms. Do not require sunlight to grow, but take much longer than other plants to mature. Gives roughly the same nutrition as an uncooked potato."
+      ]
+    },
     {
       "version": "0.1.1585.7466",
       "notes": [
@@ -2493,11 +2501,7 @@
         "Re-Fixed spawning in wrong position",
         "Added translucency to ice ores and silicon",
         "Fixed object reference error with chute bin.",
-        "Added some more localized versions of button and placeholder text fields on the save and join world menus.",
-        "Fixed Camera being moveable when Dead",
-        "Decay Stage added to Human. 3 minutes after dying you will now drop all items and turn into Skeleton. Skeletons represent a dead player who has no chance of being revived.",
-        "Organ death now results in major Brute damage to player (Any organ failure will put you into Dead state)",
-        "Fixed bug with Brute damage not being able to decrease if it was at cap"
+        "Added some more localized versions of button and placeholder text fields on the save and join world menus."
       ]
     }
   ]

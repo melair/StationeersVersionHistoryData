@@ -1,4 +1,15 @@
 {
+  "0.1.1586.7476": {
+    "notes": [
+      "Added Pumpkin. Provides a lot of nutrition but grows slowly. Can be turned into Pumpkin Pie with other ingredients.",
+      "Added Rice. Grows fast but does not provide much nutrition. Will be used in future recipes.",
+      "Added mushrooms. Do not require sunlight to grow, but take much longer than other plants to mature. Gives roughly the same nutrition as an uncooked potato."
+    ],
+    "releases": {
+      "built": "2018-08-10T00:00:00+01:00",
+      "beta": "2018-08-10T05:01:24+01:00"
+    }
+  },
   "0.1.1585.7466": {
     "notes": [
       "Fixed Index Out Of Range error caused by GetPercentageString if a status update percentage went over 200.",
