@@ -1,9 +1,104 @@
 {
   "current": {
-    "version": "0.1.1567.7381",
-    "date": "2018-07-30T00:00:00+01:00"
+    "version": "0.1.1586.7476",
+    "date": "2018-08-10T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1586.7476",
+      "notes": [
+        "Added Pumpkin. Provides a lot of nutrition but grows slowly. Can be turned into Pumpkin Pie with other ingredients.",
+        "Added Rice. Grows fast but does not provide much nutrition. Will be used in future recipes.",
+        "Added mushrooms. Do not require sunlight to grow, but take much longer than other plants to mature. Gives roughly the same nutrition as an uncooked potato."
+      ]
+    },
+    {
+      "version": "0.1.1585.7466",
+      "notes": [
+        "Fixed Index Out Of Range error caused by GetPercentageString if a status update percentage went over 200.",
+        "Improvement Garbage collection improvements to Jetpack.",
+        "Fixed ConsoleMonitor Autorotate bug.",
+        "Improvement Autorotate now works with Transformer",
+        "Improvement Autorotate now works with TorpedoTube",
+        "Improvement Autorotate now works with Unloader, ToolManufactory, and VendingMachine.",
+        "Improvement Autorotate now (theoretically) works with TankSmallAir and TankSmallFuel.",
+        "Improvement Autorotate now works with TankBig and TankSmall",
+        "Improvement Autorotate now works with SuitStorage",
+        "Improvement Autorotate now works with StellarAnchor",
+        "Improvement Autorotate now works with StackerReverse.",
+        "Improvement Autorotate now works with Stacker",
+        "Rereverted addition of Autorotate to Gyroscope, Cryotube and HydraulicPipeBender"
+      ]
+    },
+    {
+      "version": "0.1.1582.7450",
+      "notes": [
+        "Reverted addition of Autorotate to Gyroscope, Cryotube and HydraulicPipeBender due Unity issues preventing build from finishing.",
+        "Fixed AreaPowerControl consuming power but not adding that power to the inserted battery if it was powered off."
+      ]
+    },
+    {
+      "version": "0.1.1581.7447",
+      "notes": [
+        "Improvement Autorotate now works with Sorter",
+        "Improvement Autorotate now works with SolidFuelGenerator",
+        "Improvement Autorotate now works with Sleeper",
+        "Improvement Autorotate now works with SecurityPrinter",
+        "Improvement Autorotate now works with the rocket engines",
+        "Improvement Autorotate now works with Recycler",
+        "Improvement Autorotate now works with OrganicsPrinter",
+        "Improvement Autorotate now works with HydroponicsStation",
+        "Improvement Autorotate now works with HydraulicPipeBender",
+        "Improvement Autorotate now works with Gyroscope",
+        "Fixed Log and Pow logic math functions were using Input2 twice, instead of Input1, Input2.  Should now be using both inputs correctly.",
+        "Improvement Autorotate now works with GasTankStorage",
+        "Improvement Autorotate now works with GasGenerator",
+        "Improvement Autorotate now works with Furnace",
+        "Improvement Autorotate now works with Fabricator",
+        "Fixed credits button taking you to the scenarios menu.",
+        "Improvement Autorotate now works with ElectronicsPrinter",
+        "Improvement Autorotate now woks with CryoTube",
+        "Fix Attachment connection directions on AirConditioner"
+      ]
+    },
+    {
+      "version": "0.1.1573.7410",
+      "notes": [
+        "Improvement Autorotate now works with Computer",
+        "Improvement Autorotate now works with Contrifuge",
+        "Improvement Autorotate now works with Bench, Chair, and Control Chair",
+        "Improvement Autorotate now works with Battery",
+        "Improvement Autorotate now works with Autolathe.",
+        "Improvement Autorotate now works with Arc Furnace"
+      ]
+    },
+    {
+      "version": "0.1.1571.7399",
+      "notes": [
+        "Improvement Autorotate now works with Tank Connector.",
+        "Improvement Autorotate now works with SolarPanels.",
+        "Improvement Autorotate now works with PowerConnector.",
+        "Improvement Autorotate now works with Air Conditioner, Electrolyzer, and Filtration",
+        "Improvement Autorotate now works with GasMixer",
+        "Improvement Autorotate now works with Beacon"
+      ]
+    },
+    {
+      "version": "0.1.1570.7392",
+      "notes": [
+        "Improvement Autorotate now works with AreaPowerControl.",
+        "Improvement Autorotate now works with ActiveVent",
+        "Improvement Autorotate works with LED; Wall Light; DiodeSlide; and Wall Light Long Wide, Long Angled, and Long.",
+        "Improvement Autorotate works with Conveyor Corner, Straight Long, Straight, Straight Short and Riser.",
+        "Improvement Extended Autorotate to work with grid objects that can't rotate in any direction."
+      ]
+    },
+    {
+      "version": "0.1.1568.7383",
+      "notes": [
+        "Added Scenario Menu.  No official scenarios are included yet, but support for workshop scenarios has been enabled.  This will be better detailed in the next patch and documentation on how to build your own scenario will be provided in the #modding channel in Discord when it's ready.  The Scenario button will be disabled if no valid scenarios are detected in your enabled mods."
+      ]
+    },
     {
       "version": "0.1.1567.7381",
       "notes": [
@@ -2406,138 +2501,7 @@
         "Re-Fixed spawning in wrong position",
         "Added translucency to ice ores and silicon",
         "Fixed object reference error with chute bin.",
-        "Added some more localized versions of button and placeholder text fields on the save and join world menus.",
-        "Fixed Camera being moveable when Dead",
-        "Decay Stage added to Human. 3 minutes after dying you will now drop all items and turn into Skeleton. Skeletons represent a dead player who has no chance of being revived.",
-        "Organ death now results in major Brute damage to player (Any organ failure will put you into Dead state)",
-        "Fixed bug with Brute damage not being able to decrease if it was at cap",
-        "Fixed spawning in wrong position (fixes wrong tutorial spawn position and fixes falling through terrain)",
-        "Fixed small items falling through terrain when moving Fast"
-      ]
-    },
-    {
-      "version": "0.1.1102.5564",
-      "notes": [
-        "Fixed NRE when Logic Displays attempted to render a character they didn't have a mesh for."
-      ]
-    },
-    {
-      "version": "0.1.1101.5559",
-      "notes": [
-        "Fixed voxels sometimes losing density on loading world.",
-        "Disabled Workshop button while mod UI is implemented.",
-        "Reduced loading time and optimized memory usage on host player.Removed unnecessary sequences when loading.",
-        "Deleted nav mesh properly when leaving game.It caused freezing. It's faster than before."
-      ]
-    },
-    {
-      "version": "0.1.1100.5553",
-      "notes": [
-        "Optimized memory allocations. Unity GC(garbage collector) runs more often and unloaded unused assets to reduce memory usage. There is no chance to run GC on persistent dedicated server yet. We will do it soon.",
-        "Fixed InvalidOperationException: Steamworks is not initialized. Modifed not to throw exception while updating steam stats",
-        "Fixed could not see other languages on chatting panel."
-      ]
-    },
-    {
-      "version": "0.1.1099.5549",
-      "notes": [
-        "Added respawn mechanic. Game will now ask if you want to respawn or exit to menu on death."
-      ]
-    },
-    {
-      "version": "0.1.1097.5535",
-      "notes": [
-        "Added extra visual feedback on key binding screen, and a prompt if you attempt to bind actions to mouse buttons.",
-        "Fixed Bug where game would attempt to auto-save during Tutorial.",
-        "Fixed wrong player count on dedicated server. Players could connect to dedicated server upto max player count - 1. It was fixed upto max player count.",
-        "Disabled WaterVisualizer on dedicated server. It's a visualizer only on client."
-      ]
-    },
-    {
-      "version": "0.1.1095.5529",
-      "notes": [
-        "Fixed LED Displays were displaying their values offset when they were placed in certain orientations. Now values will be correctly centered in all orientations.",
-        "Fixed some devices were adding energy from power usage to atmospheres that had only a small quantity of moles. For now, most devices will stop heating the atmosphere if it is below the Armstrong Limit (6kPa). In future, this will probably be lowered, as it is not realistic, but this will help with flash fires caused during decompression."
-      ]
-    },
-    {
-      "version": "0.1.1094.5526",
-      "notes": [
-        "Fixed Air Conditioner not being able to be powered on. Now AC can be powered on correctly, it will not draw power through it's data network, and it will close itself when turned off or looses power."
-      ]
-    },
-    {
-      "version": "0.1.1093.5524",
-      "notes": [
-        "Fixed bug with flood fill room generation generating junk values. Previous fix caused the junk rooms to return. When you would mine a voxel, this would cause an attempt at room generation. If all faces were closed, it would succeed and create a tiny one-grid room. Now this is checked for and prevented. Existing rooms will not be removed by this change, this only affects new rooms. Junk rooms are unlikely to have much ill effect but might cause gravity issues for the space world.",
-        "Fixed Air Conditioner double used power when heating. Now AC applies its passive energy use, and retains its active energy use to apply during power tick. Reported by Zaneo via email/discord.",
-        "Lowered view distance for Wall Lights, as their increased lighting distance was causing signficant frame drop.",
-        "Fixed cannot spraypaint pipe analyser. Now can be painted just like other devices and objects. Reported by Lizza on steam.",
-        "Fixed ices would melt when in subzero temperature even when in direct sunlight. Now ices will not melt, even if direct sunlight, if they are below freezing point. Reported by [BS] Fridge Lord on steam forums.",
-        "Fixed painted LED not changing color variable. This meant if you manually painted an LED, it would not change its color variable and would load with the default color (0). Now the color state is changed."
-      ]
-    },
-    {
-      "version": "0.1.1092.5517",
-      "notes": [
-        "Added support for localized text to most alert and prompt popups."
-      ]
-    },
-    {
-      "version": "0.1.1089.5513",
-      "notes": [
-        "Fixed Logic Motherboard missing a lot of functionality that were added to the Logic Units. This has now been unified with the logic units, so assessments available on one should also be on the other."
-      ]
-    },
-    {
-      "version": "0.1.1087.5508",
-      "notes": [
-        "Fixed Construction Kits were not displaying an error message when there was not enough in the kit to build the current cursor device. Now correctly states that not enough is in the kit, and shows the cursor as red.",
-        "Fixed some missing strings for other languages.",
-        "Removed old LED Medium and Large displays. These will no longer appear in your game, and you will need to place new ones. Small displays placements are unchanged.",
-        "Replaced Mode change for LED light and display color, instead of using \"Mode\" setting you now use \"Color\" setting.",
-        "Added functionality on LED Display for different display modes. Current number (default), percent (input a ratio, i.e. 1 == 100%, 0 == 0%), and power (in watts).",
-        "Added new LED Displays. They can handle alphanumeric and special characters much better than previously, and will be updated with new functionality in the coming weeks. New LED displays have a standardized button and input placement, for easier use.",
-        "Fixed bug with display formatting for units. Negative values were sometimes considered \"micro\" units and were formatted incorrectly.",
-        "Unified Logic Motherboard and Logic Unit value setting."
-      ]
-    },
-    {
-      "version": "0.1.1086.5505",
-      "notes": [
-        "Changed wall light distance setting from 4m to 7m. Now will provide light across a larger area, as requested by the community.",
-        "Fixed Large Tank and other internal atmosphere devices (such as the sleeper) only mix to meet pressure, they dont mix the energy and contents states. Now they completely mix with connected atmospheres.",
-        "Fixed Light Occlusion and Atmosphere world position updates not occurring on dedicated servers. Caused light issues for dedicated server logic systems and growing plants and solar heating of atmospheres."
-      ]
-    },
-    {
-      "version": "0.1.1085.5501",
-      "notes": [
-        "Updated community provided Russian translations."
-      ]
-    },
-    {
-      "version": "0.1.1083.5497",
-      "notes": [
-        "Fixed atmospheric loss due to ungenerated room cells. Rooms were not being correctly generated in some instances, such as below floor grates when there was voxels below. This caused the atmospherics system to consider below the grates as a vacuum and ablate the atmosphere dramatically, causing loss. Note: this will only affect NEW room generation! To force new room generation, lift up wall tiles and room generation will be forced for the grids above and below that wall piece. This was also the cause of zero gravity bugs in creative stations.",
-        "Added Idle logic readable to Arc Furnace. Will report 1 when nothing imported, and nothing being exported. Useful for making automated arc furnace systems.",
-        "Added Logic Dial. A dial with a configurable min/max and when dial is moved changes the value. Reports both its raw value, or the ratio compared to its max. The maximum value on the dial is the Mode."
-      ]
-    },
-    {
-      "version": "0.1.1082.5494",
-      "notes": [
-        "Added Logic Readers can read from other logic readers. Useful if you want to pass values simply between separated networks without extra writers.",
-        "Fixed atmospheric devices were able to be set to unlimited values using logic units. Now they will clamp assigned values to maximum and minimum."
-      ]
-    },
-    {
-      "version": "0.1.1081.5491",
-      "notes": [
-        "Fixed Microwave not informing player that recipe not continuing due to no power. Now tells player in tooltip that the device does not have power.",
-        "Fixed Active Vents not serializing their Pressure settings. Now correctly serializes their internal and external safeties. Possible fix for needing to reset active vents on load, as they were not storing their settings. Note: this will probably only work from the next time you load your game. So you will need to load, save, and then reload to see if it works.",
-        "Possible fix for various dedicated server initialization issues. Initialization on dedicated server has been changed to be similar to that which clients do, which might fix the many initialization problems on dedicated servers, such as active vents not working or logic units needing to be powered on/off on server restart.",
-        "Fixed Airlock Control Circuitboard exceptions and failing to correctly remove assigned devices. Now when an assigned airlock is deselected, the airlock is correctly removed. This should fix another edge case where airlock controllers would switch door assignments."
+        "Added some more localized versions of button and placeholder text fields on the save and join world menus."
       ]
     }
   ]
