@@ -1,9 +1,15 @@
 {
   "current": {
-    "version": "0.1.1586.7476",
-    "date": "2018-08-10T00:00:00+01:00"
+    "version": "0.1.1587.7479",
+    "date": "2018-08-13T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1587.7479",
+      "notes": [
+        "Fixed wrong rice texture was used. Resulted in green rice and weird plant textures. Now correct texture used so rice is white."
+      ]
+    },
     {
       "version": "0.1.1586.7476",
       "notes": [
@@ -2499,9 +2505,7 @@
       "notes": [
         "Tweaked the Join World menu server browser.",
         "Re-Fixed spawning in wrong position",
-        "Added translucency to ice ores and silicon",
-        "Fixed object reference error with chute bin.",
-        "Added some more localized versions of button and placeholder text fields on the save and join world menus."
+        "Added translucency to ice ores and silicon"
       ]
     }
   ]

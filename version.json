@@ -1,4 +1,13 @@
 {
+  "0.1.1587.7479": {
+    "notes": [
+      "Fixed wrong rice texture was used. Resulted in green rice and weird plant textures. Now correct texture used so rice is white."
+    ],
+    "releases": {
+      "built": "2018-08-13T00:00:00+01:00",
+      "beta": "2018-08-12T22:01:12+01:00"
+    }
+  },
   "0.1.1586.7476": {
     "notes": [
       "Added Pumpkin. Provides a lot of nutrition but grows slowly. Can be turned into Pumpkin Pie with other ingredients.",
