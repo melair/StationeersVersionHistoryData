@@ -1,4 +1,13 @@
 {
+  "0.1.1588.7481": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-14T00:00:00+01:00",
+      "beta": "2018-08-13T22:01:11+01:00"
+    }
+  },
   "0.1.1587.7479": {
     "notes": [
       "Fixed wrong rice texture was used. Resulted in green rice and weird plant textures. Now correct texture used so rice is white."

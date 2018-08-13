@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1587.7479",
-    "date": "2018-08-13T00:00:00+01:00"
+    "version": "0.1.1588.7481",
+    "date": "2018-08-14T00:00:00+01:00"
   },
   "history": [
     {
@@ -2504,8 +2504,7 @@
       "version": "0.1.1104.5579",
       "notes": [
         "Tweaked the Join World menu server browser.",
-        "Re-Fixed spawning in wrong position",
-        "Added translucency to ice ores and silicon"
+        "Re-Fixed spawning in wrong position"
       ]
     }
   ]
