@@ -1,4 +1,23 @@
 {
+  "0.1.1591.7488": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-15T00:00:00+01:00",
+      "beta": "2018-08-14T23:01:11+01:00"
+    }
+  },
+  "0.1.1590.7487": {
+    "notes": [
+      "Fixed bug that prevented placing Face items.",
+      "Fixed Save/Loading of Scenarios so that they properly restore stage and objective states."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1589.7482": {
     "notes": [
 

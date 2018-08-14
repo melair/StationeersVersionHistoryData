@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1589.7482",
-    "date": "2018-08-14T00:00:00+01:00"
+    "version": "0.1.1591.7488",
+    "date": "2018-08-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1590.7487",
+      "notes": [
+        "Fixed bug that prevented placing Face items.",
+        "Fixed Save/Loading of Scenarios so that they properly restore stage and objective states."
+      ]
+    },
     {
       "version": "0.1.1587.7479",
       "notes": [
@@ -2498,12 +2505,6 @@
         "Fixed error in English localized text entry.",
         "Updated Spanish translations. [credit: socramazibi]",
         "Added more localized labels for server detail window and skeletons."
-      ]
-    },
-    {
-      "version": "0.1.1104.5579",
-      "notes": [
-        "Tweaked the Join World menu server browser."
       ]
     }
   ]
