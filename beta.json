@@ -1,6 +1,6 @@
 {
   "current": {
-    "version": "0.1.1588.7481",
+    "version": "0.1.1589.7482",
     "date": "2018-08-14T00:00:00+01:00"
   },
   "history": [
@@ -2503,8 +2503,7 @@
     {
       "version": "0.1.1104.5579",
       "notes": [
-        "Tweaked the Join World menu server browser.",
-        "Re-Fixed spawning in wrong position"
+        "Tweaked the Join World menu server browser."
       ]
     }
   ]
