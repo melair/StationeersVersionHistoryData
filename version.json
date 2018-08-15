@@ -1,4 +1,13 @@
 {
+  "0.1.1595.7498": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-16T00:00:00+01:00",
+      "beta": "2018-08-15T23:01:12+01:00"
+    }
+  },
   "0.1.1593.7496": {
     "notes": [
       "Fixed some scenario objects not being cleaned up properly preventing you from completing objectives if you restarted a scenario without relaunching the game."

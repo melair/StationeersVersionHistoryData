@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1593.7496",
-    "date": "2018-08-15T00:00:00+01:00"
+    "version": "0.1.1595.7498",
+    "date": "2018-08-16T00:00:00+01:00"
   },
   "history": [
     {
@@ -2506,9 +2506,7 @@
       "notes": [
         "Fixed respawning beside old body instead of spawn point.",
         "Improved UI flow when revived before respawning.",
-        "Fixed issue of being unable to be killed after having been revived once.",
-        "Fixed respawning from the respawn menu after someone revived you",
-        "Added respawn prompt localized text values."
+        "Fixed issue of being unable to be killed after having been revived once."
       ]
     }
   ]
