@@ -1,4 +1,13 @@
 {
+  "0.1.1593.7496": {
+    "notes": [
+      "Fixed some scenario objects not being cleaned up properly preventing you from completing objectives if you restarted a scenario without relaunching the game."
+    ],
+    "releases": {
+      "built": "2018-08-15T00:00:00+01:00",
+      "beta": "2018-08-15T11:01:11+01:00"
+    }
+  },
   "0.1.1592.7494": {
     "notes": [
       "Fixed bug with Scenarios looking to the wrong file path for the starting condition definitions XML file.",
