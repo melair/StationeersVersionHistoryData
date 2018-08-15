@@ -1,4 +1,16 @@
 {
+  "0.1.1592.7494": {
+    "notes": [
+      "Fixed bug with Scenarios looking to the wrong file path for the starting condition definitions XML file.",
+      "Added Hardsuit Jetpack. Has increased capacity (forteen slots) as well as full jetpack functionality and increased environmental protection for contents. Constructable from the Tool Manufactory.",
+      "Added Hardsuit Backpack. This has more slots, but no jetpack capability. Constructable from the Tool Manufactory. Useful where you want more storage space but don't require jetpack.",
+      "Refactored mineables pool. Modest reduction in garbage collection."
+    ],
+    "releases": {
+      "built": "2018-08-15T00:00:00+01:00",
+      "beta": "2018-08-15T09:01:12+01:00"
+    }
+  },
   "0.1.1591.7488": {
     "notes": [
 

@@ -1,9 +1,18 @@
 {
   "current": {
-    "version": "0.1.1591.7488",
+    "version": "0.1.1592.7494",
     "date": "2018-08-15T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1592.7494",
+      "notes": [
+        "Fixed bug with Scenarios looking to the wrong file path for the starting condition definitions XML file.",
+        "Added Hardsuit Jetpack. Has increased capacity (forteen slots) as well as full jetpack functionality and increased environmental protection for contents. Constructable from the Tool Manufactory.",
+        "Added Hardsuit Backpack. This has more slots, but no jetpack capability. Constructable from the Tool Manufactory. Useful where you want more storage space but don't require jetpack.",
+        "Refactored mineables pool. Modest reduction in garbage collection."
+      ]
+    },
     {
       "version": "0.1.1590.7487",
       "notes": [
@@ -2499,12 +2508,7 @@
     {
       "version": "0.1.1107.5589",
       "notes": [
-        "Fixed helmet not visible on old body after respawn.",
-        "HealPill should now correctly heal burn damage",
-        "Added bindip command which binds specific IP on dedicated server when it has multiple IPs. It's available only on IPv4. Usage : rocketstation_DedicatedServer .exe -bindip=192.168.1.78",
-        "Fixed error in English localized text entry.",
-        "Updated Spanish translations. [credit: socramazibi]",
-        "Added more localized labels for server detail window and skeletons."
+        "Fixed helmet not visible on old body after respawn."
       ]
     }
   ]
