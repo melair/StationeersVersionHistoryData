@@ -1,9 +1,17 @@
 {
   "current": {
-    "version": "0.1.1596.7504",
+    "version": "0.1.1599.7512",
     "date": "2018-08-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1597.7508",
+      "notes": [
+        "Added Water Canister to Portable Hydroponics on new world start.",
+        "Reduced amount of water that spawns with a Water Canister.",
+        "Added first pass of setting prefab attributes through modding. There is now a new XML type \"ThingModData\" which is a list inside \"ThingMods\" in GameData. This allows you to overwrite prefab values that were previously hardcoded in the prefabs. So far, variables on Thing, DynamicThing, Item, Food, GasCanister, and BatteryCell have been exposed. An example mod is included in the game folder (StreamingAssets\\AttributesExampleMod.zip), as well as on the workshop (don't run while playing the game, it makes eggs unusable in recipes). Note that over time more and more attributes will be exposed, allowing you to mod more and more of the game."
+      ]
+    },
     {
       "version": "0.1.1596.7504",
       "notes": [
@@ -2488,20 +2496,6 @@
       "notes": [
         "Fixed NRE in CameraCollisionHandler. It failed to join server on a certain pc because of delay to initial camera. It makes you join server properly.",
         "Fixed battery charger distributing power to charged batteries. Now the charger only adds charge to batteries that aren't full. (Thanks Risu!)"
-      ]
-    },
-    {
-      "version": "0.1.1111.5605",
-      "notes": [
-        "Fixed skeletons turning into Ghost Rider. Skeletons can no longer be set on fire. (thanks FlashDim!)"
-      ]
-    },
-    {
-      "version": "0.1.1110.5602",
-      "notes": [
-        "Fixed healpill not healing lung damage.",
-        "Respawn player on join if dead. Prevents situation where player disconnects while dead, and unable to respawn afterwards.",
-        "Fixed invisible favorite server list on join menu."
       ]
     }
   ]

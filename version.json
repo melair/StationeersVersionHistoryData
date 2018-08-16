@@ -1,4 +1,24 @@
 {
+  "0.1.1599.7512": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-16T00:00:00+01:00",
+      "beta": "2018-08-16T07:01:19+01:00"
+    }
+  },
+  "0.1.1597.7508": {
+    "notes": [
+      "Added Water Canister to Portable Hydroponics on new world start.",
+      "Reduced amount of water that spawns with a Water Canister.",
+      "Added first pass of setting prefab attributes through modding. There is now a new XML type \"ThingModData\" which is a list inside \"ThingMods\" in GameData. This allows you to overwrite prefab values that were previously hardcoded in the prefabs. So far, variables on Thing, DynamicThing, Item, Food, GasCanister, and BatteryCell have been exposed. An example mod is included in the game folder (StreamingAssets\\AttributesExampleMod.zip), as well as on the workshop (don't run while playing the game, it makes eggs unusable in recipes). Note that over time more and more attributes will be exposed, allowing you to mod more and more of the game."
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown"
+    }
+  },
   "0.1.1596.7504": {
     "notes": [
       "Added Portable Hydroponics. A dynamic item that contains four planting slots, and a gas canister slot. Provided as part of the starting supplies, and also constructable from a kit produced from Pipe Bender. Allows growing plants in a dynamic object that can be carried around. Still requires sunlight. Can be wrenched onto a connector.",
