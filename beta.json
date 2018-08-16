@@ -1,9 +1,19 @@
 {
   "current": {
-    "version": "0.1.1595.7498",
+    "version": "0.1.1596.7504",
     "date": "2018-08-16T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1596.7504",
+      "notes": [
+        "Added Portable Hydroponics. A dynamic item that contains four planting slots, and a gas canister slot. Provided as part of the starting supplies, and also constructable from a kit produced from Pipe Bender. Allows growing plants in a dynamic object that can be carried around. Still requires sunlight. Can be wrenched onto a connector.",
+        "Fixed mining drill being audible at far beyond it's intended sound range.",
+        "Fixed Batteries having their power stored value being set to NaN and rendering the battery non functional.",
+        "Fixed collision damage not taking angle into account. You should no longer receive damage if sliding down a slope.",
+        "Reverted some changes intended to increase performance that may have been causing issues (exploding canisters)"
+      ]
+    },
     {
       "version": "0.1.1593.7496",
       "notes": [
@@ -2492,21 +2502,6 @@
         "Fixed healpill not healing lung damage.",
         "Respawn player on join if dead. Prevents situation where player disconnects while dead, and unable to respawn afterwards.",
         "Fixed invisible favorite server list on join menu."
-      ]
-    },
-    {
-      "version": "0.1.1109.5598",
-      "notes": [
-        "Fixed respawn button disconnecting you instead.",
-        "Fixed airlocks not cycling properly on dedicated servers"
-      ]
-    },
-    {
-      "version": "0.1.1108.5595",
-      "notes": [
-        "Fixed respawning beside old body instead of spawn point.",
-        "Improved UI flow when revived before respawning.",
-        "Fixed issue of being unable to be killed after having been revived once."
       ]
     }
   ]
