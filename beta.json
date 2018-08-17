@@ -1,9 +1,16 @@
 {
   "current": {
-    "version": "0.1.1601.7522",
+    "version": "0.1.1602.7526",
     "date": "2018-08-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1602.7526",
+      "notes": [
+        "Added Speakers can now be linked to Airlock Controllers. When a speaker is linked to the airlock controller, it will be turned on and off in the same way as lights are - when the airlock is processing all Speakers will be turned on.",
+        "Added Speaker (Klaxton). Has six alarm sounds and three basic music tracks. Set the different tracks using Mode, turn on and off with external tool. Can set volume either via logic, or via a screw on the speaker itself. Constructable from a Speaker Kit, which you can build on the Electronics Printer."
+      ]
+    },
     {
       "version": "0.1.1601.7522",
       "notes": [
@@ -2489,13 +2496,6 @@
         "Added more missing strings for localization including the Change Appearance screen.",
         "Fixed missing EntryTools for Chair, Turret and engines.",
         "Fixed truncate chatting text when it's full. It will scroll properly."
-      ]
-    },
-    {
-      "version": "0.1.1114.5617",
-      "notes": [
-        "Fixed items being invisible when viewing your own dead body after re-spawning",
-        "Fixed error when disabling shadows on re-spawn"
       ]
     }
   ]
