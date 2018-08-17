@@ -1,4 +1,21 @@
 {
+  "0.1.1601.7522": {
+    "notes": [
+      "Added recipe for mothership core to Electronics Printer with some very temporary ingredients.  This is largely to support the Mars scenario that is still being tested.",
+      "Added OnMothershipCreatedEvent to scenario authoring to support tasks to create new mothership cores.",
+      "Fixed Using the Type mode on OnConstructedEvent now checks for a subclass match not an exact class match.",
+      "Fixed ThingExceedAltitudeEvent now selects the first mothership it finds when the mission task is created.  Means this task trigger will have to be on a subsequent stage after any mothership creation one or it won't work correctly until save/load.",
+      "Fixed TaskDisplays list on Custom Missions is now correctly cleared at the end of a stage.",
+      "Fixed Mothership cores being placed at world origin instead of correctly on the mothership grid due to the mothership having its grid set back to the world grid by occlusion manager.",
+      "Fixed ability to interact with empty slots on Hydroponics Station and Portable Hydroponics even when holding nothing.",
+      "Fixed A bug in which cycling through some options while on mothership grid would cause incorrect orientation of the object.",
+      "Updated Localizations for French, Italian, Simplified and Traditional Chinese, Spanish and Suomi.  As always, a big thanks for the active members in the #localization channel contributing to the translation effort."
+    ],
+    "releases": {
+      "built": "2018-08-17T00:00:00+01:00",
+      "beta": "2018-08-17T08:01:12+01:00"
+    }
+  },
   "0.1.1600.7513": {
     "notes": [
 

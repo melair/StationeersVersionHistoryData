@@ -1,9 +1,23 @@
 {
   "current": {
-    "version": "0.1.1600.7513",
+    "version": "0.1.1601.7522",
     "date": "2018-08-17T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1601.7522",
+      "notes": [
+        "Added recipe for mothership core to Electronics Printer with some very temporary ingredients.  This is largely to support the Mars scenario that is still being tested.",
+        "Added OnMothershipCreatedEvent to scenario authoring to support tasks to create new mothership cores.",
+        "Fixed Using the Type mode on OnConstructedEvent now checks for a subclass match not an exact class match.",
+        "Fixed ThingExceedAltitudeEvent now selects the first mothership it finds when the mission task is created.  Means this task trigger will have to be on a subsequent stage after any mothership creation one or it won't work correctly until save/load.",
+        "Fixed TaskDisplays list on Custom Missions is now correctly cleared at the end of a stage.",
+        "Fixed Mothership cores being placed at world origin instead of correctly on the mothership grid due to the mothership having its grid set back to the world grid by occlusion manager.",
+        "Fixed ability to interact with empty slots on Hydroponics Station and Portable Hydroponics even when holding nothing.",
+        "Fixed A bug in which cycling through some options while on mothership grid would cause incorrect orientation of the object.",
+        "Updated Localizations for French, Italian, Simplified and Traditional Chinese, Spanish and Suomi.  As always, a big thanks for the active members in the #localization channel contributing to the translation effort."
+      ]
+    },
     {
       "version": "0.1.1597.7508",
       "notes": [
@@ -2481,21 +2495,7 @@
       "version": "0.1.1114.5617",
       "notes": [
         "Fixed items being invisible when viewing your own dead body after re-spawning",
-        "Fixed error when disabling shadows on re-spawn",
-        "Added skeleton despawning after 60 seconds.",
-        "Fixed re-spawn while in decayed State(wasn't working at all)",
-        "Fixed some dropped items being invisible(because they were still on the wrong layer)",
-        "Removed all shadows of dead players",
-        "Avoided possible divide by zero in cell charger. (Thanks Risu!)",
-        "Fixed ores not appearing on load for play host players",
-        "Updated localization files for German, Russian, Spanish and French"
-      ]
-    },
-    {
-      "version": "0.1.1113.5609",
-      "notes": [
-        "Fixed NRE in CameraCollisionHandler. It failed to join server on a certain pc because of delay to initial camera. It makes you join server properly.",
-        "Fixed battery charger distributing power to charged batteries. Now the charger only adds charge to batteries that aren't full. (Thanks Risu!)"
+        "Fixed error when disabling shadows on re-spawn"
       ]
     }
   ]
