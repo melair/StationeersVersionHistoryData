@@ -1,4 +1,16 @@
 {
+  "9.9.9.9": {
+    "notes": [
+      "https://stationeers.melaircraft.net will stop updating on the 30th of August 2018.",
+      "If you are consuming our raw JSON, you can find a replacement at: https://stationeering.com/tools/data",
+      "If you are consuming our ATOM feed, you can find a replacement on: https://stationeering.com/versions/recent"
+    ],
+    "releases": {
+      "built": "unknown",
+      "beta": "unknown",
+      "public": "unknown"
+    }
+  },
   "0.1.1602.7526": {
     "notes": [
       "Added Speakers can now be linked to Airlock Controllers. When a speaker is linked to the airlock controller, it will be turned on and off in the same way as lights are - when the airlock is processing all Speakers will be turned on.",
