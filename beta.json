@@ -7,7 +7,6 @@
     {
       "version": "0.1.1602.7526",
       "notes": [
-        "*** https://stationeers.melaircraft.com is being decomissioned, please see https://stationeering.com/tools/data for a replacement feed. ***",
         "Added Speakers can now be linked to Airlock Controllers. When a speaker is linked to the airlock controller, it will be turned on and off in the same way as lights are - when the airlock is processing all Speakers will be turned on.",
         "Added Speaker (Klaxton). Has six alarm sounds and three basic music tracks. Set the different tracks using Mode, turn on and off with external tool. Can set volume either via logic, or via a screw on the speaker itself. Constructable from a Speaker Kit, which you can build on the Electronics Printer."
       ]
