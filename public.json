@@ -1,9 +1,88 @@
 {
   "current": {
-    "version": "0.1.1586.7476",
-    "date": "2018-08-10T00:00:00+01:00"
+    "version": "0.1.1603.7531",
+    "date": "2018-08-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1603.7531",
+      "notes": [
+        "Fixed Guide Tablet now resets to page 1 when you progress to a new mission stage.",
+        "Fixed incorrect paths when loading scenarios from base game data vs from mods.",
+        "Added Escape From Mars scenario to base game, but still requires a lot of balance and currently will be very difficult to complete.  If you do try it out, drop by Discord and let us know what you think!",
+        "Fixed Air Conditioner screen not turning on when loading a save. [Thanks Risu]",
+        "Added recipes for Mushroom, Pumpkin and Rice to the Organics Printer.",
+        "Fixed Setting volume via logic is no longer clamped between 0.1 and 1.  Now uses 1-100.",
+        "Fixed error message when trying to set Klaxon volume outside the main thread (ie. via logic)."
+      ]
+    },
+    {
+      "version": "0.1.1602.7526",
+      "notes": [
+        "Added Speakers can now be linked to Airlock Controllers. When a speaker is linked to the airlock controller, it will be turned on and off in the same way as lights are - when the airlock is processing all Speakers will be turned on.",
+        "Added Speaker (Klaxton). Has six alarm sounds and three basic music tracks. Set the different tracks using Mode, turn on and off with external tool. Can set volume either via logic, or via a screw on the speaker itself. Constructable from a Speaker Kit, which you can build on the Electronics Printer."
+      ]
+    },
+    {
+      "version": "0.1.1601.7522",
+      "notes": [
+        "Added recipe for mothership core to Electronics Printer with some very temporary ingredients.  This is largely to support the Mars scenario that is still being tested.",
+        "Added OnMothershipCreatedEvent to scenario authoring to support tasks to create new mothership cores.",
+        "Fixed Using the Type mode on OnConstructedEvent now checks for a subclass match not an exact class match.",
+        "Fixed ThingExceedAltitudeEvent now selects the first mothership it finds when the mission task is created.  Means this task trigger will have to be on a subsequent stage after any mothership creation one or it won't work correctly until save/load.",
+        "Fixed TaskDisplays list on Custom Missions is now correctly cleared at the end of a stage.",
+        "Fixed Mothership cores being placed at world origin instead of correctly on the mothership grid due to the mothership having its grid set back to the world grid by occlusion manager.",
+        "Fixed ability to interact with empty slots on Hydroponics Station and Portable Hydroponics even when holding nothing.",
+        "Fixed A bug in which cycling through some options while on mothership grid would cause incorrect orientation of the object.",
+        "Updated Localizations for French, Italian, Simplified and Traditional Chinese, Spanish and Suomi.  As always, a big thanks for the active members in the #localization channel contributing to the translation effort."
+      ]
+    },
+    {
+      "version": "0.1.1597.7508",
+      "notes": [
+        "Added Water Canister to Portable Hydroponics on new world start.",
+        "Reduced amount of water that spawns with a Water Canister.",
+        "Added first pass of setting prefab attributes through modding. There is now a new XML type \"ThingModData\" which is a list inside \"ThingMods\" in GameData. This allows you to overwrite prefab values that were previously hardcoded in the prefabs. So far, variables on Thing, DynamicThing, Item, Food, GasCanister, and BatteryCell have been exposed. An example mod is included in the game folder (StreamingAssets\\AttributesExampleMod.zip), as well as on the workshop (don't run while playing the game, it makes eggs unusable in recipes). Note that over time more and more attributes will be exposed, allowing you to mod more and more of the game."
+      ]
+    },
+    {
+      "version": "0.1.1596.7504",
+      "notes": [
+        "Added Portable Hydroponics. A dynamic item that contains four planting slots, and a gas canister slot. Provided as part of the starting supplies, and also constructable from a kit produced from Pipe Bender. Allows growing plants in a dynamic object that can be carried around. Still requires sunlight. Can be wrenched onto a connector.",
+        "Fixed mining drill being audible at far beyond it's intended sound range.",
+        "Fixed Batteries having their power stored value being set to NaN and rendering the battery non functional.",
+        "Fixed collision damage not taking angle into account. You should no longer receive damage if sliding down a slope.",
+        "Reverted some changes intended to increase performance that may have been causing issues (exploding canisters)"
+      ]
+    },
+    {
+      "version": "0.1.1593.7496",
+      "notes": [
+        "Fixed some scenario objects not being cleaned up properly preventing you from completing objectives if you restarted a scenario without relaunching the game."
+      ]
+    },
+    {
+      "version": "0.1.1592.7494",
+      "notes": [
+        "Fixed bug with Scenarios looking to the wrong file path for the starting condition definitions XML file.",
+        "Added Hardsuit Jetpack. Has increased capacity (forteen slots) as well as full jetpack functionality and increased environmental protection for contents. Constructable from the Tool Manufactory.",
+        "Added Hardsuit Backpack. This has more slots, but no jetpack capability. Constructable from the Tool Manufactory. Useful where you want more storage space but don't require jetpack.",
+        "Refactored mineables pool. Modest reduction in garbage collection."
+      ]
+    },
+    {
+      "version": "0.1.1590.7487",
+      "notes": [
+        "Fixed bug that prevented placing Face items.",
+        "Fixed Save/Loading of Scenarios so that they properly restore stage and objective states."
+      ]
+    },
+    {
+      "version": "0.1.1587.7479",
+      "notes": [
+        "Fixed wrong rice texture was used. Resulted in green rice and weird plant textures. Now correct texture used so rice is white."
+      ]
+    },
     {
       "version": "0.1.1586.7476",
       "notes": [
@@ -2420,88 +2499,6 @@
         "Fixed Inactive ServerListItem Animators being called when disabled. causing lag on player load",
         "Eyes should now correctly close when you die",
         "Fixed writing decimals to logic memory unit from logic computers"
-      ]
-    },
-    {
-      "version": "0.1.1117.5624",
-      "notes": [
-        "Added Traditional Chinese localization.",
-        "Added more missing strings for localization including the Change Appearance screen.",
-        "Fixed missing EntryTools for Chair, Turret and engines.",
-        "Fixed truncate chatting text when it's full. It will scroll properly."
-      ]
-    },
-    {
-      "version": "0.1.1114.5617",
-      "notes": [
-        "Fixed items being invisible when viewing your own dead body after re-spawning",
-        "Fixed error when disabling shadows on re-spawn",
-        "Added skeleton despawning after 60 seconds.",
-        "Fixed re-spawn while in decayed State(wasn't working at all)",
-        "Fixed some dropped items being invisible(because they were still on the wrong layer)",
-        "Removed all shadows of dead players",
-        "Avoided possible divide by zero in cell charger. (Thanks Risu!)",
-        "Fixed ores not appearing on load for play host players",
-        "Updated localization files for German, Russian, Spanish and French"
-      ]
-    },
-    {
-      "version": "0.1.1113.5609",
-      "notes": [
-        "Fixed NRE in CameraCollisionHandler. It failed to join server on a certain pc because of delay to initial camera. It makes you join server properly.",
-        "Fixed battery charger distributing power to charged batteries. Now the charger only adds charge to batteries that aren't full. (Thanks Risu!)"
-      ]
-    },
-    {
-      "version": "0.1.1111.5605",
-      "notes": [
-        "Fixed skeletons turning into Ghost Rider. Skeletons can no longer be set on fire. (thanks FlashDim!)"
-      ]
-    },
-    {
-      "version": "0.1.1110.5602",
-      "notes": [
-        "Fixed healpill not healing lung damage.",
-        "Respawn player on join if dead. Prevents situation where player disconnects while dead, and unable to respawn afterwards.",
-        "Fixed invisible favorite server list on join menu."
-      ]
-    },
-    {
-      "version": "0.1.1109.5598",
-      "notes": [
-        "Fixed respawn button disconnecting you instead.",
-        "Fixed airlocks not cycling properly on dedicated servers"
-      ]
-    },
-    {
-      "version": "0.1.1108.5595",
-      "notes": [
-        "Fixed respawning beside old body instead of spawn point.",
-        "Improved UI flow when revived before respawning.",
-        "Fixed issue of being unable to be killed after having been revived once.",
-        "Fixed respawning from the respawn menu after someone revived you",
-        "Added respawn prompt localized text values."
-      ]
-    },
-    {
-      "version": "0.1.1107.5589",
-      "notes": [
-        "Fixed helmet not visible on old body after respawn.",
-        "HealPill should now correctly heal burn damage",
-        "Added bindip command which binds specific IP on dedicated server when it has multiple IPs. It's available only on IPv4. Usage : rocketstation_DedicatedServer .exe -bindip=192.168.1.78",
-        "Fixed error in English localized text entry.",
-        "Updated Spanish translations. [credit: socramazibi]",
-        "Added more localized labels for server detail window and skeletons."
-      ]
-    },
-    {
-      "version": "0.1.1104.5579",
-      "notes": [
-        "Tweaked the Join World menu server browser.",
-        "Re-Fixed spawning in wrong position",
-        "Added translucency to ice ores and silicon",
-        "Fixed object reference error with chute bin.",
-        "Added some more localized versions of button and placeholder text fields on the save and join world menus."
       ]
     }
   ]

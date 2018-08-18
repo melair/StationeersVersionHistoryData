@@ -1,9 +1,21 @@
 {
   "current": {
-    "version": "0.1.1602.7526",
-    "date": "2018-08-17T00:00:00+01:00"
+    "version": "0.1.1603.7531",
+    "date": "2018-08-18T00:00:00+01:00"
   },
   "history": [
+    {
+      "version": "0.1.1603.7531",
+      "notes": [
+        "Fixed Guide Tablet now resets to page 1 when you progress to a new mission stage.",
+        "Fixed incorrect paths when loading scenarios from base game data vs from mods.",
+        "Added Escape From Mars scenario to base game, but still requires a lot of balance and currently will be very difficult to complete.  If you do try it out, drop by Discord and let us know what you think!",
+        "Fixed Air Conditioner screen not turning on when loading a save. [Thanks Risu]",
+        "Added recipes for Mushroom, Pumpkin and Rice to the Organics Printer.",
+        "Fixed Setting volume via logic is no longer clamped between 0.1 and 1.  Now uses 1-100.",
+        "Fixed error message when trying to set Klaxon volume outside the main thread (ie. via logic)."
+      ]
+    },
     {
       "version": "0.1.1602.7526",
       "notes": [
@@ -2487,15 +2499,6 @@
         "Fixed Inactive ServerListItem Animators being called when disabled. causing lag on player load",
         "Eyes should now correctly close when you die",
         "Fixed writing decimals to logic memory unit from logic computers"
-      ]
-    },
-    {
-      "version": "0.1.1117.5624",
-      "notes": [
-        "Added Traditional Chinese localization.",
-        "Added more missing strings for localization including the Change Appearance screen.",
-        "Fixed missing EntryTools for Chair, Turret and engines.",
-        "Fixed truncate chatting text when it's full. It will scroll properly."
       ]
     }
   ]

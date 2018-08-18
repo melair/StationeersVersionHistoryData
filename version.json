@@ -11,6 +11,22 @@
       "public": "unknown"
     }
   },
+  "0.1.1603.7531": {
+    "notes": [
+      "Fixed Guide Tablet now resets to page 1 when you progress to a new mission stage.",
+      "Fixed incorrect paths when loading scenarios from base game data vs from mods.",
+      "Added Escape From Mars scenario to base game, but still requires a lot of balance and currently will be very difficult to complete.  If you do try it out, drop by Discord and let us know what you think!",
+      "Fixed Air Conditioner screen not turning on when loading a save. [Thanks Risu]",
+      "Added recipes for Mushroom, Pumpkin and Rice to the Organics Printer.",
+      "Fixed Setting volume via logic is no longer clamped between 0.1 and 1.  Now uses 1-100.",
+      "Fixed error message when trying to set Klaxon volume outside the main thread (ie. via logic)."
+    ],
+    "releases": {
+      "built": "2018-08-18T00:00:00+01:00",
+      "public": "2018-08-18T03:01:18+01:00",
+      "beta": "2018-08-18T03:01:18+01:00"
+    }
+  },
   "0.1.1602.7526": {
     "notes": [
       "Added Speakers can now be linked to Airlock Controllers. When a speaker is linked to the airlock controller, it will be turned on and off in the same way as lights are - when the airlock is processing all Speakers will be turned on.",
@@ -18,7 +34,8 @@
     ],
     "releases": {
       "built": "2018-08-17T00:00:00+01:00",
-      "beta": "2018-08-17T10:01:19+01:00"
+      "beta": "2018-08-17T10:01:19+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1601.7522": {
@@ -35,7 +52,8 @@
     ],
     "releases": {
       "built": "2018-08-17T00:00:00+01:00",
-      "beta": "2018-08-17T08:01:12+01:00"
+      "beta": "2018-08-17T08:01:12+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1600.7513": {
@@ -64,7 +82,8 @@
     ],
     "releases": {
       "built": "unknown",
-      "beta": "unknown"
+      "beta": "unknown",
+      "public": "unknown"
     }
   },
   "0.1.1596.7504": {
@@ -77,7 +96,8 @@
     ],
     "releases": {
       "built": "2018-08-16T00:00:00+01:00",
-      "beta": "2018-08-16T04:01:14+01:00"
+      "beta": "2018-08-16T04:01:14+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1595.7498": {
@@ -95,7 +115,8 @@
     ],
     "releases": {
       "built": "2018-08-15T00:00:00+01:00",
-      "beta": "2018-08-15T11:01:11+01:00"
+      "beta": "2018-08-15T11:01:11+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1592.7494": {
@@ -107,7 +128,8 @@
     ],
     "releases": {
       "built": "2018-08-15T00:00:00+01:00",
-      "beta": "2018-08-15T09:01:12+01:00"
+      "beta": "2018-08-15T09:01:12+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1591.7488": {
@@ -126,7 +148,8 @@
     ],
     "releases": {
       "built": "unknown",
-      "beta": "unknown"
+      "beta": "unknown",
+      "public": "unknown"
     }
   },
   "0.1.1589.7482": {
@@ -153,7 +176,8 @@
     ],
     "releases": {
       "built": "2018-08-13T00:00:00+01:00",
-      "beta": "2018-08-12T22:01:12+01:00"
+      "beta": "2018-08-12T22:01:12+01:00",
+      "public": "unknown"
     }
   },
   "0.1.1586.7476": {
