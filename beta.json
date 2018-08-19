@@ -1,7 +1,7 @@
 {
   "current": {
-    "version": "0.1.1603.7531",
-    "date": "2018-08-18T00:00:00+01:00"
+    "version": "0.1.1605.7533",
+    "date": "2018-08-20T00:00:00+01:00"
   },
   "history": [
     {
@@ -2496,9 +2496,7 @@
       "version": "0.1.1119.5631",
       "notes": [
         "Fixed Join World button is disabled when player returns join menu from game.",
-        "Fixed Inactive ServerListItem Animators being called when disabled. causing lag on player load",
-        "Eyes should now correctly close when you die",
-        "Fixed writing decimals to logic memory unit from logic computers"
+        "Fixed Inactive ServerListItem Animators being called when disabled. causing lag on player load"
       ]
     }
   ]

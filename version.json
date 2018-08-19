@@ -11,6 +11,15 @@
       "public": "unknown"
     }
   },
+  "0.1.1605.7533": {
+    "notes": [
+
+    ],
+    "releases": {
+      "built": "2018-08-20T00:00:00+01:00",
+      "beta": "2018-08-19T23:01:12+01:00"
+    }
+  },
   "0.1.1603.7531": {
     "notes": [
       "Fixed Guide Tablet now resets to page 1 when you progress to a new mission stage.",
